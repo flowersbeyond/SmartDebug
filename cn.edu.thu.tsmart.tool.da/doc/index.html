@@ -1,39 +1,41 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
-  width: 45em;
-  border: 1px solid #ddd;
-  outline: 1300px solid #fff;
-  margin: 16px auto;
-}
-
-body .markdown-body
-{
-  padding: 30px;
-}
-
-@font-face {
-  font-family: fontawesome-mini;
-  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAzUABAAAAAAFNgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABbAAAABwAAAAcZMzaOEdERUYAAAGIAAAAHQAAACAAOQAET1MvMgAAAagAAAA+AAAAYHqhde9jbWFwAAAB6AAAAFIAAAFa4azkLWN2dCAAAAI8AAAAKAAAACgFgwioZnBnbQAAAmQAAAGxAAACZVO0L6dnYXNwAAAEGAAAAAgAAAAIAAAAEGdseWYAAAQgAAAFDgAACMz7eroHaGVhZAAACTAAAAAwAAAANgWEOEloaGVhAAAJYAAAAB0AAAAkDGEGa2htdHgAAAmAAAAAEwAAADBEgAAQbG9jYQAACZQAAAAaAAAAGgsICJBtYXhwAAAJsAAAACAAAAAgASgBD25hbWUAAAnQAAACZwAABOD4no+3cG9zdAAADDgAAABsAAAAmF+yXM9wcmVwAAAMpAAAAC4AAAAusPIrFAAAAAEAAAAAyYlvMQAAAADLVHQgAAAAAM/u9uZ4nGNgZGBg4ANiCQYQYGJgBEJuIGYB8xgABMMAPgAAAHicY2Bm42OcwMDKwMLSw2LMwMDQBqGZihmiwHycoKCyqJjB4YPDh4NsDP+BfNb3DIuAFCOSEgUGRgAKDgt4AAB4nGNgYGBmgGAZBkYGEAgB8hjBfBYGCyDNxcDBwMTA9MHhQ9SHrA8H//9nYACyQyFs/sP86/kX8HtB9UIBIxsDXICRCUgwMaACRoZhDwA3fxKSAAAAAAHyAHABJQB/AIEAdAFGAOsBIwC/ALgAxACGAGYAugBNACcA/wCIeJxdUbtOW0EQ3Q0PA4HE2CA52hSzmZDGe6EFCcTVjWJkO4XlCGk3cpGLcQEfQIFEDdqvGaChpEibBiEXSHxCPiESM2uIojQ7O7NzzpkzS8qRqnfpa89T5ySQwt0GzTb9Tki1swD3pOvrjYy0gwdabGb0ynX7/gsGm9GUO2oA5T1vKQ8ZTTuBWrSn/tH8Cob7/B/zOxi0NNP01DoJ6SEE5ptxS4PvGc26yw/6gtXhYjAwpJim4i4/plL+tzTnasuwtZHRvIMzEfnJNEBTa20Emv7UIdXzcRRLkMumsTaYmLL+JBPBhcl0VVO1zPjawV2ys+hggyrNgQfYw1Z5DB4ODyYU0rckyiwNEfZiq8QIEZMcCjnl3Mn+pED5SBLGvElKO+OGtQbGkdfAoDZPs/88m01tbx3C+FkcwXe/GUs6+MiG2hgRYjtiKYAJREJGVfmGGs+9LAbkUvvPQJSA5fGPf50ItO7YRDyXtXUOMVYIen7b3PLLirtWuc6LQndvqmqo0inN+17OvscDnh4Lw0FjwZvP+/5Kgfo8LK40aA4EQ3o3ev+iteqIq7wXPrIn07+xWgAAAAABAAH//wAPeJyFlctvG1UUh+/12DPN1B7P3JnYjj2Ox4/MuDHxJH5N3UdaEUQLqBIkfQQioJWQ6AMEQkIqsPGCPwA1otuWSmTBhjtps2ADWbJg3EpIXbGouqSbCraJw7kzNo2dRN1cnXN1ZvT7zuuiMEI7ncizyA0URofRBJpCdbQuIFShYY+GZRrxMDVtih5TwQPHtXDFFSIKoWIbuREBjLH27Ny4MsbVx+uOJThavebgVrNRLAiYx06rXsvhxLgWx9xpfHdrs/ekc2Pl2cpPCVEITQpwbj8VQhfXSq2m+Wxqaq2D73Kne5e3NjHqQNj3CRYlJlgUl/jRNP+2Gs2pNYRQiOnmUaQDqm30KqKiTTWPWjboxnTWpvgxjXo0KrtZXAHt7hwIz0YVcj88JnKlJKi3NPAwLyDwZudSmJSMMJFDYaOkaol6XtESx3Gt1VTytdZJ3DCLeaVhVnCBH1fycHTxFXwPX+l2e3d6H/TufGGmMTLTnbSJUdo00zuBswMO/nl3YLeL/wnu9/limCuD3vC54h5NBVz6Li414AI8Vx3iiosKcQXUbrvhFFiYb++HN4DaF4XzFW0fIN4XDWJ3a3XQoq9V8WiyRmdsatV9xUcHims1JloH0YUa090G3Tro3mC6c01f+YwCPquINr1PTaCP6rVTOOmf0GE2dBc7zWIhji3/5MchSuBHgDbU99RMWt3YUNMZMJmx92YP6NsHx/5/M1yvInpnkIOM3Z8fA3JQ2lW1RFC1KaBPDFXNAHYYvGy73aYZZZ3HifbeuiVZCpwA3oQBs0wGPYJbJfg60xrKEbKiNtTe1adwrpBRwlAuQ3q3VRaX0QmQ9a49BTSCuF1MLfQ6+tinOubRBZuWPNoMevGMT+V41KitO1is3D/tpMcq1JHZqDHGs8DoYGDkxJgKjHROeTCmhZvzPm9pod+ltKm4PN7Dyvvldlpsg8D+4AUJZ3F/JBstZz7cbFRxsaAGV6yX/dkcycWf8eS3QlQea+YLjdm3yrOnrhFpUyKVvFE4lpv4bO3Svx/6F/4xmiDu/RT5iI++lko18mY1oX+5UGKR6kmVjM/Zb76yfHtxy+h/SyQ0lLdpdKy/lWB6szatetQJ8nZ80A2Qt6ift6gJeavU3BO4gtxs/KCtNPVibCtYCWY3SIlSBPKXZALXiIR9oZeJ1AuMyxLpHIy/yO7vSiSE+kZvk0ihJ30HgHfzZtEMmvV58x6dtqns0XTAW7Vdm4HJ04OCp/crOO7rd9SGxQAE/mVA9xRN+kVSMRFF6S9JFGUtthkjBA5tFCWc2l4V43Ex9GmUP3SI37Jjmir9KqlaDJ4S4JB3vuM/jzyH1+8MuoZ+QGzfnvPoJb96cZlWjMcKLfgDwB7E634JTY+asjsPzS5CiVnEWY+KsrsIN5rn3mAPjqmQBxGjcGKB9f9ZxY3mYC2L85CJ2FXIxKKyHk+dg0FHbuEc7D5NzWUX32WxFcWNGRAbvwSx0RmIXVDuYySafluQBmzA/ssqJAMLnli+WIC90Gw4lm85wcp0qjArEDPJJV/sSx4P9ungTpgMw5gVC1XO4uULq0s3v1rqLi0vX/z65vlH50f8T/RHmSPTk5xxWBWOluMT6WiOy+tdvWxlV/XQb3o3c6Ssr+r6I708GsX9/nzp1tKFh0s3v7m4vAy/Hnb/KMOvc1wump6Il48K6mGDy02X9Yd65pa+nQIjk76lWxCkG8NBCP0HQS9IpAAAeJxjYGRgYGBhcCrq214Qz2/zlUGenQEEzr/77oug/zewFbB+AHI5GJhAogBwKQ0qeJxjYGRgYH3/P46BgZ0BBNgKGBgZUAEPAE/7At0AAAB4nGNngAB2IGYjhBsYBAAIYADVAAAAAAAAAAAAAFwAyAEeAaACCgKmAx4DggRmAAAAAQAAAAwAagAEAAAAAAACAAEAAgAWAAABAAChAAAAAHiclZI7bxQxFIWPd/JkUYQChEhIyAVKgdBMskm1QkKrRETpQiLRUczueB/K7HhlOxttg8LvoKPgP9DxFxANDR0tHRWi4NjrPIBEgh1p/dm+vufcawNYFWsQmP6e4jSyQB2fI9cwj++RE9wTjyPP4LYoI89iWbyLPIe6+Bh5Hs9rryMv4GbtW+RF3EhuRa7jbrIbeQkPkjdUETOLnL0Kip4FVvAhco1RXyMnSPEz8gzWxE7kWTwUp5HnsCLeR57HW/El8gJWa58iL+JO7UfkOh4l9yMv4UnyEtvQGGECgwF66MNBooF1bGCL1ELB/TYU+ZBRlvsKQ44Se6jQ4a7hef+fh72Crv25kp+8lNWGmeKoOI5jJLb1aGIGvb6TjfWNLdkqdFvJw4l1amjlXtXRZqRN7lSRylZZyhBqpVFWmTEXgWfUrpi/hZOQXdOd4rKuXOtEWT3k5IArPRzTUU5tHKjecZkTpnVbNOnt6jzN8240GD4xtikvZW56043rPMg/dS+dlOceXoR+WPbJ55Dsekq1lJpnypsMUsYOdCW30o103Ytu/lvh+5RWFLfBjm9/N8hJntPhvx92rnoE/kyHdGasGy754kw36vsVf/lFeBi+0COu+cfgQr42G3CRpeLoZ53gmfe3X6rcKt5oVxnptHR9JS8ehVUd5wvvahN2uqxOOpMXapibI5k7Zwbt4xBSaTfoKBufhAnO/uqNcfK8OTs0OQ6l7JIqFjDhYj5WcjevCnI/1DDiI8j4ndWb/5YzDZWh79yomWXeXj7Nnw70/2TIeFPTrlSh89k1ObOSRVZWZfgF0r/zJQB4nG2JUQuCQBCEd07TTg36fb2IyBaLd3vWaUh/vmSJnvpgmG8YcmS8X3Shf3R7QA4OBUocUKHGER5NNbOOEvwc1txnuWkTRb/aPjimJ5vXabI+3VfOiyS15UWvyezM2xiGOPyuMohOH8O8JiO4Af+FsAGNAEuwCFBYsQEBjlmxRgYrWCGwEFlLsBRSWCGwgFkdsAYrXFhZsBQrAAA=) format('woff');
-}
-
-@font-face {
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
   font-family: octicons-anchor;
   src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 .markdown-body {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #333333;
-  overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;
 }
 
 .markdown-body a {
-  background: transparent;
+  background-color: transparent;
 }
 
 .markdown-body a:active,
@@ -41,30 +43,8 @@ body .markdown-body
   outline: 0;
 }
 
-.markdown-body b,
 .markdown-body strong {
   font-weight: bold;
-}
-
-.markdown-body mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.markdown-body sub,
-.markdown-body sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-.markdown-body sup {
-  top: -0.5em;
-}
-.markdown-body sub {
-  bottom: -0.25em;
 }
 
 .markdown-body h1 {
@@ -77,7 +57,6 @@ body .markdown-body
 }
 
 .markdown-body hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -88,8 +67,7 @@ body .markdown-body
 
 .markdown-body code,
 .markdown-body kbd,
-.markdown-body pre,
-.markdown-body samp {
+.markdown-body pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -123,81 +101,16 @@ body .markdown-body
   padding: 0;
 }
 
-.markdown-body .codehilitetable {
-  border: 0;
-  border-spacing: 0;
-}
-
-.markdown-body .codehilitetable tr {
-  border: 0;
-}
-
-.markdown-body .codehilitetable pre,
-.markdown-body .codehilitetable div.codehilite {
-  margin: 0;
-}
-
-.markdown-body .linenos,
-.markdown-body .code,
-.markdown-body .codehilitetable td {
-  border: 0;
-  padding: 0;
-}
-
-.markdown-body td:not(.linenos) .linenodiv {
-  padding: 0 !important;
-}
-
-.markdown-body .code {
-  width: 100%;
-}
-
-.markdown-body .linenos div pre,
-.markdown-body .linenodiv pre,
-.markdown-body .linenodiv {
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.markdown-body .code div pre,
-.markdown-body .code div {
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.markdown-body * {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .markdown-body input {
-  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.4;
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .markdown-body a {
-  color: #4183c4;
+  color: #4078c0;
   text-decoration: none;
 }
 
 .markdown-body a:hover,
-.markdown-body a:focus,
 .markdown-body a:active {
   text-decoration: underline;
 }
@@ -211,14 +124,15 @@ body .markdown-body
   border-bottom: 1px solid #ddd;
 }
 
-.markdown-body hr:before,
-.markdown-body hr:after {
+.markdown-body hr:before {
   display: table;
-  content: " ";
+  content: "";
 }
 
 .markdown-body hr:after {
+  display: table;
   clear: both;
+  content: "";
 }
 
 .markdown-body h1,
@@ -283,9 +197,7 @@ body .markdown-body
   margin-left: 0;
 }
 
-.markdown-body code,
-.markdown-body pre,
-.markdown-body samp {
+.markdown-body code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
 }
@@ -293,21 +205,39 @@ body .markdown-body
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.markdown-body kbd {
-  background-color: #e7e7e7;
-  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
-  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
-  background-image: linear-gradient(#fefefe, #e7e7e7);
-  background-repeat: repeat-x;
-  border-radius: 2px;
-  border: 1px solid #cfcfcf;
-  color: #000;
-  padding: 3px 5px;
-  line-height: 10px;
-  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
   display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .markdown-body>*:first-child {
@@ -318,18 +248,18 @@ body .markdown-body
   margin-bottom: 0 !important;
 }
 
-.markdown-body .headeranchor-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  padding-right: 6px;
-  padding-left: 30px;
-  margin-left: -30px;
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
 }
 
-.markdown-body .headeranchor-link:focus {
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
   outline: none;
 }
 
@@ -339,44 +269,39 @@ body .markdown-body
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  position: relative;
   margin-top: 1em;
   margin-bottom: 16px;
   font-weight: bold;
   line-height: 1.4;
 }
 
-.markdown-body h1 .headeranchor,
-.markdown-body h2 .headeranchor,
-.markdown-body h3 .headeranchor,
-.markdown-body h4 .headeranchor,
-.markdown-body h5 .headeranchor,
-.markdown-body h6 .headeranchor {
-  display: none;
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
   color: #000;
   vertical-align: middle;
+  visibility: hidden;
 }
 
-.markdown-body h1:hover .headeranchor-link,
-.markdown-body h2:hover .headeranchor-link,
-.markdown-body h3:hover .headeranchor-link,
-.markdown-body h4:hover .headeranchor-link,
-.markdown-body h5:hover .headeranchor-link,
-.markdown-body h6:hover .headeranchor-link {
-  height: 1em;
-  padding-left: 8px;
-  margin-left: -30px;
-  line-height: 1;
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
   text-decoration: none;
 }
 
-.markdown-body h1:hover .headeranchor-link .headeranchor,
-.markdown-body h2:hover .headeranchor-link .headeranchor,
-.markdown-body h3:hover .headeranchor-link .headeranchor,
-.markdown-body h4:hover .headeranchor-link .headeranchor,
-.markdown-body h5:hover .headeranchor-link .headeranchor,
-.markdown-body h6:hover .headeranchor-link .headeranchor {
-  display: inline-block;
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
 }
 
 .markdown-body h1 {
@@ -386,6 +311,10 @@ body .markdown-body
   border-bottom: 1px solid #eee;
 }
 
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
 .markdown-body h2 {
   padding-bottom: 0.3em;
   font-size: 1.75em;
@@ -393,22 +322,42 @@ body .markdown-body
   border-bottom: 1px solid #eee;
 }
 
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
 .markdown-body h3 {
   font-size: 1.5em;
   line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
 }
 
 .markdown-body h4 {
   font-size: 1.25em;
 }
 
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
 .markdown-body h5 {
   font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
 }
 
 .markdown-body h6 {
   font-size: 1em;
   color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
 }
 
 .markdown-body p,
@@ -417,8 +366,7 @@ body .markdown-body
 .markdown-body ol,
 .markdown-body dl,
 .markdown-body table,
-.markdown-body pre,
-.markdown-body .admonition {
+.markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -508,12 +456,11 @@ body .markdown-body
 
 .markdown-body img {
   max-width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  background-color: #fff;
 }
 
-.markdown-body code,
-.markdown-body samp {
+.markdown-body code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -539,11 +486,11 @@ body .markdown-body
   border: 0;
 }
 
-.markdown-body .codehilite {
+.markdown-body .highlight {
   margin-bottom: 16px;
 }
 
-.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
 .markdown-body pre {
   padding: 16px;
   overflow: auto;
@@ -553,7 +500,7 @@ body .markdown-body
   border-radius: 3px;
 }
 
-.markdown-body .codehilite pre {
+.markdown-body .highlight pre {
   margin-bottom: 0;
   word-break: normal;
 }
@@ -579,325 +526,136 @@ body .markdown-body
   content: normal;
 }
 
-/* Admonition */
-.markdown-body .admonition {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  position: relative;
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
   border-radius: 3px;
-  border: 1px solid #e0e0e0;
-  border-left: 6px solid #333;
-  padding: 10px 10px 10px 30px;
+  box-shadow: inset 0 -1px 0 #bbb;
 }
 
-.markdown-body .admonition table {
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
   color: #333;
 }
 
-.markdown-body .admonition p {
-  padding: 0;
+.markdown-body .pl-ent {
+  color: #63a35c;
 }
 
-.markdown-body .admonition-title {
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
   font-weight: bold;
-  margin: 0;
 }
 
-.markdown-body .admonition>.admonition-title {
-  color: #333;
+.markdown-body .pl-ml {
+  color: #693a17;
 }
 
-.markdown-body .attention>.admonition-title {
-  color: #a6d796;
-}
-
-.markdown-body .caution>.admonition-title {
-  color: #d7a796;
-}
-
-.markdown-body .hint>.admonition-title {
-  color: #96c6d7;
-}
-
-.markdown-body .danger>.admonition-title {
-  color: #c25f77;
-}
-
-.markdown-body .question>.admonition-title {
-  color: #96a6d7;
-}
-
-.markdown-body .note>.admonition-title {
-  color: #d7c896;
-}
-
-.markdown-body .admonition:before,
-.markdown-body .attention:before,
-.markdown-body .caution:before,
-.markdown-body .hint:before,
-.markdown-body .danger:before,
-.markdown-body .question:before,
-.markdown-body .note:before {
-  font: normal normal 16px fontawesome-mini;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: 1.5;
-  color: #333;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.markdown-body .admonition:before {
-  content: "\f056\00a0";
-  color: 333;
-}
-
-.markdown-body .attention:before {
-  content: "\f058\00a0";
-  color: #a6d796;
-}
-
-.markdown-body .caution:before {
-  content: "\f06a\00a0";
-  color: #d7a796;
-}
-
-.markdown-body .hint:before {
-  content: "\f05a\00a0";
-  color: #96c6d7;
-}
-
-.markdown-body .danger:before {
-  content: "\f057\00a0";
-  color: #c25f77;
-}
-
-.markdown-body .question:before {
-  content: "\f059\00a0";
-  color: #96a6d7;
-}
-
-.markdown-body .note:before {
-  content: "\f040\00a0";
-  color: #d7c896;
-}
-
-.markdown-body .admonition::after {
-  content: normal;
-}
-
-.markdown-body .attention {
-  border-left: 6px solid #a6d796;
-}
-
-.markdown-body .caution {
-  border-left: 6px solid #d7a796;
-}
-
-.markdown-body .hint {
-  border-left: 6px solid #96c6d7;
-}
-
-.markdown-body .danger {
-  border-left: 6px solid #c25f77;
-}
-
-.markdown-body .question {
-  border-left: 6px solid #96a6d7;
-}
-
-.markdown-body .note {
-  border-left: 6px solid #d7c896;
-}
-
-.markdown-body .admonition>*:first-child {
-  margin-top: 0 !important;
-}
-
-.markdown-body .admonition>*:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* progress bar*/
-.markdown-body .progress {
-  display: block;
-  width: 300px;
-  margin: 10px 0;
-  height: 24px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #ededed;
-  position: relative;
-  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
-}
-
-.markdown-body .progress-label {
-  position: absolute;
-  text-align: center;
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
   font-weight: bold;
-  width: 100%; margin: 0;
-  line-height: 24px;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
   color: #333;
-  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.markdown-body .progress-bar {
-  height: 24px;
-  float: left;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #96c6d7;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
-  background-size: 30px 30px;
-  background-image: -webkit-linear-gradient(
-    135deg, rgba(255, 255, 255, .4) 27%,
-    transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%,
-    transparent 77%, transparent
-  );
-  background-image: -moz-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: -ms-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: -o-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-}
-
-.markdown-body .progress-100plus .progress-bar {
-  background-color: #a6d796;
-}
-
-.markdown-body .progress-80plus .progress-bar {
-  background-color: #c6d796;
-}
-
-.markdown-body .progress-60plus .progress-bar {
-  background-color: #d7c896;
-}
-
-.markdown-body .progress-40plus .progress-bar {
-  background-color: #d7a796;
-}
-
-.markdown-body .progress-20plus .progress-bar {
-  background-color: #d796a6;
-}
-
-.markdown-body .progress-0plus .progress-bar {
-  background-color: #c25f77;
-}
-
-.markdown-body .candystripe-animate .progress-bar{
-  -webkit-animation: animate-stripes 3s linear infinite;
-  -moz-animation: animate-stripes 3s linear infinite;
-  animation: animate-stripes 3s linear infinite;
-}
-
-@-webkit-keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-@-moz-keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-@keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-.markdown-body .gloss .progress-bar {
-  box-shadow:
-    inset 0 4px 12px rgba(255, 255, 255, .7),
-    inset 0 -12px 0 rgba(0, 0, 0, .05);
-}
-
-/* Multimarkdown Critic Blocks */
-.markdown-body .critic_mark {
-  background: #ff0;
-}
-
-.markdown-body .critic_delete {
-  color: #c82829;
-  text-decoration: line-through;
-}
-
-.markdown-body .critic_insert {
-  color: #718c00 ;
-  text-decoration: underline;
-}
-
-.markdown-body .critic_comment {
-  color: #8e908c;
   font-style: italic;
 }
 
-.markdown-body .headeranchor {
-  font: normal normal 16px octicons-anchor;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
 }
 
-.headeranchor:before {
-  content: '\f05c';
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
 }
 
 .markdown-body .task-list-item {
@@ -909,136 +667,118 @@ body .markdown-body
 }
 
 .markdown-body .task-list-item input {
-  margin: 0 4px 0.25em -20px;
+  margin: 0 0.35em 0.25em -1.6em;
   vertical-align: middle;
 }
 
-/* Media */
-@media only screen and (min-width: 480px) {
-  .markdown-body {
-    font-size:14px;
-  }
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
 }
 
-@media only screen and (min-width: 768px) {
-  .markdown-body {
-    font-size:16px;
-  }
+.markdown-body .plan-choice.open {
+  background-color: #fff;
 }
 
-@media print {
-  .markdown-body * {
-    background: transparent !important;
-    color: black !important;
-    filter:none !important;
-    -ms-filter: none !important;
-  }
-
-  .markdown-body {
-    font-size:12pt;
-    max-width:100%;
-    outline:none;
-    border: 0;
-  }
-
-  .markdown-body a,
-  .markdown-body a:visited {
-    text-decoration: underline;
-  }
-
-  .markdown-body .headeranchor-link {
-    display: none;
-  }
-
-  .markdown-body a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  .markdown-body abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .markdown-body .ir a:after,
-  .markdown-body a[href^="javascript:"]:after,
-  .markdown-body a[href^="#"]:after {
-    content: "";
-  }
-
-  .markdown-body pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  .markdown-body pre,
-  .markdown-body blockquote {
-    border: 1px solid #999;
-    padding-right: 1em;
-    page-break-inside: avoid;
-  }
-
-  .markdown-body .progress,
-  .markdown-body .progress-bar {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .markdown-body .progress {
-    border: 1px solid #ddd;
-  }
-
-  .markdown-body .progress-bar {
-    height: 22px;
-    border-right: 1px solid #ddd;
-  }
-
-  .markdown-body tr,
-  .markdown-body img {
-    page-break-inside: avoid;
-  }
-
-  .markdown-body img {
-    max-width: 100% !important;
-  }
-
-  .markdown-body p,
-  .markdown-body h2,
-  .markdown-body h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  .markdown-body h2,
-  .markdown-body h3 {
-    page-break-after: avoid;
-  }
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
 }
-</style><title>index</title></head><body><article class="markdown-body"><h1 id="smartdebug-an-interactive-debug-assistant-for-java"><a name="user-content-smartdebug-an-interactive-debug-assistant-for-java" href="#smartdebug-an-interactive-debug-assistant-for-java" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>SmartDebug: An Interactive Debug Assistant for Java</h1>
-<h2 id="introduction"><a name="user-content-introduction" href="#introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introduction</h2>
-<p>Automated debugging has long been an important research direction. Recently a series of work on &ldquo;generate-and-validate&rdquo; (GAV) systems have been developed aiming at &ldquo;automatically generating patches so that a test suite can be passed&rdquo;. These systems, chronolically, include GenProg, Par, SemFix, DirectFix, SPR, Prophet, etc.</p>
-<p>The basic idea of GAV systems is that they would search through &ldquo;a pre-defined modification search space&rdquo; and see if it is possible to somehow modify the source code so that the program passes the test suite. For example, a modification space may include &ldquo;change every int typed expression &lsquo;a&rsquo; to &lsquo;a+1&rsquo;&ldquo;.</p>
-<p>A highlighted advantage of GAV systems is that they fix general bugs, in other words, they do not limit themselves to a narrow range of bugs. Therefore you do not need to analyze the reason of a certain bug manually before you use GAV systems. However, GAV systems are still far from practical usage as the success rate and efficiency cannot be achieved simutaneously. Existing systems are generally slow. It is difficult for these systems to identify the root cause of a bug, or &ldquo;localize&rdquo; a bug. Widely adopted localization algorithms often generate a &ldquo;rank&rdquo; of expressions or statements that are possibly responsible for the bug. However these ranks are based on empirical metrics and not often precise. Even if we are correct at identifying the buggy expressions or statements, there are still infinite ways to modify the source code. How could we possibly know which one is correct? Honestly we cannot. This is why we have a &ldquo;pre-defined modification search space&rdquo;. We try to modify the source code in ways defined in the search space (the &ldquo;generate&rdquo; phase), rerun the test suite and see if the program is fixed (the &ldquo;validate&rdquo; phase). As you can see, the success rate is completely decided by the volume of the search space. With bigger search spaces, i.e. larger quantities of modification varieties, it is more likely that we &ldquo;cover&rdquo; the correct fix. However, enlarging the search space would incur dramatic efficency loss since, for each possible place we can fix, we need to generate more candidate of fixes, and hence validate more candidate fixes. Even in state of the art system &ldquo;SPR&rdquo;, experiments show that to achieve a relatively acceptable fix rate, it may take hours to fix a single bug in real world programs.</p>
-<p>The goal of our work is to bridge the gap between automated debugging techniques and practical usage. We notice that two major factors that influence the efficiency. First is the &ldquo;localization accuracy&rdquo;, i.e. the accuracy of the &ldquo;rank&rdquo; generated by existing fault localization metrics. Second is the &ldquo;validation&rdquo; process, which takes up at least 90% of the time. Correspondingly, we propose two techniques to improve the efficiency.</p>
-<p>The first one is a usage design called &ldquo;interactive debugger&rdquo;, which allows the users to decompose the debug task into small fractions through annotations on program execution state, so that the GAV system can work on small tasks susccessively. This mechanism makes it possible to utilize users&rsquo; understanding of the faulty program and simplifies debugging task given to GAV systems, which further shortens the waiting time of users when they use the system. This mechanism has already been implemented as an eclipse plugin called SmartDebug.</p>
-<p>The second is an optimization technique, called &ldquo;early filtration&rdquo;, which filters out impossible fix candidates before they ever go into the valdiation phase. Preliminary experiments show that this technique is able to compress the search space dramatically, even harsher than SPR. Experiments are still running.</p>
-<h2 id="an-interactive-debugger"><a name="user-content-an-interactive-debugger" href="#an-interactive-debugger" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>An Interactive Debugger</h2>
-<p>Please refer to:<br />
- - Xinrui Guo, &ldquo;SmartDebug: An Interactive Debug Assistant for Java&rdquo;, FSE-SRC 2016 <a href="http://sts.thss.tsinghua.edu.cn/tsmart2.0/da/smartdebug/fse16src-srcid27-preprint.pdf">[pdf]</a></p>
-<h2 id="shorten-fix-validation-process-via-early-filtration"><a name="user-content-shorten-fix-validation-process-via-early-filtration" href="#shorten-fix-validation-process-via-early-filtration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Shorten fix validation process via &ldquo;early filtration&rdquo;</h2>
-<p>The huge search space has always been an obstacle in developing efficient generate-and-validate systems. SPR and Prophet stand out in recent published systems as they first try to prune the search space dramatically and later prioritize possible fix candidates according to a &ldquo;possibility&rdquo; computed by learned weighting functions.<br />
-Despite the promising results reported, in our experiment, we discovered that the search space can be further pruned through an &ldquo;early filtration&rdquo; strategy.</p>
-<h3 id="what-is-early-filtration"><a name="user-content-what-is-early-filtration" href="#what-is-early-filtration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>What is &ldquo;early filtration&rdquo;?</h3>
-<p>&ldquo;Early filtration&rdquo;, by the name, means to filter impossible fix candidates early in the generate phase, so that they do not flow to the validate phase. It focuses on fixes that only modifies expressions, or fixes that contain modifications of expressions. This strategy is based on the following observation:</p>
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>index</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-smartdebug-an-interactive-debug-assistant-for-java" class="anchor" href="#smartdebug-an-interactive-debug-assistant-for-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SmartDebug: An Interactive Debug Assistant for Java</h1>
+
+<h2>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>Automated debugging has long been an important research direction. Recently a series of work on "generate-and-validate" (GAV) systems have been developed aiming at "automatically generating patches so that a test suite can be passed". These systems, chronolically, include GenProg, Par, SemFix, DirectFix, SPR, Prophet, etc.</p>
+
+<p>The basic idea of GAV systems is that they would search through "a pre-defined modification search space" and see if it is possible to somehow modify the source code so that the program passes the test suite. For example, a modification space may include "change every int typed expression 'a' to 'a+1'".</p>
+
+<p>A highlighted advantage of GAV systems is that they fix general bugs, in other words, they do not limit themselves to a narrow range of bugs. Therefore you do not need to analyze the reason of a certain bug manually before you use GAV systems. However, GAV systems are still far from practical usage as the success rate and efficiency cannot be achieved simutaneously. Existing systems are generally slow. It is difficult for these systems to identify the root cause of a bug, or "localize" a bug. Widely adopted localization algorithms often generate a "rank" of expressions or statements that are possibly responsible for the bug. However these ranks are based on empirical metrics and not often precise. Even if we are correct at identifying the buggy expressions or statements, there are still infinite ways to modify the source code. How could we possibly know which one is correct? Honestly we cannot. This is why we have a "pre-defined modification search space". We try to modify the source code in ways defined in the search space (the "generate" phase), rerun the test suite and see if the program is fixed (the "validate" phase). As you can see, the success rate is completely decided by the volume of the search space. With bigger search spaces, i.e. larger quantities of modification varieties, it is more likely that we "cover" the correct fix. However, enlarging the search space would incur dramatic efficency loss since, for each possible place we can fix, we need to generate more candidate of fixes, and hence validate more candidate fixes. Even in state of the art system "SPR", experiments show that to achieve a relatively acceptable fix rate, it may take hours to fix a single bug in real world programs.</p>
+
+<p>The goal of our work is to bridge the gap between automated debugging techniques and practical usage. We notice that two major factors that influence the efficiency. First is the "localization accuracy", i.e. the accuracy of the "rank" generated by existing fault localization metrics. Second is the "validation" process, which takes up at least 90% of the time. Correspondingly, we propose two techniques to improve the efficiency.</p>
+
+<p>The first one is a usage design called "interactive debugger", which allows the users to decompose the debug task into small fractions through annotations on program execution state, so that the GAV system can work on small tasks susccessively. This mechanism makes it possible to utilize users' understanding of the faulty program and simplifies debugging task given to GAV systems, which further shortens the waiting time of users when they use the system. This mechanism has already been implemented as an eclipse plugin called SmartDebug.</p>
+
+<p>The second is an optimization technique, called "early filtration", which filters out impossible fix candidates before they ever go into the valdiation phase. Preliminary experiments show that this technique is able to compress the search space dramatically, even harsher than SPR. Experiments are still running.</p>
+
+<h3>
+<a id="user-content-repository" class="anchor" href="#repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository</h3>
+
+<p>Please visit <a href="https://github.com/flowersbeyond/SmartDebug">here</a> for the latest code.</p>
+
+<h2>
+<a id="user-content-an-interactive-debugger" class="anchor" href="#an-interactive-debugger" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An Interactive Debugger</h2>
+
+<p>Please refer to:</p>
+
 <ul>
-<li>If an expression A is to be replaced with an expression B, then:<ul>
-<li>In order to ensure that all the passed tests remains passed, A should be &ldquo;equal&rdquo; to B at each time the program runs to A&rsquo;s place.</li>
-<li>In order to correct the failed tests, A should NOT be &ldquo;equal&rdquo; to B in at least one time the program runs to B&rsquo;s place.</li>
+<li>Xinrui Guo, "SmartDebug: An Interactive Debug Assistant for Java", FSE-SRC 2016 <a href="http://sts.thss.tsinghua.edu.cn/tsmart2.0/da/smartdebug/fse16src-srcid27-preprint.pdf">[pdf]</a>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-shorten-fix-validation-process-via-early-filtration" class="anchor" href="#shorten-fix-validation-process-via-early-filtration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Shorten fix validation process via "early filtration"</h2>
+
+<p>The huge search space has always been an obstacle in developing efficient generate-and-validate systems. SPR and Prophet stand out in recent published systems as they first try to prune the search space dramatically and later prioritize possible fix candidates according to a "possibility" computed by learned weighting functions.
+Despite the promising results reported, in our experiment, we discovered that the search space can be further pruned through an "early filtration" strategy.</p>
+
+<h3>
+<a id="user-content-what-is-early-filtration" class="anchor" href="#what-is-early-filtration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is "early filtration"?</h3>
+
+<p>"Early filtration", by the name, means to filter impossible fix candidates early in the generate phase, so that they do not flow to the validate phase. It focuses on fixes that only modifies expressions, or fixes that contain modifications of expressions. This strategy is based on the following observation:</p>
+
+<ul>
+<li>If an expression A is to be replaced with an expression B, then:
+
+<ul>
+<li>In order to ensure that all the passed tests remains passed, A should be "equal" to B at each time the program runs to A's place.</li>
+<li>In order to correct the failed tests, A should NOT be "equal" to B in at least one time the program runs to B's place.</li>
 </ul>
 </li>
 </ul>
+
 <p>This is straight forward since the execution process of the passed test cases should not be altered as we modify A to B, while the execution process of the failed test cases MUST be altered.</p>
+
 <p>Based on this observation, for most of the expression fixes covered in state-of-the-art search space, we only need to evaluate the candidate expressions (Bs) and the target expression (A) and see if they obey the observation above. If not, the candidate expression should be tossed out of the candidate list. The following table lists our current search space:</p>
+
 <table>
 <thead>
 <tr>
@@ -1057,37 +797,42 @@ Despite the promising results reported, in our experiment, we discovered that th
 </tr>
 <tr>
 <td>branch expression fix</td>
-<td>modify if-conditions as general expression fix; change expression &ldquo;e&rdquo; to &ldquo;e</td>
+<td>modify if-conditions as general expression fix; change expression "e" to "e</td>
 </tr>
 <tr>
 <td>array boundary checks</td>
-<td access="access" array="array" statement_="statement;">if(i &gt;= 0 &amp;&amp; i &lt;= array.length)</td>
+<td>if(i &gt;= 0 &amp;&amp; i &lt;= array.length){ array access statement; }</td>
 </tr>
 <tr>
 <td>collection boundary checks</td>
-<td collection.get_i_="collection.get(i)" statement_="statement;">if (i &gt;= 0 &amp;&amp; i &lt;= list.size())</td>
+<td>if (i &gt;= 0 &amp;&amp; i &lt;= list.size()){collection.get(i) statement;}</td>
 </tr>
 <tr>
 <td>null pointer checks</td>
-<td access="access" obj="obj" statement_="statement;">if(obj != null)</td>
+<td>if(obj != null){ obj access statement;}</td>
 </tr>
 <tr>
 <td>cast type checks</td>
-<td Type="Type" obj1="obj1">if(obj instanceof Type)</td>
+<td>if(obj instanceof Type){Type obj1 = (Type)obj;}</td>
 </tr>
 <tr>
 <td>method overload</td>
-<td>change a.b(c1, c2, &hellip;, cn) to a.b&rsquo;(c1, c2, &hellip;, cn)</td>
+<td>change a.b(c1, c2, ..., cn) to a.b'(c1, c2, ..., cn)</td>
 </tr>
 <tr>
 <td>method override</td>
-<td>change a.b(c1,c2,&hellip;, cn) to a.b(c1, c2, &hellip;, cm)</td>
+<td>change a.b(c1,c2,..., cn) to a.b(c1, c2, ..., cm)</td>
 </tr>
 </tbody>
 </table>
-<p>We are currently working on Java programs. The machanism of JVM makes it very convenient to &ldquo;halt&rdquo; the execution process at a certain point and evaluate the value of an expression. During our experiment, we discovered that it takes often seconds to validate a fix (think about the modify-and-rebuild process) while only a few milisecond to evaluate an expression on a hot java stackframe. Therefore, through early filtration, we can save a large amount of time since mass majority of the candidates can be filtered out before moving to the validation process.</p>
-<h3 id="preliminary-results"><a name="user-content-preliminary-results" href="#preliminary-results" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Preliminary results</h3>
+
+<p>We are currently working on Java programs. The machanism of JVM makes it very convenient to "halt" the execution process at a certain point and evaluate the value of an expression. During our experiment, we discovered that it takes often seconds to validate a fix (think about the modify-and-rebuild process) while only a few milisecond to evaluate an expression on a hot java stackframe. Therefore, through early filtration, we can save a large amount of time since mass majority of the candidates can be filtered out before moving to the validation process.</p>
+
+<h3>
+<a id="user-content-preliminary-results" class="anchor" href="#preliminary-results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preliminary results</h3>
+
 <p>Currently we are performing experiments on Defects4J, a collection of several hundred versions of 5 real world programs. Theoretically we are now able to fix only 30 of the 324 versions. However this is already the largest amout ever reported on this benchmark. The system still contains plenty of bugs and we are debugging it continuously. The following table reports the current status of our experiment.</p>
+
 <table>
 <thead>
 <tr>
@@ -1254,7 +999,8 @@ Despite the promising results reported, in our experiment, we discovered that th
 </tr>
 </tbody>
 </table>
-<style type="text/css">
+
+
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -1271,413 +1017,416 @@ Despite the promising results reported, in our experiment, we discovered that th
 .tg .tg-wohh{background-color:#9698ed;text-align:center;vertical-align:top}
 .tg .tg-yw4l{vertical-align:top}
 .tg .tg-kjho{background-color:#ffffc7;vertical-align:top}
-</style>
 
-<table class="tg">
+
+<table>
   <tr>
-    <th class="tg-baqh" rowspan="2"><br>Version ID</th>
-    <th class="tg-baqh" colspan="4">PRE</th>
-    <th class="tg-baqh" colspan="4">POST</th>
-    <th class="tg-baqh" rowspan="2"><br>METHOD</th>
-    <th class="tg-baqh" colspan="2">FINAL</th>
-    <th class="tg-baqh" colspan="2">COMPRESSION</th>
+    <th rowspan="2">
+<br>Version ID</th>
+    <th colspan="4">PRE</th>
+    <th colspan="4">POST</th>
+    <th rowspan="2">
+<br>METHOD</th>
+    <th colspan="2">FINAL</th>
+    <th colspan="2">COMPRESSION</th>
   </tr>
   <tr>
-    <td class="tg-s6z2">EXPR</td>
-    <td class="tg-s6z2">BOOL</td>
-    <td class="tg-baqh">CE</td>
-    <td class="tg-cmwg">SUM</td>
-    <td class="tg-baqh">EXPR</td>
-    <td class="tg-baqh">BOOL</td>
-    <td class="tg-baqh">EXPR_SET</td>
-    <td class="tg-baqh">BOOL_SET</td>
-    <td class="tg-7geq">TOTAL</td>
-    <td class="tg-adx7">VALIDATE</td>
-    <td class="tg-sh07">FULL</td>
-    <td class="tg-wohh">EXPR</td>
+    <td>EXPR</td>
+    <td>BOOL</td>
+    <td>CE</td>
+    <td>SUM</td>
+    <td>EXPR</td>
+    <td>BOOL</td>
+    <td>EXPR_SET</td>
+    <td>BOOL_SET</td>
+    <td>TOTAL</td>
+    <td>VALIDATE</td>
+    <td>FULL</td>
+    <td>EXPR</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-1</td>
-    <td class="tg-031e">6362</td>
-    <td class="tg-031e">256275</td>
-    <td class="tg-yw4l">107674</td>
-    <td class="tg-i6eq">154963</td>
-    <td class="tg-yw4l">860</td>
-    <td class="tg-yw4l">13999</td>
-    <td class="tg-yw4l">291</td>
-    <td class="tg-yw4l">963</td>
-    <td class="tg-yw4l">624</td>
-    <td class="tg-kjho">15483</td>
-    <td class="tg-achz">1878</td>
-    <td class="tg-b44r">0.01207</td>
-    <td class="tg-jbrh">0.00809</td>
+    <td>closure-compiler-1</td>
+    <td>6362</td>
+    <td>256275</td>
+    <td>107674</td>
+    <td>154963</td>
+    <td>860</td>
+    <td>13999</td>
+    <td>291</td>
+    <td>963</td>
+    <td>624</td>
+    <td>15483</td>
+    <td>1878</td>
+    <td>0.01207</td>
+    <td>0.00809</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-10</td>
-    <td class="tg-031e">19223</td>
-    <td class="tg-031e">385645</td>
-    <td class="tg-yw4l">155174</td>
-    <td class="tg-i6eq">249694</td>
-    <td class="tg-yw4l">1778</td>
-    <td class="tg-yw4l">4937</td>
-    <td class="tg-yw4l">118</td>
-    <td class="tg-yw4l">695</td>
-    <td class="tg-yw4l">2783</td>
-    <td class="tg-kjho">9498</td>
-    <td class="tg-achz">3596</td>
-    <td class="tg-b44r">0.01424</td>
-    <td class="tg-jbrh">0.00326</td>
+    <td>closure-compiler-10</td>
+    <td>19223</td>
+    <td>385645</td>
+    <td>155174</td>
+    <td>249694</td>
+    <td>1778</td>
+    <td>4937</td>
+    <td>118</td>
+    <td>695</td>
+    <td>2783</td>
+    <td>9498</td>
+    <td>3596</td>
+    <td>0.01424</td>
+    <td>0.00326</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-118</td>
-    <td class="tg-031e">6229</td>
-    <td class="tg-031e">468011</td>
-    <td class="tg-yw4l">176216</td>
-    <td class="tg-i6eq">298024</td>
-    <td class="tg-yw4l">491</td>
-    <td class="tg-yw4l">7637</td>
-    <td class="tg-yw4l">76</td>
-    <td class="tg-yw4l">248</td>
-    <td class="tg-yw4l">1311</td>
-    <td class="tg-kjho">9439</td>
-    <td class="tg-achz">1635</td>
-    <td class="tg-b44r">0.00546</td>
-    <td class="tg-jbrh">0.00109</td>
+    <td>closure-compiler-118</td>
+    <td>6229</td>
+    <td>468011</td>
+    <td>176216</td>
+    <td>298024</td>
+    <td>491</td>
+    <td>7637</td>
+    <td>76</td>
+    <td>248</td>
+    <td>1311</td>
+    <td>9439</td>
+    <td>1635</td>
+    <td>0.00546</td>
+    <td>0.00109</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-125</td>
-    <td class="tg-031e">5177</td>
-    <td class="tg-031e">347358</td>
-    <td class="tg-yw4l">139623</td>
-    <td class="tg-i6eq">212912</td>
-    <td class="tg-yw4l">141</td>
-    <td class="tg-yw4l">1335</td>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">108</td>
-    <td class="tg-yw4l">417</td>
-    <td class="tg-kjho">1893</td>
-    <td class="tg-achz">530</td>
-    <td class="tg-b44r">0.00248</td>
-    <td class="tg-jbrh">0.00053</td>
+    <td>closure-compiler-125</td>
+    <td>5177</td>
+    <td>347358</td>
+    <td>139623</td>
+    <td>212912</td>
+    <td>141</td>
+    <td>1335</td>
+    <td>5</td>
+    <td>108</td>
+    <td>417</td>
+    <td>1893</td>
+    <td>530</td>
+    <td>0.00248</td>
+    <td>0.00053</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-51</td>
-    <td class="tg-031e">791</td>
-    <td class="tg-031e">4500</td>
-    <td class="tg-yw4l">3479</td>
-    <td class="tg-i6eq">1812</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">29</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">54</td>
-    <td class="tg-kjho">83</td>
-    <td class="tg-achz">58</td>
-    <td class="tg-b44r">0.03108</td>
-    <td class="tg-jbrh">0.00221</td>
+    <td>closure-compiler-51</td>
+    <td>791</td>
+    <td>4500</td>
+    <td>3479</td>
+    <td>1812</td>
+    <td>0</td>
+    <td>29</td>
+    <td>0</td>
+    <td>4</td>
+    <td>54</td>
+    <td>83</td>
+    <td>58</td>
+    <td>0.03108</td>
+    <td>0.00221</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-62</td>
-    <td class="tg-031e">4</td>
-    <td class="tg-031e">164</td>
-    <td class="tg-yw4l">107</td>
-    <td class="tg-i6eq">61</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">2</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-kjho">9</td>
-    <td class="tg-achz">4</td>
-    <td class="tg-b44r">0.06452</td>
-    <td class="tg-jbrh">0.04918</td>
+    <td>closure-compiler-62</td>
+    <td>4</td>
+    <td>164</td>
+    <td>107</td>
+    <td>61</td>
+    <td>1</td>
+    <td>7</td>
+    <td>1</td>
+    <td>2</td>
+    <td>1</td>
+    <td>9</td>
+    <td>4</td>
+    <td>0.06452</td>
+    <td>0.04918</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-63</td>
-    <td class="tg-031e">90</td>
-    <td class="tg-031e">560</td>
-    <td class="tg-yw4l">323</td>
-    <td class="tg-i6eq">327</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">2</td>
-    <td class="tg-yw4l">77</td>
-    <td class="tg-kjho">85</td>
-    <td class="tg-achz">80</td>
-    <td class="tg-b44r">0.19802</td>
-    <td class="tg-jbrh">0.00917</td>
+    <td>closure-compiler-63</td>
+    <td>90</td>
+    <td>560</td>
+    <td>323</td>
+    <td>327</td>
+    <td>1</td>
+    <td>7</td>
+    <td>1</td>
+    <td>2</td>
+    <td>77</td>
+    <td>85</td>
+    <td>80</td>
+    <td>0.19802</td>
+    <td>0.00917</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-73</td>
-    <td class="tg-031e">18</td>
-    <td class="tg-031e">4486</td>
-    <td class="tg-yw4l">3452</td>
-    <td class="tg-i6eq">1052</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">18</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-kjho">25</td>
-    <td class="tg-achz">11</td>
-    <td class="tg-b44r">0.01039</td>
-    <td class="tg-jbrh">0.00380</td>
+    <td>closure-compiler-73</td>
+    <td>18</td>
+    <td>4486</td>
+    <td>3452</td>
+    <td>1052</td>
+    <td>0</td>
+    <td>18</td>
+    <td>0</td>
+    <td>4</td>
+    <td>7</td>
+    <td>25</td>
+    <td>11</td>
+    <td>0.01039</td>
+    <td>0.00380</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-86</td>
-    <td class="tg-031e">556</td>
-    <td class="tg-031e">1127</td>
-    <td class="tg-yw4l">814</td>
-    <td class="tg-i6eq">869</td>
-    <td class="tg-yw4l">95</td>
-    <td class="tg-yw4l">166</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">17</td>
-    <td class="tg-yw4l">160</td>
-    <td class="tg-kjho">421</td>
-    <td class="tg-achz">177</td>
-    <td class="tg-b44r">0.17201</td>
-    <td class="tg-jbrh">0.01956</td>
+    <td>closure-compiler-86</td>
+    <td>556</td>
+    <td>1127</td>
+    <td>814</td>
+    <td>869</td>
+    <td>95</td>
+    <td>166</td>
+    <td>0</td>
+    <td>17</td>
+    <td>160</td>
+    <td>421</td>
+    <td>177</td>
+    <td>0.17201</td>
+    <td>0.01956</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-92</td>
-    <td class="tg-031e">1479</td>
-    <td class="tg-031e">23151</td>
-    <td class="tg-yw4l">7330</td>
-    <td class="tg-i6eq">17300</td>
-    <td class="tg-yw4l">1051</td>
-    <td class="tg-yw4l">2830</td>
-    <td class="tg-yw4l">617</td>
-    <td class="tg-yw4l">654</td>
-    <td class="tg-yw4l">279</td>
-    <td class="tg-kjho">4160</td>
-    <td class="tg-achz">1550</td>
-    <td class="tg-b44r">0.08817</td>
-    <td class="tg-jbrh">0.07347</td>
+    <td>closure-compiler-92</td>
+    <td>1479</td>
+    <td>23151</td>
+    <td>7330</td>
+    <td>17300</td>
+    <td>1051</td>
+    <td>2830</td>
+    <td>617</td>
+    <td>654</td>
+    <td>279</td>
+    <td>4160</td>
+    <td>1550</td>
+    <td>0.08817</td>
+    <td>0.07347</td>
   </tr>
   <tr>
-    <td class="tg-031e">closure-compiler-93</td>
-    <td class="tg-031e">1479</td>
-    <td class="tg-031e">23194</td>
-    <td class="tg-yw4l">7198</td>
-    <td class="tg-i6eq">17475</td>
-    <td class="tg-yw4l">1051</td>
-    <td class="tg-yw4l">2767</td>
-    <td class="tg-yw4l">617</td>
-    <td class="tg-yw4l">642</td>
-    <td class="tg-yw4l">279</td>
-    <td class="tg-kjho">4097</td>
-    <td class="tg-achz">1538</td>
-    <td class="tg-b44r">0.08663</td>
-    <td class="tg-jbrh">0.07205</td>
+    <td>closure-compiler-93</td>
+    <td>1479</td>
+    <td>23194</td>
+    <td>7198</td>
+    <td>17475</td>
+    <td>1051</td>
+    <td>2767</td>
+    <td>617</td>
+    <td>642</td>
+    <td>279</td>
+    <td>4097</td>
+    <td>1538</td>
+    <td>0.08663</td>
+    <td>0.07205</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-lang3-24</td>
-    <td class="tg-031e">161</td>
-    <td class="tg-031e">1253</td>
-    <td class="tg-yw4l">464</td>
-    <td class="tg-i6eq">950</td>
-    <td class="tg-yw4l">30</td>
-    <td class="tg-yw4l">261</td>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">111</td>
-    <td class="tg-yw4l">6</td>
-    <td class="tg-kjho">297</td>
-    <td class="tg-achz">124</td>
-    <td class="tg-b44r">0.12971</td>
-    <td class="tg-jbrh">0.12421</td>
+    <td>commons-lang3-24</td>
+    <td>161</td>
+    <td>1253</td>
+    <td>464</td>
+    <td>950</td>
+    <td>30</td>
+    <td>261</td>
+    <td>7</td>
+    <td>111</td>
+    <td>6</td>
+    <td>297</td>
+    <td>124</td>
+    <td>0.12971</td>
+    <td>0.12421</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-lang3-26</td>
-    <td class="tg-031e">16</td>
-    <td class="tg-031e">410</td>
-    <td class="tg-yw4l">113</td>
-    <td class="tg-i6eq">313</td>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-yw4l">89</td>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">43</td>
-    <td class="tg-kjho">140</td>
-    <td class="tg-achz">58</td>
-    <td class="tg-b44r">0.16292</td>
-    <td class="tg-jbrh">0.04792</td>
+    <td>commons-lang3-26</td>
+    <td>16</td>
+    <td>410</td>
+    <td>113</td>
+    <td>313</td>
+    <td>8</td>
+    <td>89</td>
+    <td>8</td>
+    <td>7</td>
+    <td>43</td>
+    <td>140</td>
+    <td>58</td>
+    <td>0.16292</td>
+    <td>0.04792</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-lang3-6</td>
-    <td class="tg-031e">240</td>
-    <td class="tg-031e">385</td>
-    <td class="tg-yw4l">250</td>
-    <td class="tg-i6eq">375</td>
-    <td class="tg-yw4l">68</td>
-    <td class="tg-yw4l">51</td>
-    <td class="tg-yw4l">44</td>
-    <td class="tg-yw4l">21</td>
-    <td class="tg-yw4l">57</td>
-    <td class="tg-kjho">176</td>
-    <td class="tg-achz">122</td>
-    <td class="tg-b44r">0.28241</td>
-    <td class="tg-jbrh">0.17333</td>
+    <td>commons-lang3-6</td>
+    <td>240</td>
+    <td>385</td>
+    <td>250</td>
+    <td>375</td>
+    <td>68</td>
+    <td>51</td>
+    <td>44</td>
+    <td>21</td>
+    <td>57</td>
+    <td>176</td>
+    <td>122</td>
+    <td>0.28241</td>
+    <td>0.17333</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-math-75</td>
-    <td class="tg-031e">3</td>
-    <td class="tg-031e">3</td>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-i6eq">1</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">35</td>
-    <td class="tg-kjho">36</td>
-    <td class="tg-achz">36</td>
-    <td class="tg-b44r">1.00000</td>
-    <td class="tg-jbrh">1.00000</td>
+    <td>commons-math-75</td>
+    <td>3</td>
+    <td>3</td>
+    <td>5</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>35</td>
+    <td>36</td>
+    <td>36</td>
+    <td>1.00000</td>
+    <td>1.00000</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-math-80</td>
-    <td class="tg-031e">752</td>
-    <td class="tg-031e">522</td>
-    <td class="tg-yw4l">241</td>
-    <td class="tg-i6eq">1033</td>
-    <td class="tg-yw4l">519</td>
-    <td class="tg-yw4l">48</td>
-    <td class="tg-yw4l">283</td>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-yw4l">100</td>
-    <td class="tg-kjho">667</td>
-    <td class="tg-achz">391</td>
-    <td class="tg-b44r">0.34510</td>
-    <td class="tg-jbrh">0.28170</td>
+    <td>commons-math-80</td>
+    <td>752</td>
+    <td>522</td>
+    <td>241</td>
+    <td>1033</td>
+    <td>519</td>
+    <td>48</td>
+    <td>283</td>
+    <td>8</td>
+    <td>100</td>
+    <td>667</td>
+    <td>391</td>
+    <td>0.34510</td>
+    <td>0.28170</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-math-82</td>
-    <td class="tg-031e">295</td>
-    <td class="tg-031e">1215</td>
-    <td class="tg-yw4l">806</td>
-    <td class="tg-i6eq">704</td>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">42</td>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">12</td>
-    <td class="tg-yw4l">80</td>
-    <td class="tg-kjho">127</td>
-    <td class="tg-achz">95</td>
-    <td class="tg-b44r">0.12117</td>
-    <td class="tg-jbrh">0.02131</td>
+    <td>commons-math-82</td>
+    <td>295</td>
+    <td>1215</td>
+    <td>806</td>
+    <td>704</td>
+    <td>5</td>
+    <td>42</td>
+    <td>3</td>
+    <td>12</td>
+    <td>80</td>
+    <td>127</td>
+    <td>95</td>
+    <td>0.12117</td>
+    <td>0.02131</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-math-85</td>
-    <td class="tg-031e">157</td>
-    <td class="tg-031e">238</td>
-    <td class="tg-yw4l">165</td>
-    <td class="tg-i6eq">230</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">10</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">39</td>
-    <td class="tg-kjho">49</td>
-    <td class="tg-achz">42</td>
-    <td class="tg-b44r">0.15613</td>
-    <td class="tg-jbrh">0.01304</td>
+    <td>commons-math-85</td>
+    <td>157</td>
+    <td>238</td>
+    <td>165</td>
+    <td>230</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td>3</td>
+    <td>39</td>
+    <td>49</td>
+    <td>42</td>
+    <td>0.15613</td>
+    <td>0.01304</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-math3-33</td>
-    <td class="tg-031e">790</td>
-    <td class="tg-031e">1707</td>
-    <td class="tg-yw4l">970</td>
-    <td class="tg-i6eq">1527</td>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">25</td>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">10</td>
-    <td class="tg-yw4l">56</td>
-    <td class="tg-kjho">84</td>
-    <td class="tg-achz">69</td>
-    <td class="tg-b44r">0.04359</td>
-    <td class="tg-jbrh">0.00851</td>
+    <td>commons-math3-33</td>
+    <td>790</td>
+    <td>1707</td>
+    <td>970</td>
+    <td>1527</td>
+    <td>3</td>
+    <td>25</td>
+    <td>3</td>
+    <td>10</td>
+    <td>56</td>
+    <td>84</td>
+    <td>69</td>
+    <td>0.04359</td>
+    <td>0.00851</td>
   </tr>
   <tr>
-    <td class="tg-031e">commons-math3-5</td>
-    <td class="tg-031e">12</td>
-    <td class="tg-031e">68</td>
-    <td class="tg-yw4l">22</td>
-    <td class="tg-i6eq">58</td>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">24</td>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-kjho">28</td>
-    <td class="tg-achz">8</td>
-    <td class="tg-b44r">0.13793</td>
-    <td class="tg-jbrh">0.13793</td>
+    <td>commons-math3-5</td>
+    <td>12</td>
+    <td>68</td>
+    <td>22</td>
+    <td>58</td>
+    <td>4</td>
+    <td>24</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0</td>
+    <td>28</td>
+    <td>8</td>
+    <td>0.13793</td>
+    <td>0.13793</td>
   </tr>
   <tr>
-    <td class="tg-031e">jfreechart-1</td>
-    <td class="tg-031e">1222</td>
-    <td class="tg-031e">7898</td>
-    <td class="tg-yw4l">1488</td>
-    <td class="tg-i6eq">7632</td>
-    <td class="tg-yw4l">873</td>
-    <td class="tg-yw4l">2526</td>
-    <td class="tg-yw4l">816</td>
-    <td class="tg-yw4l">125</td>
-    <td class="tg-yw4l">193</td>
-    <td class="tg-kjho">3592</td>
-    <td class="tg-achz">1134</td>
-    <td class="tg-b44r">0.14492</td>
-    <td class="tg-jbrh">0.12330</td>
+    <td>jfreechart-1</td>
+    <td>1222</td>
+    <td>7898</td>
+    <td>1488</td>
+    <td>7632</td>
+    <td>873</td>
+    <td>2526</td>
+    <td>816</td>
+    <td>125</td>
+    <td>193</td>
+    <td>3592</td>
+    <td>1134</td>
+    <td>0.14492</td>
+    <td>0.12330</td>
   </tr>
   <tr>
-    <td class="tg-031e">jfreechart-11</td>
-    <td class="tg-031e">56</td>
-    <td class="tg-031e">465</td>
-    <td class="tg-yw4l">265</td>
-    <td class="tg-i6eq">256</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">2</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-kjho">10</td>
-    <td class="tg-achz">9</td>
-    <td class="tg-b44r">0.03409</td>
-    <td class="tg-jbrh">0.00391</td>
+    <td>jfreechart-11</td>
+    <td>56</td>
+    <td>465</td>
+    <td>265</td>
+    <td>256</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0</td>
+    <td>1</td>
+    <td>8</td>
+    <td>10</td>
+    <td>9</td>
+    <td>0.03409</td>
+    <td>0.00391</td>
   </tr>
   <tr>
-    <td class="tg-031e">jfreechart-24</td>
-    <td class="tg-031e">56</td>
-    <td class="tg-031e">9</td>
-    <td class="tg-yw4l">11</td>
-    <td class="tg-i6eq">54</td>
-    <td class="tg-yw4l">34</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">14</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">26</td>
-    <td class="tg-kjho">60</td>
-    <td class="tg-achz">40</td>
-    <td class="tg-b44r">0.50000</td>
-    <td class="tg-jbrh">0.25926</td>
+    <td>jfreechart-24</td>
+    <td>56</td>
+    <td>9</td>
+    <td>11</td>
+    <td>54</td>
+    <td>34</td>
+    <td>0</td>
+    <td>14</td>
+    <td>0</td>
+    <td>26</td>
+    <td>60</td>
+    <td>40</td>
+    <td>0.50000</td>
+    <td>0.25926</td>
   </tr>
   <tr>
-    <td class="tg-031e">jfreechart-9</td>
-    <td class="tg-031e">25</td>
-    <td class="tg-031e">107</td>
-    <td class="tg-yw4l">71</td>
-    <td class="tg-i6eq">61</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-kjho">4</td>
-    <td class="tg-achz">4</td>
-    <td class="tg-b44r">0.06250</td>
-    <td class="tg-jbrh">0.01639</td>
+    <td>jfreechart-9</td>
+    <td>25</td>
+    <td>107</td>
+    <td>71</td>
+    <td>61</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>3</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0.06250</td>
+    <td>0.01639</td>
   </tr>
-</table></article></body></html>
+</table>
+</article></body></html>
