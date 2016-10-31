@@ -1,0 +1,16 @@
+[12:20:16]	[SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(J)Dline 342 - 342
+[12:20:16]	[GENERATE_METHOD_FIX]:	27
+[12:20:16]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:1
+[12:20:16]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:20:16]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:0;EXPRSET:1;BOOLSETCOUNT:0
+[12:20:16]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(J)Dline 342 - 342
+[12:20:16]	[SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(J)Dline 342 - 342
+[12:20:16]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:16]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:16]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(J)Dline 342 - 342
+[12:20:16]	[SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(Ljava/lang/Object;)Dline 303 - 303
+[12:20:16]	[GENERATE_METHOD_FIX]:	8
+[12:20:16]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:2
+[12:20:17]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:20:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:17]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(Ljava/lang/Object;)Dline 303 - 303

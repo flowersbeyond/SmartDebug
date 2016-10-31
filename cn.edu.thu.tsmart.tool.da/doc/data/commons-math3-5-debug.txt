@@ -1,0 +1,79 @@
+[12:27:01]	[SEARCH_FIX]:	search for:org/apache/commons/math3/complex/Complex:toString:()Ljava/lang/String;line 1228 - 1228
+[12:27:01]	[GENERATE_METHOD_FIX]:	0
+[12:27:01]	[METHOD_FIX_DETAIL]:	
+[12:27:02]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:27:02]	[FILTER_DEAD]:	isInfinite():false;not expected:false
+[12:27:02]	[FILTER_DEAD]:	isInfinite:false;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	isNaN():true;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	!isInfinite:true;not expected:false
+[12:27:02]	[FILTER_DEAD]:	!isNaN():false;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	isNaN:true;not expected:false
+[12:27:02]	[FILTER_DEAD]:	!isNaN:false;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	!isInfinite():true;not expected:false
+[12:27:02]	[FILTER_DEAD]:	real:NaN;imaginary:NaN
+[12:27:02]	[FILTER_DEAD]:	imaginary:NaN;real:NaN
+[12:27:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:4
+[12:27:02]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:4	#false:4	#NaN:2	
+[12:27:02]	[FAIL_TC_FILTER_START]:	survive count:4
+[12:27:02]	[FILTER_DEAD]:	isNaN():false;not expected:false
+[12:27:02]	[FILTER_DEAD]:	!isInfinite:false;not expected:false
+[12:27:02]	[FILTER_DEAD]:	isNaN:false;not expected:false
+[12:27:02]	[FILTER_DEAD]:	!isInfinite():false;not expected:false
+[12:27:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:4
+[12:27:02]	[FILTER_SURVIVE]:	isInfinite():true;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	isInfinite:true;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	!isNaN():true;not expected:false
+[12:27:02]	[FILTER_SURVIVE]:	!isNaN:true;not expected:false
+[12:27:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:27:02]	[FILTER_DEAD]:	real:Infinity;imaginary:Infinity
+[12:27:02]	[FILTER_DEAD]:	imaginary:Infinity;real:Infinity
+[12:27:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:27:02]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#false:4	#NaN#Infinity:2	#false#true:4	
+[12:27:02]	[SEARCH_FIX]:	search for:org/apache/commons/math3/complex/Complex:toString:()Ljava/lang/String;line 1228 - 1228
+[12:27:02]	[SEARCH_FIX]:	search for:org/apache/commons/math3/complex/Complex:toString:()Ljava/lang/String;line 1228 - 1228
+[12:27:02]	[SEARCH_FIX]:	search for:org/apache/commons/math3/complex/Complex:toString:()Ljava/lang/String;line 1228 - 1228
+[12:27:02]	[SEARCH_FIX]:	search for:org/apache/commons/math3/complex/Complex:reciprocal:()Lorg/apache/commons/math3/complex/Complex;line 305 - 305
+[12:27:02]	[GENERATE_METHOD_FIX]:	0
+[12:27:02]	[METHOD_FIX_DETAIL]:	
+[12:27:03]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:27:03]	[FILTER_DEAD]:	!NaN.isNaN():false;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!ZERO.isInfinite():true;not expected:false
+[12:27:03]	[FILTER_DEAD]:	isNaN:false;not expected:false
+[12:27:03]	[FILTER_DEAD]:	isInfinite():false;not expected:false
+[12:27:03]	[FILTER_DEAD]:	isInfinite:false;not expected:false
+[12:27:03]	[FILTER_DEAD]:	isNaN():false;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!NaN.isInfinite():true;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!isNaN():true;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	NaN.isNaN():true;not expected:false
+[12:27:03]	[FILTER_DEAD]:	NaN.isInfinite():false;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!isInfinite():true;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!ZERO.isNaN():true;not expected:false
+[12:27:03]	[FILTER_DEAD]:	ZERO.isNaN():false;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!isInfinite:true;not expected:false
+[12:27:03]	[FILTER_DEAD]:	ZERO.isInfinite():false;not expected:false
+[12:27:03]	[FILTER_SURVIVE]:	!isNaN:true;not expected:false
+[12:27:03]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:27:03]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:8	#false:8	
+[12:27:04]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:27:04]	[FILTER_DEAD]:	!NaN.isNaN():false;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!ZERO.isInfinite():true;not expected:false
+[12:27:04]	[FILTER_DEAD]:	isNaN:false;not expected:false
+[12:27:04]	[FILTER_DEAD]:	isInfinite():false;not expected:false
+[12:27:04]	[FILTER_DEAD]:	isInfinite:false;not expected:false
+[12:27:04]	[FILTER_DEAD]:	isNaN():false;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!NaN.isInfinite():true;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!isNaN():true;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	NaN.isNaN():true;not expected:false
+[12:27:04]	[FILTER_DEAD]:	NaN.isInfinite():false;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!isInfinite():true;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!ZERO.isNaN():true;not expected:false
+[12:27:04]	[FILTER_DEAD]:	ZERO.isNaN():false;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!isInfinite:true;not expected:false
+[12:27:04]	[FILTER_DEAD]:	ZERO.isInfinite():false;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	!isNaN:true;not expected:false
+[12:27:04]	[FILTER_SURVIVE]:	INF:-6195664516687396620;Infinity;true;false;Infinity;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;;NaN:-6195664516687396620;NaN;false;true;NaN;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;
+[12:27:04]	[FILTER_SURVIVE]:	ZERO:-6195664516687396620;0.0;false;false;0.0;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;;NaN:-6195664516687396620;NaN;false;true;NaN;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;
+[12:27:04]	[FILTER_SURVIVE]:	ONE:-6195664516687396620;0.0;false;false;1.0;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;;NaN:-6195664516687396620;NaN;false;true;NaN;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;
+[12:27:04]	[FILTER_SURVIVE]:	I:-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;;NaN:-6195664516687396620;NaN;false;true;NaN;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;
+[12:27:04]	[FAIL_TC_FILTER_FINISHED]:	survive count:12
+[12:27:04]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#-6195664516687396620;Infinity;true;false;Infinity;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;:1	#true:8	#false:8	#-6195664516687396620;0.0;false;false;1.0;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;:1	#-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;:1	#-6195664516687396620;0.0;false;false;0.0;-6195664516687396620;1.0;false;false;0.0;-6195664516687396620;:1	

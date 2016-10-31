@@ -1,0 +1,328 @@
+[12:20:17]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:20:17]	[GENERATE_METHOD_FIX]:	0
+[12:20:17]	[PRE_FILTER_STATUS]:	EXPR:91;BOOL:12
+[12:20:19]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:20:20]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:20]	[POST_FILTER_STATUS]:	EXPR:89;BOOL:0;EXPRSET:28;BOOLSETCOUNT:0
+[12:20:20]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:20:20]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1060 - 1060
+[12:20:20]	[GENERATE_METHOD_FIX]:	70
+[12:20:20]	[PRE_FILTER_STATUS]:	EXPR:206;BOOL:57
+[12:20:21]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:20:22]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:23]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:24]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:20:25]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:26]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:28]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:20:29]	[FILTER_COMPILATION_ERROR_COUNT]:	13
+[12:20:29]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:30]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:31]	[FILTER_COMPILATION_ERROR_COUNT]:	11
+[12:20:31]	[POST_FILTER_STATUS]:	EXPR:132;BOOL:0;EXPRSET:68;BOOLSETCOUNT:0
+[12:20:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1060 - 1060
+[12:20:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:20:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:20:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:20:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:20:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1415 - 1415
+[12:20:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1415 - 1415
+[12:20:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:20:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:20:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1090 - 1090
+[12:20:31]	[GENERATE_METHOD_FIX]:	0
+[12:20:31]	[PRE_FILTER_STATUS]:	EXPR:78;BOOL:82
+[12:20:32]	[FILTER_COMPILATION_ERROR_COUNT]:	23
+[12:20:33]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:34]	[FILTER_COMPILATION_ERROR_COUNT]:	21
+[12:20:35]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:20:35]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:20:36]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:20:36]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:37]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:20:37]	[POST_FILTER_STATUS]:	EXPR:55;BOOL:0;EXPRSET:42;BOOLSETCOUNT:0
+[12:20:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1090 - 1090
+[12:20:37]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1061 - 1061
+[12:20:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1061 - 1061
+[12:20:37]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:processGeneralBlock:(I)Vline 871 - 871
+[12:20:37]	[GENERATE_METHOD_FIX]:	0
+[12:20:37]	[PRE_FILTER_STATUS]:	EXPR:32;BOOL:0
+[12:20:38]	[FILTER_COMPILATION_ERROR_COUNT]:	15
+[12:20:38]	[POST_FILTER_STATUS]:	EXPR:17;BOOL:0;EXPRSET:3;BOOLSETCOUNT:0
+[12:20:38]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:processGeneralBlock:(I)Vline 871 - 871
+[12:20:38]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:20:38]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:38]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:38]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:20:38]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:20:38]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:38]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:38]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:20:38]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1138 - 1138
+[12:20:38]	[GENERATE_METHOD_FIX]:	0
+[12:20:38]	[PRE_FILTER_STATUS]:	EXPR:52;BOOL:8
+[12:20:39]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:20:43]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:47]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:52;BOOL:0;EXPRSET:28;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1138 - 1138
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1139 - 1139
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1139 - 1139
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1061 - 1061
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1061 - 1061
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1415 - 1415
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1415 - 1415
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1093 - 1093
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1093 - 1093
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1092 - 1092
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1092 - 1092
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1090 - 1090
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1090 - 1090
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1137 - 1137
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1137 - 1137
+[12:20:49]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 960 - 960
+[12:20:49]	[GENERATE_METHOD_FIX]:	0
+[12:20:49]	[PRE_FILTER_STATUS]:	EXPR:78;BOOL:8
+[12:20:50]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:20:53]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:57]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:21:00]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:21:03]	[POST_FILTER_STATUS]:	EXPR:37;BOOL:0;EXPRSET:30;BOOLSETCOUNT:0
+[12:21:03]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 960 - 960
+[12:21:03]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:21:03]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:03]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:03]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:21:03]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1059 - 1059
+[12:21:03]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:03]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:03]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1059 - 1059
+[12:21:03]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:21:03]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:03]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:03]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:21:03]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:21:03]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:03]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:03]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:21:03]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:03]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:03]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:03]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:03]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1384 - 1384
+[12:21:03]	[GENERATE_METHOD_FIX]:	0
+[12:21:03]	[PRE_FILTER_STATUS]:	EXPR:77;BOOL:4
+[12:21:04]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:21:05]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:21:06]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:21:06]	[POST_FILTER_STATUS]:	EXPR:54;BOOL:0;EXPRSET:33;BOOLSETCOUNT:0
+[12:21:06]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1384 - 1384
+[12:21:06]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:(Lorg/apache/commons/math/linear/RealVector;)Dline 870 - 870
+[12:21:06]	[GENERATE_METHOD_FIX]:	13
+[12:21:06]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:18
+[12:21:07]	[FILTER_COMPILATION_ERROR_COUNT]:	11
+[12:21:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:4;EXPRSET:0;BOOLSETCOUNT:1
+[12:21:07]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:(Lorg/apache/commons/math/linear/RealVector;)Dline 870 - 870
+[12:21:07]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 889 - 889
+[12:21:07]	[GENERATE_METHOD_FIX]:	0
+[12:21:07]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:4
+[12:21:08]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:21:08]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:1
+[12:21:08]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 889 - 889
+[12:21:08]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1406 - 1406
+[12:21:08]	[GENERATE_METHOD_FIX]:	0
+[12:21:08]	[PRE_FILTER_STATUS]:	EXPR:77;BOOL:4
+[12:21:09]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:21:09]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:21:11]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:55;BOOL:0;EXPRSET:33;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1406 - 1406
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1385 - 1385
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1385 - 1385
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1058 - 1058
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1405 - 1405
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1405 - 1405
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1414 - 1414
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1138 - 1139
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1138 - 1139
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:21:11]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1408 - 1408
+[12:21:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:281
+[12:21:17]	[FILTER_COMPILATION_ERROR_COUNT]:	126
+[12:21:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:26;EXPRSET:0;BOOLSETCOUNT:1
+[12:21:17]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1408 - 1408
+[12:21:17]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1056 - 1056
+[12:21:17]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:17]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1056 - 1056
+[12:21:17]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:17]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:17]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:17]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1056 - 1057
+[12:21:17]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:17]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1056 - 1057
+[12:21:17]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:(Lorg/apache/commons/math/linear/ArrayRealVector;)Dline 900 - 900
+[12:21:17]	[GENERATE_METHOD_FIX]:	13
+[12:21:17]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:12
+[12:21:18]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:21:18]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:4;EXPRSET:0;BOOLSETCOUNT:1
+[12:21:18]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:(Lorg/apache/commons/math/linear/ArrayRealVector;)Dline 900 - 900
+[12:21:18]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:18]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:18]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:18]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:18]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1059 - 1059
+[12:21:18]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:18]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:18]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1059 - 1059
+[12:21:18]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 957 - 957
+[12:21:18]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:18]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:18]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 957 - 957
+[12:21:18]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 886 - 886
+[12:21:18]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:4
+[12:21:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:1
+[12:21:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 886 - 886
+[12:21:19]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 887 - 887
+[12:21:19]	[GENERATE_METHOD_FIX]:	0
+[12:21:19]	[PRE_FILTER_STATUS]:	EXPR:3;BOOL:16
+[12:21:19]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:21:21]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:6;EXPRSET:0;BOOLSETCOUNT:1
+[12:21:21]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 887 - 887
+[12:21:21]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1139 - 1139
+[12:21:21]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:21]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:21]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1139 - 1139
+[12:21:21]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 945 - 946
+[12:21:21]	[GENERATE_METHOD_FIX]:	0
+[12:21:21]	[PRE_FILTER_STATUS]:	EXPR:31;BOOL:4
+[12:21:22]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:21:25]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:21:27]	[POST_FILTER_STATUS]:	EXPR:17;BOOL:0;EXPRSET:15;BOOLSETCOUNT:0
+[12:21:27]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 945 - 946
+[12:21:27]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 884 - 884
+[12:21:27]	[GENERATE_METHOD_FIX]:	4
+[12:21:27]	[PRE_FILTER_STATUS]:	EXPR:4;BOOL:8
+[12:21:27]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:21:28]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:4;EXPRSET:0;BOOLSETCOUNT:2
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 884 - 884
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1386 - 1386
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1386 - 1386
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1415 - 1415
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1415 - 1415
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1056 - 1056
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1056 - 1056
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1139 - 1139
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1139 - 1139
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 885 - 886
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 885 - 886
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1385 - 1385
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1385 - 1385
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:processGeneralBlock:(I)Vline 871 - 872
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:processGeneralBlock:(I)Vline 871 - 872
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1055 - 1055
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1404 - 1404
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1404 - 1404
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 886 - 886
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/ArrayRealVector:dotProduct:([D)Dline 886 - 886
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1060 - 1060
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1060 - 1060
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1091 - 1091
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1091 - 1091
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 960 - 960
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:initialSplits:(I)Vline 960 - 960
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1385 - 1385
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:dqd:(II)Vline 1385 - 1385
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:goodStep:(II)Iline 1062 - 1062
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1142 - 1136
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:21:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:21:28]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1142 - 1136
+[12:21:28]	[SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1135 - 1136
+[12:21:28]	[GENERATE_METHOD_FIX]:	0
+[12:21:28]	[PRE_FILTER_STATUS]:	EXPR:20;BOOL:0
+[12:21:29]	[FILTER_COMPILATION_ERROR_COUNT]:	9
+[12:21:29]	[POST_FILTER_STATUS]:	EXPR:11;BOOL:0;EXPRSET:3;BOOLSETCOUNT:0
+[12:21:29]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/linear/EigenDecompositionImpl:flipIfWarranted:(II)Zline 1135 - 1136

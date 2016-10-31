@@ -1,0 +1,220 @@
+package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.core.filebuffers.ITextFileBuffer;
+import org.eclipse.core.filebuffers.ITextFileBufferManager;
+import org.eclipse.core.filebuffers.LocationKind;
+import org.eclipse.jdt.core.ICompilationUnit;
+import org.eclipse.jdt.core.JavaCore;
+import org.eclipse.jdt.core.JavaModelException;
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.Block;
+import org.eclipse.jdt.core.dom.DoStatement;
+import org.eclipse.jdt.core.dom.EnhancedForStatement;
+import org.eclipse.jdt.core.dom.ForStatement;
+import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.Statement;
+import org.eclipse.jdt.core.dom.WhileStatement;
+import org.eclipse.jface.text.BadLocationException;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.swt.widgets.Display;
+
+import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.suggestion.BlockFix;
+
+public class LoopFixer extends CompoundStructureFixer{
+	private ArrayList<ASTNode> triedLoopStructure = new ArrayList<ASTNode>();
+	
+	public ArrayList<BlockFix> generateFix(StatementFixSite fixSite){
+		return loopFix(fixSite);
+	}
+	
+	private ArrayList<BlockFix> loopFix(StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+
+		List<? extends ASTNode> statements = fixSite.getStatements();
+		if(statements == null || statements.size() == 0)
+			return fixes;
+		ASTNode node = statements.get(0);
+		ASTNode child = node;
+		ASTNode parent = node.getParent();
+		while(!(parent instanceof MethodDeclaration)){
+			if(parent instanceof ForStatement){
+				ForStatement stmt = (ForStatement)parent;
+				if(!triedLoopStructure.contains(stmt)){
+					fixes.addAll(forFix(stmt, fixSite));
+					triedLoopStructure.add(stmt);
+				}
+			}
+			else if(parent instanceof WhileStatement){
+				WhileStatement stmt = (WhileStatement)parent;
+				if(!triedLoopStructure.contains(stmt)){
+					fixes.addAll(whileFix(stmt, fixSite));
+					triedLoopStructure.add(stmt);
+				}
+			}
+			
+			parent = parent.getParent();
+		}
+		return fixes;
+	}
+	
+	private ArrayList<BlockFix> forFix(ForStatement forstmt, StatementFixSite fixSite){
+		
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		
+		//move in
+		ASTNode node = forstmt.getParent();
+		if(node instanceof Block){
+			Block block = (Block)node;
+			fixes.addAll(loopMoveIn(forstmt, forstmt.getBody(), block, fixSite));
+		}
+		
+		Statement forBody = forstmt.getBody();
+		if(forBody instanceof Block){			
+			Block forBodyBlock = (Block)forBody;
+			//move out	
+			fixes.addAll(compoundStatementMoveOut(forstmt, forBodyBlock, fixSite));			
+			//delete
+			fixes.addAll(loopDelete(forstmt, forBodyBlock, fixSite));
+		}
+		
+		return fixes;
+		
+	}
+	private ArrayList<BlockFix> whileFix(WhileStatement whilestmt, StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		
+		//move in
+		ASTNode node = whilestmt.getParent();
+		if(node instanceof Block){
+			Block block = (Block)node;
+			fixes.addAll(loopMoveIn(whilestmt, whilestmt.getBody(), block, fixSite));
+		}
+		
+		Statement whileBody = whilestmt.getBody();
+		if(whileBody instanceof Block){			
+			Block whileBodyBlock = (Block)whileBody;
+			//move out	
+			fixes.addAll(compoundStatementMoveOut(whilestmt, whileBodyBlock, fixSite));			
+			//delete
+			fixes.addAll(loopDelete(whilestmt, whileBodyBlock, fixSite));
+		}
+		
+		return fixes;
+	}
+	
+	private ArrayList<BlockFix> loopMoveIn(Statement loopStatement, Statement loopBody, Block wrappingBlock, StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		
+		List<Statement> statements = wrappingBlock.statements();
+		
+		int loopStatementIndex = statements.indexOf(loopStatement);
+		//move statements before this loop inside the loop
+		for(int i = loopStatementIndex -1; i >= 0; i --){
+			Statement stmt = statements.get(i);
+			
+			if(stmt instanceof WhileStatement ||stmt instanceof ForStatement
+					|| stmt instanceof DoStatement || stmt instanceof EnhancedForStatement){
+				break;
+			}
+			
+			int startPosition = stmt.getStartPosition();
+			int originalLength = loopStatement.getStartPosition()  + loopStatement.getLength() - startPosition;
+			String outsideString = "";
+			for(int j = i; j < loopStatementIndex; j ++){
+				outsideString += statements.get(j).toString() + "\n";
+			}
+			
+			/*DocumentContentGetter contentGetter = new DocumentContentGetter(fixSite.getFile(), loopStatement.getStartPosition(), loopStatement.getLength());
+			Display.getDefault().syncExec(contentGetter);
+			String modifiedString = contentGetter.getDocumentContent();*/
+			
+			ICompilationUnit cu = JavaCore.createCompilationUnitFrom(fixSite.getFile());
+			String source;
+			try {
+				source = cu.getSource();
+				String modifiedString = source.substring(loopStatement.getStartPosition(), loopStatement.getStartPosition() + loopStatement.getLength());
+			
+				if(loopBody instanceof Block){
+					Block loopBodyBlock = (Block)loopBody;
+					List<Statement> loopBodyStatements = loopBodyBlock.statements();
+					int loopBodyStart = loopBodyStatements.get(0).getStartPosition() - loopStatement.getStartPosition();
+					modifiedString = modifiedString.substring(0, loopBodyStart) + 
+							outsideString + modifiedString.substring(loopBodyStart);
+				} else{
+					int loopBodyStart = loopBody.getStartPosition() - loopStatement.getStartPosition();
+					modifiedString = modifiedString.substring(0, loopBodyStart) + 
+							"{\n" + outsideString + modifiedString.substring(loopBodyStart) + "}\n";
+				}
+				
+				fixes.add(new BlockFix(fixSite, startPosition, originalLength, modifiedString));
+			} catch (JavaModelException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+		//move statements after this loop inside the loop
+		for(int i = loopStatementIndex + 1; i <statements.size(); i ++){
+			Statement stmt = statements.get(i);
+			
+			if(stmt instanceof WhileStatement ||stmt instanceof ForStatement
+					|| stmt instanceof DoStatement || stmt instanceof EnhancedForStatement){
+				break;
+			}
+			
+			int startPosition = loopStatement.getStartPosition();
+			int originalLength = stmt.getStartPosition()  + stmt.getLength() - startPosition;
+			String outsideString = "";
+			for(int j = loopStatementIndex + 1; j <= i; j ++){
+				outsideString += statements.get(j).toString() + "\n";
+			}
+			
+			DocumentContentGetter contentGetter = new DocumentContentGetter(fixSite.getFile(), loopStatement.getStartPosition(), loopStatement.getLength());
+			Display.getDefault().syncExec(contentGetter);
+			
+			ITextFileBuffer fileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(fixSite.getFile().getFullPath(), LocationKind.IFILE);
+			IDocument document = fileBuffer.getDocument();
+			try {
+				String modifiedString = document.get(loopStatement.getStartPosition(), loopStatement.getLength());
+				if(loopBody instanceof Block){
+					Block loopBodyBlock = (Block)loopBody;
+					List<Statement> forBodyStatements = loopBodyBlock.statements();
+					Statement lastForBodyStatement = forBodyStatements.get(forBodyStatements.size() - 1);
+					int loopBodyEnd = lastForBodyStatement.getStartPosition() + lastForBodyStatement.getLength() - loopStatement.getStartPosition();
+					
+					modifiedString = modifiedString.substring(0, loopBodyEnd) + "\n" + 
+						outsideString + modifiedString.substring(loopBodyEnd);
+				} else{
+					int loopBodyStart = loopBody.getStartPosition() - loopStatement.getStartPosition();
+					int loopBodyEnd = loopBody.getStartPosition() + loopBody.getLength() - loopStatement.getStartPosition();
+					
+					modifiedString = modifiedString.substring(0, loopBodyStart) + 
+							"{\n" + modifiedString.substring(loopBodyStart, loopBodyEnd) + "\n" + outsideString + "}\n";
+				}
+				
+				fixes.add(new BlockFix(fixSite, startPosition, originalLength, modifiedString));
+			} catch (BadLocationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+		return fixes;
+	}
+	
+	private ArrayList<BlockFix> loopMoveOut(Statement loopStatement, Block loopBodyBlock, StatementFixSite fixSite){
+		return compoundStatementMoveOut(loopStatement, loopBodyBlock, fixSite);
+	}
+	
+	private ArrayList<BlockFix> loopDelete(Statement loopStatement, Block loopBodyBlock, StatementFixSite fixSite){
+		return compoundStatementDelete(loopStatement, loopBodyBlock, fixSite);
+	}
+	
+
+}

@@ -1,0 +1,402 @@
+[12:23:46]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 407 - 407
+[12:23:46]	[GENERATE_METHOD_FIX]:	0
+[12:23:46]	[PRE_FILTER_STATUS]:	EXPR:12;BOOL:62
+[12:23:51]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:23:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:55]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 407 - 407
+[12:23:55]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 406 - 406
+[12:23:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:55]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 406 - 406
+[12:23:55]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 339 - 339
+[12:23:55]	[GENERATE_METHOD_FIX]:	1
+[12:23:55]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:43
+[12:23:56]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:23:57]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:24:00]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:24:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:02]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 339 - 339
+[12:24:02]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 399 - 399
+[12:24:02]	[GENERATE_METHOD_FIX]:	7
+[12:24:02]	[PRE_FILTER_STATUS]:	EXPR:156;BOOL:31
+[12:24:06]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:24:09]	[FILTER_COMPILATION_ERROR_COUNT]:	80
+[12:24:13]	[FILTER_COMPILATION_ERROR_COUNT]:	24
+[12:24:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 399 - 399
+[12:24:15]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 339 - 339
+[12:24:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 339 - 339
+[12:24:15]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 399 - 399
+[12:24:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 399 - 399
+[12:24:15]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 399 - 399
+[12:24:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 399 - 399
+[12:24:15]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 339 - 339
+[12:24:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 339 - 339
+[12:24:15]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:15]	[GENERATE_METHOD_FIX]:	11
+[12:24:15]	[PRE_FILTER_STATUS]:	EXPR:16;BOOL:29
+[12:24:15]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:24:17]	[FILTER_COMPILATION_ERROR_COUNT]:	17
+[12:24:18]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:24:19]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 263 - 263
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 263 - 263
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 262 - 262
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 262 - 262
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 262 - 262
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 262 - 262
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:normalize:(Lorg/apache/commons/math3/optimization/linear/LinearConstraint;)Lorg/apache/commons/math3/optimization/linear/LinearConstraint;line 261 - 261
+[12:24:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 423 - 423
+[12:24:19]	[GENERATE_METHOD_FIX]:	0
+[12:24:19]	[PRE_FILTER_STATUS]:	EXPR:61;BOOL:75
+[12:24:20]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:24:23]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:24:26]	[FILTER_COMPILATION_ERROR_COUNT]:	20
+[12:24:28]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:24:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:35]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 423 - 423
+[12:24:35]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 398 - 398
+[12:24:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:35]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 398 - 398
+[12:24:35]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 398 - 398
+[12:24:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:35]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getSolution:()Lorg/apache/commons/math3/optimization/PointValuePair;line 398 - 398
+[12:24:35]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:24:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:12
+[12:24:36]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:24:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:24:37]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:24:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:24:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:24:37]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 302 - 302
+[12:24:37]	[GENERATE_METHOD_FIX]:	0
+[12:24:37]	[PRE_FILTER_STATUS]:	EXPR:3;BOOL:12
+[12:24:37]	[FILTER_COMPILATION_ERROR_COUNT]:	11
+[12:24:38]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:38]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 302 - 302
+[12:24:38]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 216 - 216
+[12:24:38]	[GENERATE_METHOD_FIX]:	2
+[12:24:38]	[PRE_FILTER_STATUS]:	EXPR:34;BOOL:198
+[12:24:40]	[FILTER_COMPILATION_ERROR_COUNT]:	66
+[12:24:45]	[FILTER_COMPILATION_ERROR_COUNT]:	77
+[12:24:48]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:24:49]	[FILTER_COMPILATION_ERROR_COUNT]:	22
+[12:24:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 216 - 216
+[12:24:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 199 - 199
+[12:24:50]	[GENERATE_METHOD_FIX]:	2
+[12:24:50]	[PRE_FILTER_STATUS]:	EXPR:37;BOOL:57
+[12:24:51]	[FILTER_COMPILATION_ERROR_COUNT]:	22
+[12:24:55]	[FILTER_COMPILATION_ERROR_COUNT]:	40
+[12:24:57]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:24:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:24:57]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 199 - 199
+[12:24:57]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:initializeColumnLabels:()Vline 162 - 162
+[12:24:57]	[GENERATE_METHOD_FIX]:	1
+[12:24:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:13
+[12:25:01]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:initializeColumnLabels:()Vline 162 - 162
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 215 - 215
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 215 - 215
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 215 - 215
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 215 - 215
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 199 - 199
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 199 - 199
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 200 - 200
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 200 - 200
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 216 - 216
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 216 - 216
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:initializeColumnLabels:()Vline 162 - 162
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:initializeColumnLabels:()Vline 162 - 162
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:getInvertedCoefficientSum:(Lorg/apache/commons/math3/linear/RealVector;)Dline 299 - 299
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:initializeColumnLabels:()Vline 162 - 162
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:04]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:initializeColumnLabels:()Vline 162 - 162
+[12:25:04]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 226 - 226
+[12:25:04]	[GENERATE_METHOD_FIX]:	2
+[12:25:04]	[PRE_FILTER_STATUS]:	EXPR:47;BOOL:253
+[12:25:06]	[FILTER_COMPILATION_ERROR_COUNT]:	66
+[12:25:13]	[FILTER_COMPILATION_ERROR_COUNT]:	80
+[12:25:17]	[FILTER_COMPILATION_ERROR_COUNT]:	66
+[12:25:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 226 - 226
+[12:25:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 226 - 226
+[12:25:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 226 - 226
+[12:25:19]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 196 - 196
+[12:25:19]	[GENERATE_METHOD_FIX]:	13
+[12:25:19]	[PRE_FILTER_STATUS]:	EXPR:219;BOOL:151
+[12:25:20]	[FILTER_COMPILATION_ERROR_COUNT]:	29
+[12:25:22]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:25:25]	[FILTER_COMPILATION_ERROR_COUNT]:	40
+[12:25:29]	[FILTER_COMPILATION_ERROR_COUNT]:	50
+[12:25:31]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:25:35]	[FILTER_COMPILATION_ERROR_COUNT]:	53
+[12:25:39]	[FILTER_COMPILATION_ERROR_COUNT]:	60
+[12:25:41]	[POST_FILTER_STATUS]:	EXPR:3;BOOL:5;EXPRSET:3;BOOLSETCOUNT:5
+[12:25:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 196 - 196
+[12:25:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 225 - 225
+[12:25:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:21
+[12:25:42]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:25:45]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:45]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 225 - 225
+[12:25:45]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 224 - 224
+[12:25:45]	[GENERATE_METHOD_FIX]:	2
+[12:25:45]	[PRE_FILTER_STATUS]:	EXPR:47;BOOL:85
+[12:25:47]	[FILTER_COMPILATION_ERROR_COUNT]:	80
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 224 - 224
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 196 - 196
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 196 - 196
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 224 - 224
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 224 - 224
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 196 - 196
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 196 - 196
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 191 - 191
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 191 - 191
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:createTableau:(Z)Lorg/apache/commons/math3/linear/RealMatrix;line 193 - 193
+[12:25:50]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:copyIn:([[D)Vline 526 - 526
+[12:25:50]	[GENERATE_METHOD_FIX]:	0
+[12:25:50]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:0
+[12:25:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:copyIn:([[D)Vline 526 - 526
+[12:25:51]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 284 - 284
+[12:25:51]	[GENERATE_METHOD_FIX]:	0
+[12:25:51]	[PRE_FILTER_STATUS]:	EXPR:32;BOOL:5
+[12:25:52]	[FILTER_COMPILATION_ERROR_COUNT]:	11
+[12:25:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:54]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 284 - 284
+[12:25:54]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 279 - 279
+[12:25:54]	[GENERATE_METHOD_FIX]:	0
+[12:25:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:25:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:25:54]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 279 - 279
+[12:25:54]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 346 - 346
+[12:25:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:123
+[12:25:54]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:25:58]	[FILTER_COMPILATION_ERROR_COUNT]:	78
+[12:26:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:26:02]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 346 - 346
+[12:26:02]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 356 - 356
+[12:26:02]	[GENERATE_METHOD_FIX]:	1
+[12:26:02]	[PRE_FILTER_STATUS]:	EXPR:28;BOOL:65
+[12:26:03]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:26:04]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:26:07]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:26:10]	[FILTER_COMPILATION_ERROR_COUNT]:	25
+[12:26:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:9;EXPRSET:0;BOOLSETCOUNT:3
+[12:26:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 356 - 356
+[12:26:12]	[SEARCH_FIX]:	search for:org/apache/commons/math3/util/Pair:getKey:()Ljava/lang/Object;line 63 - 63
+[12:26:12]	[GENERATE_METHOD_FIX]:	0
+[12:26:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/util/Pair:getKey:()Ljava/lang/Object;line 63 - 63
+[12:26:12]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 365 - 365
+[12:26:12]	[GENERATE_METHOD_FIX]:	5
+[12:26:12]	[PRE_FILTER_STATUS]:	EXPR:15;BOOL:14
+[12:26:12]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:26:15]	[FILTER_COMPILATION_ERROR_COUNT]:	13
+[12:26:16]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:16]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 365 - 365
+[12:26:16]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 356 - 356
+[12:26:16]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:16]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:16]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 356 - 356
+[12:26:16]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 333 - 333
+[12:26:16]	[GENERATE_METHOD_FIX]:	4
+[12:26:16]	[PRE_FILTER_STATUS]:	EXPR:15;BOOL:13
+[12:26:16]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:26:19]	[FILTER_COMPILATION_ERROR_COUNT]:	13
+[12:26:22]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:22]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 333 - 333
+[12:26:22]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 361 - 361
+[12:26:22]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:6
+[12:26:22]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:26:23]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:23]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 361 - 361
+[12:26:23]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 281 - 281
+[12:26:23]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:95
+[12:26:25]	[FILTER_COMPILATION_ERROR_COUNT]:	42
+[12:26:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 281 - 281
+[12:26:31]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 263 - 263
+[12:26:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:35
+[12:26:32]	[FILTER_COMPILATION_ERROR_COUNT]:	24
+[12:26:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:34]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 263 - 263
+[12:26:34]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 284 - 284
+[12:26:34]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:34]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 284 - 284
+[12:26:34]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 345 - 345
+[12:26:34]	[GENERATE_METHOD_FIX]:	0
+[12:26:34]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:18
+[12:26:35]	[FILTER_COMPILATION_ERROR_COUNT]:	15
+[12:26:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 345 - 345
+[12:26:37]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 362 - 362
+[12:26:37]	[GENERATE_METHOD_FIX]:	5
+[12:26:37]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:21
+[12:26:38]	[FILTER_COMPILATION_ERROR_COUNT]:	18
+[12:26:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:40]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 362 - 362
+[12:26:40]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 269 - 269
+[12:26:40]	[GENERATE_METHOD_FIX]:	0
+[12:26:40]	[PRE_FILTER_STATUS]:	EXPR:7;BOOL:1
+[12:26:41]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:26:41]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:26:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 269 - 269
+[12:26:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 344 - 344
+[12:26:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 344 - 344
+[12:26:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 362 - 362
+[12:26:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 362 - 362
+[12:26:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 354 - 354
+[12:26:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 354 - 354
+[12:26:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 279 - 279
+[12:26:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 279 - 279
+[12:26:41]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 275 - 275
+[12:26:41]	[GENERATE_METHOD_FIX]:	0
+[12:26:41]	[PRE_FILTER_STATUS]:	EXPR:18;BOOL:3
+[12:26:42]	[FILTER_COMPILATION_ERROR_COUNT]:	11
+[12:26:44]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:44]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 275 - 275
+[12:26:44]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 280 - 280
+[12:26:44]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:44]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:45]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 280 - 280
+[12:26:45]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 362 - 362
+[12:26:45]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:45]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:45]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 362 - 362
+[12:26:45]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 275 - 275
+[12:26:45]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:45]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:45]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 275 - 275
+[12:26:45]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 351 - 351
+[12:26:45]	[GENERATE_METHOD_FIX]:	0
+[12:26:45]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:7
+[12:26:45]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:26:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 351 - 351
+[12:26:47]	[SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 270 - 270
+[12:26:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/linear/Array2DRowRealMatrix:setSubMatrix:([[DII)Vline 270 - 270
+[12:26:47]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 344 - 344
+[12:26:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 344 - 344
+[12:26:47]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 352 - 352
+[12:26:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 352 - 352
+[12:26:47]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 361 - 361
+[12:26:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 361 - 361
+[12:26:47]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 354 - 354
+[12:26:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:26:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:26:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 354 - 354
+[12:26:47]	[SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 338 - 338
+[12:26:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:259
+[12:26:52]	[FILTER_COMPILATION_ERROR_COUNT]:	209
+[12:27:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:10;EXPRSET:0;BOOLSETCOUNT:1
+[12:27:01]	[END_SEARCH_FIX]:	search for:org/apache/commons/math3/optimization/linear/SimplexTableau:dropPhase1Objective:()Vline 338 - 338

@@ -1,0 +1,184 @@
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:30]	[GENERATE_METHOD_FIX]:	3
+[12:23:30]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:30]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:30]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:30]	[GENERATE_METHOD_FIX]:	0
+[12:23:30]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:12
+[12:23:30]	[FILTER_COMPILATION_ERROR_COUNT]:	9
+[12:23:30]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:1
+[12:23:30]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:30]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:30]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:30]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:30]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:30]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:30]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:30]	[GENERATE_METHOD_FIX]:	1
+[12:23:30]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:11
+[12:23:31]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 200 - 200
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 200 - 200
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:23:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/AbstractContinuousDistribution:inverseCumulativeProbability:(D)Dline 70 - 70
+[12:23:31]	[GENERATE_METHOD_FIX]:	12
+[12:23:31]	[PRE_FILTER_STATUS]:	EXPR:24;BOOL:10
+[12:23:32]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:23:32]	[FILTER_COMPILATION_ERROR_COUNT]:	13
+[12:23:32]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:23:33]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:23:33]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:33]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/distribution/AbstractContinuousDistribution:inverseCumulativeProbability:(D)Dline 70 - 70
+[12:23:33]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 184 - 184
+[12:23:33]	[GENERATE_METHOD_FIX]:	0
+[12:23:33]	[PRE_FILTER_STATUS]:	EXPR:7;BOOL:4
+[12:23:33]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[12:23:33]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:33]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 184 - 184
+[12:23:33]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainUpperBound:(D)Dline 203 - 203
+[12:23:33]	[GENERATE_METHOD_FIX]:	0
+[12:23:33]	[PRE_FILTER_STATUS]:	EXPR:8;BOOL:8
+[12:23:34]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:23:34]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:23:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:34]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainUpperBound:(D)Dline 203 - 203
+[12:23:34]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getInitialDomain:(D)Dline 229 - 229
+[12:23:34]	[GENERATE_METHOD_FIX]:	0
+[12:23:34]	[PRE_FILTER_STATUS]:	EXPR:7;BOOL:0
+[12:23:34]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:23:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:34]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getInitialDomain:(D)Dline 229 - 229
+[12:23:34]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 178 - 178
+[12:23:34]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:33
+[12:23:35]	[FILTER_COMPILATION_ERROR_COUNT]:	28
+[12:23:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:23:35]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 178 - 178
+[12:23:35]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:buildMessage:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;line 85 - 85
+[12:23:36]	[GENERATE_METHOD_FIX]:	3
+[12:23:36]	[PRE_FILTER_STATUS]:	EXPR:12;BOOL:15
+[12:23:36]	[FILTER_COMPILATION_ERROR_COUNT]:	21
+[12:23:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/MathException:buildMessage:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;line 85 - 85
+[12:23:37]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 181 - 181
+[12:23:37]	[GENERATE_METHOD_FIX]:	0
+[12:23:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:4
+[12:23:37]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:23:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:37]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 181 - 181
+[12:23:37]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 189 - 189
+[12:23:37]	[GENERATE_METHOD_FIX]:	20
+[12:23:37]	[PRE_FILTER_STATUS]:	EXPR:77;BOOL:4
+[12:23:38]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:23:38]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:23:39]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:23:39]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[12:23:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 189 - 189
+[12:23:39]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 186 - 186
+[12:23:39]	[GENERATE_METHOD_FIX]:	0
+[12:23:39]	[PRE_FILTER_STATUS]:	EXPR:20;BOOL:0
+[12:23:40]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[12:23:40]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:23:41]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:23:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:23:41]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 186 - 186
+[12:23:41]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 198 - 198
+[12:23:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:137
+[12:23:42]	[FILTER_COMPILATION_ERROR_COUNT]:	36
+[12:23:46]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:7;EXPRSET:0;BOOLSETCOUNT:1
+[12:23:46]	[END_SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 198 - 198

@@ -1,0 +1,276 @@
+[12:17:05]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 553 - 553
+[12:17:05]	[GENERATE_METHOD_FIX]:	2
+[12:17:05]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:120
+[12:17:07]	[FILTER_COMPILATION_ERROR_COUNT]:	36
+[12:17:10]	[FILTER_COMPILATION_ERROR_COUNT]:	34
+[12:17:12]	[FILTER_COMPILATION_ERROR_COUNT]:	30
+[12:17:13]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:17:13]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:13]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:17:13]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:10;EXPRSET:0;BOOLSETCOUNT:7
+[12:17:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 553 - 553
+[12:17:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1407 - 1407
+[12:17:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:74
+[12:17:14]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:17]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:17:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:33;EXPRSET:0;BOOLSETCOUNT:13
+[12:17:25]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1407 - 1407
+[12:17:25]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1391 - 1391
+[12:17:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:57
+[12:17:27]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:17:32]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:20;EXPRSET:0;BOOLSETCOUNT:16
+[12:17:32]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1391 - 1391
+[12:17:32]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1375 - 1375
+[12:17:32]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:105
+[12:17:33]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:17:35]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:36]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:17:37]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:17:40]	[FILTER_COMPILATION_ERROR_COUNT]:	20
+[12:17:46]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:28;EXPRSET:0;BOOLSETCOUNT:7
+[12:17:46]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1375 - 1375
+[12:17:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1341 - 1341
+[12:17:46]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:100
+[12:17:47]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:48]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:49]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:17:51]	[FILTER_COMPILATION_ERROR_COUNT]:	20
+[12:18:05]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:30;EXPRSET:0;BOOLSETCOUNT:10
+[12:18:05]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1341 - 1341
+[12:18:05]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 493 - 493
+[12:18:05]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:80
+[12:18:06]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:18:07]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:18:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:2
+[12:18:07]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 493 - 493
+[12:18:07]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 553 - 553
+[12:18:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:07]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 553 - 553
+[12:18:08]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isAllZeros:(Ljava/lang/String;)Zline 621 - 621
+[12:18:08]	[GENERATE_METHOD_FIX]:	0
+[12:18:08]	[PRE_FILTER_STATUS]:	EXPR:44;BOOL:5
+[12:18:09]	[FILTER_COMPILATION_ERROR_COUNT]:	22
+[12:18:10]	[POST_FILTER_STATUS]:	EXPR:8;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:18:10]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isAllZeros:(Ljava/lang/String;)Zline 621 - 621
+[12:18:10]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1396 - 1396
+[12:18:10]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:33
+[12:18:11]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:18:12]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:18:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:7;EXPRSET:0;BOOLSETCOUNT:4
+[12:18:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1396 - 1396
+[12:18:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1353 - 1353
+[12:18:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1353 - 1353
+[12:18:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1338 - 1338
+[12:18:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1338 - 1338
+[12:18:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:18:13]	[GENERATE_METHOD_FIX]:	2
+[12:18:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:40
+[12:18:14]	[FILTER_COMPILATION_ERROR_COUNT]:	32
+[12:18:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:4;EXPRSET:0;BOOLSETCOUNT:1
+[12:18:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:18:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:18:14]	[GENERATE_METHOD_FIX]:	2
+[12:18:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:120
+[12:18:16]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:18:17]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:18:18]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:18:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:3;EXPRSET:0;BOOLSETCOUNT:3
+[12:18:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:18:19]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:18:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:18:19]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1405 - 1405
+[12:18:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:19]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:19]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1405 - 1405
+[12:18:19]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1358 - 1358
+[12:18:19]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:47
+[12:18:20]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:18:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:12;EXPRSET:0;BOOLSETCOUNT:3
+[12:18:25]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1358 - 1358
+[12:18:25]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1391 - 1391
+[12:18:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:25]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1391 - 1391
+[12:18:25]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:18:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:25]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:18:25]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1338 - 1338
+[12:18:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:25]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1338 - 1338
+[12:18:25]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1354 - 1354
+[12:18:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:53
+[12:18:27]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:18:32]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:14;EXPRSET:0;BOOLSETCOUNT:3
+[12:18:32]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1354 - 1354
+[12:18:32]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1332 - 1332
+[12:18:32]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:53
+[12:18:33]	[FILTER_COMPILATION_ERROR_COUNT]:	20
+[12:18:38]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:7;EXPRSET:0;BOOLSETCOUNT:1
+[12:18:38]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1332 - 1332
+[12:18:38]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1416 - 1416
+[12:18:38]	[GENERATE_METHOD_FIX]:	0
+[12:18:38]	[PRE_FILTER_STATUS]:	EXPR:6;BOOL:4
+[12:18:38]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:4;BOOL:1;EXPRSET:2;BOOLSETCOUNT:1
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1416 - 1416
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1353 - 1353
+[12:18:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1353 - 1353
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1339 - 1339
+[12:18:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1339 - 1339
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1405 - 1405
+[12:18:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1405 - 1405
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1339 - 1339
+[12:18:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1339 - 1339
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1354 - 1354
+[12:18:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1354 - 1354
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1403 - 1403
+[12:18:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:39]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1403 - 1403
+[12:18:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1342 - 1342
+[12:18:39]	[GENERATE_METHOD_FIX]:	0
+[12:18:40]	[PRE_FILTER_STATUS]:	EXPR:6;BOOL:12
+[12:18:41]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:18:42]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:3;EXPRSET:0;BOOLSETCOUNT:1
+[12:18:42]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1342 - 1342
+[12:18:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1330 - 1330
+[12:18:42]	[GENERATE_METHOD_FIX]:	0
+[12:18:42]	[PRE_FILTER_STATUS]:	EXPR:47;BOOL:31
+[12:18:42]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:18:44]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:18:46]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:18:46]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:18:47]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:18:48]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[12:18:49]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:18:50]	[POST_FILTER_STATUS]:	EXPR:6;BOOL:7;EXPRSET:1;BOOLSETCOUNT:7
+[12:18:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1330 - 1330
+[12:18:50]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1393 - 1393
+[12:18:50]	[GENERATE_METHOD_FIX]:	0
+[12:18:50]	[PRE_FILTER_STATUS]:	EXPR:6;BOOL:4
+[12:18:50]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:18:50]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:18:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1393 - 1393
+[12:18:50]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:18:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:18:50]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1345 - 1345
+[12:18:50]	[GENERATE_METHOD_FIX]:	0
+[12:18:50]	[PRE_FILTER_STATUS]:	EXPR:6;BOOL:4
+[12:18:51]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:18:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:18:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1345 - 1345
+[12:18:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1411 - 1411
+[12:18:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:57
+[12:18:52]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:18:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:29;EXPRSET:0;BOOLSETCOUNT:11
+[12:18:57]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1411 - 1411
+[12:18:57]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:18:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:18:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:18:57]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:18:57]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1359 - 1359
+[12:18:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:37
+[12:18:58]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:19:00]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:8;EXPRSET:0;BOOLSETCOUNT:3
+[12:19:00]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1359 - 1359
+[12:19:00]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1382 - 1382
+[12:19:00]	[GENERATE_METHOD_FIX]:	0
+[12:19:00]	[PRE_FILTER_STATUS]:	EXPR:6;BOOL:12
+[12:19:01]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:19:02]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:3;EXPRSET:1;BOOLSETCOUNT:1
+[12:19:02]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1382 - 1382
+[12:19:02]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1358 - 1358
+[12:19:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:02]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1358 - 1358
+[12:19:02]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isAllZeros:(Ljava/lang/String;)Zline 621 - 621
+[12:19:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:02]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isAllZeros:(Ljava/lang/String;)Zline 621 - 621
+[12:19:02]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1364 - 1364
+[12:19:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:53
+[12:19:03]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:19:06]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:16;EXPRSET:0;BOOLSETCOUNT:3
+[12:19:06]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1364 - 1364
+[12:19:06]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1401 - 1401
+[12:19:06]	[GENERATE_METHOD_FIX]:	0
+[12:19:06]	[PRE_FILTER_STATUS]:	EXPR:5;BOOL:4
+[12:19:07]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:19:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:19:07]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1401 - 1401
+[12:19:07]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 464 - 464
+[12:19:07]	[GENERATE_METHOD_FIX]:	0
+[12:19:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:80
+[12:19:08]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:19:09]	[FILTER_COMPILATION_ERROR_COUNT]:	38
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:2
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 464 - 464
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1330 - 1330
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1330 - 1330
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 480 - 480
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1375 - 1375
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1375 - 1375
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1411 - 1411
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1411 - 1411
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isAllZeros:(Ljava/lang/String;)Zline 621 - 621
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isAllZeros:(Ljava/lang/String;)Zline 621 - 621
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1340 - 1340
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1340 - 1340
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1375 - 1375
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1375 - 1375
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:createNumber:(Ljava/lang/String;)Ljava/lang/Number;line 521 - 521
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1404 - 1404
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:09]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1404 - 1404
+[12:19:09]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1320 - 1320
+[12:19:09]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:64
+[12:19:11]	[FILTER_COMPILATION_ERROR_COUNT]:	26
+[12:19:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:17;EXPRSET:0;BOOLSETCOUNT:7
+[12:19:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1320 - 1320
+[12:19:15]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1413 - 1413
+[12:19:15]	[GENERATE_METHOD_FIX]:	0
+[12:19:15]	[PRE_FILTER_STATUS]:	EXPR:35;BOOL:4
+[12:19:16]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:19:16]	[POST_FILTER_STATUS]:	EXPR:10;BOOL:1;EXPRSET:3;BOOLSETCOUNT:1
+[12:19:16]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/math/NumberUtils:isNumber:(Ljava/lang/String;)Zline 1413 - 1413

@@ -1,0 +1,188 @@
+package cn.edu.thu.tsmart.tool.da.core.suggestion;
+
+import org.eclipse.core.filebuffers.ITextFileBuffer;
+import org.eclipse.core.filebuffers.ITextFileBufferManager;
+import org.eclipse.core.filebuffers.LocationKind;
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.jdt.core.dom.Expression;
+import org.eclipse.jface.text.BadLocationException;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.text.edits.MalformedTreeException;
+import org.eclipse.text.edits.ReplaceEdit;
+import org.eclipse.text.edits.UndoEdit;
+
+import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
+
+public class ExpressionFix extends Fix {
+	
+	private FixSite fixSite;
+	private Expression expr;
+	private IFile modifiedFile;
+	private int startposition;
+	private int originalLength;
+	private String originalString;
+	private String modifiedString;
+	private double exprPriority;
+	private double fixSimilarity;
+	
+	private UndoEdit undoEdit;
+	
+	public ExpressionFix(FixSite fixSite, Expression expr, String modifiedString) {
+		this.fixSite = fixSite;
+		this.expr = expr;
+		this.modifiedFile = fixSite.getFile();
+		startposition = expr.getStartPosition();
+		originalLength = expr.getLength();
+		this.modifiedString = modifiedString;
+	}
+	
+	public Expression getExpression(){
+		return expr;
+	}
+	
+	public void setExprPriority(double priority){
+		this.exprPriority = priority;
+	}
+	public double getExprPriority(){
+		return this.exprPriority;
+	}
+	public void setFixSimilarity(double similarity){
+		this.fixSimilarity = similarity;
+	}
+	public double getFixSimilarity(){
+		return this.fixSimilarity;
+	}
+
+	@Override
+	public void doFix() {
+		System.out.println("enter do Fix()");
+		
+		ReplaceEdit replaceEdit = new ReplaceEdit(startposition, originalLength, modifiedString);
+		ITextFileBuffer fileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(fixSite.getFile().getFullPath(), LocationKind.IFILE);
+		IDocument document = fileBuffer.getDocument();
+		try {
+			Display.getDefault().syncExec(new Runnable(){
+
+				@Override
+				public void run() {
+					try {
+						undoEdit = replaceEdit.apply(document);
+					} catch (MalformedTreeException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (BadLocationException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+				}
+				
+			});
+			fileBuffer.commit(new NullProgressMonitor(), true);
+		} catch (MalformedTreeException e) {
+			e.printStackTrace();
+		} catch (CoreException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		/*
+		ExpressionFix fix = this;
+		Display.getDefault().syncExec(new Runnable(){
+			@Override
+			public void run() {
+				try {
+					System.out.println("enter apply fix display thread");
+				IFile file = fix.modifiedFile;
+				IWorkbenchPage page = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
+				ITextEditor editor = (ITextEditor) IDE.openEditor(page, file);
+				IDocument document = editor.getDocumentProvider().getDocument(editor.getEditorInput());
+				originalString = document.get(fix.startposition, fix.originalLength);
+				document.replace(fix.startposition, fix.originalLength, fix.modifiedString);
+				
+				editor.doSave(new NullProgressMonitor());
+				} catch (PartInitException | BadLocationException e) {
+					e.printStackTrace();
+				}
+			}
+			
+		});*/	
+	}
+
+	@Override
+	public void undoFix() {
+		ITextFileBuffer fileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(fixSite.getFile().getFullPath(), LocationKind.IFILE);
+		IDocument document = fileBuffer.getDocument();
+		if(undoEdit == null)
+			return;
+		else{
+			try {
+				Display.getDefault().syncExec(new Runnable(){
+
+					@Override
+					public void run() {
+						try {
+							undoEdit.apply(document);
+						} catch (MalformedTreeException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (BadLocationException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}				
+					}
+					
+				});
+				fileBuffer.commit(new NullProgressMonitor(), true);
+			} catch (MalformedTreeException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (CoreException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		/*
+		ExpressionFix fix = this;
+		Display.getDefault().syncExec(new Runnable(){
+			@Override
+			public void run() {
+				try {
+					IFile file = fix.modifiedFile;
+					IWorkbenchPage page = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
+					ITextEditor editor = (ITextEditor) IDE.openEditor(page, file);
+					IDocument document = editor.getDocumentProvider().getDocument(editor.getEditorInput());
+					document.replace(startposition, modifiedString.length(), fix.originalString);
+					editor.doSave(new NullProgressMonitor());
+				} catch (PartInitException e) {
+					e.printStackTrace();
+				}
+				 catch (BadLocationException e){
+					e.printStackTrace();
+				}
+			}							
+		});*/
+		
+	}
+	
+	@Override
+	public IFile[] getModifiedFiles() {
+		IFile[] files = new IFile[] {this.modifiedFile};
+		return files;
+	}
+
+	public String getModifiedString() {
+		return this.modifiedString;
+	}
+	
+	public String toString(){
+		if(this.originalString == null)
+			return "Expression Change: " + expr.toString() + " -> " + this.modifiedString;
+		else
+			return "Expression Change: " + this.originalString + " -> " + this.modifiedString;
+	}
+
+}

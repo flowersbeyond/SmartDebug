@@ -1,0 +1,25 @@
+MyExpressionGenerator is certainly more stable than CodeHint. However it generates more expressions, too.
+Experiments show that too many expressions are generated that we may not be able to generate meaningful expressions. Therefore heuristics should be applied.
+After observing existing experiments and reading Prophet search spaces, we can restrain the generated fixes according to the following strategies:
+1. if we are to add a if() checker, the guard condition should be at least:
+	a. be a boolean constant defined within this class
+	b. be a method call on local variable with no parameters
+	c. be a method call on this method with no parameters
+2. if we are to append another boolean expression to a existing condition expression or boolean expression, the new fragment should be:
+	a. a method call on a variable that has existed in this expression
+	b. a method call from this object with a parameter that existed in this expression
+	c. a boolean constant defined within this class
+	d. a comparison with a variable from this expression
+
+3. if we are to generate a comparison between two int/double, they should be both local variables that are not too far from each other.
+
+4. if we want to replace an expression with another:
+	a. both local variables within the same scope
+	b. both constants defined in the same class
+
+5. if we are to replace a method call with another call:
+	a. two methods should not have more than 1 different expressions
+
+a. for variables, we need to know whether they are local variables, fields of this object, or static fields
+b. for two variables, we need to know their nearest distance of occurences
+c. for variables, we need to know their occurences in this code block

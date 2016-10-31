@@ -1,0 +1,131 @@
+package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.core.filebuffers.ITextFileBuffer;
+import org.eclipse.core.filebuffers.ITextFileBufferManager;
+import org.eclipse.core.filebuffers.LocationKind;
+import org.eclipse.jdt.core.ICompilationUnit;
+import org.eclipse.jdt.core.JavaCore;
+import org.eclipse.jdt.core.JavaModelException;
+import org.eclipse.jdt.core.dom.Block;
+import org.eclipse.jdt.core.dom.Statement;
+import org.eclipse.jface.text.BadLocationException;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.swt.widgets.Display;
+
+import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.suggestion.BlockFix;
+
+public class CompoundStructureFixer extends Fixer{
+	
+	protected ArrayList<BlockFix> compoundStatementMoveOut(Statement statement, Block bodyBlock, StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		
+		List<Statement> loopBodyStatements = bodyBlock.statements();
+		//move infront of this loop
+		for(int i = 0; i < loopBodyStatements.size() - 1; i ++){
+			int startPosition = statement.getStartPosition();
+			int originalLength = statement.getLength();
+			String insideString = "";
+			for(int j = 0; j <= i; j ++){
+				insideString += loopBodyStatements.get(j).toString() + "\n";
+			}
+			
+			/*DocumentContentGetter contentGetter = new DocumentContentGetter(fixSite.getFile(), statement.getStartPosition(), statement.getLength());
+			Display.getDefault().syncExec(contentGetter);
+			String modifiedString = contentGetter.getDocumentContent();*/
+			
+			ICompilationUnit cu = JavaCore.createCompilationUnitFrom(fixSite.getFile());
+			String source;
+			try {
+				source = cu.getSource();
+				String modifiedString = source.substring(statement.getStartPosition(), statement.getStartPosition() + statement.getLength());
+				
+				int insideStartPosition = loopBodyStatements.get(0).getStartPosition() - statement.getStartPosition();
+				int insideEndPosition = loopBodyStatements.get(i).getStartPosition() + loopBodyStatements.get(i).getLength()
+						- statement.getStartPosition() - 1;
+				modifiedString = insideString + modifiedString.substring(0, insideStartPosition) + modifiedString.substring(insideEndPosition + 1); 
+			
+				fixes.add(new BlockFix(fixSite, startPosition, originalLength, modifiedString));
+			} catch (JavaModelException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		//move after this loop
+		for(int i = 1; i < loopBodyStatements.size(); i ++){
+			int startPosition = statement.getStartPosition();
+			int originalLength = statement.getLength();
+			String insideString = "";
+			for(int j = i; j < loopBodyStatements.size(); j ++){
+				insideString += loopBodyStatements.get(j).toString() + "\n";
+			}
+			
+			ITextFileBuffer fileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(fixSite.getFile().getFullPath(), LocationKind.IFILE);
+			IDocument document = fileBuffer.getDocument();
+			try {
+				String modifiedString = document.get(statement.getStartPosition(), statement.getLength());
+				int insideStartPosition = loopBodyStatements.get(i).getStartPosition() - statement.getStartPosition();
+				int insideEndPosition = loopBodyStatements.get(loopBodyStatements.size() - 1).getStartPosition() 
+						+ loopBodyStatements.get(loopBodyStatements.size() - 1).getLength()
+						- statement.getStartPosition() - 1;
+				modifiedString = modifiedString.substring(0, insideStartPosition) 
+						+ modifiedString.substring(insideEndPosition + 1) 
+						+ "\n" + insideString; 
+			
+				fixes.add(new BlockFix(fixSite, startPosition, originalLength, modifiedString));
+			
+			} catch (BadLocationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+		
+		return fixes;
+		
+	}
+	
+	protected ArrayList<BlockFix> compoundStatementDelete(Statement statement, Block bodyBlock, StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		
+		List<Statement> loopBodyStatements = bodyBlock.statements();
+		if(loopBodyStatements.size() >= 2){
+			for(int i = 0; i < loopBodyStatements.size(); i ++){
+				int startPosition = statement.getStartPosition();
+				int originalLength = statement.getLength();
+				
+				/*DocumentContentGetter contentGetter = new DocumentContentGetter(fixSite.getFile(), statement.getStartPosition(), statement.getLength());
+				Display.getDefault().syncExec(contentGetter);
+				String modifiedString = contentGetter.getDocumentContent();*/
+				
+				ICompilationUnit cu = JavaCore.createCompilationUnitFrom(fixSite.getFile());
+				String source;
+				try {
+					source = cu.getSource();
+					String modifiedString = source.substring(statement.getStartPosition(), statement.getStartPosition() + statement.getLength());
+					
+					Statement removedStatement = loopBodyStatements.get(i);
+					int removeStartPosition = removedStatement.getStartPosition() - statement.getStartPosition();
+					int removeEndPosition = removedStatement.getStartPosition() + removedStatement.getLength() 
+							- statement.getStartPosition() - 1;
+					modifiedString = modifiedString.substring(0, removeStartPosition) 
+							+ modifiedString.substring(removeEndPosition + 1);
+					
+					fixes.add(new BlockFix(fixSite, startPosition, originalLength, modifiedString));
+				} catch (JavaModelException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		}
+		
+		return fixes;
+	}
+
+}

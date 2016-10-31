@@ -1,0 +1,85 @@
+package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.jdt.core.dom.ASTNode;
+
+import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.suggestion.BlockFix;
+
+public class SequenceFixer {
+	
+	public ArrayList<BlockFix> generateFix(StatementFixSite fixSite){
+		return swap(fixSite);
+	}
+	
+	private ArrayList<BlockFix> swap(StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		//in swap we swap every two possible statements
+		//since the whole block will be modified, all generated fixes share the same
+		//IFile, startposition, originallength, and this "block"
+		List<? extends ASTNode> stmts = fixSite.getStatements();
+		if(stmts.size() < 2)
+			return fixes;
+		
+		
+		
+		int startposition = stmts.get(0).getStartPosition();
+		int	originalLength = stmts.get(stmts.size() - 1).getStartPosition() 
+				+ stmts.get(stmts.size() - 1).getLength() - startposition;
+		
+		
+		for(int i = 0; i < stmts.size(); i ++){
+			for(int j = i + 1; j < stmts.size(); j ++){
+				String modifiedString = "";
+				for(int k = 0; k < i; k ++)
+					modifiedString += stmts.get(k);
+				modifiedString += stmts.get(j);
+				for(int k = i + 1; k < j; k ++)
+					modifiedString += stmts.get(k);
+				modifiedString += stmts.get(i);
+				for(int k = j + 1; k < stmts.size(); k ++){
+					modifiedString += stmts.get(k);
+				}
+				
+				fixes.add(new BlockFix(fixSite, startposition, originalLength,modifiedString));
+			}
+		}
+		return fixes;
+	}
+	
+	/**
+	 * insert a new statement
+	 */
+	private void insertGeneral(){
+		//get the statement repository
+		//insert it at different places
+	}
+	
+	/**
+	 * copy & insert a new statement
+	 */
+	private void copyInsertGeneral(){
+		//get the statement repository
+		//copy everyone of them
+		//get the expression repository
+		//try to change the statement using the expression repositories.
+	}
+	
+	/**
+	 * insert intitialization
+	 */
+	private void insertInit(){
+		//get the variables in this area
+		//find their used location
+		//get the expression repository
+		//try all possible constructors, and fill in the parameters
+	}
+	/**
+	 * delete some statement
+	 */
+	private void delete(){
+		//pick a statement and delete it.
+	}
+}

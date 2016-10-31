@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Sample Action Set"
+            visible="true"
+            id="cn.edu.thu.tsmart.tool.da.expr4j.actionSet">
+         <menu
+               label="Test"
+               id="cn.edu.thu.tsmart.tool.da.expr4j.TestEverything">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="Test Everything"
+               icon="icons/go2.png"
+               class="cn.edu.thu.tsmart.tool.da.expr4j.actions.TestEverythingAction"
+               tooltip="Test Everything"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="cn.edu.thu.tsmart.tool.da.expr4j.actions.TestEverythingAction">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

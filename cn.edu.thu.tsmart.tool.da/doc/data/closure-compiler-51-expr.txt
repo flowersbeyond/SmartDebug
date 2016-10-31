@@ -1,0 +1,246 @@
+[18:01:01]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 945 - 945
+[18:01:01]	[GENERATE_METHOD_FIX]:	1
+[18:01:01]	[PRE_FILTER_STATUS]:	EXPR:21;BOOL:590
+[18:01:05]	[FILTER_COMPILATION_ERROR_COUNT]:	160
+[18:01:11]	[FILTER_COMPILATION_ERROR_COUNT]:	172
+[18:01:20]	[FILTER_COMPILATION_ERROR_COUNT]:	165
+[18:01:24]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:25]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 945 - 945
+[18:01:25]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 945 - 945
+[18:01:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:01:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:25]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 945 - 945
+[18:01:25]	[SEARCH_FIX]:	search for:com/google/javascript/rhino/Node$NumberNode:setDouble:(D)Vline 275 - 275
+[18:01:25]	[GENERATE_METHOD_FIX]:	0
+[18:01:25]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:31
+[18:01:26]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[18:01:30]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:30]	[END_SEARCH_FIX]:	search for:com/google/javascript/rhino/Node$NumberNode:setDouble:(D)Vline 275 - 275
+[18:01:30]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 946 - 946
+[18:01:30]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:01:30]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:30]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 946 - 946
+[18:01:30]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:transformTokenType:(I)Iline 1121 - 1121
+[18:01:30]	[GENERATE_METHOD_FIX]:	0
+[18:01:30]	[PRE_FILTER_STATUS]:	EXPR:94;BOOL:8
+[18:01:32]	[FILTER_COMPILATION_ERROR_COUNT]:	97
+[18:01:33]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[18:01:33]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:33]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:transformTokenType:(I)Iline 1121 - 1121
+[18:01:33]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 944 - 944
+[18:01:34]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:419
+[18:01:41]	[FILTER_COMPILATION_ERROR_COUNT]:	332
+[18:01:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:25;EXPRSET:0;BOOLSETCOUNT:1
+[18:01:51]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 944 - 944
+[18:01:51]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 944 - 944
+[18:01:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:01:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:51]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 944 - 944
+[18:01:51]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 169 - 169
+[18:01:51]	[GENERATE_METHOD_FIX]:	0
+[18:01:51]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:114
+[18:01:52]	[FILTER_COMPILATION_ERROR_COUNT]:	54
+[18:01:53]	[FILTER_COMPILATION_ERROR_COUNT]:	57
+[18:01:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:01:53]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 169 - 169
+[18:01:53]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 943 - 943
+[18:01:53]	[GENERATE_METHOD_FIX]:	4
+[18:01:53]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:394
+[18:01:57]	[FILTER_COMPILATION_ERROR_COUNT]:	192
+[18:02:01]	[FILTER_COMPILATION_ERROR_COUNT]:	192
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 943 - 943
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 942 - 942
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 942 - 942
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 943 - 943
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 943 - 943
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 169 - 169
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 169 - 169
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 943 - 943
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 943 - 943
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 169 - 169
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 169 - 169
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 944 - 944
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 944 - 944
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 942 - 942
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processUnaryExpression:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/UnaryExpression;)Lcom/google/javascript/rhino/Node;line 942 - 942
+[18:02:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:appendOp:(Ljava/lang/String;Z)Vline 200 - 200
+[18:02:02]	[GENERATE_METHOD_FIX]:	2
+[18:02:02]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:14
+[18:02:03]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[18:02:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:04]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:appendOp:(Ljava/lang/String;Z)Vline 200 - 200
+[18:02:04]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 254 - 254
+[18:02:04]	[GENERATE_METHOD_FIX]:	21
+[18:02:04]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:49
+[18:02:05]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[18:02:06]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[18:02:08]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[18:02:09]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:09]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 254 - 254
+[18:02:09]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:09]	[GENERATE_METHOD_FIX]:	0
+[18:02:09]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:91
+[18:02:11]	[FILTER_COMPILATION_ERROR_COUNT]:	92
+[18:02:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:11]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:11]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:02:11]	[GENERATE_METHOD_FIX]:	22
+[18:02:11]	[PRE_FILTER_STATUS]:	EXPR:7;BOOL:160
+[18:02:14]	[FILTER_COMPILATION_ERROR_COUNT]:	130
+[18:02:18]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:18]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:02:18]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:18]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:18]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:18]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:18]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 247 - 247
+[18:02:18]	[GENERATE_METHOD_FIX]:	0
+[18:02:18]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:58
+[18:02:19]	[FILTER_COMPILATION_ERROR_COUNT]:	57
+[18:02:20]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:20]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 247 - 247
+[18:02:20]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:02:20]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:20]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:20]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:02:20]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:02:20]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:20]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:20]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:02:20]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:20]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:20]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:20]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:20]	[SEARCH_FIX]:	search for:com/google/javascript/rhino/Node$NumberNode:getDouble:()Dline 270 - 270
+[18:02:20]	[GENERATE_METHOD_FIX]:	0
+[18:02:20]	[PRE_FILTER_STATUS]:	EXPR:3;BOOL:31
+[18:02:21]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[18:02:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:25]	[END_SEARCH_FIX]:	search for:com/google/javascript/rhino/Node$NumberNode:getDouble:()Dline 270 - 270
+[18:02:25]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 225 - 225
+[18:02:25]	[GENERATE_METHOD_FIX]:	2
+[18:02:25]	[PRE_FILTER_STATUS]:	EXPR:644;BOOL:997
+[18:02:38]	[FILTER_COMPILATION_ERROR_COUNT]:	1095
+[18:02:47]	[FILTER_COMPILATION_ERROR_COUNT]:	404
+[18:02:49]	[FILTER_COMPILATION_ERROR_COUNT]:	24
+[18:02:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:51]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 225 - 225
+[18:02:51]	[SEARCH_FIX]:	search for:com/google/javascript/rhino/Node:newNumber:(D)Lcom/google/javascript/rhino/Node;line 600 - 600
+[18:02:51]	[GENERATE_METHOD_FIX]:	1
+[18:02:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:90
+[18:02:53]	[FILTER_COMPILATION_ERROR_COUNT]:	90
+[18:02:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:53]	[END_SEARCH_FIX]:	search for:com/google/javascript/rhino/Node:newNumber:(D)Lcom/google/javascript/rhino/Node;line 600 - 600
+[18:02:53]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 256 - 256
+[18:02:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:53]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 256 - 256
+[18:02:53]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:02:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:02:53]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:02:53]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 226 - 226
+[18:02:53]	[GENERATE_METHOD_FIX]:	1
+[18:02:53]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:500
+[18:02:59]	[FILTER_COMPILATION_ERROR_COUNT]:	478
+[18:03:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 226 - 226
+[18:03:02]	[SEARCH_FIX]:	search for:com/google/javascript/rhino/Node$NumberNode:getDouble:()Dline 270 - 270
+[18:03:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/rhino/Node$NumberNode:getDouble:()Dline 270 - 270
+[18:03:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 226 - 226
+[18:03:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 226 - 226
+[18:03:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:03:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory:newNumberNode:(Ljava/lang/Double;)Lcom/google/javascript/rhino/Node;line 1294 - 1294
+[18:03:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 225 - 225
+[18:03:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 225 - 225
+[18:03:02]	[SEARCH_FIX]:	search for:com/google/javascript/rhino/Node:newNumber:(D)Lcom/google/javascript/rhino/Node;line 600 - 600
+[18:03:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:02]	[END_SEARCH_FIX]:	search for:com/google/javascript/rhino/Node:newNumber:(D)Lcom/google/javascript/rhino/Node;line 600 - 600
+[18:03:02]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 237 - 237
+[18:03:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:139
+[18:03:03]	[FILTER_COMPILATION_ERROR_COUNT]:	78
+[18:03:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[18:03:07]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 237 - 237
+[18:03:07]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:03:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:07]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/IRFactory$TransformDispatcher:processNumberLiteral:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/NumberLiteral;)Lcom/google/javascript/rhino/Node;line 756 - 756
+[18:03:07]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 247 - 247
+[18:03:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:07]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 247 - 247
+[18:03:07]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 254 - 254
+[18:03:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:07]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 254 - 254
+[18:03:07]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 226 - 226
+[18:03:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:07]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:07]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 226 - 226
+[18:03:07]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 245 - 245
+[18:03:07]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:163
+[18:03:09]	[FILTER_COMPILATION_ERROR_COUNT]:	71
+[18:03:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:1
+[18:03:15]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 245 - 245
+[18:03:15]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 225 - 225
+[18:03:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:15]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 225 - 225
+[18:03:15]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 247 - 247
+[18:03:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:15]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/parsing/TypeSafeDispatcher:process:(Lcom/google/javascript/jscomp/mozilla/rhino/ast/AstNode;)Ljava/lang/Object;line 247 - 247
+[18:03:15]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 236 - 236
+[18:03:15]	[GENERATE_METHOD_FIX]:	0
+[18:03:15]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:16
+[18:03:16]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[18:03:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:17]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 236 - 236
+[18:03:17]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 245 - 245
+[18:03:17]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:17]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:17]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 245 - 245
+[18:03:17]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 251 - 251
+[18:03:17]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:67
+[18:03:18]	[FILTER_COMPILATION_ERROR_COUNT]:	18
+[18:03:21]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:21]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 251 - 251
+[18:03:21]	[SEARCH_FIX]:	search for:com/google/javascript/rhino/Node:newNumber:(D)Lcom/google/javascript/rhino/Node;line 600 - 600
+[18:03:21]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:03:21]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:21]	[END_SEARCH_FIX]:	search for:com/google/javascript/rhino/Node:newNumber:(D)Lcom/google/javascript/rhino/Node;line 600 - 600
+[18:03:21]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 227 - 227
+[18:03:21]	[GENERATE_METHOD_FIX]:	0
+[18:03:21]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:498
+[18:03:27]	[FILTER_COMPILATION_ERROR_COUNT]:	464
+[18:03:29]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:03:29]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeGenerator:add:(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Context;)Vline 227 - 227
+[18:03:29]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 241 - 241
+[18:03:29]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:71
+[18:03:30]	[FILTER_COMPILATION_ERROR_COUNT]:	36
+[18:03:32]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[18:03:32]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/CodeConsumer:addNumber:(D)Vline 241 - 241

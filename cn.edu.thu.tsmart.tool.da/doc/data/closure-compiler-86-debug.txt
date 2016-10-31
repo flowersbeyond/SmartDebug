@@ -1,0 +1,898 @@
+[18:05:44]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:isToStringMethodCall:(Lcom/google/javascript/rhino/Node;)Zline 2531 - 2531
+[18:05:44]	[GENERATE_METHOD_FIX]:	0
+[18:05:44]	[METHOD_FIX_DETAIL]:	
+[18:05:45]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:05:45]	[FILTER_SURVIVE]:	call.hasSideEffects():true;not expected:false
+[18:05:45]	[FILTER_DEAD]:	getNode.isQuotedString():false;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!getNode.isNoSideEffectsCall():true;not expected:false
+[18:05:45]	[FILTER_DEAD]:	call.isUnscopedQualifiedName():false;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!call.isVarArgs():true;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!call.wasEmptyNode():true;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!getNode.wasEmptyNode():true;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!call.isOnlyModifiesThisCall():true;not expected:false
+[18:05:45]	[FILTER_DEAD]:	getNode.wasEmptyNode():false;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	call.hasOneChild():true;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!getNode.isSyntheticBlock():true;not expected:false
+[18:05:45]	[FILTER_DEAD]:	getNode.isOnlyModifiesThisCall():false;not expected:false
+[18:05:45]	[FILTER_DEAD]:	call.isNoSideEffectsCall():false;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!getNode.hasChildren():true;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!call.hasMoreThanOneChild():true;not expected:false
+[18:05:45]	[FILTER_DEAD]:	getNode.isNoSideEffectsCall():false;not expected:false
+[18:05:45]	[FILTER_SURVIVE]:	!call.isQualifiedName():true;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.isQualifiedName():false;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!getNode.hasSideEffects():true;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	getNode.isQualifiedName():true;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.isVarArgs():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	getNode.isLocalResultCall():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	!call.hasChildren():false;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!call.isQuotedString():true;not expected:false
+[18:05:46]	[FILTER_DEAD]:	getNode.isOptionalArg():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	!getNode.isQualifiedName():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.isOnlyModifiesThisCall():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.isOptionalArg():false;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!call.isNoSideEffectsCall():true;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!getNode.isOptionalArg():true;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	call.hasChildren():true;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.wasEmptyNode():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	getNode.hasChildren():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.hasMoreThanOneChild():false;not expected:false
+[18:05:46]	[FILTER_DEAD]:	call.isLocalResultCall():false;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!getNode.isLocalResultCall():true;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!getNode.isOnlyModifiesThisCall():true;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!call.isLocalResultCall():true;not expected:false
+[18:05:46]	[FILTER_SURVIVE]:	!getNode.hasOneChild():true;not expected:false
+[18:05:47]	[FILTER_DEAD]:	getNode.hasMoreThanOneChild():false;not expected:false
+[18:05:47]	[FILTER_DEAD]:	call.isQuotedString():false;not expected:false
+[18:05:47]	[FILTER_SURVIVE]:	!getNode.isVarArgs():true;not expected:false
+[18:05:47]	[FILTER_DEAD]:	!call.hasSideEffects():false;not expected:false
+[18:05:47]	[FILTER_SURVIVE]:	getNode.isUnscopedQualifiedName():true;not expected:false
+[18:05:47]	[FILTER_DEAD]:	getNode.isVarArgs():false;not expected:false
+[18:05:47]	[FILTER_SURVIVE]:	!call.isOptionalArg():true;not expected:false
+[18:05:47]	[FILTER_DEAD]:	getNode.isSyntheticBlock():false;not expected:false
+[18:05:47]	[FILTER_DEAD]:	getNode.hasOneChild():false;not expected:false
+[18:05:47]	[FILTER_DEAD]:	getNode.hasSideEffects():false;not expected:false
+[18:05:47]	[FILTER_SURVIVE]:	!getNode.hasMoreThanOneChild():true;not expected:false
+[18:05:47]	[FILTER_DEAD]:	!getNode.isUnscopedQualifiedName():false;not expected:false
+[18:05:47]	[FILTER_SURVIVE]:	!getNode.isQuotedString():true;not expected:false
+[18:05:48]	[FILTER_SURVIVE]:	!call.isSyntheticBlock():true;not expected:false
+[18:05:48]	[FILTER_DEAD]:	!call.hasOneChild():false;not expected:false
+[18:05:48]	[FILTER_DEAD]:	call.isSyntheticBlock():false;not expected:false
+[18:05:48]	[FILTER_SURVIVE]:	!call.isUnscopedQualifiedName():true;not expected:false
+[18:05:48]	[FAIL_TC_FILTER_FINISHED]:	survive count:28
+[18:05:48]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:28	#false:28	
+[18:05:48]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:isToStringMethodCall:(Lcom/google/javascript/rhino/Node;)Zline 2527 - 2527
+[18:05:48]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:05:48]	[FILTER_SURVIVE]:	call.hasSideEffects():true;not expected:false
+[18:05:48]	[FILTER_DEAD]:	getNode.isQuotedString():false;not expected:false
+[18:05:48]	[FILTER_SURVIVE]:	!getNode.isNoSideEffectsCall():true;not expected:false
+[18:05:49]	[FILTER_DEAD]:	call.isUnscopedQualifiedName():false;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!call.isVarArgs():true;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!call.wasEmptyNode():true;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!getNode.wasEmptyNode():true;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!call.isOnlyModifiesThisCall():true;not expected:false
+[18:05:49]	[FILTER_DEAD]:	getNode.wasEmptyNode():false;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	call.hasOneChild():true;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!getNode.isSyntheticBlock():true;not expected:false
+[18:05:49]	[FILTER_DEAD]:	getNode.isOnlyModifiesThisCall():false;not expected:false
+[18:05:49]	[FILTER_DEAD]:	call.isNoSideEffectsCall():false;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!getNode.hasChildren():true;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!call.hasMoreThanOneChild():true;not expected:false
+[18:05:49]	[FILTER_DEAD]:	getNode.isNoSideEffectsCall():false;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!call.isQualifiedName():true;not expected:false
+[18:05:49]	[FILTER_DEAD]:	call.isQualifiedName():false;not expected:false
+[18:05:49]	[FILTER_SURVIVE]:	!getNode.hasSideEffects():true;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	getNode.isQualifiedName():true;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.isVarArgs():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	getNode.isLocalResultCall():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	!call.hasChildren():false;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!call.isQuotedString():true;not expected:false
+[18:05:50]	[FILTER_DEAD]:	getNode.isOptionalArg():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	!getNode.isQualifiedName():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.isOnlyModifiesThisCall():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.isOptionalArg():false;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!call.isNoSideEffectsCall():true;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!getNode.isOptionalArg():true;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	call.hasChildren():true;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.wasEmptyNode():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	getNode.hasChildren():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.hasMoreThanOneChild():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.isLocalResultCall():false;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!getNode.isLocalResultCall():true;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!getNode.isOnlyModifiesThisCall():true;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!call.isLocalResultCall():true;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!getNode.hasOneChild():true;not expected:false
+[18:05:50]	[FILTER_DEAD]:	getNode.hasMoreThanOneChild():false;not expected:false
+[18:05:50]	[FILTER_DEAD]:	call.isQuotedString():false;not expected:false
+[18:05:50]	[FILTER_SURVIVE]:	!getNode.isVarArgs():true;not expected:false
+[18:05:51]	[FILTER_DEAD]:	!call.hasSideEffects():false;not expected:false
+[18:05:51]	[FILTER_SURVIVE]:	getNode.isUnscopedQualifiedName():true;not expected:false
+[18:05:51]	[FILTER_DEAD]:	getNode.isVarArgs():false;not expected:false
+[18:05:51]	[FILTER_SURVIVE]:	!call.isOptionalArg():true;not expected:false
+[18:05:51]	[FILTER_DEAD]:	getNode.isSyntheticBlock():false;not expected:false
+[18:05:51]	[FILTER_DEAD]:	getNode.hasOneChild():false;not expected:false
+[18:05:51]	[FILTER_DEAD]:	getNode.hasSideEffects():false;not expected:false
+[18:05:51]	[FILTER_SURVIVE]:	!getNode.hasMoreThanOneChild():true;not expected:false
+[18:05:51]	[FILTER_DEAD]:	!getNode.isUnscopedQualifiedName():false;not expected:false
+[18:05:51]	[FILTER_SURVIVE]:	!getNode.isQuotedString():true;not expected:false
+[18:05:51]	[FILTER_SURVIVE]:	!call.isSyntheticBlock():true;not expected:false
+[18:05:51]	[FILTER_DEAD]:	!call.hasOneChild():false;not expected:false
+[18:05:51]	[FILTER_DEAD]:	call.isSyntheticBlock():false;not expected:false
+[18:05:51]	[FILTER_SURVIVE]:	!call.isUnscopedQualifiedName():true;not expected:false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||getNode.hasChildren():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.hasChildren():false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.hasChildren():true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.hasChildren():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||getNode.hasOneChild():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.hasOneChild():false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.hasOneChild():true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.hasOneChild():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||getNode.hasMoreThanOneChild():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.hasMoreThanOneChild():false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.hasMoreThanOneChild():true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.hasMoreThanOneChild():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||getNode.hasChild(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.hasChild(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.hasChild(getNode):true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.hasChild(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||getNode.checkTreeEqualsSilent(getNode):true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.checkTreeEqualsSilent(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||!getNode.checkTreeEqualsSilent(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.checkTreeEqualsSilent(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||getNode.checkTreeTypeAwareEqualsSilent(getNode):true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.checkTreeTypeAwareEqualsSilent(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||!getNode.checkTreeTypeAwareEqualsSilent(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.checkTreeTypeAwareEqualsSilent(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||getNode.isEquivalentTo(getNode):true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isEquivalentTo(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||!getNode.isEquivalentTo(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isEquivalentTo(getNode):false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||getNode.hasSideEffects():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.hasSideEffects():false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.hasSideEffects():true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.hasSideEffects():false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||getNode.isQualifiedName():true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isQualifiedName():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||!getNode.isQualifiedName():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isQualifiedName():false;isGet(getNode):false
+[18:05:52]	[FILTER_SURVIVE]:	isGet(getNode)||getNode.isUnscopedQualifiedName():true;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isUnscopedQualifiedName():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||!getNode.isUnscopedQualifiedName():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isUnscopedQualifiedName():false;isGet(getNode):false
+[18:05:52]	[FILTER_DEAD]:	isGet(getNode)||getNode.isVarArgs():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isVarArgs():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isVarArgs():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isVarArgs():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.isOptionalArg():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isOptionalArg():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isOptionalArg():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isOptionalArg():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.isSyntheticBlock():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isSyntheticBlock():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isSyntheticBlock():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isSyntheticBlock():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.wasEmptyNode():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.wasEmptyNode():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.wasEmptyNode():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.wasEmptyNode():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.isOnlyModifiesThisCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isOnlyModifiesThisCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isOnlyModifiesThisCall():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isOnlyModifiesThisCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.isNoSideEffectsCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isNoSideEffectsCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isNoSideEffectsCall():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isNoSideEffectsCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.isLocalResultCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isLocalResultCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isLocalResultCall():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isLocalResultCall():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)||getNode.isQuotedString():false;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&getNode.isQuotedString():false;isGet(getNode):false
+[18:05:53]	[FILTER_SURVIVE]:	isGet(getNode)||!getNode.isQuotedString():true;isGet(getNode):false
+[18:05:53]	[FILTER_DEAD]:	isGet(getNode)&&!getNode.isQuotedString():false;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	canBeSideEffected(getNode):true;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	containsCall(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	containsFunction(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	evaluatesToLocalValue(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getAddingRoot(getNode):2;0;40;2;15;13;-1;8;12;4095;3;;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getAssignedValue(getNode):null;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getBooleanValue(getNode):UNKNOWN;2;FALSE;0;TRUE;1;UNKNOWN;2;FALSE;0;TRUE;;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getExpressionBooleanValue(getNode):UNKNOWN;2;FALSE;0;TRUE;1;UNKNOWN;2;FALSE;0;TRUE;;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getInfoForNameNode(getNode):null;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getLoopCodeBlock(getNode):null;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getNumberValue(getNode):null;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getPrototypeClassName(getNode):null;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getRootOfQualifiedName(getNode):2;0;40;2;15;13;-1;8;12;4095;3;;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getSourceName(getNode): [testcode] ;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getStringValue(getNode):null;isGet(getNode):false
+[18:05:54]	[FILTER_SURVIVE]:	getVarsDeclaredInBranch(getNode):2147483639;16;0.75;1073741824;64;3801124242820219131;362498820763181265;8;6;false;null;;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isAssign(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isAssignmentOp(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isCall(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isCallOrNew(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isConstantName(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isControlStructure(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isEmptyBlock(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isEmptyFunctionExpression(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isExprAssign(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isExprCall(getNode):false;isGet(getNode):false
+[18:05:54]	[FILTER_DEAD]:	isExpressionNode(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isForIn(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isFunction(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isFunctionDeclaration(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isFunctionExpression(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isFunctionObjectApply(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isFunctionObjectCall(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isFunctionObjectCallOrApply(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isGetOrSetKey(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isGetProp(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isHoistedFunctionDeclaration(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isImmutableValue(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isLabelName(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isLoopStructure(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_SURVIVE]:	isName(getNode):true;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isNew(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isPrototypeProperty(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isPrototypePropertyDeclaration(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_SURVIVE]:	isReferenceName(getNode):true;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isSimpleFunctionObjectCall(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isSimpleOperator(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isStatement(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isStatementBlock(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isString(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isSwitchCase(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isThis(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isVar(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isVarDeclaration(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	isWithinLoop(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	mayEffectMutableState(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	mayHaveSideEffects(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_SURVIVE]:	newUndefinedNode(getNode):2;0;40;2;15;13;-1;8;12;4095;3;;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	nodeTypeMayHaveSideEffects(getNode):false;isGet(getNode):false
+[18:05:55]	[FILTER_SURVIVE]:	redeclareVarsInsideBranch(getNode):;isGet(getNode):false
+[18:05:55]	[FILTER_DEAD]:	referencesThis(getNode):false;isGet(getNode):false
+[18:05:55]	[FAIL_TC_FILTER_FINISHED]:	survive count:63
+[18:05:55]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:49	#2;0;40;2;15;13;-1;8;12;4095;3;:3	#:1	#false:126	# [testcode] :1	#UNKNOWN;2;FALSE;0;TRUE;1;UNKNOWN;2;FALSE;0;TRUE;:2	#null:6	#2147483639;16;0.75;1073741824;64;3801124242820219131;362498820763181265;8;6;false;null;:1	
+[18:05:56]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2459 - 2459
+[18:05:56]	[GENERATE_METHOD_FIX]:	158
+[18:05:56]	[METHOD_FIX_DETAIL]:	||||?? -> canBeSideEffected(value)||||?? -> constructorCallHasSideEffects(value)||||?? -> containsCall(value)||||?? -> containsFunction(value)||||?? -> evaluatesToLocalValue(value)||||?? -> functionCallHasSideEffects(value)||||?? -> getAddingRoot(value)||||?? -> getAssignedValue(value)||||?? -> getBooleanValue(value)||||?? -> getCatchBlock(value)||||?? -> getConditionExpression(value)||||?? -> getExpressionBooleanValue(value)||||?? -> getFnParameters(value)||||?? -> getFunctionBody(value)||||?? -> getFunctionInfo(value)||||?? -> getFunctionName(value)||||?? -> getInfoForNameNode(value)||||?? -> getLoopCodeBlock(value)||||?? -> getNearestFunctionName(value)||||?? -> getNumberValue(value)||||?? -> getOpFromAssignmentOp(value)||||?? -> getPrototypeClassName(value)||||?? -> getPrototypePropertyName(value)||||?? -> getRootOfQualifiedName(value)||||?? -> getSourceName(value)||||?? -> getStringValue(value)||||?? -> getVarsDeclaredInBranch(value)||||?? -> hasCatchHandler(value)||||?? -> hasFinally(value)||||?? -> isAssign(value)||||?? -> isAssignmentOp(value)||||?? -> isCall(value)||||?? -> isCallOrNew(value)||||?? -> isConstantName(value)||||?? -> isControlStructure(value)||||?? -> isEmptyBlock(value)||||?? -> isEmptyFunctionExpression(value)||||?? -> isExprAssign(value)||||?? -> isExprCall(value)||||?? -> isExpressionNode(value)||||?? -> isForIn(value)||||?? -> isFunction(value)||||?? -> isFunctionDeclaration(value)||||?? -> isFunctionExpression(value)||||?? -> isFunctionObjectApply(value)||||?? -> isFunctionObjectCall(value)||||?? -> isFunctionObjectCallOrApply(value)||||?? -> isGet(value)||||?? -> isGetOrSetKey(value)||||?? -> isGetProp(value)||||?? -> isHoistedFunctionDeclaration(value)||||?? -> isImmutableValue(value)||||?? -> isLabelName(value)||||?? -> isLoopStructure(value)||||?? -> isName(value)||||?? -> isNew(value)||||?? -> isPrototypeProperty(value)||||?? -> isPrototypePropertyDeclaration(value)||||?? -> isReferenceName(value)||||?? -> isSimpleFunctionObjectCall(value)||||?? -> isSimpleOperator(value)||||?? -> isStatement(value)||||?? -> isStatementBlock(value)||||?? -> isString(value)||||?? -> isSwitchCase(value)||||?? -> isThis(value)||||?? -> isToStringMethodCall(value)||||?? -> isVar(value)||||?? -> isVarArgsFunction(value)||||?? -> isVarDeclaration(value)||||?? -> isWithinLoop(value)||||?? -> mayEffectMutableState(value)||||?? -> mayHaveSideEffects(value)||||?? -> newExpr(value)||||?? -> newUndefinedNode(value)||||?? -> nodeTypeMayHaveSideEffects(value)||||?? -> redeclareVarsInsideBranch(value)||||?? -> referencesThis(value)||||?? -> tryMergeBlock(value)||||?? -> callHasLocalResult(value)||||?? -> canBeSideEffected(value)||||?? -> constructorCallHasSideEffects(value)||||?? -> containsCall(value)||||?? -> containsFunction(value)||||?? -> evaluatesToLocalValue(value)||||?? -> functionCallHasSideEffects(value)||||?? -> getAddingRoot(value)||||?? -> getAssignedValue(value)||||?? -> getBooleanValue(value)||||?? -> getCatchBlock(value)||||?? -> getConditionExpression(value)||||?? -> getExpressionBooleanValue(value)||||?? -> getFnParameters(value)||||?? -> getFunctionBody(value)||||?? -> getFunctionInfo(value)||||?? -> getFunctionName(value)||||?? -> getInfoForNameNode(value)||||?? -> getLoopCodeBlock(value)||||?? -> getNearestFunctionName(value)||||?? -> getNumberValue(value)||||?? -> getOpFromAssignmentOp(value)||||?? -> getPrototypeClassName(value)||||?? -> getPrototypePropertyName(value)||||?? -> getRootOfQualifiedName(value)||||?? -> getSourceName(value)||||?? -> getStringValue(value)||||?? -> getVarsDeclaredInBranch(value)||||?? -> hasCatchHandler(value)||||?? -> hasFinally(value)||||?? -> isAssign(value)||||?? -> isAssignmentOp(value)||||?? -> isCall(value)||||?? -> isCallOrNew(value)||||?? -> isConstantName(value)||||?? -> isControlStructure(value)||||?? -> isEmptyBlock(value)||||?? -> isEmptyFunctionExpression(value)||||?? -> isExprAssign(value)||||?? -> isExprCall(value)||||?? -> isExpressionNode(value)||||?? -> isForIn(value)||||?? -> isFunction(value)||||?? -> isFunctionDeclaration(value)||||?? -> isFunctionExpression(value)||||?? -> isFunctionObjectApply(value)||||?? -> isFunctionObjectCall(value)||||?? -> isFunctionObjectCallOrApply(value)||||?? -> isGet(value)||||?? -> isGetOrSetKey(value)||||?? -> isGetProp(value)||||?? -> isHoistedFunctionDeclaration(value)||||?? -> isImmutableValue(value)||||?? -> isLabelName(value)||||?? -> isLoopStructure(value)||||?? -> isName(value)||||?? -> isNew(value)||||?? -> isPrototypeProperty(value)||||?? -> isPrototypePropertyDeclaration(value)||||?? -> isReferenceName(value)||||?? -> isSimpleFunctionObjectCall(value)||||?? -> isSimpleOperator(value)||||?? -> isStatement(value)||||?? -> isStatementBlock(value)||||?? -> isString(value)||||?? -> isSwitchCase(value)||||?? -> isThis(value)||||?? -> isVar(value)||||?? -> isVarArgsFunction(value)||||?? -> isVarDeclaration(value)||||?? -> isWithinLoop(value)||||?? -> mayEffectMutableState(value)||||?? -> mayHaveSideEffects(value)||||?? -> newExpr(value)||||?? -> newUndefinedNode(value)||||?? -> nodeTypeMayHaveSideEffects(value)||||?? -> redeclareVarsInsideBranch(value)||||?? -> referencesThis(value)||||?? -> tryMergeBlock(value)
+[18:05:56]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:05:56]	[FILTER_DEAD]:	value.hasOneChild():false;not expected:false
+[18:05:56]	[FILTER_DEAD]:	value.hasSideEffects():false;not expected:false
+[18:05:57]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:05:57]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	value.isUnscopedQualifiedName():true;not expected:false
+[18:05:57]	[FILTER_DEAD]:	!value.isUnscopedQualifiedName():false;not expected:false
+[18:05:57]	[FILTER_DEAD]:	!value.isQualifiedName():false;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:05:57]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:05:57]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	value.isQualifiedName():true;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:05:57]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:05:58]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:05:58]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:05:58]	[FILTER_SURVIVE]:	!value.hasSideEffects():true;not expected:false
+[18:05:58]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:05:58]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:05:58]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:05:58]	[FILTER_SURVIVE]:	!value.hasChildren():true;not expected:false
+[18:05:58]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:05:59]	[FILTER_DEAD]:	value.hasChildren():false;not expected:false
+[18:05:59]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.hasOneChild():true;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:05:59]	[FAIL_TC_FILTER_FINISHED]:	survive count:14
+[18:05:59]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:14	#false:14	
+[18:05:59]	[FAIL_TC_FILTER_START]:	survive count:14
+[18:05:59]	[FILTER_DEAD]:	value.isUnscopedQualifiedName():false;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:05:59]	[FILTER_DEAD]:	value.isQualifiedName():false;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:05:59]	[FILTER_DEAD]:	!value.hasSideEffects():false;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:05:59]	[FILTER_DEAD]:	!value.hasChildren():false;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:05:59]	[FILTER_DEAD]:	!value.hasOneChild():false;not expected:false
+[18:05:59]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:05:59]	[FAIL_TC_FILTER_FINISHED]:	survive count:14
+[18:06:00]	[FILTER_SURVIVE]:	value.hasOneChild():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	value.hasSideEffects():true;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isUnscopedQualifiedName():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isQualifiedName():true;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	value.hasChildren():true;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:00]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:00]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true:9	#true#false:5	#false#false:9	#false#true:5	
+[18:06:00]	[FAIL_TC_FILTER_START]:	survive count:19
+[18:06:00]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:06:00]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:00]	[FILTER_DEAD]:	value.isUnscopedQualifiedName():false;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	value.isQualifiedName():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.hasSideEffects():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.hasChildren():true;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.hasOneChild():true;not expected:false
+[18:06:00]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:00]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:00]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:00]	[FILTER_DEAD]:	value.hasOneChild():false;not expected:false
+[18:06:00]	[FILTER_DEAD]:	value.hasSideEffects():false;not expected:false
+[18:06:00]	[FILTER_SURVIVE]:	!value.isUnscopedQualifiedName():true;not expected:false
+[18:06:00]	[FILTER_DEAD]:	!value.isQualifiedName():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.hasChildren():false;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#false#false:1	#false#false#false:9	#true#false#true:4	#false#true#false:4	#true#true#true:9	#false#true#true:1	
+[18:06:01]	[FAIL_TC_FILTER_START]:	survive count:19
+[18:06:01]	[FILTER_SURVIVE]:	value.isUnscopedQualifiedName():true;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FILTER_SURVIVE]:	value.isQualifiedName():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.hasSideEffects():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.hasChildren():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.hasOneChild():true;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FILTER_DEAD]:	value.hasOneChild():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.hasSideEffects():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	!value.isQualifiedName():false;not expected:false
+[18:06:01]	[FILTER_DEAD]:	value.hasChildren():false;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FILTER_DEAD]:	!value.isUnscopedQualifiedName():false;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#false#false#true:1	#true#true#true#true:9	#false#true#false#false:4	#true#false#true#true:4	#false#true#true#false:1	#false#false#false#false:9	
+[18:06:01]	[FAIL_TC_FILTER_START]:	survive count:19
+[18:06:01]	[FILTER_DEAD]:	value.isUnscopedQualifiedName():false;not expected:false
+[18:06:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:01]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:06:01]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:06:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:02]	[FILTER_SURVIVE]:	value.hasOneChild():true;not expected:false
+[18:06:02]	[FILTER_SURVIVE]:	value.hasSideEffects():true;not expected:false
+[18:06:02]	[FILTER_SURVIVE]:	!value.isQualifiedName():true;not expected:false
+[18:06:02]	[FILTER_SURVIVE]:	value.hasChildren():true;not expected:false
+[18:06:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:02]	[FILTER_DEAD]:	value.isQualifiedName():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	!value.hasSideEffects():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	!value.hasChildren():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	!value.hasOneChild():false;not expected:false
+[18:06:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:02]	[FILTER_SURVIVE]:	!value.isUnscopedQualifiedName():true;not expected:false
+[18:06:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:02]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:02]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:19
+[18:06:02]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#true#false#false#true:4	#true#false#false#true#false:1	#false#true#true#false#true:1	#true#true#true#true#true:9	#false#false#false#false#false:9	#true#false#true#true#false:4	
+[18:06:02]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:06:03]	[FILTER_SURVIVE]:	value.hasOneChild():true;not expected:false
+[18:06:03]	[FILTER_SURVIVE]:	value.hasSideEffects():true;not expected:false
+[18:06:03]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:03]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:03]	[FILTER_DEAD]:	value.isUnscopedQualifiedName():false;not expected:false
+[18:06:03]	[FILTER_SURVIVE]:	!value.isUnscopedQualifiedName():true;not expected:false
+[18:06:03]	[FILTER_SURVIVE]:	!value.isQualifiedName():true;not expected:false
+[18:06:03]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:06:03]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:03]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:03]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:06:04]	[FILTER_DEAD]:	value.isQualifiedName():false;not expected:false
+[18:06:04]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:06:04]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:06:04]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:06:04]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:04]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:04]	[FILTER_DEAD]:	!value.hasSideEffects():false;not expected:false
+[18:06:04]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:04]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:06:04]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:04]	[FILTER_DEAD]:	!value.hasChildren():false;not expected:false
+[18:06:05]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:06:05]	[FILTER_SURVIVE]:	value.hasChildren():true;not expected:false
+[18:06:05]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:05]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:06:05]	[FILTER_DEAD]:	!value.hasOneChild():false;not expected:false
+[18:06:05]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value)||isToStringMethodCall(value)
+            || locals.apply(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasChildren():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasChildren():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasChildren():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasChildren():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasOneChild():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasMoreThanOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasMoreThanOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasMoreThanOneChild():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasMoreThanOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasChild(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasChild(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasChild(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasChild(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.checkTreeEqualsSilent(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.checkTreeEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.checkTreeEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.checkTreeEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.checkTreeTypeAwareEqualsSilent(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.checkTreeTypeAwareEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.checkTreeTypeAwareEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.checkTreeTypeAwareEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isEquivalentTo(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isEquivalentTo(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isEquivalentTo(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isEquivalentTo(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasSideEffects():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasSideEffects():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:06]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasSideEffects():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasSideEffects():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isQualifiedName():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isUnscopedQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isUnscopedQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isUnscopedQualifiedName():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isUnscopedQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isVarArgs():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isVarArgs():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isVarArgs():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isVarArgs():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isOptionalArg():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isOptionalArg():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isOptionalArg():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isOptionalArg():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isSyntheticBlock():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isSyntheticBlock():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isSyntheticBlock():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isSyntheticBlock():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.wasEmptyNode():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.wasEmptyNode():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.wasEmptyNode():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.wasEmptyNode():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isOnlyModifiesThisCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isOnlyModifiesThisCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isOnlyModifiesThisCall():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isOnlyModifiesThisCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isNoSideEffectsCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isNoSideEffectsCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isNoSideEffectsCall():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isNoSideEffectsCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isLocalResultCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isLocalResultCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isLocalResultCall():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isLocalResultCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:07]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isQuotedString():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:08]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isQuotedString():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:08]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isQuotedString():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:08]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isQuotedString():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:32
+[18:06:08]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:32	#false:69	
+[18:06:08]	[FAIL_TC_FILTER_START]:	survive count:32
+[18:06:08]	[FILTER_SURVIVE]:	value.hasOneChild():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	value.hasSideEffects():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isUnscopedQualifiedName():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isQualifiedName():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	value.hasChildren():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:06:08]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasChildren():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasOneChild():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasMoreThanOneChild():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasChild(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.checkTreeEqualsSilent(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.checkTreeTypeAwareEqualsSilent(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isEquivalentTo(value):true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasSideEffects():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isQualifiedName():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isUnscopedQualifiedName():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isVarArgs():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isOptionalArg():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isSyntheticBlock():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.wasEmptyNode():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isOnlyModifiesThisCall():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isNoSideEffectsCall():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isLocalResultCall():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_SURVIVE]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isQuotedString():true;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FAIL_TC_FILTER_FINISHED]:	survive count:32
+[18:06:09]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isUnscopedQualifiedName():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isQualifiedName():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	!value.hasSideEffects():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	!value.hasChildren():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	!value.hasOneChild():false;not expected:false
+[18:06:09]	[FILTER_DEAD]:	callHasLocalResult(value)||isToStringMethodCall(value)
+            || locals.apply(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasChildren():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasChildren():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasChildren():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:09]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasMoreThanOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasMoreThanOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasMoreThanOneChild():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.hasChild(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasChild(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasChild(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.checkTreeEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.checkTreeEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.checkTreeEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.checkTreeTypeAwareEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.checkTreeTypeAwareEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.checkTreeTypeAwareEqualsSilent(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isEquivalentTo(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.isEquivalentTo(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isEquivalentTo(value):false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.hasSideEffects():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||!value.hasSideEffects():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.hasSideEffects():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isUnscopedQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isUnscopedQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isUnscopedQualifiedName():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isVarArgs():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isVarArgs():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isVarArgs():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isOptionalArg():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isOptionalArg():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isOptionalArg():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isSyntheticBlock():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isSyntheticBlock():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isSyntheticBlock():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.wasEmptyNode():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:10]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.wasEmptyNode():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.wasEmptyNode():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isOnlyModifiesThisCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isOnlyModifiesThisCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isOnlyModifiesThisCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isNoSideEffectsCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isNoSideEffectsCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isNoSideEffectsCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isLocalResultCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isLocalResultCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isLocalResultCall():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)||value.isQuotedString():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&value.isQuotedString():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FILTER_DEAD]:	callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value)&&!value.isQuotedString():false;callHasLocalResult(value) || isToStringMethodCall(value) || locals.apply(value):false
+[18:06:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:32
+[18:06:11]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true:32	#false#false:69	
+[18:06:11]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:06:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:06:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[18:06:12]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:06:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:06:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[18:06:12]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2460 - 2460
+[18:06:12]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:callHasLocalResult:(Lcom/google/javascript/rhino/Node;)Zline 796 - 796
+[18:06:12]	[GENERATE_METHOD_FIX]:	2
+[18:06:12]	[METHOD_FIX_DETAIL]:	||||?? -> Preconditions.checkState(n.getType() == Token.CALL)||||?? -> Preconditions.checkArgument(n.getType() == Token.CALL)
+[18:06:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:06:13]	[FILTER_DEAD]:	!n.hasOneChild():false;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.isOptionalArg():true;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.wasEmptyNode():true;not expected:false
+[18:06:13]	[FILTER_DEAD]:	!n.hasSideEffects():false;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	n.hasOneChild():true;not expected:false
+[18:06:13]	[FILTER_DEAD]:	n.isNoSideEffectsCall():false;not expected:false
+[18:06:13]	[FILTER_DEAD]:	n.isVarArgs():false;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.isUnscopedQualifiedName():true;not expected:false
+[18:06:13]	[FILTER_DEAD]:	n.isSyntheticBlock():false;not expected:false
+[18:06:13]	[FILTER_DEAD]:	n.isOptionalArg():false;not expected:false
+[18:06:13]	[FILTER_DEAD]:	n.wasEmptyNode():false;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	n.hasSideEffects():true;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.isOnlyModifiesThisCall():true;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.isLocalResultCall():true;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.isSyntheticBlock():true;not expected:false
+[18:06:13]	[FILTER_SURVIVE]:	!n.isVarArgs():true;not expected:false
+[18:06:14]	[FILTER_SURVIVE]:	!n.hasMoreThanOneChild():true;not expected:false
+[18:06:14]	[FILTER_DEAD]:	n.hasMoreThanOneChild():false;not expected:false
+[18:06:14]	[FILTER_SURVIVE]:	!n.isQualifiedName():true;not expected:false
+[18:06:14]	[FILTER_SURVIVE]:	!n.isQuotedString():true;not expected:false
+[18:06:14]	[FILTER_SURVIVE]:	!n.isNoSideEffectsCall():true;not expected:false
+[18:06:14]	[FILTER_DEAD]:	!n.hasChildren():false;not expected:false
+[18:06:14]	[FILTER_DEAD]:	n.isUnscopedQualifiedName():false;not expected:false
+[18:06:14]	[FILTER_DEAD]:	n.isOnlyModifiesThisCall():false;not expected:false
+[18:06:14]	[FILTER_DEAD]:	n.isQualifiedName():false;not expected:false
+[18:06:14]	[FILTER_DEAD]:	n.isQuotedString():false;not expected:false
+[18:06:14]	[FILTER_DEAD]:	n.isLocalResultCall():false;not expected:false
+[18:06:14]	[FILTER_SURVIVE]:	n.hasChildren():true;not expected:false
+[18:06:14]	[FILTER_SURVIVE]:	n.getType()>Token.CALL:false;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType()>=Token.CALL:true;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_SURVIVE]:	n.getType()<Token.CALL:false;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType()<=Token.CALL:true;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_SURVIVE]:	n.getType()!=Token.CALL:false;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.hasChildren():true;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType() == Token.CALL&&n.hasChildren():true;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.hasChildren():true;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&!n.hasChildren():false;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.hasOneChild():true;n.getType() == Token.CALL:true
+[18:06:14]	[FILTER_DEAD]:	n.getType() == Token.CALL&&n.hasOneChild():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.hasOneChild():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&!n.hasOneChild():false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.hasMoreThanOneChild():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.hasMoreThanOneChild():false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.hasMoreThanOneChild():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.hasMoreThanOneChild():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.hasChild(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.hasChild(n):false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.hasChild(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.hasChild(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.checkTreeEqualsSilent(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&n.checkTreeEqualsSilent(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.checkTreeEqualsSilent(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&!n.checkTreeEqualsSilent(n):false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.checkTreeTypeAwareEqualsSilent(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&n.checkTreeTypeAwareEqualsSilent(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.checkTreeTypeAwareEqualsSilent(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&!n.checkTreeTypeAwareEqualsSilent(n):false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isEquivalentTo(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&n.isEquivalentTo(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isEquivalentTo(n):true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&!n.isEquivalentTo(n):false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.hasSideEffects():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&n.hasSideEffects():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.hasSideEffects():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&!n.hasSideEffects():false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isQualifiedName():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isQualifiedName():false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isQualifiedName():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isQualifiedName():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isUnscopedQualifiedName():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isUnscopedQualifiedName():false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isUnscopedQualifiedName():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isUnscopedQualifiedName():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isVarArgs():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isVarArgs():false;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isVarArgs():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isVarArgs():true;n.getType() == Token.CALL:true
+[18:06:15]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isOptionalArg():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isOptionalArg():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isOptionalArg():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isOptionalArg():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isSyntheticBlock():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isSyntheticBlock():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isSyntheticBlock():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isSyntheticBlock():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.wasEmptyNode():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.wasEmptyNode():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.wasEmptyNode():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.wasEmptyNode():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isOnlyModifiesThisCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isOnlyModifiesThisCall():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isOnlyModifiesThisCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isOnlyModifiesThisCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isNoSideEffectsCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isNoSideEffectsCall():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isNoSideEffectsCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isNoSideEffectsCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isLocalResultCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isLocalResultCall():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isLocalResultCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isLocalResultCall():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||n.isQuotedString():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_SURVIVE]:	n.getType() == Token.CALL&&n.isQuotedString():false;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL||!n.isQuotedString():true;n.getType() == Token.CALL:true
+[18:06:16]	[FILTER_DEAD]:	n.getType() == Token.CALL&&!n.isQuotedString():true;n.getType() == Token.CALL:true
+[18:06:17]	[FAIL_TC_FILTER_FINISHED]:	survive count:35
+[18:06:17]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:70	#false:35	
+[18:06:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:06:18]	[FILTER_DEAD]:	!n.hasOneChild():false;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.isOptionalArg():true;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.wasEmptyNode():true;not expected:false
+[18:06:18]	[FILTER_DEAD]:	!n.hasSideEffects():false;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	n.hasOneChild():true;not expected:false
+[18:06:18]	[FILTER_DEAD]:	n.isNoSideEffectsCall():false;not expected:false
+[18:06:18]	[FILTER_DEAD]:	n.isVarArgs():false;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.isUnscopedQualifiedName():true;not expected:false
+[18:06:18]	[FILTER_DEAD]:	n.isSyntheticBlock():false;not expected:false
+[18:06:18]	[FILTER_DEAD]:	n.isOptionalArg():false;not expected:false
+[18:06:18]	[FILTER_DEAD]:	n.wasEmptyNode():false;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	n.hasSideEffects():true;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.isOnlyModifiesThisCall():true;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.isLocalResultCall():true;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.isSyntheticBlock():true;not expected:false
+[18:06:18]	[FILTER_SURVIVE]:	!n.isVarArgs():true;not expected:false
+[18:06:19]	[FILTER_SURVIVE]:	!n.hasMoreThanOneChild():true;not expected:false
+[18:06:19]	[FILTER_DEAD]:	n.hasMoreThanOneChild():false;not expected:false
+[18:06:19]	[FILTER_SURVIVE]:	!n.isQualifiedName():true;not expected:false
+[18:06:19]	[FILTER_SURVIVE]:	!n.isQuotedString():true;not expected:false
+[18:06:19]	[FILTER_SURVIVE]:	!n.isNoSideEffectsCall():true;not expected:false
+[18:06:19]	[FILTER_DEAD]:	!n.hasChildren():false;not expected:false
+[18:06:19]	[FILTER_DEAD]:	n.isUnscopedQualifiedName():false;not expected:false
+[18:06:19]	[FILTER_DEAD]:	n.isOnlyModifiesThisCall():false;not expected:false
+[18:06:19]	[FILTER_DEAD]:	n.isQualifiedName():false;not expected:false
+[18:06:19]	[FILTER_DEAD]:	n.isQuotedString():false;not expected:false
+[18:06:19]	[FILTER_DEAD]:	n.isLocalResultCall():false;not expected:false
+[18:06:19]	[FILTER_SURVIVE]:	n.hasChildren():true;not expected:false
+[18:06:19]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS)==0:true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS)>=0:true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS)<0:false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS)<=0:true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS)!=0:false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.hasChildren():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.hasChildren():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.hasChildren():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:19]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.hasChildren():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.hasOneChild():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.hasOneChild():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.hasOneChild():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.hasOneChild():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.hasMoreThanOneChild():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.hasMoreThanOneChild():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.hasMoreThanOneChild():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.hasMoreThanOneChild():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.hasChild(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.hasChild(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.hasChild(n):true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:20]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.hasChild(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.checkTreeEqualsSilent(n):true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.checkTreeEqualsSilent(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.checkTreeEqualsSilent(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.checkTreeEqualsSilent(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.checkTreeTypeAwareEqualsSilent(n):true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.checkTreeTypeAwareEqualsSilent(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.checkTreeTypeAwareEqualsSilent(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.checkTreeTypeAwareEqualsSilent(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isEquivalentTo(n):true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isEquivalentTo(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isEquivalentTo(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isEquivalentTo(n):false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.hasSideEffects():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.hasSideEffects():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.hasSideEffects():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.hasSideEffects():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:21]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isQualifiedName():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isQualifiedName():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isQualifiedName():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isQualifiedName():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isUnscopedQualifiedName():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isUnscopedQualifiedName():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isUnscopedQualifiedName():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isUnscopedQualifiedName():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isVarArgs():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isVarArgs():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isVarArgs():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isVarArgs():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isOptionalArg():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isOptionalArg():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isOptionalArg():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isOptionalArg():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isSyntheticBlock():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isSyntheticBlock():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isSyntheticBlock():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isSyntheticBlock():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.wasEmptyNode():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.wasEmptyNode():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.wasEmptyNode():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:22]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.wasEmptyNode():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isOnlyModifiesThisCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isOnlyModifiesThisCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isOnlyModifiesThisCall():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isOnlyModifiesThisCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isNoSideEffectsCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isNoSideEffectsCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isNoSideEffectsCall():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isNoSideEffectsCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isLocalResultCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isLocalResultCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isLocalResultCall():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isLocalResultCall():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||n.isQuotedString():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&n.isQuotedString():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_SURVIVE]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0||!n.isQuotedString():true;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:23]	[FILTER_DEAD]:	(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0&&!n.isQuotedString():false;(n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0:false
+[18:06:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:35
+[18:06:24]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:35	#false:70	
+[18:06:24]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2465 - 2465
+[18:06:24]	[GENERATE_METHOD_FIX]:	0
+[18:06:24]	[METHOD_FIX_DETAIL]:	
+[18:06:25]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:06:25]	[FILTER_SURVIVE]:	value.hasOneChild():true;not expected:false
+[18:06:25]	[FILTER_SURVIVE]:	value.hasSideEffects():true;not expected:false
+[18:06:25]	[FILTER_DEAD]:	value.hasMoreThanOneChild():false;not expected:false
+[18:06:25]	[FILTER_DEAD]:	value.isOptionalArg():false;not expected:false
+[18:06:25]	[FILTER_DEAD]:	value.isUnscopedQualifiedName():false;not expected:false
+[18:06:25]	[FILTER_SURVIVE]:	!value.isUnscopedQualifiedName():true;not expected:false
+[18:06:26]	[FILTER_SURVIVE]:	!value.isQualifiedName():true;not expected:false
+[18:06:26]	[FILTER_SURVIVE]:	!value.isSyntheticBlock():true;not expected:false
+[18:06:26]	[FILTER_DEAD]:	value.isLocalResultCall():false;not expected:false
+[18:06:26]	[FILTER_DEAD]:	value.wasEmptyNode():false;not expected:false
+[18:06:26]	[FILTER_SURVIVE]:	!value.isOptionalArg():true;not expected:false
+[18:06:26]	[FILTER_DEAD]:	value.isQualifiedName():false;not expected:false
+[18:06:26]	[FILTER_SURVIVE]:	!value.hasMoreThanOneChild():true;not expected:false
+[18:06:26]	[FILTER_SURVIVE]:	!value.isVarArgs():true;not expected:false
+[18:06:26]	[FILTER_SURVIVE]:	!value.isLocalResultCall():true;not expected:false
+[18:06:26]	[FILTER_DEAD]:	value.isNoSideEffectsCall():false;not expected:false
+[18:06:26]	[FILTER_DEAD]:	value.isQuotedString():false;not expected:false
+[18:06:26]	[FILTER_DEAD]:	!value.hasSideEffects():false;not expected:false
+[18:06:26]	[FILTER_DEAD]:	value.isVarArgs():false;not expected:false
+[18:06:27]	[FILTER_SURVIVE]:	!value.isNoSideEffectsCall():true;not expected:false
+[18:06:27]	[FILTER_DEAD]:	value.isOnlyModifiesThisCall():false;not expected:false
+[18:06:27]	[FILTER_DEAD]:	!value.hasChildren():false;not expected:false
+[18:06:27]	[FILTER_SURVIVE]:	!value.isQuotedString():true;not expected:false
+[18:06:27]	[FILTER_SURVIVE]:	value.hasChildren():true;not expected:false
+[18:06:27]	[FILTER_DEAD]:	value.isSyntheticBlock():false;not expected:false
+[18:06:27]	[FILTER_SURVIVE]:	!value.isOnlyModifiesThisCall():true;not expected:false
+[18:06:27]	[FILTER_DEAD]:	!value.hasOneChild():false;not expected:false
+[18:06:28]	[FILTER_SURVIVE]:	!value.wasEmptyNode():true;not expected:false
+[18:06:28]	[FAIL_TC_FILTER_FINISHED]:	survive count:14
+[18:06:28]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:14	#false:14	

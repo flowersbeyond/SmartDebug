@@ -1,0 +1,254 @@
+[12:39:35]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 921 - 921
+[12:39:36]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:36]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:36]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:36]	[FILTER_DEAD]:	start!=null:true;start == null:false
+[12:39:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:36]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:36]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:36]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:36]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:36]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:36]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:36]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:36]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:36]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:36]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[12:39:36]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 927 - 927
+[12:39:36]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:36]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:37]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)==0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)>=0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_DEAD]:	start.compareTo(end)<0:true;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_DEAD]:	start.compareTo(end)<=0:true;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_DEAD]:	start.compareTo(end)!=0:true;start.compareTo(end) > 0:false
+[12:39:37]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:37]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:37]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)==0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)>=0:false;start.compareTo(end) > 0:false
+[12:39:37]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:37]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:37]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)==0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)>=0:false;start.compareTo(end) > 0:false
+[12:39:37]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:37]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:37]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)==0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)>=0:false;start.compareTo(end) > 0:false
+[12:39:37]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:37]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:37]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)==0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_SURVIVE]:	start.compareTo(end)>=0:false;start.compareTo(end) > 0:false
+[12:39:37]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:37]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:37]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:37]	[FILTER_DEAD]:	start.compareTo(end)==0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FILTER_DEAD]:	start.compareTo(end)>=0:false;start.compareTo(end) > 0:false
+[12:39:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:37]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:3	
+[12:39:37]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 942 - 942
+[12:39:37]	[GENERATE_METHOD_FIX]:	0
+[12:39:37]	[METHOD_FIX_DETAIL]:	
+[12:39:38]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:38]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:38]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:38]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:38]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:38]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:38]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:38]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:38]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:38]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:38]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:38]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:38]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[12:39:38]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:38]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:39]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:39]	[FILTER_DEAD]:	startIndex:0;1:1
+[12:39:39]	[FILTER_DEAD]:	endIndex:-1;1:1
+[12:39:39]	[FILTER_DEAD]:	maximumItemCount:2147483647;1:1
+[12:39:39]	[FILTER_DEAD]:	startIndex:0;endIndex:-1
+[12:39:39]	[FILTER_DEAD]:	maximumItemCount:2147483647;endIndex:-1
+[12:39:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:39]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:39]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:39]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:39]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:39]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:39]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:39]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:39]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:39]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:39]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:39]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:39]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[12:39:39]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:39]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:39]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:39]	[FILTER_DEAD]:	startIndex:0;1:1
+[12:39:39]	[FILTER_DEAD]:	endIndex:0;1:1
+[12:39:39]	[FILTER_DEAD]:	maximumItemCount:2147483647;1:1
+[12:39:39]	[FILTER_SURVIVE]:	startIndex:0;endIndex:0
+[12:39:40]	[FILTER_DEAD]:	maximumItemCount:2147483647;endIndex:0
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[FILTER_DEAD]:	startIndex:0;endIndex:2
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:40]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:40]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:40]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:40]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[12:39:40]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 932 - 932
+[12:39:40]	[GENERATE_METHOD_FIX]:	3
+[12:39:40]	[METHOD_FIX_DETAIL]:	||||?? -> delete(start)||||?? -> getDataItem(start)||||?? -> getValue(start)
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:40]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:40]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:40]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:41]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:41]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:41]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:41]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[12:39:41]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:41]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:41]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:41]	[FILTER_SURVIVE]:	end:4;8;null;null;null;null;null;null;null;null;null;;start:4;8;null;null;null;null;null;null;null;null;null;
+[12:39:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:41]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:41]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:41]	[FILTER_SURVIVE]:	end:4;8;null;null;null;null;null;null;null;null;null;;start:4;8;null;null;null;null;null;null;null;null;null;
+[12:39:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:41]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:41]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:41]	[FILTER_SURVIVE]:	end:4;8;null;null;null;null;null;null;null;null;null;;start:4;8;null;null;null;null;null;null;null;null;null;
+[12:39:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:41]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:41]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:41]	[FILTER_SURVIVE]:	end:4;8;null;null;null;null;null;null;null;null;null;;start:4;8;null;null;null;null;null;null;null;null;null;
+[12:39:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:41]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:41]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:41]	[FILTER_SURVIVE]:	end:4;8;null;null;null;null;null;null;null;null;null;;start:4;8;null;null;null;null;null;null;null;null;null;
+[12:39:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:42]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:42]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:42]	[FILTER_DEAD]:	end:4;8;null;null;null;null;null;null;null;null;null;;start:4;8;null;null;null;null;null;null;null;null;null;
+[12:39:42]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:42]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	#4;8;null;null;null;null;null;null;null;null;null;:1	
+[12:39:42]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 944 - 944
+[12:39:42]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:42]	[FILTER_DEAD]:	!data.isEmpty():true;expected:false
+[12:39:42]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:42]	[FILTER_DEAD]:	endIndex==0:false;endIndex < 0:true
+[12:39:42]	[FILTER_DEAD]:	endIndex>0:false;endIndex < 0:true
+[12:39:42]	[FILTER_DEAD]:	endIndex>=0:false;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex<=0:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex!=0:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||emptyRange:true;endIndex < 0:true
+[12:39:42]	[FILTER_DEAD]:	endIndex < 0&&emptyRange:false;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||!emptyRange:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0&&!emptyRange:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||endIndex!=startIndex:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex!=startIndex:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<=startIndex:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<=startIndex:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<startIndex:true;endIndex < 0:true
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<startIndex:true;endIndex < 0:true
+[12:39:42]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:42]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:42]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:42]	[FILTER_DEAD]:	endIndex<=0:true;endIndex < 0:false
+[12:39:42]	[FILTER_SURVIVE]:	endIndex!=0:false;endIndex < 0:false
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||emptyRange:false;endIndex < 0:false
+[12:39:42]	[FILTER_DEAD]:	endIndex < 0||!emptyRange:true;endIndex < 0:false
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0&&!emptyRange:false;endIndex < 0:false
+[12:39:42]	[FILTER_SURVIVE]:	endIndex < 0||endIndex!=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex!=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0||endIndex<=startIndex:true;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:43]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:43]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:43]	[FILTER_DEAD]:	endIndex!=0:true;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&!emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0||endIndex!=startIndex:true;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex!=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:43]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:43]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&!emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex!=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:43]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:43]	[FILTER_SURVIVE]:	data.isEmpty():false;expected:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&!emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex!=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0&&endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:43]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:43]	[FILTER_DEAD]:	data.isEmpty():false;not expected:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0||emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0&&!emptyRange:false;endIndex < 0:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0&&endIndex!=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0&&endIndex<=startIndex:false;endIndex < 0:false
+[12:39:43]	[FILTER_SURVIVE]:	endIndex < 0||endIndex<startIndex:true;endIndex < 0:false
+[12:39:43]	[FILTER_DEAD]:	endIndex < 0&&endIndex<startIndex:false;endIndex < 0:false
+[12:39:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:39:43]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	#false:6	

@@ -1,0 +1,364 @@
+[12:19:30]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 156 - 156
+[12:19:30]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:33
+[12:19:31]	[FILTER_COMPILATION_ERROR_COUNT]:	20
+[12:19:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:7;EXPRSET:0;BOOLSETCOUNT:1
+[12:19:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 156 - 156
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:19:31]	[GENERATE_METHOD_FIX]:	1
+[12:19:31]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_ESCAPE:()[[Ljava/lang/String;line 358 - 358
+[12:19:31]	[GENERATE_METHOD_FIX]:	1
+[12:19:31]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_ESCAPE:()[[Ljava/lang/String;line 358 - 358
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_ESCAPE:()[[Ljava/lang/String;line 395 - 395
+[12:19:31]	[GENERATE_METHOD_FIX]:	1
+[12:19:31]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:31]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_ESCAPE:()[[Ljava/lang/String;line 395 - 395
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 161 - 161
+[12:19:31]	[GENERATE_METHOD_FIX]:	2
+[12:19:31]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:14
+[12:19:32]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:19:32]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:19:32]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:2
+[12:19:32]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 161 - 161
+[12:19:32]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:19:32]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:37
+[12:19:33]	[FILTER_COMPILATION_ERROR_COUNT]:	33
+[12:19:33]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:4;EXPRSET:0;BOOLSETCOUNT:3
+[12:19:33]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:19:33]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 59 - 59
+[12:19:33]	[GENERATE_METHOD_FIX]:	4
+[12:19:33]	[PRE_FILTER_STATUS]:	EXPR:5;BOOL:20
+[12:19:34]	[FILTER_COMPILATION_ERROR_COUNT]:	9
+[12:19:34]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:19:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:34]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 59 - 59
+[12:19:34]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 420 - 420
+[12:19:34]	[GENERATE_METHOD_FIX]:	0
+[12:19:34]	[PRE_FILTER_STATUS]:	EXPR:30;BOOL:30
+[12:19:35]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:19:35]	[FILTER_COMPILATION_ERROR_COUNT]:	17
+[12:19:37]	[FILTER_COMPILATION_ERROR_COUNT]:	17
+[12:19:38]	[POST_FILTER_STATUS]:	EXPR:22;BOOL:0;EXPRSET:6;BOOLSETCOUNT:0
+[12:19:38]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 420 - 420
+[12:19:39]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1742 - 1742
+[12:19:39]	[GENERATE_METHOD_FIX]:	0
+[12:19:39]	[PRE_FILTER_STATUS]:	EXPR:44;BOOL:1
+[12:19:39]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:19:40]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:19:41]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:19:42]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:19:42]	[POST_FILTER_STATUS]:	EXPR:16;BOOL:0;EXPRSET:11;BOOLSETCOUNT:0
+[12:19:42]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1742 - 1742
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 84 - 84
+[12:19:42]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:42]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:42]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 84 - 84
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_ESCAPE:()[[Ljava/lang/String;line 358 - 358
+[12:19:42]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:42]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:42]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_ESCAPE:()[[Ljava/lang/String;line 358 - 358
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:42]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:42]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:42]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 108 - 108
+[12:19:42]	[GENERATE_METHOD_FIX]:	1
+[12:19:42]	[PRE_FILTER_STATUS]:	EXPR:6;BOOL:3
+[12:19:42]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:19:43]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:19:43]	[POST_FILTER_STATUS]:	EXPR:3;BOOL:0;EXPRSET:3;BOOLSETCOUNT:0
+[12:19:43]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 108 - 108
+[12:19:43]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 108 - 108
+[12:19:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:43]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 108 - 108
+[12:19:43]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_ESCAPE:()[[Ljava/lang/String;line 395 - 395
+[12:19:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:43]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_ESCAPE:()[[Ljava/lang/String;line 395 - 395
+[12:19:43]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_UNESCAPE:()[[Ljava/lang/String;line 408 - 408
+[12:19:43]	[GENERATE_METHOD_FIX]:	1
+[12:19:43]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:43]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_UNESCAPE:()[[Ljava/lang/String;line 408 - 408
+[12:19:44]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:19:44]	[GENERATE_METHOD_FIX]:	1
+[12:19:44]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:44]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:44]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:19:44]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:19:44]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:44]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:44]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:19:44]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 422 - 422
+[12:19:44]	[GENERATE_METHOD_FIX]:	0
+[12:19:44]	[PRE_FILTER_STATUS]:	EXPR:12;BOOL:2
+[12:19:44]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:19:45]	[POST_FILTER_STATUS]:	EXPR:11;BOOL:0;EXPRSET:11;BOOLSETCOUNT:0
+[12:19:45]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 422 - 422
+[12:19:45]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:19:45]	[GENERATE_METHOD_FIX]:	1
+[12:19:45]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:45]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:45]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1744 - 1744
+[12:19:46]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:46]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:46]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1744 - 1744
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:19:46]	[GENERATE_METHOD_FIX]:	1
+[12:19:46]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:46]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:46]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:46]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:46]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:46]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/ArrayUtils:clone:([Ljava/lang/Object;)[Ljava/lang/Object;line 323 - 323
+[12:19:46]	[GENERATE_METHOD_FIX]:	1
+[12:19:46]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:1
+[12:19:46]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:19:46]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:46]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/ArrayUtils:clone:([Ljava/lang/Object;)[Ljava/lang/Object;line 323 - 323
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_ESCAPE:()[[Ljava/lang/String;line 377 - 377
+[12:19:47]	[GENERATE_METHOD_FIX]:	1
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_ESCAPE:()[[Ljava/lang/String;line 377 - 377
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 94 - 94
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 94 - 94
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 419 - 419
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 419 - 419
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 162 - 162
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 162 - 162
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 419 - 419
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 419 - 419
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:19:47]	[GENERATE_METHOD_FIX]:	1
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:47]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 86 - 86
+[12:19:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:47
+[12:19:48]	[FILTER_COMPILATION_ERROR_COUNT]:	30
+[12:19:48]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:5;EXPRSET:0;BOOLSETCOUNT:1
+[12:19:48]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 86 - 86
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_UNESCAPE:()[[Ljava/lang/String;line 138 - 138
+[12:19:48]	[GENERATE_METHOD_FIX]:	1
+[12:19:48]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:3
+[12:19:48]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:48]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_UNESCAPE:()[[Ljava/lang/String;line 138 - 138
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/ArrayUtils:clone:([Ljava/lang/Object;)[Ljava/lang/Object;line 323 - 323
+[12:19:48]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:48]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:48]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/ArrayUtils:clone:([Ljava/lang/Object;)[Ljava/lang/Object;line 323 - 323
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:19:48]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:48]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:48]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 84 - 84
+[12:19:48]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:48]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:48]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 84 - 84
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 417 - 417
+[12:19:48]	[GENERATE_METHOD_FIX]:	0
+[12:19:48]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:2
+[12:19:49]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:19:49]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:49]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 417 - 417
+[12:19:49]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1737 - 1737
+[12:19:49]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:19
+[12:19:50]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:19:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:1
+[12:19:50]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1737 - 1737
+[12:19:50]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 167 - 167
+[12:19:50]	[GENERATE_METHOD_FIX]:	0
+[12:19:50]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:7
+[12:19:50]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 167 - 167
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1744 - 1744
+[12:19:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1744 - 1744
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 109 - 109
+[12:19:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 109 - 109
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 110 - 110
+[12:19:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 110 - 110
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:19:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1763 - 1763
+[12:19:51]	[GENERATE_METHOD_FIX]:	0
+[12:19:51]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:0
+[12:19:51]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:19:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:19:51]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1763 - 1763
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils:escapeCsv:(Ljava/lang/String;)Ljava/lang/String;line 556 - 556
+[12:19:51]	[GENERATE_METHOD_FIX]:	1
+[12:19:52]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:9
+[12:19:52]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:19:52]	[POST_FILTER_STATUS]:	EXPR:10;BOOL:1;EXPRSET:8;BOOLSETCOUNT:1
+[12:19:52]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils:escapeCsv:(Ljava/lang/String;)Ljava/lang/String;line 556 - 556
+[12:19:52]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1747 - 1747
+[12:19:52]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:109
+[12:19:56]	[FILTER_COMPILATION_ERROR_COUNT]:	32
+[12:20:10]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:27;EXPRSET:0;BOOLSETCOUNT:9
+[12:20:10]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1747 - 1747
+[12:20:10]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:20:10]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:10]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:10]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:20:10]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_UNESCAPE:()[[Ljava/lang/String;line 408 - 408
+[12:20:10]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:10]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:10]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_UNESCAPE:()[[Ljava/lang/String;line 408 - 408
+[12:20:11]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 54 - 54
+[12:20:11]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:11
+[12:20:11]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:20:11]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:20:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 54 - 54
+[12:20:11]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 85 - 85
+[12:20:11]	[GENERATE_METHOD_FIX]:	1
+[12:20:11]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:0
+[12:20:11]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:20:11]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:0;EXPRSET:1;BOOLSETCOUNT:0
+[12:20:11]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 85 - 85
+[12:20:11]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/UnicodeEscaper:outsideOf:(II)Lorg/apache/commons/lang3/text/translate/UnicodeEscaper;line 85 - 85
+[12:20:11]	[GENERATE_METHOD_FIX]:	1
+[12:20:11]	[PRE_FILTER_STATUS]:	EXPR:7;BOOL:2
+[12:20:12]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:2;BOOL:0;EXPRSET:2;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/UnicodeEscaper:outsideOf:(II)Lorg/apache/commons/lang3/text/translate/UnicodeEscaper;line 85 - 85
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_ESCAPE:()[[Ljava/lang/String;line 377 - 377
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_ESCAPE:()[[Ljava/lang/String;line 377 - 377
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:20:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:12]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1737 - 1737
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1737 - 1737
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1740 - 1740
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1740 - 1740
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 161 - 161
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 161 - 161
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 94 - 94
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:13]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:13]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 94 - 94
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 76 - 76
+[12:20:13]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:5
+[12:20:13]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:20:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:20:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 76 - 76
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:20:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 420 - 420
+[12:20:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 420 - 420
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:20:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:20:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:14]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 83 - 83
+[12:20:14]	[GENERATE_METHOD_FIX]:	0
+[12:20:14]	[PRE_FILTER_STATUS]:	EXPR:9;BOOL:1
+[12:20:14]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:20:15]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:20:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:20:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 83 - 83
+[12:20:15]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 95 - 95
+[12:20:15]	[GENERATE_METHOD_FIX]:	36
+[12:20:15]	[PRE_FILTER_STATUS]:	EXPR:8;BOOL:2
+[12:20:15]	[FILTER_COMPILATION_ERROR_COUNT]:	7
+[12:20:15]	[POST_FILTER_STATUS]:	EXPR:3;BOOL:0;EXPRSET:2;BOOLSETCOUNT:0
+[12:20:15]	[END_SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 95 - 95

@@ -1,0 +1,693 @@
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:30]	[GENERATE_METHOD_FIX]:	3
+[12:23:30]	[METHOD_FIX_DETAIL]:	||||?? -> new ConvergenceException("number of iterations={0}, maximum iterations={1}, " + "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " + "final b value={6}, f(a)={7}, f(b)={8}", numIterations)||||?? -> new ConvergenceException()||||?? -> new ConvergenceException()
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:30]	[GENERATE_METHOD_FIX]:	0
+[12:23:30]	[METHOD_FIX_DETAIL]:	
+[12:23:30]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:30]	[FILTER_SURVIVE]:	!locale.hasExtensions():true;not expected:false
+[12:23:30]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:30]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:30]	[FILTER_SURVIVE]:	!pattern.isEmpty():true;not expected:false
+[12:23:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:23:30]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:2	#false:2	
+[12:23:30]	[FAIL_TC_FILTER_START]:	survive count:2
+[12:23:30]	[FILTER_SURVIVE]:	!locale.hasExtensions():true;not expected:false
+[12:23:30]	[FILTER_SURVIVE]:	!pattern.isEmpty():true;not expected:false
+[12:23:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:23:30]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:30]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:23:30]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true:2	#false#false:2	
+[12:23:30]	[FAIL_TC_FILTER_START]:	survive count:2
+[12:23:30]	[FILTER_SURVIVE]:	!locale.hasExtensions():true;not expected:false
+[12:23:30]	[FILTER_SURVIVE]:	!pattern.isEmpty():true;not expected:false
+[12:23:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:23:30]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:30]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:23:30]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:2	#true#true#true:2	
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:30]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:30]	[GENERATE_METHOD_FIX]:	1
+[12:23:30]	[METHOD_FIX_DETAIL]:	||||?? -> Locale.getDefault()
+[12:23:31]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:23:31]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:23:31]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 200 - 200
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 199 - 199
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getMessage:(Ljava/util/Locale;)Ljava/lang/String;line 166 - 166
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 203 - 203
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:getLocalizedMessage:()Ljava/lang/String;line 172 - 172
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 204 - 204
+[12:23:31]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/AbstractContinuousDistribution:inverseCumulativeProbability:(D)Dline 70 - 70
+[12:23:31]	[GENERATE_METHOD_FIX]:	12
+[12:23:31]	[METHOD_FIX_DETAIL]:	||||?? -> cumulativeProbability(x, getDomainUpperBound)||||?? -> getDomainUpperBound(p)||||?? -> getInitialDomain(p)||||?? -> inverseCumulativeProbability(p)||||?? -> getDomainLowerBound(p)||||?? -> getInitialDomain(p)||||?? -> inverseCumulativeProbability(p)||||?? -> new UnivariateRealFunction()||||?? -> new FunctionEvaluationException(x, ex.getPattern(), ex.getArguments())||||?? -> new FunctionEvaluationException(bracket, ex.getPattern(), ex.getArguments())||||?? -> new FunctionEvaluationException(ex, x, ex.getPattern(), ex.getArguments())||||?? -> new FunctionEvaluationException(ex, bracket, ex.getPattern(), ex.getArguments())
+[12:23:32]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:32]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:32]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:32]	[FILTER_DEAD]:	lowerBound:-1.79769;p:0.001
+[12:23:32]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:32]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:32]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:33]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:33]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:33]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 184 - 184
+[12:23:33]	[GENERATE_METHOD_FIX]:	0
+[12:23:33]	[METHOD_FIX_DETAIL]:	
+[12:23:33]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:33]	[FILTER_DEAD]:	p:0.001;ret:-1.79769
+[12:23:33]	[FILTER_DEAD]:	SQRT2PI:2.506628;ret:-1.79769
+[12:23:33]	[FILTER_DEAD]:	mean:2.1;ret:-1.79769
+[12:23:33]	[FILTER_DEAD]:	standardDeviation:1.4;ret:-1.79769
+[12:23:33]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:33]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainUpperBound:(D)Dline 203 - 203
+[12:23:33]	[GENERATE_METHOD_FIX]:	0
+[12:23:33]	[METHOD_FIX_DETAIL]:	
+[12:23:34]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:34]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:34]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:34]	[FILTER_DEAD]:	p:0.999;Double.MAX_VALUE:1.797693
+[12:23:34]	[FILTER_DEAD]:	SQRT2PI:2.506628;Double.MAX_VALUE:1.797693
+[12:23:34]	[FILTER_DEAD]:	mean:2.1;Double.MAX_VALUE:1.797693
+[12:23:34]	[FILTER_DEAD]:	standardDeviation:1.4;Double.MAX_VALUE:1.797693
+[12:23:34]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:34]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getInitialDomain:(D)Dline 229 - 229
+[12:23:34]	[GENERATE_METHOD_FIX]:	0
+[12:23:34]	[METHOD_FIX_DETAIL]:	
+[12:23:34]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:34]	[FILTER_DEAD]:	p:0.001;ret:0.700000
+[12:23:34]	[FILTER_DEAD]:	SQRT2PI:2.506628;ret:0.700000
+[12:23:34]	[FILTER_DEAD]:	mean:2.1;ret:0.700000
+[12:23:34]	[FILTER_DEAD]:	standardDeviation:1.4;ret:0.700000
+[12:23:34]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:34]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 178 - 178
+[12:23:35]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:35]	[FILTER_DEAD]:	p==.5:false;p < .5:true
+[12:23:35]	[FILTER_DEAD]:	p>.5:false;p < .5:true
+[12:23:35]	[FILTER_DEAD]:	p>=.5:false;p < .5:true
+[12:23:35]	[FILTER_SURVIVE]:	p<=.5:true;p < .5:true
+[12:23:35]	[FILTER_SURVIVE]:	p!=.5:true;p < .5:true
+[12:23:35]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:35]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:23:35]	[FILTER_SURVIVE]:	p<=.5:true;p < .5:true
+[12:23:35]	[FILTER_SURVIVE]:	p!=.5:true;p < .5:true
+[12:23:35]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:23:35]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:23:35]	[FILTER_SURVIVE]:	p<=.5:true;p < .5:true
+[12:23:35]	[FILTER_SURVIVE]:	p!=.5:true;p < .5:true
+[12:23:35]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:23:35]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:23:35]	[FILTER_SURVIVE]:	p<=.5:true;p < .5:true
+[12:23:35]	[FILTER_SURVIVE]:	p!=.5:true;p < .5:true
+[12:23:35]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:23:35]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:23:35]	[FILTER_SURVIVE]:	p<=.5:true;p < .5:true
+[12:23:35]	[FILTER_SURVIVE]:	p!=.5:true;p < .5:true
+[12:23:35]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:23:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:35]	[FILTER_DEAD]:	p<=.5:false;p < .5:false
+[12:23:35]	[FILTER_SURVIVE]:	p!=.5:true;p < .5:false
+[12:23:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:23:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	#false:1	
+[12:23:35]	[SEARCH_FIX]:	search for:org/apache/commons/math/MathException:buildMessage:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;line 85 - 85
+[12:23:36]	[GENERATE_METHOD_FIX]:	3
+[12:23:36]	[METHOD_FIX_DETAIL]:	||||?? -> new MessageFormat(translate(pattern,locale),locale).formatToCharacterIterator(arguments)||||?? -> new MessageFormat(translate(pattern,locale))||||?? -> new MessageFormat(translate(pattern,locale), locale)
+[12:23:36]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:36]	[FILTER_DEAD]:	!locale.hasExtensions():true;expected:false
+[12:23:36]	[FILTER_SURVIVE]:	pattern.isEmpty():false;expected:false
+[12:23:36]	[FILTER_SURVIVE]:	locale.hasExtensions():false;expected:false
+[12:23:36]	[FILTER_DEAD]:	!pattern.isEmpty():true;expected:false
+[12:23:36]	[FILTER_DEAD]:	pattern:Maximal number of iterations ({0}) exceeded;"":
+[12:23:36]	[FILTER_DEAD]:	(pattern!=null):true;(pattern == null):false
+[12:23:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:36]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:23:36]	[FILTER_SURVIVE]:	pattern.isEmpty():false;expected:false
+[12:23:36]	[FILTER_SURVIVE]:	locale.hasExtensions():false;expected:false
+[12:23:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:23:36]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:23:36]	[FILTER_SURVIVE]:	pattern.isEmpty():false;expected:false
+[12:23:36]	[FILTER_SURVIVE]:	locale.hasExtensions():false;expected:false
+[12:23:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:23:36]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:23:36]	[FILTER_SURVIVE]:	pattern.isEmpty():false;expected:false
+[12:23:36]	[FILTER_SURVIVE]:	locale.hasExtensions():false;expected:false
+[12:23:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:23:36]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:23:36]	[FILTER_SURVIVE]:	pattern.isEmpty():false;expected:false
+[12:23:36]	[FILTER_SURVIVE]:	locale.hasExtensions():false;expected:false
+[12:23:36]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:23:36]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:36]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:36]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:2	
+[12:23:36]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:36]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:36]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:2	
+[12:23:36]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:36]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:36]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:2	
+[12:23:36]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:36]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:36]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:37]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false:2	
+[12:23:37]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:37]	[FILTER_DEAD]:	pattern.isEmpty():false;not expected:false
+[12:23:37]	[FILTER_DEAD]:	locale.hasExtensions():false;not expected:false
+[12:23:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:37]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:2	
+[12:23:37]	[SEARCH_FIX]:	search for:org/apache/commons/math/distribution/NormalDistributionImpl:getDomainLowerBound:(D)Dline 181 - 181
+[12:23:37]	[GENERATE_METHOD_FIX]:	0
+[12:23:37]	[METHOD_FIX_DETAIL]:	
+[12:23:37]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:37]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:37]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 189 - 189
+[12:23:37]	[GENERATE_METHOD_FIX]:	20
+[12:23:37]	[METHOD_FIX_DETAIL]:	||||?? -> Math.max(numIterations, numIterations)||||?? -> Math.max()||||?? -> Math.max()||||?? -> Math.IEEEremainder(a - 1.0, lowerBound)||||?? -> Math.atan2(a - 1.0, lowerBound)||||?? -> Math.copySign(a - 1.0, lowerBound)||||?? -> Math.hypot(a - 1.0, lowerBound)||||?? -> Math.min(a - 1.0, lowerBound)||||?? -> Math.nextAfter(a - 1.0, lowerBound)||||?? -> Math.pow(a - 1.0, lowerBound)||||?? -> Math.min(numIterations, numIterations)||||?? -> Math.min()||||?? -> Math.min()||||?? -> Math.IEEEremainder(b + 1.0, upperBound)||||?? -> Math.atan2(b + 1.0, upperBound)||||?? -> Math.copySign(b + 1.0, upperBound)||||?? -> Math.hypot(b + 1.0, upperBound)||||?? -> Math.max(b + 1.0, upperBound)||||?? -> Math.nextAfter(b + 1.0, upperBound)||||?? -> Math.pow(b + 1.0, upperBound)
+[12:23:37]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:38]	[FILTER_DEAD]:	a:-0.29999;b:1.700000
+[12:23:38]	[FILTER_DEAD]:	initial:0.700000;b:1.700000
+[12:23:38]	[FILTER_DEAD]:	upperBound:2.1;b:1.700000
+[12:23:38]	[FILTER_DEAD]:	lowerBound:-1.79769;b:1.700000
+[12:23:38]	[FILTER_DEAD]:	fa:0.042238;b:1.700000
+[12:23:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:38]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:38]	[FILTER_DEAD]:	maximumIterations:2147483647;numIterations:0
+[12:23:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:38]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:38]	[FILTER_DEAD]:	a:0.700000;1.0:1.0
+[12:23:38]	[FILTER_DEAD]:	b:0.700000;1.0:1.0
+[12:23:38]	[FILTER_DEAD]:	initial:0.700000;1.0:1.0
+[12:23:38]	[FILTER_DEAD]:	upperBound:2.1;1.0:1.0
+[12:23:38]	[FILTER_DEAD]:	lowerBound:-1.79769;1.0:1.0
+[12:23:38]	[FILTER_DEAD]:	a:0.700000;lowerBound:-1.79769
+[12:23:38]	[FILTER_DEAD]:	b:0.700000;lowerBound:-1.79769
+[12:23:38]	[FILTER_DEAD]:	initial:0.700000;lowerBound:-1.79769
+[12:23:38]	[FILTER_DEAD]:	upperBound:2.1;lowerBound:-1.79769
+[12:23:38]	[FILTER_SURVIVE]:	b:0.700000;a:0.700000
+[12:23:38]	[FILTER_SURVIVE]:	initial:0.700000;a:0.700000
+[12:23:38]	[FILTER_DEAD]:	upperBound:2.1;a:0.700000
+[12:23:38]	[FILTER_DEAD]:	lowerBound:-1.79769;a:0.700000
+[12:23:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:38]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:23:38]	[FILTER_DEAD]:	b:1.700000;a:-0.29999
+[12:23:38]	[FILTER_DEAD]:	initial:0.700000;a:-0.29999
+[12:23:38]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:23:39]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:39]	[FILTER_DEAD]:	a:-0.29999;upperBound:2.1
+[12:23:39]	[FILTER_DEAD]:	b:0.700000;upperBound:2.1
+[12:23:39]	[FILTER_DEAD]:	initial:0.700000;upperBound:2.1
+[12:23:39]	[FILTER_DEAD]:	lowerBound:-1.79769;upperBound:2.1
+[12:23:39]	[FILTER_DEAD]:	a:-0.29999;1.0:1.0
+[12:23:39]	[FILTER_DEAD]:	b:0.700000;1.0:1.0
+[12:23:39]	[FILTER_DEAD]:	initial:0.700000;1.0:1.0
+[12:23:39]	[FILTER_DEAD]:	upperBound:2.1;1.0:1.0
+[12:23:39]	[FILTER_DEAD]:	lowerBound:-1.79769;1.0:1.0
+[12:23:39]	[FILTER_DEAD]:	a:-0.29999;b:0.700000
+[12:23:39]	[FILTER_SURVIVE]:	initial:0.700000;b:0.700000
+[12:23:39]	[FILTER_DEAD]:	upperBound:2.1;b:0.700000
+[12:23:39]	[FILTER_DEAD]:	lowerBound:-1.79769;b:0.700000
+[12:23:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:39]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:23:39]	[FILTER_DEAD]:	initial:0.700000;b:1.700000
+[12:23:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:23:39]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:39]	[FILTER_DEAD]:	b:1.700000;a:-0.29999
+[12:23:39]	[FILTER_DEAD]:	initial:0.700000;a:-0.29999
+[12:23:39]	[FILTER_DEAD]:	upperBound:2.1;a:-0.29999
+[12:23:39]	[FILTER_DEAD]:	lowerBound:-1.79769;a:-0.29999
+[12:23:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:39]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 186 - 186
+[12:23:39]	[GENERATE_METHOD_FIX]:	0
+[12:23:39]	[METHOD_FIX_DETAIL]:	
+[12:23:40]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:40]	[FILTER_DEAD]:	upperBound:2.1;initial:0.700000
+[12:23:40]	[FILTER_DEAD]:	lowerBound:-1.79769;initial:0.700000
+[12:23:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:40]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:40]	[FILTER_SURVIVE]:	a:0.700000;initial:0.700000
+[12:23:40]	[FILTER_DEAD]:	upperBound:2.1;initial:0.700000
+[12:23:40]	[FILTER_DEAD]:	lowerBound:-1.79769;initial:0.700000
+[12:23:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:40]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:23:40]	[FILTER_SURVIVE]:	a:0.700000;initial:0.700000
+[12:23:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:23:40]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:23:40]	[FILTER_SURVIVE]:	a:0.700000;initial:0.700000
+[12:23:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:23:40]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:23:40]	[FILTER_SURVIVE]:	a:0.700000;initial:0.700000
+[12:23:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:23:40]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:23:40]	[FILTER_SURVIVE]:	a:0.700000;initial:0.700000
+[12:23:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:23:41]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:41]	[FILTER_DEAD]:	a:1.0;initial:1.0
+[12:23:41]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:23:41]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0:1	
+[12:23:41]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:41]	[FILTER_DEAD]:	maximumIterations:2147483647;0:0
+[12:23:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:41]	[SEARCH_FIX]:	search for:org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils:bracket:(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[Dline 198 - 198
+[12:23:41]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb==0.0:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb>0.0:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb<0.0:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb<=0.0:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb!=0.0:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=lowerBound:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=lowerBound:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=numIterations:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=numIterations:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<b:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<b:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=initial:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=initial:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=a:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=a:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<a:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<a:false;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=b:true;fa * fb >= 0.0:false
+[12:23:41]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=b:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<fb:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<fb:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=upperBound:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=upperBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<initial:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<initial:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=initial:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=initial:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<numIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<numIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=maximumIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=b:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=b:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=initial:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=initial:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=a:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=a:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=upperBound:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=upperBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=b:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=b:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=numIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=numIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=a:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=a:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=maximumIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=fa:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=fa:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=maximumIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=fa:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=fa:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=fb:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=fb:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<numIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<numIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=b:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=b:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=a:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=a:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=fb:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=fb:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<upperBound:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<upperBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<b:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<b:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<a:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<a:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb!=upperBound:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=upperBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=upperBound:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=upperBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa!=numIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=numIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<initial:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<initial:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<maximumIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=maximumIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=numIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=numIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<maximumIterations:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=initial:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=initial:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<fa:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<fa:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<upperBound:true;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<upperBound:false;fa * fb >= 0.0:false
+[12:23:42]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:23:42]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb==0.0:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb>0.0:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=numIterations:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<b:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=initial:false;fa * fb >= 0.0:false
+[12:23:42]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<fb:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=fb:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=fb:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:23:43]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb==0.0:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb>0.0:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<fb:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=fa:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=fb:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=fb:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<b:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<a:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=upperBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=numIterations:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<initial:false;fa * fb >= 0.0:false
+[12:23:43]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:23:44]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb==0.0:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb>0.0:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<fb:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=fb:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=fb:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:23:44]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb==0.0:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb>0.0:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<fb:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=initial:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=upperBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=fa:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=fb:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<lowerBound:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<numIterations:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=b:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=a:false;fa * fb >= 0.0:false
+[12:23:44]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=fb:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<upperBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<b:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<a:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<a:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=upperBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=upperBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=lowerBound:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa!=numIterations:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<initial:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=maximumIterations:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fa<=numIterations:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<maximumIterations:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=initial:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0||fb<fa:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<fa:false;fa * fb >= 0.0:false
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<upperBound:false;fa * fb >= 0.0:false
+[12:23:45]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:23:45]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:23:45]	[FILTER_DEAD]:	fa * fb==0.0:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb>0.0:false;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=lowerBound:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=lowerBound:false;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb!=numIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<b:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=initial:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=b:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<fb:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=upperBound:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<initial:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb!=initial:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<numIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=maximumIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb!=b:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=initial:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb!=a:false;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=upperBound:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<lowerBound:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<lowerBound:false;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=b:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=numIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb!=maximumIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb!=fa:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=maximumIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=fa:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<=fa:false;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=fb:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<lowerBound:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<lowerBound:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<numIterations:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=b:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=a:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=fb:true;fa * fb >= 0.0:true
+[12:23:45]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<upperBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<=lowerBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=lowerBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<b:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<a:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<a:false;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb!=upperBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=upperBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0||fa<=lowerBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=lowerBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa!=numIterations:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<initial:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<maximumIterations:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=maximumIterations:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fa<=numIterations:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<maximumIterations:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<=initial:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0||fb<fa:true;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_SURVIVE]:	fa * fb >= 0.0&&fb<fa:false;fa * fb >= 0.0:true
+[12:23:46]	[FILTER_DEAD]:	fa * fb >= 0.0&&fb<upperBound:true;fa * fb >= 0.0:true
+[12:23:46]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:23:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:53	#false:7	

@@ -1,0 +1,842 @@
+[12:27:05]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:27:05]	[GENERATE_METHOD_FIX]:	27
+[12:27:05]	[PRE_FILTER_STATUS]:	EXPR:12;BOOL:234
+[12:27:08]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:27:12]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:27:15]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:27:19]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:27:21]	[POST_FILTER_STATUS]:	EXPR:2;BOOL:108;EXPRSET:2;BOOLSETCOUNT:4
+[12:27:21]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:27:22]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1508 - 1508
+[12:27:22]	[GENERATE_METHOD_FIX]:	12
+[12:27:22]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:175
+[12:27:25]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:27:28]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:27:32]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:27:32]	[POST_FILTER_STATUS]:	EXPR:6;BOOL:80;EXPRSET:3;BOOLSETCOUNT:3
+[12:27:32]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1508 - 1508
+[12:27:32]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1792 - 1792
+[12:27:32]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:121
+[12:27:37]	[FILTER_COMPILATION_ERROR_COUNT]:	92
+[12:27:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:15;EXPRSET:0;BOOLSETCOUNT:2
+[12:27:40]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1792 - 1792
+[12:27:40]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1431 - 1431
+[12:27:40]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:27:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:27:40]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1431 - 1431
+[12:27:40]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1322 - 1322
+[12:27:40]	[GENERATE_METHOD_FIX]:	1
+[12:27:40]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:107
+[12:27:56]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:28:06]	[POST_FILTER_STATUS]:	EXPR:2;BOOL:56;EXPRSET:1;BOOLSETCOUNT:6
+[12:28:06]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1322 - 1322
+[12:28:06]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 946 - 946
+[12:28:06]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:171
+[12:28:15]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:28:15]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:54;EXPRSET:0;BOOLSETCOUNT:1
+[12:28:15]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 946 - 946
+[12:28:15]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:15]	[GENERATE_METHOD_FIX]:	36
+[12:28:15]	[PRE_FILTER_STATUS]:	EXPR:812;BOOL:0
+[12:28:16]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:17]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:18]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:18]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:19]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:20]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:21]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:21]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:22]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:23]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:24]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:25]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:25]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:26]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:27]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:28]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:29]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:29]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:30]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:31]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:32]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:33]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:33]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:34]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:35]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:36]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:36]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:37]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:28:37]	[POST_FILTER_STATUS]:	EXPR:756;BOOL:0;EXPRSET:756;BOOLSETCOUNT:0
+[12:28:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:37]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:28:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:28:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1358 - 1358
+[12:28:37]	[GENERATE_METHOD_FIX]:	1
+[12:28:37]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:105
+[12:28:44]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:28:44]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:52;EXPRSET:1;BOOLSETCOUNT:2
+[12:28:44]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1358 - 1358
+[12:28:44]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 312 - 312
+[12:28:44]	[GENERATE_METHOD_FIX]:	20
+[12:28:44]	[PRE_FILTER_STATUS]:	EXPR:154;BOOL:20
+[12:28:44]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:28:45]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:28:46]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:28:46]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:28:47]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:28:47]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:28:48]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:28:49]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:28:51]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:28:51]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:28:53]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:28:53]	[FILTER_COMPILATION_ERROR_COUNT]:	14
+[12:28:55]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:28:55]	[POST_FILTER_STATUS]:	EXPR:72;BOOL:0;EXPRSET:38;BOOLSETCOUNT:0
+[12:28:55]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 312 - 312
+[12:28:55]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:28:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:28:55]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:55]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:28:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:28:55]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:28:55]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:28:55]	[GENERATE_METHOD_FIX]:	27
+[12:28:55]	[PRE_FILTER_STATUS]:	EXPR:12;BOOL:234
+[12:28:58]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:29:02]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:29:06]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:29:09]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:29:12]	[POST_FILTER_STATUS]:	EXPR:4;BOOL:108;EXPRSET:3;BOOLSETCOUNT:4
+[12:29:12]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:29:12]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:29:12]	[GENERATE_METHOD_FIX]:	1
+[12:29:12]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:327
+[12:29:20]	[FILTER_COMPILATION_ERROR_COUNT]:	110
+[12:29:34]	[FILTER_COMPILATION_ERROR_COUNT]:	114
+[12:29:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:56;EXPRSET:0;BOOLSETCOUNT:6
+[12:29:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:29:41]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:29:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:29:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:29:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:29:41]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1292 - 1292
+[12:29:41]	[GENERATE_METHOD_FIX]:	1
+[12:29:41]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:308
+[12:29:45]	[FILTER_COMPILATION_ERROR_COUNT]:	24
+[12:30:05]	[FILTER_COMPILATION_ERROR_COUNT]:	77
+[12:30:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:112;EXPRSET:0;BOOLSETCOUNT:6
+[12:30:14]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1292 - 1292
+[12:30:14]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:checkAxisIndices:(Ljava/util/List;)Vline 1453 - 1453
+[12:30:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:189
+[12:30:24]	[FILTER_COMPILATION_ERROR_COUNT]:	26
+[12:30:32]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:56;EXPRSET:0;BOOLSETCOUNT:1
+[12:30:32]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:checkAxisIndices:(Ljava/util/List;)Vline 1453 - 1453
+[12:30:32]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1352 - 1352
+[12:30:32]	[GENERATE_METHOD_FIX]:	1
+[12:30:32]	[PRE_FILTER_STATUS]:	EXPR:13;BOOL:56
+[12:30:36]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:30:36]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:26;EXPRSET:0;BOOLSETCOUNT:1
+[12:30:36]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1352 - 1352
+[12:30:36]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 309 - 309
+[12:30:36]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:30:36]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:30:36]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 309 - 309
+[12:30:36]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1527 - 1527
+[12:30:36]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:30:36]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:30:36]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1527 - 1527
+[12:30:36]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:getParent:()Lorg/jfree/chart/plot/Plot;line 456 - 456
+[12:30:36]	[GENERATE_METHOD_FIX]:	0
+[12:30:36]	[PRE_FILTER_STATUS]:	EXPR:3;BOOL:29
+[12:30:37]	[FILTER_COMPILATION_ERROR_COUNT]:	21
+[12:30:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:5;EXPRSET:0;BOOLSETCOUNT:1
+[12:30:39]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:getParent:()Lorg/jfree/chart/plot/Plot;line 456 - 456
+[12:30:39]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1046 - 1046
+[12:30:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:496
+[12:30:47]	[FILTER_COMPILATION_ERROR_COUNT]:	110
+[12:31:09]	[FILTER_COMPILATION_ERROR_COUNT]:	172
+[12:31:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:84;EXPRSET:0;BOOLSETCOUNT:6
+[12:31:25]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1046 - 1046
+[12:31:25]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1528 - 1528
+[12:31:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:31:25]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:31:25]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1528 - 1528
+[12:31:25]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1353 - 1353
+[12:31:25]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:161
+[12:31:34]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:31:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:53;EXPRSET:0;BOOLSETCOUNT:1
+[12:31:34]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1353 - 1353
+[12:31:34]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1507 - 1507
+[12:31:34]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:31:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:31:34]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1507 - 1507
+[12:31:34]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 304 - 304
+[12:31:34]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:31:34]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:31:34]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 304 - 304
+[12:31:34]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1672 - 1672
+[12:31:34]	[GENERATE_METHOD_FIX]:	0
+[12:31:34]	[PRE_FILTER_STATUS]:	EXPR:15;BOOL:78
+[12:31:40]	[FILTER_COMPILATION_ERROR_COUNT]:	19
+[12:31:40]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:30;EXPRSET:1;BOOLSETCOUNT:1
+[12:31:40]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1672 - 1672
+[12:31:40]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ResourceBundleWrapper:getBundle:(Ljava/lang/String;)Ljava/util/ResourceBundle;line 128 - 128
+[12:31:40]	[GENERATE_METHOD_FIX]:	8
+[12:31:40]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:17
+[12:31:40]	[FILTER_COMPILATION_ERROR_COUNT]:	9
+[12:31:41]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:31:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:2;EXPRSET:0;BOOLSETCOUNT:2
+[12:31:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/util/ResourceBundleWrapper:getBundle:(Ljava/lang/String;)Ljava/util/ResourceBundle;line 128 - 128
+[12:31:41]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1528 - 1528
+[12:31:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:31:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:31:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1528 - 1528
+[12:31:41]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:31:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:31:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:31:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:31:41]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 302 - 302
+[12:31:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:31:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:31:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 302 - 302
+[12:31:41]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1014 - 1014
+[12:31:41]	[GENERATE_METHOD_FIX]:	1
+[12:31:41]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:212
+[12:32:01]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:32:10]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:112;EXPRSET:0;BOOLSETCOUNT:6
+[12:32:10]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1014 - 1014
+[12:32:10]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 308 - 308
+[12:32:10]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:32:10]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:32:10]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 308 - 308
+[12:32:10]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 325 - 325
+[12:32:10]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:32:10]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:32:10]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 325 - 325
+[12:32:10]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1356 - 1356
+[12:32:10]	[GENERATE_METHOD_FIX]:	0
+[12:32:10]	[PRE_FILTER_STATUS]:	EXPR:15;BOOL:54
+[12:32:14]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:32:14]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:26;EXPRSET:1;BOOLSETCOUNT:1
+[12:32:14]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1356 - 1356
+[12:32:14]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 328 - 328
+[12:32:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:32:14]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:32:14]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 328 - 328
+[12:32:14]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1426 - 1426
+[12:32:14]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:167
+[12:32:23]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:32:23]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:56;EXPRSET:0;BOOLSETCOUNT:1
+[12:32:23]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1426 - 1426
+[12:32:23]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 328 - 328
+[12:32:23]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:32:23]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:32:23]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 328 - 328
+[12:32:23]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:setPlot:(Lorg/jfree/chart/plot/CategoryPlot;)Vline 296 - 296
+[12:32:23]	[GENERATE_METHOD_FIX]:	0
+[12:32:23]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:57
+[12:32:26]	[FILTER_COMPILATION_ERROR_COUNT]:	29
+[12:32:26]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:14;EXPRSET:0;BOOLSETCOUNT:1
+[12:32:26]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:setPlot:(Lorg/jfree/chart/plot/CategoryPlot;)Vline 296 - 296
+[12:32:26]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 323 - 323
+[12:32:26]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:32:26]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:32:26]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 323 - 323
+[12:32:26]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:32:26]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:32:26]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:32:26]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:32:26]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1365 - 1365
+[12:32:26]	[GENERATE_METHOD_FIX]:	2
+[12:32:26]	[PRE_FILTER_STATUS]:	EXPR:3;BOOL:104
+[12:32:29]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:32:35]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:32:35]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:52;EXPRSET:1;BOOLSETCOUNT:2
+[12:32:35]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1365 - 1365
+[12:32:35]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1015 - 1015
+[12:32:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:265
+[12:32:48]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:33:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:113;EXPRSET:0;BOOLSETCOUNT:3
+[12:33:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1015 - 1015
+[12:33:02]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 325 - 325
+[12:33:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:02]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 325 - 325
+[12:33:02]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:33:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:02]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:02]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:33:02]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2341 - 2341
+[12:33:02]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:215
+[12:33:13]	[FILTER_COMPILATION_ERROR_COUNT]:	58
+[12:33:36]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:57;EXPRSET:0;BOOLSETCOUNT:3
+[12:33:36]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2341 - 2341
+[12:33:36]	[SEARCH_FIX]:	search for:org/jfree/chart/LegendItemCollection:getItemCount:()Iline 107 - 107
+[12:33:36]	[GENERATE_METHOD_FIX]:	0
+[12:33:36]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:4
+[12:33:37]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/LegendItemCollection:getItemCount:()Iline 107 - 107
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1509 - 1509
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1509 - 1509
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1013 - 1013
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1013 - 1013
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1508 - 1508
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1508 - 1508
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 333 - 333
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:37]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 333 - 333
+[12:33:37]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1675 - 1675
+[12:33:37]	[GENERATE_METHOD_FIX]:	1
+[12:33:37]	[PRE_FILTER_STATUS]:	EXPR:4;BOOL:230
+[12:33:41]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:33:46]	[FILTER_COMPILATION_ERROR_COUNT]:	18
+[12:33:50]	[FILTER_COMPILATION_ERROR_COUNT]:	18
+[12:33:50]	[POST_FILTER_STATUS]:	EXPR:2;BOOL:90;EXPRSET:2;BOOLSETCOUNT:3
+[12:33:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1675 - 1675
+[12:33:50]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 1232 - 1232
+[12:33:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:160
+[12:33:58]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:53;EXPRSET:0;BOOLSETCOUNT:1
+[12:33:58]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 1232 - 1232
+[12:33:58]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 332 - 332
+[12:33:58]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:58]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:58]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 332 - 332
+[12:33:58]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:58]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:58]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:58]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:58]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:fireChangeEvent:()Vline 986 - 986
+[12:33:59]	[GENERATE_METHOD_FIX]:	1
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:10
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:5;EXPRSET:0;BOOLSETCOUNT:1
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:fireChangeEvent:()Vline 986 - 986
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 331 - 331
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 331 - 331
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/LegendItemCollection:getItemCount:()Iline 107 - 107
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/LegendItemCollection:getItemCount:()Iline 107 - 107
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 317 - 317
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 317 - 317
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1292 - 1292
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1292 - 1292
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 335 - 335
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 335 - 335
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 297 - 297
+[12:33:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:33:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:33:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 297 - 297
+[12:33:59]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1795 - 1795
+[12:34:00]	[GENERATE_METHOD_FIX]:	17
+[12:34:00]	[PRE_FILTER_STATUS]:	EXPR:8;BOOL:108
+[12:34:02]	[FILTER_COMPILATION_ERROR_COUNT]:	26
+[12:34:06]	[FILTER_COMPILATION_ERROR_COUNT]:	30
+[12:34:08]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:28;EXPRSET:0;BOOLSETCOUNT:2
+[12:34:08]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1795 - 1795
+[12:34:08]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1507 - 1507
+[12:34:08]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:34:08]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:34:08]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxis:(II)Vline 1507 - 1507
+[12:34:08]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1679 - 1679
+[12:34:08]	[GENERATE_METHOD_FIX]:	0
+[12:34:08]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:152
+[12:34:12]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:34:16]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:34:16]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:60;EXPRSET:0;BOOLSETCOUNT:2
+[12:34:16]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1679 - 1679
+[12:34:16]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2334 - 2334
+[12:34:16]	[GENERATE_METHOD_FIX]:	0
+[12:34:16]	[PRE_FILTER_STATUS]:	EXPR:11;BOOL:96
+[12:34:22]	[FILTER_COMPILATION_ERROR_COUNT]:	44
+[12:34:31]	[POST_FILTER_STATUS]:	EXPR:10;BOOL:28;EXPRSET:1;BOOLSETCOUNT:3
+[12:34:32]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2334 - 2334
+[12:34:32]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1041 - 1041
+[12:34:32]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:121
+[12:34:38]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:34:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:31;EXPRSET:0;BOOLSETCOUNT:3
+[12:34:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1041 - 1041
+[12:34:50]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 946 - 946
+[12:34:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:34:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:34:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 946 - 946
+[12:34:50]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:34:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:34:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:34:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:34:50]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 320 - 320
+[12:34:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:34:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:34:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 320 - 320
+[12:34:50]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 325 - 325
+[12:34:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:34:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:34:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 325 - 325
+[12:34:50]	[SEARCH_FIX]:	search for:org/jfree/chart/LegendItemCollection:getItemCount:()Iline 107 - 107
+[12:34:50]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:34:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:34:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/LegendItemCollection:getItemCount:()Iline 107 - 107
+[12:34:50]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2345 - 2345
+[12:34:50]	[GENERATE_METHOD_FIX]:	1
+[12:34:50]	[PRE_FILTER_STATUS]:	EXPR:4;BOOL:283
+[12:34:55]	[FILTER_COMPILATION_ERROR_COUNT]:	42
+[12:35:08]	[FILTER_COMPILATION_ERROR_COUNT]:	46
+[12:35:21]	[FILTER_COMPILATION_ERROR_COUNT]:	43
+[12:35:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:84;EXPRSET:0;BOOLSETCOUNT:9
+[12:35:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2345 - 2345
+[12:35:28]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:35:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:35:28]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:35:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:35:28]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1412 - 1412
+[12:35:28]	[GENERATE_METHOD_FIX]:	12
+[12:35:28]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:175
+[12:35:32]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:35:35]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:35:39]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[12:35:39]	[POST_FILTER_STATUS]:	EXPR:6;BOOL:80;EXPRSET:3;BOOLSETCOUNT:3
+[12:35:39]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1412 - 1412
+[12:35:39]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1352 - 1352
+[12:35:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:39]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1352 - 1352
+[12:35:39]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2345 - 2345
+[12:35:39]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:39]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:39]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2345 - 2345
+[12:35:39]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 950 - 950
+[12:35:39]	[GENERATE_METHOD_FIX]:	0
+[12:35:39]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:54
+[12:35:43]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:35:43]	[POST_FILTER_STATUS]:	EXPR:2;BOOL:26;EXPRSET:1;BOOLSETCOUNT:1
+[12:35:43]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 950 - 950
+[12:35:43]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 289 - 289
+[12:35:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:43]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 289 - 289
+[12:35:43]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1792 - 1792
+[12:35:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:43]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1792 - 1792
+[12:35:43]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 299 - 299
+[12:35:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:43]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 299 - 299
+[12:35:43]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1430 - 1430
+[12:35:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:43]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1430 - 1430
+[12:35:43]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1527 - 1527
+[12:35:43]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:43]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1527 - 1527
+[12:35:43]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 1231 - 1231
+[12:35:43]	[GENERATE_METHOD_FIX]:	0
+[12:35:43]	[PRE_FILTER_STATUS]:	EXPR:14;BOOL:54
+[12:35:47]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:35:47]	[POST_FILTER_STATUS]:	EXPR:4;BOOL:26;EXPRSET:1;BOOLSETCOUNT:1
+[12:35:47]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 1231 - 1231
+[12:35:47]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1357 - 1357
+[12:35:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:109
+[12:35:53]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:35:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:27;EXPRSET:0;BOOLSETCOUNT:1
+[12:35:53]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1357 - 1357
+[12:35:53]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:setPlot:(Lorg/jfree/chart/plot/CategoryPlot;)Vline 293 - 293
+[12:35:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:117
+[12:35:58]	[FILTER_COMPILATION_ERROR_COUNT]:	32
+[12:35:58]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:29;EXPRSET:0;BOOLSETCOUNT:1
+[12:35:58]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:setPlot:(Lorg/jfree/chart/plot/CategoryPlot;)Vline 293 - 293
+[12:35:58]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 950 - 950
+[12:35:58]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:58]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:58]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDomainAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 950 - 950
+[12:35:58]	[SEARCH_FIX]:	search for:org/jfree/data/general/AbstractDataset:notifyListeners:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 191 - 191
+[12:35:58]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:11
+[12:35:59]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:35:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:35:59]	[END_SEARCH_FIX]:	search for:org/jfree/data/general/AbstractDataset:notifyListeners:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 191 - 191
+[12:35:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 297 - 297
+[12:35:59]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:35:59]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:35:59]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 297 - 297
+[12:35:59]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:notifyListeners:(Lorg/jfree/chart/event/PlotChangeEvent;)Vline 972 - 972
+[12:35:59]	[GENERATE_METHOD_FIX]:	0
+[12:35:59]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:12
+[12:36:00]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:36:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:5;EXPRSET:0;BOOLSETCOUNT:1
+[12:36:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:notifyListeners:(Lorg/jfree/chart/event/PlotChangeEvent;)Vline 972 - 972
+[12:36:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1430 - 1430
+[12:36:01]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1430 - 1430
+[12:36:01]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:36:01]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:36:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2338 - 2338
+[12:36:01]	[GENERATE_METHOD_FIX]:	0
+[12:36:01]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:659
+[12:36:15]	[FILTER_COMPILATION_ERROR_COUNT]:	126
+[12:36:35]	[FILTER_COMPILATION_ERROR_COUNT]:	42
+[12:36:50]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:112;EXPRSET:0;BOOLSETCOUNT:6
+[12:36:50]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2338 - 2338
+[12:36:51]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:36:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:36:51]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 312 - 312
+[12:36:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 312 - 312
+[12:36:51]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1793 - 1793
+[12:36:51]	[GENERATE_METHOD_FIX]:	0
+[12:36:51]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:52
+[12:36:53]	[FILTER_COMPILATION_ERROR_COUNT]:	54
+[12:36:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:53]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1793 - 1793
+[12:36:53]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1352 - 1352
+[12:36:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:53]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1352 - 1352
+[12:36:53]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2335 - 2335
+[12:36:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:53]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2335 - 2335
+[12:36:53]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:36:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:53]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:36:53]	[SEARCH_FIX]:	search for:org/jfree/data/general/AbstractDataset:notifyListeners:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 191 - 191
+[12:36:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:53]	[END_SEARCH_FIX]:	search for:org/jfree/data/general/AbstractDataset:notifyListeners:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 191 - 191
+[12:36:53]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:36:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:53]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:53]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:36:53]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ResourceBundleWrapper:getBundle:(Ljava/lang/String;)Ljava/util/ResourceBundle;line 122 - 122
+[12:36:53]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:5
+[12:36:54]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/util/ResourceBundleWrapper:getBundle:(Ljava/lang/String;)Ljava/util/ResourceBundle;line 122 - 122
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1013 - 1013
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureDomainAxes:()Vline 1013 - 1013
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2347 - 2347
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2347 - 2347
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1796 - 1796
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1796 - 1796
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1041 - 1041
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1041 - 1041
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 307 - 307
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 307 - 307
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1672 - 1672
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1672 - 1672
+[12:36:54]	[SEARCH_FIX]:	search for:org/jfree/chart/event/ChartChangeEvent:setType:(Lorg/jfree/chart/event/ChartChangeEventType;)Vline 131 - 131
+[12:36:54]	[GENERATE_METHOD_FIX]:	0
+[12:36:54]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:1
+[12:36:54]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:36:54]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:54]	[END_SEARCH_FIX]:	search for:org/jfree/chart/event/ChartChangeEvent:setType:(Lorg/jfree/chart/event/ChartChangeEventType;)Vline 131 - 131
+[12:36:55]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2335 - 2335
+[12:36:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:55]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2335 - 2335
+[12:36:55]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1429 - 1429
+[12:36:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:55]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1429 - 1429
+[12:36:55]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 299 - 299
+[12:36:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:36:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:36:55]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 299 - 299
+[12:36:55]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 1227 - 1227
+[12:36:55]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:171
+[12:37:03]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:37:03]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:54;EXPRSET:0;BOOLSETCOUNT:1
+[12:37:03]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(ILorg/jfree/chart/axis/AxisLocation;Z)Vline 1227 - 1227
+[12:37:04]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 328 - 328
+[12:37:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:04]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 328 - 328
+[12:37:04]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:37:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:04]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:04]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:37:04]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1321 - 1321
+[12:37:04]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:121
+[12:37:10]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:37:27]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:31;EXPRSET:0;BOOLSETCOUNT:3
+[12:37:27]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1321 - 1321
+[12:37:27]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:37:27]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:27]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:27]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:37:27]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:37:27]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:37:28]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:37:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:37:28]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:37:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1042 - 1042
+[12:37:28]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1796 - 1796
+[12:37:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:28]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1796 - 1796
+[12:37:28]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:notifyListeners:(Lorg/jfree/chart/event/PlotChangeEvent;)Vline 969 - 969
+[12:37:28]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:34
+[12:37:32]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:11;EXPRSET:0;BOOLSETCOUNT:1
+[12:37:32]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/Plot:notifyListeners:(Lorg/jfree/chart/event/PlotChangeEvent;)Vline 969 - 969
+[12:37:32]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getIndexOf:(Lorg/jfree/chart/renderer/category/CategoryItemRenderer;)Iline 1727 - 1727
+[12:37:32]	[GENERATE_METHOD_FIX]:	0
+[12:37:32]	[PRE_FILTER_STATUS]:	EXPR:12;BOOL:70
+[12:37:37]	[FILTER_COMPILATION_ERROR_COUNT]:	11
+[12:37:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:30;EXPRSET:0;BOOLSETCOUNT:1
+[12:37:40]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getIndexOf:(Lorg/jfree/chart/renderer/category/CategoryItemRenderer;)Iline 1727 - 1727
+[12:37:40]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:37:40]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:40]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1362 - 1362
+[12:37:40]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 320 - 320
+[12:37:40]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:40]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 320 - 320
+[12:37:40]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getIndexOf:(Lorg/jfree/chart/renderer/category/CategoryItemRenderer;)Iline 1727 - 1727
+[12:37:40]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getIndexOf:(Lorg/jfree/chart/renderer/category/CategoryItemRenderer;)Iline 1727 - 1727
+[12:37:41]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ObjectList:indexOf:(Ljava/lang/Object;)Iline 107 - 107
+[12:37:41]	[GENERATE_METHOD_FIX]:	0
+[12:37:41]	[PRE_FILTER_STATUS]:	EXPR:1;BOOL:0
+[12:37:41]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:37:41]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:41]	[END_SEARCH_FIX]:	search for:org/jfree/chart/util/ObjectList:indexOf:(Ljava/lang/Object;)Iline 107 - 107
+[12:37:41]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:checkAxisIndices:(Ljava/util/List;)Vline 1456 - 1456
+[12:37:41]	[GENERATE_METHOD_FIX]:	3
+[12:37:41]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:60
+[12:37:44]	[FILTER_COMPILATION_ERROR_COUNT]:	6
+[12:37:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:27;EXPRSET:0;BOOLSETCOUNT:1
+[12:37:47]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:checkAxisIndices:(Ljava/util/List;)Vline 1456 - 1456
+[12:37:47]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 312 - 312
+[12:37:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:47]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 312 - 312
+[12:37:47]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1410 - 1410
+[12:37:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:47]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:47]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1410 - 1410
+[12:37:47]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1681 - 1681
+[12:37:47]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:184
+[12:37:57]	[FILTER_COMPILATION_ERROR_COUNT]:	16
+[12:37:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:111;EXPRSET:0;BOOLSETCOUNT:1
+[12:37:57]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1681 - 1681
+[12:37:57]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1356 - 1356
+[12:37:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:57]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setDataset:(ILorg/jfree/data/category/CategoryDataset;)Vline 1356 - 1356
+[12:37:57]	[SEARCH_FIX]:	search for:org/jfree/data/general/AbstractDataset:notifyListeners:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 190 - 190
+[12:37:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:57]	[END_SEARCH_FIX]:	search for:org/jfree/data/general/AbstractDataset:notifyListeners:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 190 - 190
+[12:37:57]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1411 - 1411
+[12:37:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:57]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1411 - 1411
+[12:37:57]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 304 - 304
+[12:37:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:37:57]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:37:57]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 304 - 304
+[12:37:57]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/AbstractRenderer:addChangeListener:(Lorg/jfree/chart/event/RendererChangeListener;)Vline 2892 - 2892
+[12:37:57]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:149
+[12:38:01]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:38:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:49;EXPRSET:0;BOOLSETCOUNT:1
+[12:38:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/AbstractRenderer:addChangeListener:(Lorg/jfree/chart/event/RendererChangeListener;)Vline 2892 - 2892
+[12:38:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:38:01]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1433 - 1433
+[12:38:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 309 - 309
+[12:38:01]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 309 - 309
+[12:38:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 320 - 320
+[12:38:01]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 320 - 320
+[12:38:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1411 - 1411
+[12:38:01]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:01]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:01]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxis:(II)Vline 1411 - 1411
+[12:38:01]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2336 - 2336
+[12:38:01]	[GENERATE_METHOD_FIX]:	16
+[12:38:01]	[PRE_FILTER_STATUS]:	EXPR:4;BOOL:282
+[12:38:15]	[FILTER_COMPILATION_ERROR_COUNT]:	127
+[12:38:31]	[POST_FILTER_STATUS]:	EXPR:1;BOOL:84;EXPRSET:1;BOOLSETCOUNT:3
+[12:38:31]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2336 - 2336
+[12:38:31]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1321 - 1321
+[12:38:31]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:31]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:31]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1321 - 1321
+[12:38:31]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(Lorg/jfree/chart/axis/AxisLocation;Z)Vline 1197 - 1197
+[12:38:31]	[GENERATE_METHOD_FIX]:	3
+[12:38:31]	[PRE_FILTER_STATUS]:	EXPR:15;BOOL:52
+[12:38:34]	[FILTER_COMPILATION_ERROR_COUNT]:	1
+[12:38:34]	[POST_FILTER_STATUS]:	EXPR:2;BOOL:26;EXPRSET:0;BOOLSETCOUNT:1
+[12:38:34]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRangeAxisLocation:(Lorg/jfree/chart/axis/AxisLocation;Z)Vline 1197 - 1197
+[12:38:35]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1674 - 1674
+[12:38:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:35]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1674 - 1674
+[12:38:35]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:38:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:35]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:38:35]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 309 - 309
+[12:38:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:35]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 309 - 309
+[12:38:35]	[SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:38:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:35]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:35]	[END_SEARCH_FIX]:	search for:org/jfree/chart/ChartColor:createDefaultPaintArray:()[Ljava/awt/Paint;line 151 - 151
+[12:38:35]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1673 - 1673
+[12:38:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:129
+[12:38:41]	[FILTER_COMPILATION_ERROR_COUNT]:	4
+[12:38:42]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:32;EXPRSET:0;BOOLSETCOUNT:1
+[12:38:42]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:setRenderer:(ILorg/jfree/chart/renderer/category/CategoryItemRenderer;Z)Vline 1673 - 1673
+[12:38:42]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1791 - 1791
+[12:38:42]	[GENERATE_METHOD_FIX]:	1
+[12:38:42]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:52
+[12:38:44]	[FILTER_COMPILATION_ERROR_COUNT]:	52
+[12:38:44]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:44]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1791 - 1791
+[12:38:44]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1798 - 1798
+[12:38:44]	[GENERATE_METHOD_FIX]:	0
+[12:38:44]	[PRE_FILTER_STATUS]:	EXPR:2;BOOL:104
+[12:38:46]	[FILTER_COMPILATION_ERROR_COUNT]:	24
+[12:38:50]	[FILTER_COMPILATION_ERROR_COUNT]:	26
+[12:38:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:28;EXPRSET:0;BOOLSETCOUNT:2
+[12:38:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1798 - 1798
+[12:38:51]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2346 - 2346
+[12:38:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:datasetChanged:(Lorg/jfree/data/event/DatasetChangeEvent;)Vline 2346 - 2346
+[12:38:51]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:38:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:configureRangeAxes:()Vline 1291 - 1291
+[12:38:51]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 315 - 315
+[12:38:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 315 - 315
+[12:38:51]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 324 - 324
+[12:38:51]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:51]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:51]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 324 - 324
+[12:38:52]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1431 - 1431
+[12:38:52]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:52]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:52]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1431 - 1431
+[12:38:52]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1322 - 1322
+[12:38:52]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:52]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:52]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1322 - 1322
+[12:38:52]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:38:52]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:52]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:52]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToRangeAxes:(ILjava/util/List;)Vline 1530 - 1530
+[12:38:52]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1321 - 1321
+[12:38:52]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:38:52]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:38:52]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getDataset:(I)Lorg/jfree/data/category/CategoryDataset;line 1321 - 1321
+[12:38:52]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1045 - 1045
+[12:38:52]	[GENERATE_METHOD_FIX]:	0
+[12:38:52]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:162
+[12:39:00]	[FILTER_COMPILATION_ERROR_COUNT]:	110
+[12:39:05]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:28;EXPRSET:0;BOOLSETCOUNT:3
+[12:39:05]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:getRangeAxis:(I)Lorg/jfree/chart/axis/ValueAxis;line 1045 - 1045
+[12:39:05]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1431 - 1431
+[12:39:05]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:39:05]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:39:05]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/CategoryPlot:mapDatasetToDomainAxes:(ILjava/util/List;)Vline 1431 - 1431
+[12:39:05]	[SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 333 - 333
+[12:39:05]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[12:39:05]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:39:05]	[END_SEARCH_FIX]:	search for:org/jfree/chart/plot/DefaultDrawingSupplier:createStandardSeriesShapes:()[Ljava/awt/Shape;line 333 - 333
+[12:39:05]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1797 - 1797
+[12:39:05]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:13
+[12:39:06]	[FILTER_COMPILATION_ERROR_COUNT]:	12
+[12:39:06]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:39:06]	[END_SEARCH_FIX]:	search for:org/jfree/chart/renderer/category/AbstractCategoryItemRenderer:getLegendItems:()Lorg/jfree/chart/LegendItemCollection;line 1797 - 1797

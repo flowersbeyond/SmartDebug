@@ -1,0 +1,1309 @@
+[12:19:30]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 156 - 156
+[12:19:31]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:31]	[FILTER_DEAD]:	CSV_QUOTE_STR.isEmpty():false;not expected:false
+[12:19:31]	[FILTER_SURVIVE]:	!CSV_QUOTE_STR.isEmpty():true;not expected:false
+[12:19:31]	[FILTER_SURVIVE]:	index==0:true;index != 0:false
+[12:19:31]	[FILTER_DEAD]:	index>0:false;index != 0:false
+[12:19:31]	[FILTER_SURVIVE]:	index>=0:true;index != 0:false
+[12:19:31]	[FILTER_DEAD]:	index<0:false;index != 0:false
+[12:19:31]	[FILTER_SURVIVE]:	index<=0:true;index != 0:false
+[12:19:31]	[FILTER_SURVIVE]:	index != 0||index!=CSV_QUOTE:true;index != 0:false
+[12:19:31]	[FILTER_DEAD]:	index != 0&&index!=CSV_QUOTE:false;index != 0:false
+[12:19:31]	[FILTER_SURVIVE]:	index != 0||index<=CSV_QUOTE:true;index != 0:false
+[12:19:31]	[FILTER_DEAD]:	index != 0&&index<=CSV_QUOTE:false;index != 0:false
+[12:19:31]	[FILTER_SURVIVE]:	index != 0||index<CSV_QUOTE:true;index != 0:false
+[12:19:31]	[FILTER_DEAD]:	index != 0&&index<CSV_QUOTE:false;index != 0:false
+[12:19:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:19:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:7	#false:6	
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:19:31]	[GENERATE_METHOD_FIX]:	1
+[12:19:31]	[METHOD_FIX_DETAIL]:	||||?? -> HTML40_EXTENDED_UNESCAPE.clone()
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_ESCAPE:()[[Ljava/lang/String;line 358 - 358
+[12:19:31]	[GENERATE_METHOD_FIX]:	1
+[12:19:31]	[METHOD_FIX_DETAIL]:	||||?? -> BASIC_ESCAPE.clone()
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_ESCAPE:()[[Ljava/lang/String;line 395 - 395
+[12:19:31]	[GENERATE_METHOD_FIX]:	1
+[12:19:31]	[METHOD_FIX_DETAIL]:	||||?? -> JAVA_CTRL_CHARS_ESCAPE.clone()
+[12:19:31]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 161 - 161
+[12:19:31]	[GENERATE_METHOD_FIX]:	2
+[12:19:31]	[METHOD_FIX_DETAIL]:	||||?? -> out.write(length)||||?? -> out.write(CSV_SEARCH_CHARS)
+[12:19:32]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:32]	[FILTER_DEAD]:	CSV_QUOTE_STR.isEmpty():false;not expected:false
+[12:19:32]	[FILTER_SURVIVE]:	!CSV_QUOTE_STR.isEmpty():true;not expected:false
+[12:19:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:19:32]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	#false:1	
+[12:19:32]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:32]	[FILTER_DEAD]:	CSV_QUOTE_STR.isEmpty():false;not expected:false
+[12:19:32]	[FILTER_SURVIVE]:	!CSV_QUOTE_STR.isEmpty():true;not expected:false
+[12:19:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:19:32]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	#false:1	
+[12:19:32]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:19:33]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:33]	[FILTER_SURVIVE]:	StringUtils.containsAny(input.toString(), CSV_SEARCH_CHARS):false;StringUtils.containsNone(input.toString(),CSV_SEARCH_CHARS):true
+[12:19:33]	[FILTER_SURVIVE]:	StringUtils.containsOnly(input.toString(), CSV_SEARCH_CHARS):false;StringUtils.containsNone(input.toString(),CSV_SEARCH_CHARS):true
+[12:19:33]	[FILTER_SURVIVE]:	StringUtils.indexOfAny(input.toString(), CSV_SEARCH_CHARS):-1;StringUtils.containsNone(input.toString(),CSV_SEARCH_CHARS):true
+[12:19:33]	[FILTER_SURVIVE]:	StringUtils.indexOfAnyBut(input.toString(), CSV_SEARCH_CHARS):0;StringUtils.containsNone(input.toString(),CSV_SEARCH_CHARS):true
+[12:19:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:4
+[12:19:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:2	#-1:1	#0:1	
+[12:19:33]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 59 - 59
+[12:19:33]	[GENERATE_METHOD_FIX]:	4
+[12:19:33]	[METHOD_FIX_DETAIL]:	||||?? -> translate(input, length, writer)||||?? -> translate(input)||||?? -> new StringWriter()||||?? -> new StringWriter(input.length() * 2)
+[12:19:34]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:34]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:34]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:34]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:34]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 420 - 420
+[12:19:34]	[GENERATE_METHOD_FIX]:	0
+[12:19:34]	[METHOD_FIX_DETAIL]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:35]	[FILTER_SURVIVE]:	i:0;1:1
+[12:19:35]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	newarray:null;null;null;null;null;null;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null;null;null;null;null;null;null;null;null;null;null;:1	#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0:1	
+[12:19:35]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:35]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;null;null;null;null;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:35]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	i:1;1:1
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;null;null;null;null;null;null;null;null;null;:1	#null#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0#1:1	
+[12:19:36]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;null;null;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	i:2;1:1
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0#1#2:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null:9	#null;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;null;null;null;null;null;null;null;:1	
+[12:19:36]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	i:3;1:1
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null#null:9	#0#1#2#3:1	#null;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;null;null;null;null;null;:1	
+[12:19:36]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	i:4;1:1
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;null;null;null;:1	#null#null#null#null#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0#1#2#3#4:1	
+[12:19:36]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	i:5;1:1
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0#1#2#3#4#5:1	#null#null#null#null#null#null:9	#null;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;null;:1	
+[12:19:36]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:36]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:36]	[FILTER_SURVIVE]:	i:6;1:1
+[12:19:36]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:37]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:37]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null#null#null#null#null:9	#0#1#2#3#4#5#6:1	
+[12:19:37]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:37]	[FILTER_DEAD]:	i:0;0:0
+[12:19:37]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	newarray:&nbsp;;null;null;null;null;null;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:19:37]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#&nbsp;;null;null;null;null;null;null;null;null;null;null;:1	#0:1	
+[12:19:37]	[FAIL_TC_FILTER_START]:	survive count:10
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:19:37]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:19:37]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:19:37]	[FILTER_SURVIVE]:	i:1;0:0
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:37]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#&nbsp;;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;:1	#null#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0#1:1	
+[12:19:37]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:37]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;null;null;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:37]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:37]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	i:2;0:0
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#&nbsp;;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;null;null;null;null;null;null;:1	#0#1#2:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null:9	
+[12:19:38]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;null;null;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	i:3;0:0
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#&nbsp;;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;null;null;null;null;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null#null:9	#0#1#2#3:1	
+[12:19:38]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;null;null;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	i:4;0:0
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#&nbsp;;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;null;null;:1	#null#null#null#null#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0#1#2#3#4:1	
+[12:19:38]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	i:5;0:0
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#0#1#2#3#4#5:1	#null#null#null#null#null#null:9	#&nbsp;;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	
+[12:19:38]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:38]	[FILTER_DEAD]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	i:6;0:0
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FILTER_SURVIVE]:	newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;
+[12:19:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null#null#null#null#null:9	#0#1#2#3#4#5#6:1	#&nbsp;;null;null;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;null;null;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;null;null;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;null;null;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;null;null;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	
+[12:19:38]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1742 - 1742
+[12:19:39]	[GENERATE_METHOD_FIX]:	0
+[12:19:39]	[METHOD_FIX_DETAIL]:	
+[12:19:39]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:39]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:39]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:39]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:39]	[FILTER_SURVIVE]:	INDEX_NOT_FOUND:-1;1:1
+[12:19:40]	[FILTER_SURVIVE]:	PAD_LIMIT:8192;1:1
+[12:19:40]	[FILTER_SURVIVE]:	csLen:2;1:1
+[12:19:40]	[FILTER_SURVIVE]:	INDEX_NOT_FOUND:-1;csLen:2
+[12:19:40]	[FILTER_SURVIVE]:	PAD_LIMIT:8192;csLen:2
+[12:19:40]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:19:40]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#8192:2	#-1:2	#2:1	
+[12:19:40]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:41]	[FILTER_SURVIVE]:	INDEX_NOT_FOUND:-1;searchChars.length:4
+[12:19:41]	[FILTER_SURVIVE]:	PAD_LIMIT:8192;searchChars.length:4
+[12:19:41]	[FILTER_SURVIVE]:	csLen:2;searchChars.length:4
+[12:19:41]	[FILTER_SURVIVE]:	csLast:1;searchChars.length:4
+[12:19:41]	[FAIL_TC_FILTER_FINISHED]:	survive count:4
+[12:19:41]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#8192:1	#-1:1	#1:1	#2:1	
+[12:19:41]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:41]	[FILTER_SURVIVE]:	searchLen:4;1:1
+[12:19:41]	[FILTER_SURVIVE]:	INDEX_NOT_FOUND:-1;1:1
+[12:19:41]	[FILTER_SURVIVE]:	PAD_LIMIT:8192;1:1
+[12:19:41]	[FILTER_SURVIVE]:	csLen:2;1:1
+[12:19:41]	[FILTER_DEAD]:	csLast:1;1:1
+[12:19:41]	[FILTER_SURVIVE]:	INDEX_NOT_FOUND:-1;searchLen:4
+[12:19:42]	[FILTER_SURVIVE]:	PAD_LIMIT:8192;searchLen:4
+[12:19:42]	[FILTER_SURVIVE]:	csLen:2;searchLen:4
+[12:19:42]	[FILTER_SURVIVE]:	csLast:1;searchLen:4
+[12:19:42]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:19:42]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4:1	#8192:2	#-1:2	#1:2	#2:2	
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 84 - 84
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_ESCAPE:()[[Ljava/lang/String;line 358 - 358
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:42]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 108 - 108
+[12:19:42]	[GENERATE_METHOD_FIX]:	1
+[12:19:42]	[METHOD_FIX_DETAIL]:	||||?? -> new AggregateTranslator(newArray)
+[12:19:42]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:42]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:42]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:42]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:42]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:43]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:43]	[FILTER_SURVIVE]:	newArray:null;1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;;translators:1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;
+[12:19:43]	[FILTER_SURVIVE]:	translators:1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;;newArray:null;1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;
+[12:19:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:19:43]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;:1	#null;1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;:1	
+[12:19:43]	[FAIL_TC_FILTER_START]:	survive count:2
+[12:19:43]	[FILTER_SURVIVE]:	translators:127;32;false;;newArray:null;1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;
+[12:19:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:19:43]	[FILTER_SURVIVE]:	newArray:null;1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;;translators:127;32;false;
+[12:19:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:19:43]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;#127;32;false;:1	#null;1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;#null;1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;:1	
+[12:19:43]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:43]	[FILTER_SURVIVE]:	translators:1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;;newArray:1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;6;
+[12:19:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:19:43]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;:1	
+[12:19:43]	[FAIL_TC_FILTER_START]:	survive count:1
+[12:19:43]	[FILTER_SURVIVE]:	translators:127;32;false;;newArray:127;32;false;1;1;1;1;16;0.75;1073741824;64;
+[12:19:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:19:43]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1;1;16;0.75;1073741824;64;362498820763181265;8;6;null;null;#127;32;false;:1	
+[12:19:43]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 108 - 108
+[12:19:43]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_ESCAPE:()[[Ljava/lang/String;line 395 - 395
+[12:19:43]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_UNESCAPE:()[[Ljava/lang/String;line 408 - 408
+[12:19:43]	[GENERATE_METHOD_FIX]:	1
+[12:19:43]	[METHOD_FIX_DETAIL]:	||||?? -> JAVA_CTRL_CHARS_UNESCAPE.clone()
+[12:19:44]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:19:44]	[GENERATE_METHOD_FIX]:	1
+[12:19:44]	[METHOD_FIX_DETAIL]:	||||?? -> APOS_UNESCAPE.clone()
+[12:19:44]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:19:44]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 422 - 422
+[12:19:44]	[GENERATE_METHOD_FIX]:	0
+[12:19:44]	[METHOD_FIX_DETAIL]:	
+[12:19:44]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:44]	[FILTER_SURVIVE]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FILTER_SURVIVE]:	array: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;newarray:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;
+[12:19:44]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:44]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null:9	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:2	
+[12:19:44]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:44]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:44]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:44]	[FILTER_SURVIVE]:	BASIC_ESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:44]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:44]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:44]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:45]	[FILTER_SURVIVE]:	array:ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;;newarray:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;:1	#null#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	#null#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;:1	#null#null:7	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	
+[12:19:45]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	array:";&quot;;&;&amp;;<;&lt;;>;&gt;;;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_ESCAPE:";&quot;;&;&amp;;<;&lt;;>;&gt;;;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FILTER_SURVIVE]:	APOS_ESCAPE:null;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:null;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;newarray:&quot;;";&amp;;&;&lt;;<;&gt;;>;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#";&quot;;&;&amp;;<;&lt;;>;&gt;;:1	#null#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	#null#null#&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;:1	#null#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null:5	#null#null#";&quot;;&;&amp;;<;&lt;;>;&gt;;:1	
+[12:19:45]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	array:';&apos;;;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:null;newarray:&apos;;';
+[12:19:45]	[FILTER_SURVIVE]:	APOS_ESCAPE:';&apos;;;newarray:&apos;;';
+[12:19:45]	[FILTER_SURVIVE]:	APOS_UNESCAPE:null;newarray:&apos;;';
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:&quot;;";&amp;;&;&lt;;<;&gt;;>;;newarray:&apos;;';
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_ESCAPE:";&quot;;&;&amp;;<;&lt;;>;&gt;;;newarray:&apos;;';
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;:1	#null#null#&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;#&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	#null#null#null#&quot;;";&amp;;&;&lt;;<;&gt;;>;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#";&quot;;&;&amp;;<;&lt;;>;&gt;;#';&apos;;:1	#null#null#";&quot;;&;&amp;;<;&lt;;>;&gt;;#";&quot;;&;&amp;;<;&lt;;>;&gt;;:1	#null#null#null#null:3	#null#null#null#';&apos;;:1	
+[12:19:45]	[FAIL_TC_FILTER_START]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	HTML40_EXTENDED_ESCAPE:ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	HTML40_EXTENDED_UNESCAPE:&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_ESCAPE: ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	ISO8859_1_UNESCAPE:&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_UNESCAPE:&quot;;";&amp;;&;&lt;;<;&gt;;>;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	array:;\b;
+;\n;	;\t;;\f;;\r;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	BASIC_ESCAPE:";&quot;;&;&amp;;<;&lt;;>;&gt;;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_ESCAPE:;\b;
+;\n;	;\t;;\f;;\r;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FILTER_SURVIVE]:	APOS_UNESCAPE:&apos;;';;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FILTER_SURVIVE]:	JAVA_CTRL_CHARS_UNESCAPE:null;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FILTER_SURVIVE]:	APOS_ESCAPE:';&apos;;;newarray:\b;;\n;
+;\t;	;\f;;\r;;
+[12:19:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:45]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#null#null#null#null#;\b;
+;\n;	;\t;;\f;;\r;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#";&quot;;&;&amp;;<;&lt;;>;&gt;;#';&apos;;#;\b;
+;\n;	;\t;;\f;;\r;:1	#null#null#null#&quot;;";&amp;;&;&lt;;<;&gt;;>;#&quot;;";&amp;;&;&lt;;<;&gt;;>;:1	#null#null#null#null#null:1	#null#null#&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;#&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;#&fnof;;ƒ;&Alpha;;Α;&Beta;;Β;&Gamma;;Γ;&Delta;;Δ;&Epsilon;;:1	# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;# ;&nbsp;;¡;&iexcl;;¢;&cent;;£;&pound;;¤;&curren;;¥;:1	#null#null#null#';&apos;;#';&apos;;:1	#null#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;#ƒ;&fnof;;Α;&Alpha;;Β;&Beta;;Γ;&Gamma;;Δ;&Delta;;Ε;:1	#null#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;#&nbsp;; ;&iexcl;;¡;&cent;;¢;&pound;;£;&curren;;¤;&yen;;:1	#null#null#null#null#&apos;;';:1	#null#null#";&quot;;&;&amp;;<;&lt;;>;&gt;;#";&quot;;&;&amp;;<;&lt;;>;&gt;;#";&quot;;&;&amp;;<;&lt;;>;&gt;;:1	
+[12:19:45]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:19:45]	[GENERATE_METHOD_FIX]:	1
+[12:19:45]	[METHOD_FIX_DETAIL]:	||||?? -> ISO8859_1_ESCAPE.clone()
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1744 - 1744
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:19:46]	[GENERATE_METHOD_FIX]:	1
+[12:19:46]	[METHOD_FIX_DETAIL]:	||||?? -> HTML40_EXTENDED_ESCAPE.clone()
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:46]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/ArrayUtils:clone:([Ljava/lang/Object;)[Ljava/lang/Object;line 323 - 323
+[12:19:46]	[GENERATE_METHOD_FIX]:	1
+[12:19:46]	[METHOD_FIX_DETAIL]:	||||?? -> array.clone()
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_ESCAPE:()[[Ljava/lang/String;line 377 - 377
+[12:19:47]	[GENERATE_METHOD_FIX]:	1
+[12:19:47]	[METHOD_FIX_DETAIL]:	||||?? -> APOS_ESCAPE.clone()
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 94 - 94
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 419 - 419
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 162 - 162
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 419 - 419
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:19:47]	[GENERATE_METHOD_FIX]:	1
+[12:19:47]	[METHOD_FIX_DETAIL]:	||||?? -> BASIC_UNESCAPE.clone()
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:19:47]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 86 - 86
+[12:19:48]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:48]	[FILTER_SURVIVE]:	consumed>0:true;consumed == 0:false
+[12:19:48]	[FILTER_SURVIVE]:	consumed>=0:true;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed<0:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed<=0:false;consumed == 0:false
+[12:19:48]	[FILTER_SURVIVE]:	consumed!=0:true;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0||consumed<=pos:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0&&consumed<=pos:false;consumed == 0:false
+[12:19:48]	[FILTER_SURVIVE]:	consumed == 0||consumed<=len:true;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0&&consumed<=len:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0||consumed<len:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0&&consumed<len:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0||consumed<pos:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0&&consumed<pos:false;consumed == 0:false
+[12:19:48]	[FILTER_SURVIVE]:	consumed == 0||consumed!=pos:true;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0&&consumed!=pos:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0||consumed!=len:false;consumed == 0:false
+[12:19:48]	[FILTER_DEAD]:	consumed == 0&&consumed!=len:false;consumed == 0:false
+[12:19:48]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:19:48]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:5	#false:12	
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_UNESCAPE:()[[Ljava/lang/String;line 138 - 138
+[12:19:48]	[GENERATE_METHOD_FIX]:	1
+[12:19:48]	[METHOD_FIX_DETAIL]:	||||?? -> ISO8859_1_UNESCAPE.clone()
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/ArrayUtils:clone:([Ljava/lang/Object;)[Ljava/lang/Object;line 323 - 323
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 84 - 84
+[12:19:48]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 417 - 417
+[12:19:48]	[GENERATE_METHOD_FIX]:	0
+[12:19:48]	[METHOD_FIX_DETAIL]:	
+[12:19:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:49]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:49]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:49]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:49]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:49]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:49]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:49]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1737 - 1737
+[12:19:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:50]	[FILTER_SURVIVE]:	cs!=null || searchChars == null:true;cs == null || searchChars == null:false
+[12:19:50]	[FILTER_SURVIVE]:	cs == null || searchChars!=null:true;cs == null || searchChars == null:false
+[12:19:50]	[FILTER_DEAD]:	cs == null||searchChars == null:false;cs == null || searchChars == null:false
+[12:19:50]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:19:50]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:2	#false:1	
+[12:19:50]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 167 - 167
+[12:19:50]	[GENERATE_METHOD_FIX]:	0
+[12:19:50]	[METHOD_FIX_DETAIL]:	
+[12:19:50]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:50]	[FILTER_DEAD]:	CSV_QUOTE_STR.isEmpty():false;not expected:false
+[12:19:50]	[FILTER_SURVIVE]:	!CSV_QUOTE_STR.isEmpty():true;not expected:false
+[12:19:50]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:19:50]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	#false:1	
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1744 - 1744
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 109 - 109
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 110 - 110
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 58 - 58
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1763 - 1763
+[12:19:51]	[GENERATE_METHOD_FIX]:	0
+[12:19:51]	[METHOD_FIX_DETAIL]:	
+[12:19:51]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:51]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:19:51]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:19:51]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils:escapeCsv:(Ljava/lang/String;)Ljava/lang/String;line 556 - 556
+[12:19:51]	[GENERATE_METHOD_FIX]:	1
+[12:19:51]	[METHOD_FIX_DETAIL]:	||||?? -> ESCAPE_CSV.translate(input)
+[12:19:52]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:52]	[FILTER_SURVIVE]:	!input.isEmpty():true;not expected:false
+[12:19:52]	[FILTER_DEAD]:	input.isEmpty():false;not expected:false
+[12:19:52]	[FILTER_SURVIVE]:	ESCAPE_XML:1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;6;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	UNESCAPE_HTML4:6;4;8;5;10;4;16;0.75;1073741824;64;362498820763181265;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	ESCAPE_ECMASCRIPT:1;1;1;1;127;32;false;16;0.75;1073741824;64;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	UNESCAPE_XML:6;4;6;6;16;0.75;1073741824;64;362498820763181265;8;6;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_DEAD]:	UNESCAPE_CSV:,;";";,;";;
+;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	UNESCAPE_HTML3:6;4;8;5;16;0.75;1073741824;64;362498820763181265;8;6;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	UNESCAPE_ECMASCRIPT:377;2;2;2;1;16;0.75;1073741824;64;362498820763181265;8;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	ESCAPE_JAVA:127;32;false;1;1;1;1;16;0.75;1073741824;64;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	ESCAPE_HTML3:1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;6;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	ESCAPE_HTML4:1;1;1;1;1;1;16;0.75;1073741824;64;362498820763181265;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FILTER_SURVIVE]:	UNESCAPE_JAVA:377;2;2;2;1;16;0.75;1073741824;64;362498820763181265;8;;ESCAPE_CSV:,;";";,;";;
+;
+[12:19:52]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:19:52]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#6;4;6;6;16;0.75;1073741824;64;362498820763181265;8;6;:1	#true:1	#1;1;1;1;127;32;false;16;0.75;1073741824;64;:1	#1;1;1;1;1;1;16;0.75;1073741824;64;362498820763181265;:1	#false:1	#1;1;1;1;16;0.75;1073741824;64;362498820763181265;8;6;:2	#,;";";,;";;
+;:1	#6;4;8;5;16;0.75;1073741824;64;362498820763181265;8;6;:1	#377;2;2;2;1;16;0.75;1073741824;64;362498820763181265;8;:2	#6;4;8;5;10;4;16;0.75;1073741824;64;362498820763181265;:1	#127;32;false;1;1;1;1;16;0.75;1073741824;64;:1	
+[12:19:52]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1747 - 1747
+[12:19:53]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:19:53]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:19:53]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:19:53]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLen:true;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:19:53]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLast:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch||j<i:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:19:54]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<csLast:true;searchChars[j] == ch:false
+[12:19:54]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<csLen:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLast:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=i:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLast:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch||j!=i:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLen:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:19:55]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:19:55]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLast:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:19:56]	[FAIL_TC_FILTER_FINISHED]:	survive count:25
+[12:19:56]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:25	#false:52	
+[12:19:56]	[FAIL_TC_FILTER_START]:	survive count:25
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLast:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLast:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<csLen:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch||j!=csLast:false;searchChars[j] == ch:false
+[12:19:56]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:19:56]	[FILTER_DEAD]:	searchChars[j] == ch||j<=i:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLast:true;searchChars[j] == ch:false
+[12:19:57]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLen:true;searchChars[j] == ch:false
+[12:19:57]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:19:57]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:19:57]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLast:true;searchChars[j] == ch:false
+[12:19:57]	[FAIL_TC_FILTER_FINISHED]:	survive count:25
+[12:19:57]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||j<i:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:19:57]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=i:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:19:58]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:19:58]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:19:58]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true:22	#true#false:3	#false#false:51	#false#true:1	
+[12:19:58]	[FAIL_TC_FILTER_START]:	survive count:26
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLen:true;searchChars[j] == ch:false
+[12:19:58]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLast:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||j<=csLast:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||j!=csLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLast:true;searchChars[j] == ch:false
+[12:19:59]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLast:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLast:true;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||j<=i:false;searchChars[j] == ch:false
+[12:19:59]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:19:59]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:19:59]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||j<i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:20:00]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:20:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:01]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=i:true;searchChars[j] == ch:false
+[12:20:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:01]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true#false:3	#true#false#false:2	#false#false#false:51	#true#false#true:1	#true#true#true:19	#false#true#true:1	
+[12:20:01]	[FAIL_TC_FILTER_START]:	survive count:26
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||j<=csLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLen:true;searchChars[j] == ch:false
+[12:20:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||j<=i:false;searchChars[j] == ch:false
+[12:20:01]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:01]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:20:01]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||j<i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:20:02]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:20:02]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:02]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLast:true;searchChars[j] == ch:false
+[12:20:03]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_DEAD]:	searchChars[j] == ch||j<=csLen:false;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_DEAD]:	searchChars[j] == ch||j!=searchLast:false;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_DEAD]:	searchChars[j] == ch||j<searchLast:false;searchChars[j] == ch:false
+[12:20:03]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=i:true;searchChars[j] == ch:false
+[12:20:03]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:03]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true#true#false:3	#true#false#false#false:2	#true#true#true#true:16	#true#true#false#true:1	#false#true#true#true:1	#true#true#false#false:2	#true#false#true#true:1	#false#false#false#false:51	
+[12:20:03]	[FAIL_TC_FILTER_START]:	survive count:26
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLast:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLast:true;searchChars[j] == ch:false
+[12:20:03]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<csLast:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=i:true;searchChars[j] == ch:false
+[12:20:03]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:20:03]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:20:04]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLen:true;searchChars[j] == ch:false
+[12:20:04]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=i:true;searchChars[j] == ch:false
+[12:20:04]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<csLen:true;searchChars[j] == ch:false
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLast:true;searchChars[j] == ch:false
+[12:20:04]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:04]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLast:true;searchChars[j] == ch:false
+[12:20:04]	[FAIL_TC_FILTER_FINISHED]:	survive count:26
+[12:20:04]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:20:04]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<i:true;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:20:05]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:20:06]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:06]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#true#true#true#true:16	#false#false#false#false#false:50	#true#true#false#true#true:1	#true#false#false#false#true:2	#false#true#true#true#true:1	#true#true#false#false#true:2	#false#false#false#false#true:1	#true#true#true#false#true:3	#true#false#true#true#true:1	
+[12:20:06]	[FAIL_TC_FILTER_START]:	survive count:27
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:20:06]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:20:06]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:06]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:06]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:20:07]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLen:true;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLast:false;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=i:true;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch||j!=i:false;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<csLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLast:true;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch||j<i:false;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLast:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLast:true;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_DEAD]:	searchChars[j] == ch||j!=csLast:false;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true#false#true#true#true#false:1	#true#true#true#true#true#true:16	#false#true#true#true#true#false:1	#true#true#false#false#true#true:2	#false#false#false#false#false#false:50	#true#true#false#true#true#true:1	#false#false#false#false#true#false:1	#true#false#false#false#true#true:1	#true#true#true#false#true#true:3	#true#false#false#false#true#false:1	
+[12:20:08]	[FAIL_TC_FILTER_START]:	survive count:27
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=csLast:true;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j]<ch:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j]<=ch:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j]!=ch:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<ch:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=i:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=j:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLast:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=ch:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=searchLen:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=ch:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=searchLast:true;searchChars[j] == ch:false
+[12:20:08]	[FILTER_SURVIVE]:	searchChars[j] == ch||ch!=csLast:true;searchChars[j] == ch:false
+[12:20:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:09]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=i:true;searchChars[j] == ch:false
+[12:20:09]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||j<=csLast:false;searchChars[j] == ch:false
+[12:20:09]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:09]	[FILTER_DEAD]:	searchChars[j]>ch:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j]>=ch:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<ch:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=searchLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=i:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=j:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<csLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<csLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<i:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=i:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=i:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=searchLen:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=ch:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLast:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=j:false;searchChars[j] == ch:false
+[12:20:09]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=j:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=searchLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j<csLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=ch:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=i:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j<=csLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=i:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j!=csLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||ch<=csLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<=csLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=searchLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch!=csLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||ch<searchLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<searchLen:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&j<searchLast:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||ch<i:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<i:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||ch<j:false;searchChars[j] == ch:false
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch&&ch<j:false;searchChars[j] == ch:false
+[12:20:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||j!=csLen:false;searchChars[j] == ch:false
+[12:20:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||j<i:false;searchChars[j] == ch:false
+[12:20:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||j<=i:false;searchChars[j] == ch:false
+[12:20:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:10]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<=csLen:true;searchChars[j] == ch:false
+[12:20:10]	[FILTER_SURVIVE]:	searchChars[j] == ch||j!=searchLast:true;searchChars[j] == ch:false
+[12:20:10]	[FILTER_SURVIVE]:	searchChars[j] == ch||j<searchLast:true;searchChars[j] == ch:false
+[12:20:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:10]	[FILTER_DEAD]:	searchChars[j] == ch||j<csLast:false;searchChars[j] == ch:false
+[12:20:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:27
+[12:20:10]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:50	#true#false#false#false#true#true#false:1	#false#true#true#true#true#false#true:1	#true#true#false#false#true#true#false:2	#true#false#true#true#true#false#true:1	#false#false#false#false#true#false#false:1	#true#true#true#false#true#true#true:3	#true#false#false#false#true#false#false:1	#true#true#false#true#true#true#false:1	#true#true#true#true#true#true#true:16	
+[12:20:10]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:20:10]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:JAVA_CTRL_CHARS_UNESCAPE:()[[Ljava/lang/String;line 408 - 408
+[12:20:11]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;)Ljava/lang/String;line 54 - 54
+[12:20:11]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:11]	[FILTER_SURVIVE]:	input!=null:true;input == null:false
+[12:20:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:20:11]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	
+[12:20:11]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 85 - 85
+[12:20:11]	[GENERATE_METHOD_FIX]:	1
+[12:20:11]	[METHOD_FIX_DETAIL]:	||||?? -> translate(input, out)
+[12:20:11]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:11]	[FILTER_SURVIVE]:	len:2;pos:0
+[12:20:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:20:11]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#2:1	
+[12:20:11]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/UnicodeEscaper:outsideOf:(II)Lorg/apache/commons/lang3/text/translate/UnicodeEscaper;line 85 - 85
+[12:20:11]	[GENERATE_METHOD_FIX]:	1
+[12:20:11]	[METHOD_FIX_DETAIL]:	||||?? -> new UnicodeEscaper(codepointLow, codepointHigh, false)
+[12:20:12]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:12]	[FILTER_SURVIVE]:	codepointHigh:127;codepointLow:32
+[12:20:12]	[FILTER_SURVIVE]:	codepointLow:32;codepointHigh:127
+[12:20:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:20:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#32:1	#127:1	
+[12:20:12]	[FAIL_TC_FILTER_START]:	survive count:2
+[12:20:12]	[FILTER_SURVIVE]:	codepointLow:32;codepointHigh:127
+[12:20:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:20:12]	[FILTER_SURVIVE]:	codepointHigh:127;codepointLow:32
+[12:20:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:20:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#127#127:1	#32#32:1	
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:ISO8859_1_ESCAPE:()[[Ljava/lang/String;line 34 - 34
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:BASIC_UNESCAPE:()[[Ljava/lang/String;line 370 - 370
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_ESCAPE:()[[Ljava/lang/String;line 377 - 377
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 160 - 160
+[12:20:12]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1737 - 1737
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1740 - 1740
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringUtils:containsNone:(Ljava/lang/CharSequence;[C)Zline 1746 - 1746
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/StringEscapeUtils$CsvEscaper:translate:(Ljava/lang/CharSequence;ILjava/io/Writer;)Iline 161 - 161
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:APOS_UNESCAPE:()[[Ljava/lang/String;line 386 - 386
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 418 - 418
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 94 - 94
+[12:20:13]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 76 - 76
+[12:20:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:13]	[FILTER_SURVIVE]:	out!=null:true;out == null:false
+[12:20:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:20:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_UNESCAPE:()[[Ljava/lang/String;line 349 - 349
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:invert:([[Ljava/lang/String;)[[Ljava/lang/String;line 420 - 420
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/EntityArrays:HTML40_EXTENDED_ESCAPE:()[[Ljava/lang/String;line 147 - 147
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:with:([Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;)Lorg/apache/commons/lang3/text/translate/CharSequenceTranslator;line 111 - 111
+[12:20:14]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 83 - 83
+[12:20:14]	[GENERATE_METHOD_FIX]:	0
+[12:20:14]	[METHOD_FIX_DETAIL]:	
+[12:20:14]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:14]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:20:14]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:20:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:20:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	
+[12:20:15]	[SEARCH_FIX]:	search for:org/apache/commons/lang3/text/translate/CharSequenceTranslator:translate:(Ljava/lang/CharSequence;Ljava/io/Writer;)Vline 95 - 95
+[12:20:15]	[GENERATE_METHOD_FIX]:	36
+[12:20:15]	[METHOD_FIX_DETAIL]:	||||?? -> Character.getDirectionality(Character.codePointAt(input,pos))||||?? -> Character.getName(Character.codePointAt(input,pos))||||?? -> Character.getNumericValue(Character.codePointAt(input,pos))||||?? -> Character.getType(Character.codePointAt(input,pos))||||?? -> Character.highSurrogate(Character.codePointAt(input,pos))||||?? -> Character.isAlphabetic(Character.codePointAt(input,pos))||||?? -> Character.isBmpCodePoint(Character.codePointAt(input,pos))||||?? -> Character.isDefined(Character.codePointAt(input,pos))||||?? -> Character.isDigit(Character.codePointAt(input,pos))||||?? -> Character.isISOControl(Character.codePointAt(input,pos))||||?? -> Character.isIdentifierIgnorable(Character.codePointAt(input,pos))||||?? -> Character.isIdeographic(Character.codePointAt(input,pos))||||?? -> Character.isJavaIdentifierPart(Character.codePointAt(input,pos))||||?? -> Character.isJavaIdentifierStart(Character.codePointAt(input,pos))||||?? -> Character.isLetter(Character.codePointAt(input,pos))||||?? -> Character.isLetterOrDigit(Character.codePointAt(input,pos))||||?? -> Character.isLowerCase(Character.codePointAt(input,pos))||||?? -> Character.isMirrored(Character.codePointAt(input,pos))||||?? -> Character.isSpaceChar(Character.codePointAt(input,pos))||||?? -> Character.isSupplementaryCodePoint(Character.codePointAt(input,pos))||||?? -> Character.isTitleCase(Character.codePointAt(input,pos))||||?? -> Character.isUnicodeIdentifierPart(Character.codePointAt(input,pos))||||?? -> Character.isUnicodeIdentifierStart(Character.codePointAt(input,pos))||||?? -> Character.isUpperCase(Character.codePointAt(input,pos))||||?? -> Character.isValidCodePoint(Character.codePointAt(input,pos))||||?? -> Character.isWhitespace(Character.codePointAt(input,pos))||||?? -> Character.lowSurrogate(Character.codePointAt(input,pos))||||?? -> Character.toChars(Character.codePointAt(input,pos))||||?? -> Character.toLowerCase(Character.codePointAt(input,pos))||||?? -> Character.toTitleCase(Character.codePointAt(input,pos))||||?? -> Character.toUpperCase(Character.codePointAt(input,pos))||||?? -> Character.toUpperCaseCharArray(Character.codePointAt(input,pos))||||?? -> Character.toUpperCaseEx(Character.codePointAt(input,pos))||||?? -> Character.codePointAt(c, pos)||||?? -> Character.codePointAt(c, pos, consumed)||||?? -> Character.codePointBefore(input, pos)
+[12:20:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:15]	[FILTER_SURVIVE]:	consumed:2;pos:0
+[12:20:15]	[FILTER_SURVIVE]:	len:2;pos:0
+[12:20:15]	[FILTER_DEAD]:	pt:0;pos:0
+[12:20:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:20:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0:1	#2:2	
+[12:20:15]	[FAIL_TC_FILTER_START]:	survive count:2
+[12:20:15]	[FILTER_SURVIVE]:	pt:1;pos:2
+[12:20:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:3
+[12:20:15]	[FILTER_DEAD]:	consumed:2;pos:2
+[12:20:15]	[FILTER_DEAD]:	len:2;pos:2
+[12:20:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:3
+[12:20:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0#1:1	#2#2:2	

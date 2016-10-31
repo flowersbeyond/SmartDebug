@@ -1,0 +1,30 @@
+[12:39:35]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 921 - 921
+[12:39:35]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:13
+[12:39:36]	[FILTER_COMPILATION_ERROR_COUNT]:	10
+[12:39:36]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:39:36]	[END_SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 921 - 921
+[12:39:36]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 927 - 927
+[12:39:36]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:37
+[12:39:37]	[FILTER_COMPILATION_ERROR_COUNT]:	30
+[12:39:37]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:39:37]	[END_SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 927 - 927
+[12:39:37]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 942 - 942
+[12:39:37]	[GENERATE_METHOD_FIX]:	0
+[12:39:37]	[PRE_FILTER_STATUS]:	EXPR:22;BOOL:12
+[12:39:38]	[FILTER_COMPILATION_ERROR_COUNT]:	2
+[12:39:39]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:39:40]	[FILTER_COMPILATION_ERROR_COUNT]:	8
+[12:39:40]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:39:40]	[END_SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 942 - 942
+[12:39:40]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 932 - 932
+[12:39:40]	[GENERATE_METHOD_FIX]:	3
+[12:39:40]	[PRE_FILTER_STATUS]:	EXPR:3;BOOL:8
+[12:39:40]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:39:41]	[FILTER_COMPILATION_ERROR_COUNT]:	3
+[12:39:42]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[12:39:42]	[END_SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 932 - 932
+[12:39:42]	[SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 944 - 944
+[12:39:42]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:37
+[12:39:42]	[FILTER_COMPILATION_ERROR_COUNT]:	20
+[12:39:43]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:1;EXPRSET:0;BOOLSETCOUNT:1
+[12:39:43]	[END_SEARCH_FIX]:	search for:org/jfree/data/time/TimeSeries:createCopy:(Lorg/jfree/data/time/RegularTimePeriod;Lorg/jfree/data/time/RegularTimePeriod;)Lorg/jfree/data/time/TimeSeries;line 944 - 944

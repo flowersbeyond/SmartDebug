@@ -1,0 +1,72 @@
+package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.Block;
+import org.eclipse.jdt.core.dom.IfStatement;
+import org.eclipse.jdt.core.dom.Statement;
+
+import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.suggestion.BlockFix;
+
+public class BranchFixer extends CompoundStructureFixer{
+
+	private ArrayList<ASTNode> triedBranchStructure = new ArrayList<ASTNode>();
+	
+	public ArrayList<BlockFix> generateFix(StatementFixSite fixSite){
+		return branchFix(fixSite);
+	}
+	
+	private ArrayList<BlockFix> branchFix(StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		//block is in an if?
+		List<? extends ASTNode> statements = fixSite.getStatements();
+		if(statements == null || statements.size() == 0)
+			return fixes;
+		ASTNode node = statements.get(0);
+		if(node.getParent() instanceof IfStatement){
+			IfStatement stmt = (IfStatement)node.getParent();
+			if(!triedBranchStructure.contains(node)){
+				fixes.addAll(ifFix(stmt, fixSite));
+				triedBranchStructure.add(node);
+			}
+		}
+		return fixes;
+	}
+	
+	private ArrayList<BlockFix> ifFix(IfStatement stmt, StatementFixSite fixSite){
+		ArrayList<BlockFix> fixes = new ArrayList<BlockFix>();
+		Statement thenstatement = stmt.getThenStatement();
+		if(thenstatement instanceof Block){
+			Block thenBlock = (Block)thenstatement;
+			//move out
+			fixes.addAll(compoundStatementMoveOut(stmt, thenBlock, fixSite));			
+			//delete
+			fixes.addAll(compoundStatementDelete(stmt, thenBlock, fixSite));
+		}
+		
+		//if we have only one statement in the then block, or we don't have a then block
+		//then we simply remove the ifCondition, and simplify it into a single statement.
+		if(thenstatement instanceof Block){
+			List<Statement> statements = ((Block)thenstatement).statements();
+			if(statements.size() == 1){
+				//here it is safe to use "toString()", since we don't need to concat it with any other statements.
+				String modifiedString = statements.get(0).toString() + "\n";				
+				int startposition = stmt.getStartPosition();
+				int originalLength = stmt.getLength();
+				fixes.add(new BlockFix(fixSite , startposition, originalLength, modifiedString));
+			}
+		} else{
+			//here it is safe to use "toString()", since we don't need to concat it with any other statements.
+			String modifiedString = thenstatement.toString() + "\n";
+			int startposition = stmt.getStartPosition();
+			int originalLength = stmt.getLength();
+			fixes.add(new BlockFix(fixSite, startposition, originalLength, modifiedString));
+		}
+		
+		return fixes;
+	}
+
+}

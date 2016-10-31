@@ -1,0 +1,37 @@
+[18:05:44]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:isToStringMethodCall:(Lcom/google/javascript/rhino/Node;)Zline 2531 - 2531
+[18:05:44]	[GENERATE_METHOD_FIX]:	0
+[18:05:44]	[PRE_FILTER_STATUS]:	EXPR:4;BOOL:170
+[18:05:48]	[FILTER_COMPILATION_ERROR_COUNT]:	118
+[18:05:48]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:28;EXPRSET:0;BOOLSETCOUNT:1
+[18:05:48]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:isToStringMethodCall:(Lcom/google/javascript/rhino/Node;)Zline 2531 - 2531
+[18:05:48]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:isToStringMethodCall:(Lcom/google/javascript/rhino/Node;)Zline 2527 - 2527
+[18:05:48]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:337
+[18:05:55]	[FILTER_COMPILATION_ERROR_COUNT]:	148
+[18:05:55]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:63;EXPRSET:0;BOOLSETCOUNT:7
+[18:05:55]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:isToStringMethodCall:(Lcom/google/javascript/rhino/Node;)Zline 2527 - 2527
+[18:05:56]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2459 - 2459
+[18:05:56]	[GENERATE_METHOD_FIX]:	158
+[18:05:56]	[PRE_FILTER_STATUS]:	EXPR:120;BOOL:337
+[18:05:59]	[FILTER_COMPILATION_ERROR_COUNT]:	140
+[18:06:08]	[FILTER_COMPILATION_ERROR_COUNT]:	178
+[18:06:12]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[18:06:12]	[FILTER_COMPILATION_ERROR_COUNT]:	5
+[18:06:12]	[POST_FILTER_STATUS]:	EXPR:18;BOOL:33;EXPRSET:0;BOOLSETCOUNT:6
+[18:06:12]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2459 - 2459
+[18:06:12]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2460 - 2460
+[18:06:12]	[PRE_FILTER_STATUS]:	EXPR:0;BOOL:0
+[18:06:12]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:0;EXPRSET:0;BOOLSETCOUNT:0
+[18:06:12]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2460 - 2460
+[18:06:12]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:callHasLocalResult:(Lcom/google/javascript/rhino/Node;)Zline 796 - 796
+[18:06:12]	[GENERATE_METHOD_FIX]:	2
+[18:06:12]	[PRE_FILTER_STATUS]:	EXPR:424;BOOL:115
+[18:06:17]	[FILTER_COMPILATION_ERROR_COUNT]:	107
+[18:06:24]	[FILTER_COMPILATION_ERROR_COUNT]:	222
+[18:06:24]	[POST_FILTER_STATUS]:	EXPR:77;BOOL:28;EXPRSET:0;BOOLSETCOUNT:2
+[18:06:24]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:callHasLocalResult:(Lcom/google/javascript/rhino/Node;)Zline 796 - 796
+[18:06:24]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2465 - 2465
+[18:06:24]	[GENERATE_METHOD_FIX]:	0
+[18:06:24]	[PRE_FILTER_STATUS]:	EXPR:8;BOOL:168
+[18:06:28]	[FILTER_COMPILATION_ERROR_COUNT]:	148
+[18:06:28]	[POST_FILTER_STATUS]:	EXPR:0;BOOL:14;EXPRSET:0;BOOLSETCOUNT:1
+[18:06:28]	[END_SEARCH_FIX]:	search for:com/google/javascript/jscomp/NodeUtil:evaluatesToLocalValue:(Lcom/google/javascript/rhino/Node;Lcom/google/common/base/Predicate;)Zline 2465 - 2465

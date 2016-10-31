@@ -1,0 +1,14 @@
+[12:20:16]	[SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(J)Dline 342 - 342
+[12:20:16]	[GENERATE_METHOD_FIX]:	27
+[12:20:16]	[METHOD_FIX_DETAIL]:	||||?? -> getPct()||||?? -> getPct()||||?? -> getPct(serialVersionUID)||||?? -> getPct()||||?? -> addValue(Long.valueOf(v))||||?? -> getCount(Long.valueOf(v))||||?? -> getCumFreq(Long.valueOf(v))||||?? -> getCumPct(Long.valueOf(v))||||?? -> Long.valueOf()||||?? -> Long.valueOf()||||?? -> Long.Long(v)||||?? -> Long.bitCount(v)||||?? -> Long.hashCode(v)||||?? -> Long.highestOneBit(v)||||?? -> Long.lowestOneBit(v)||||?? -> Long.numberOfLeadingZeros(v)||||?? -> Long.numberOfTrailingZeros(v)||||?? -> Long.reverse(v)||||?? -> Long.reverseBytes(v)||||?? -> Long.signum(v)||||?? -> Long.stringSize(v)||||?? -> Long.toBinaryString(v)||||?? -> Long.toHexString(v)||||?? -> Long.toOctalString(v)||||?? -> Long.toString(v)||||?? -> Long.toUnsignedBigInteger(v)||||?? -> Long.toUnsignedString(v)
+[12:20:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:16]	[FILTER_SURVIVE]:	serialVersionUID:-3845586908418844111;v:3
+[12:20:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:1
+[12:20:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#-3845586908418844111:1	
+[12:20:16]	[SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(J)Dline 342 - 342
+[12:20:16]	[SEARCH_FIX]:	search for:org/apache/commons/math/stat/Frequency:getPct:(Ljava/lang/Object;)Dline 303 - 303
+[12:20:16]	[GENERATE_METHOD_FIX]:	8
+[12:20:16]	[METHOD_FIX_DETAIL]:	||||?? -> getCumPct(v)||||?? -> getCumPct()||||?? -> getCumPct(serialVersionUID)||||?? -> getCumPct()||||?? -> addValue((Comparable<?>)v)||||?? -> getCount((Comparable<?>)v)||||?? -> getCumFreq((Comparable<?>)v)||||?? -> getPct((Comparable<?>)v)
+[12:20:17]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:20:17]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:20:17]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	

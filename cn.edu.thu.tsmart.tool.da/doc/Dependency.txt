@@ -1,0 +1,29 @@
+If you encounter compilation error, please check if the following dependencies are met:
+
+* tool.sv *
+
+depends on:
+- bison		2.6 or higher
+- flex
+- g++		4.7 or higher
+- llvm		
+- python
+
+* tool.cc *
+
+depends on:
+- cdt		???
+???
+
+- codan		???
+???
+
+- xtext		>=2.8.3
+http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/
+
+
+* tool.da.dpryer.common *
+
+depends on:
+- simpleXML     simple-xml-2.7.1.jar
+http://simple.sourceforge.net/download.php

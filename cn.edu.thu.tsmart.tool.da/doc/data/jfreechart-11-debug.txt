@@ -1,0 +1,1471 @@
+[12:39:06]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 278 - 278
+[12:39:06]	[GENERATE_METHOD_FIX]:	6
+[12:39:06]	[METHOD_FIX_DETAIL]:	||||?? -> p1.cloneCoordsDouble(null)||||?? -> p1.cloneCoordsFloat(null)||||?? -> p1.transform(null)||||?? -> p1.cloneCoordsDouble(null)||||?? -> p1.cloneCoordsFloat(null)||||?? -> p1.transform(null)
+[12:39:07]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:07]	[FILTER_SURVIVE]:	p2:true;true;500;1000;10;20;4;3;1;0;2;;p1:true;true;500;1000;10;20;4;3;1;0;2;
+[12:39:07]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:07]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:07]	[FILTER_DEAD]:	p2:true;true;500;1000;10;20;4;3;1;0;2;;p1:true;true;500;1000;10;20;4;3;1;0;2;
+[12:39:07]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:07]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true;true;500;1000;10;20;4;3;1;0;2;:1	
+[12:39:07]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:07]	[FILTER_DEAD]:	p2:true;true;500;1000;10;20;4;3;1;0;2;;p1:true;true;500;1000;10;20;4;3;1;0;2;
+[12:39:07]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:07]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true;true;500;1000;10;20;4;3;1;0;2;#true;true;500;1000;10;20;4;3;1;0;2;:1	
+[12:39:07]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:07]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:07]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:07]	[FILTER_SURVIVE]:	p2:true;true;500;1000;10;20;4;3;1;0;2;;p1:true;true;500;1000;10;20;4;3;1;0;2;
+[12:39:07]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:08]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:08]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:08]	[FILTER_DEAD]:	p2:true;true;500;1000;10;20;4;3;1;0;2;;p1:true;true;500;1000;10;20;4;3;1;0;2;
+[12:39:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:08]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	#true;true;500;1000;10;20;4;3;1;0;2;:1	
+[12:39:08]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:08]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:08]	[FILTER_DEAD]:	p2:true;true;500;1000;10;20;4;3;1;0;2;;p1:true;true;500;1000;10;20;4;3;1;0;2;
+[12:39:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:08]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:1	#true;true;500;1000;10;20;4;3;1;0;2;#true;true;500;1000;10;20;4;3;1;0;2;:1	
+[12:39:08]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:08]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:08]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:08]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:08]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:08]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:08]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:08]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:08]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:08]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:2	
+[12:39:08]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:08]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:08]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:08]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:08]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:2	
+[12:39:09]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:09]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:09]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:09]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:09]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:09]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:09]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:09]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:09]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:09]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:09]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:2	
+[12:39:09]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:09]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:09]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:09]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:09]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:2	
+[12:39:09]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:09]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:09]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:09]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:09]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:09]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:09]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;0;0;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone()&&iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone() && iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone() && iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()||!iterator2.isDone():true;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone() && iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone() && iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone() && iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()||!iterator1.isDone():true;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_SURVIVE]:	iterator1.isDone() && iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:10]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:10]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:10]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:10]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;0;0;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone()&&iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:10]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:9	#4;3;1;0;2;0;1;0;0;2;2;:2	
+[12:39:10]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:10]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone()&&iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FILTER_DEAD]:	iterator1.isDone() && iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() && iterator2.isDone():false
+[12:39:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:10]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:10]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;0;0;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:10]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:10]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:9	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;0;0;2;2;:2	
+[12:39:10]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 292 - 292
+[12:39:10]	[GENERATE_METHOD_FIX]:	0
+[12:39:10]	[METHOD_FIX_DETAIL]:	
+[12:39:10]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:10]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:11]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:11]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:11]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:11]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:11]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:11]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:11]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:11]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:11]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:11]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:11]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;10;3;2;2;;iterator1:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:11]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:11]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:11]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;14;4;2;2;;iterator1:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:11]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:11]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:11]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:6	#4;3;1;0;2;0;1;0;0;2;2;:1	
+[12:39:11]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:11]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:11]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:11]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;:1	#false#false:6	
+[12:39:11]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:11]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:11]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:11]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;:1	#false#false#false:6	
+[12:39:12]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;10;3;2;2;;iterator1:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;:1	#false#false#false#false:6	
+[12:39:12]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;14;4;2;2;;iterator1:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:6	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;:1	
+[12:39:12]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;0;0;2;2;:1	#false#false#false#false#false#false:6	
+[12:39:12]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:12]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:12]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:6	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;:1	
+[12:39:12]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:12]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:12]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:12]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:12]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:12]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:12]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:12]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:12]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:12]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:12]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:12]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:12]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:13]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:13]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:13]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:13]	[FILTER_DEAD]:	iterator1.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator1.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator1.isDone():true;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:13]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:3	
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:3	
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:3	
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false:3	
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:3	
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false:3	
+[12:39:13]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:13]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:13]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:3	
+[12:39:13]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:13]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:13]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:14]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:14]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;4;2;2;2;;iterator2:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:14]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:14]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;10;3;2;2;;iterator1:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;10;3;2;2;;iterator2:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:14]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:14]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;14;4;2;2;;iterator1:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;14;4;2;2;;iterator2:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:14]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:14]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:14]	[FILTER_DEAD]:	iterator1.isDone():true;expected:false
+[12:39:14]	[FILTER_DEAD]:	iterator1.isDone():true;expected:false
+[12:39:14]	[FILTER_DEAD]:	iterator1.isDone():true;expected:false
+[12:39:14]	[FILTER_DEAD]:	iterator2.isDone():true;expected:false
+[12:39:14]	[FILTER_DEAD]:	iterator2.isDone():true;expected:false
+[12:39:14]	[FILTER_DEAD]:	iterator2.isDone():true;expected:false
+[12:39:14]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;14;5;2;2;;iterator1:4;3;1;0;2;0;1;14;5;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;14;5;2;2;;iterator2:4;3;1;0;2;0;1;14;5;2;2;
+[12:39:14]	[FILTER_SURVIVE]:	done = iterator1.isDone()&&iterator2.isDone():true;done=iterator1.isDone() && iterator2.isDone():true
+[12:39:14]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:14]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:14]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:14]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:14]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:14]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:14]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	#4;3;1;0;2;0;1;2;1;2;2;:2	
+[12:39:14]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:15]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;4;2;2;2;;iterator2:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;:2	#false#false:1	
+[12:39:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;10;3;2;2;;iterator1:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:15]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;10;3;2;2;;iterator2:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:1	#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;:2	
+[12:39:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;14;4;2;2;;iterator1:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:15]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;14;4;2;2;;iterator2:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;:2	#false#false#false#false:1	
+[12:39:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;14;5;2;2;;iterator1:4;3;1;0;2;0;1;14;5;2;2;
+[12:39:15]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;14;5;2;2;;iterator2:4;3;1;0;2;0;1;14;5;2;2;
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():true;done=iterator1.isDone() && iterator2.isDone():true
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;14;5;2;2;:2	#false#false#false#false#true:1	
+[12:39:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:15]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#true#false:1	#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;14;5;2;2;#4;3;1;0;2;0;1;2;1;2;2;:2	
+[12:39:15]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	done = iterator1.isDone()&&iterator2.isDone():false;done=iterator1.isDone() && iterator2.isDone():false
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:15]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;4;2;2;2;;iterator2:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:15]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:15]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#true#false#false:1	#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;14;5;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;:2	
+[12:39:15]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:15]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:15]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:15]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:15]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:15]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:15]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:15]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:15]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:15]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:15]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:15]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:15]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:15]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:15]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:15]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:15]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:15]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:15]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:15]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:15]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:15]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:2	
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:2	
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:2	
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false:2	
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:2	
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false:2	
+[12:39:16]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone():true;not expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator2.isDone():true;not expected:false
+[12:39:16]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[12:39:16]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#true:2	
+[12:39:16]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 280 - 280
+[12:39:16]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:16]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:16]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:16]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:16]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:16]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:16]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:16]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone()==iterator2.isDone():true;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||!iterator2.isDone():true;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||!iterator1.isDone():true;iterator1.isDone() != iterator2.isDone():false
+[12:39:16]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||!done:true;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:17]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:17]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:17]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:17]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[FILTER_SURVIVE]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:17]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:17]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:18]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:15	
+[12:39:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:18]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:15	
+[12:39:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:18]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:15	
+[12:39:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:18]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false:15	
+[12:39:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:18]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:15	
+[12:39:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:18]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:18]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false:15	
+[12:39:18]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:18]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:19]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:19]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator2.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!iterator1.isDone():false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()||done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FILTER_DEAD]:	iterator1.isDone() != iterator2.isDone()&&!done:false;iterator1.isDone() != iterator2.isDone():false
+[12:39:19]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:19]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:15	
+[12:39:19]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 265 - 265
+[12:39:19]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:19]	[FILTER_DEAD]:	p1!=null:true;p1 == null:false
+[12:39:19]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:19]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 294 - 294
+[12:39:19]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 278 - 278
+[12:39:19]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 280 - 280
+[12:39:19]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 293 - 293
+[12:39:19]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 285 - 285
+[12:39:19]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:19]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:19]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:19]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:19]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:19]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:19]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_DEAD]:	seg1==seg2:true;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_DEAD]:	seg1>=seg2:true;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_DEAD]:	seg1<=seg2:true;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_DEAD]:	seg1 != seg2||!done:true;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_DEAD]:	seg1 != seg2||seg1<=seg2:true;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_DEAD]:	seg1 != seg2||seg2<=seg1:true;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:20]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:20]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:20]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:20]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:20]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:20]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:20]	[FILTER_SURVIVE]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:21]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:21]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:21]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:21]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:21]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:21]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:21]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:21]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_SURVIVE]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:21]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:21]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:21]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:21]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:21]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:21]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:21	
+[12:39:21]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:21]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:21]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:22]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:21	
+[12:39:22]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:22]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:21	
+[12:39:22]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:22]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false:21	
+[12:39:22]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:22]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:21	
+[12:39:22]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:22]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:22]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false:21	
+[12:39:22]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:22]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:23]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:23]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:23]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:23]	[FILTER_DEAD]:	seg1>seg2:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1<seg2:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2||done:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&done:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&!done:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&seg1<=seg2:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2||seg1<seg2:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&seg1<seg2:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2||seg2<seg1:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&seg2<seg1:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&seg2<=seg1:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2||seg2!=seg1:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&seg2!=seg1:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2||seg1!=seg2:false;seg1 != seg2:false
+[12:39:23]	[FILTER_DEAD]:	seg1 != seg2&&seg1!=seg2:false;seg1 != seg2:false
+[12:39:23]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:23]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:21	
+[12:39:23]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 284 - 284
+[12:39:23]	[GENERATE_METHOD_FIX]:	2
+[12:39:23]	[METHOD_FIX_DETAIL]:	||||?? -> iterator1.currentSegment()||||?? -> iterator2.currentSegment()
+[12:39:23]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:23]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:23]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:23]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:23]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:23]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:23]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	d2:0.0;0.0;0.0;0.0;0.0;0.0;;d1:0.0;0.0;0.0;0.0;0.0;0.0;
+[12:39:23]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:23]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:23]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	d2:1.0;2.0;0.0;0.0;0.0;0.0;;d1:1.0;2.0;0.0;0.0;0.0;0.0;
+[12:39:23]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:23]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:23]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:23]	[FILTER_SURVIVE]:	d2:3.0;4.0;0.0;0.0;0.0;0.0;;d1:3.0;4.0;0.0;0.0;0.0;0.0;
+[12:39:24]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:24]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:24]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:24]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	d2:5.0;6.0;7.0;8.0;9.0;10.0;;d1:5.0;6.0;7.0;8.0;9.0;10.0;
+[12:39:24]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;10;3;2;2;;iterator1:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:24]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:24]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:24]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:24]	[FILTER_SURVIVE]:	d2:1.0;2.0;3.0;4.0;9.0;10.0;;d1:1.0;2.0;3.0;4.0;9.0;10.0;
+[12:39:24]	[FILTER_SURVIVE]:	iterator2:4;3;1;0;2;0;1;14;4;2;2;;iterator1:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:24]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:24]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	d2:0.0;0.0;0.0;0.0;0.0;0.0;;d1:0.0;0.0;0.0;0.0;0.0;0.0;
+[12:39:24]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:6	#0.0;0.0;0.0;0.0;0.0;0.0;:1	#4;3;1;0;2;0;1;0;0;2;2;:1	
+[12:39:24]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	d2:1.0;2.0;0.0;0.0;0.0;0.0;;d1:1.0;2.0;0.0;0.0;0.0;0.0;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;:1	#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;:1	#false#false:6	
+[12:39:24]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;4;2;2;2;;iterator1:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	d2:3.0;4.0;0.0;0.0;0.0;0.0;;d1:3.0;4.0;0.0;0.0;0.0;0.0;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;#3.0;4.0;0.0;0.0;0.0;0.0;:1	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;:1	#false#false#false:6	
+[12:39:24]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	d2:5.0;6.0;7.0;8.0;9.0;10.0;;d1:5.0;6.0;7.0;8.0;9.0;10.0;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;10;3;2;2;;iterator1:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;#3.0;4.0;0.0;0.0;0.0;0.0;#5.0;6.0;7.0;8.0;9.0;10.0;:1	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;:1	#false#false#false#false:6	
+[12:39:24]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	d2:1.0;2.0;3.0;4.0;9.0;10.0;;d1:1.0;2.0;3.0;4.0;9.0;10.0;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;14;4;2;2;;iterator1:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:24]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;#3.0;4.0;0.0;0.0;0.0;0.0;#5.0;6.0;7.0;8.0;9.0;10.0;#1.0;2.0;3.0;4.0;9.0;10.0;:1	#false#false#false#false#false:6	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;:1	
+[12:39:25]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:25]	[FILTER_DEAD]:	d2:0.0;0.0;0.0;0.0;0.0;0.0;;d1:0.0;0.0;0.0;0.0;0.0;0.0;
+[12:39:25]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:25]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;0;0;2;2;;iterator1:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:25]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;#3.0;4.0;0.0;0.0;0.0;0.0;#5.0;6.0;7.0;8.0;9.0;10.0;#1.0;2.0;3.0;4.0;9.0;10.0;#0.0;0.0;0.0;0.0;0.0;0.0;:1	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;0;0;2;2;:1	#false#false#false#false#false#false:6	
+[12:39:25]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:25]	[FILTER_DEAD]:	d2:1.0;2.0;0.0;0.0;0.0;0.0;;d1:1.0;2.0;0.0;0.0;0.0;0.0;
+[12:39:25]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FILTER_DEAD]:	iterator2:4;3;1;0;2;0;1;2;1;2;2;;iterator1:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:25]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:25]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:25]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:25]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:6	#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;#3.0;4.0;0.0;0.0;0.0;0.0;#5.0;6.0;7.0;8.0;9.0;10.0;#1.0;2.0;3.0;4.0;9.0;10.0;#0.0;0.0;0.0;0.0;0.0;0.0;#1.0;2.0;0.0;0.0;0.0;0.0;:1	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;:1	
+[12:39:25]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:25]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:25]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:25]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:25]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:25]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:25]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_DEAD]:	d1:1.0;2.0;0.0;0.0;0.0;0.0;;d2:0.0;0.0;0.0;0.0;0.0;0.0;
+[12:39:25]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;0;0;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:25]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:25]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:25]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:25]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;4;2;2;2;;iterator2:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:25]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:25]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;10;3;2;2;;iterator2:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:25]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:25]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:25]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:26]	[FILTER_SURVIVE]:	iterator1:4;3;1;0;2;0;1;14;4;2;2;;iterator2:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:26]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;0;0;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:6	#4;3;1;0;2;0;1;0;0;2;2;:1	
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;:1	#false#false:6	
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;4;2;2;2;;iterator2:4;3;1;0;2;0;1;4;2;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;:1	#false#false#false:6	
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;10;3;2;2;;iterator2:4;3;1;0;2;0;1;10;3;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;:1	#false#false#false#false:6	
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;14;4;2;2;;iterator2:4;3;1;0;2;0;1;14;4;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:6	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;:1	
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;0;0;2;2;;iterator2:4;3;1;0;2;0;1;0;0;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;0;0;2;2;:1	#false#false#false#false#false#false:6	
+[12:39:26]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1:4;3;1;0;2;0;1;2;1;2;2;;iterator2:4;3;1;0;2;0;1;2;1;2;2;
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:26]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:26]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:6	#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;#4;3;1;0;2;0;1;4;2;2;2;#4;3;1;0;2;0;1;10;3;2;2;#4;3;1;0;2;0;1;14;4;2;2;#4;3;1;0;2;0;1;0;0;2;2;#4;3;1;0;2;0;1;2;1;2;2;:1	
+[12:39:26]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 293 - 293
+[12:39:26]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 279 - 279
+[12:39:26]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 268 - 268
+[12:39:27]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:27]	[FILTER_DEAD]:	p2!=null:true;p2 == null:false
+[12:39:27]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:27]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 274 - 274
+[12:39:27]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 293 - 293
+[12:39:27]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 288 - 288
+[12:39:27]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:27]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:27]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:27]	[FILTER_DEAD]:	!iterator1.isDone():true;expected:false
+[12:39:27]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:27]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:27]	[FILTER_DEAD]:	!iterator2.isDone():true;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:27]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:27]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:27]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||!done:true;!Arrays.equals(d1,d2):false
+[12:39:27]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:28]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[12:39:28]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[12:39:28]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[12:39:28]	[CORRECT_TC_FILTER_START]:	Iterate 5
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator1.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	iterator2.isDone():false;expected:false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_SURVIVE]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 5
+[12:39:28]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:28]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:9	
+[12:39:28]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:28]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:28]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:9	
+[12:39:28]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:28]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:29]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false:9	
+[12:39:29]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:29]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false:9	
+[12:39:29]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:29]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false:9	
+[12:39:29]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:29]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false:9	
+[12:39:29]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator1.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	iterator2.isDone():false;not expected:false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)||done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FILTER_DEAD]:	!Arrays.equals(d1,d2)&&!done:false;!Arrays.equals(d1,d2):false
+[12:39:29]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:29]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false#false#false#false#false#false:9	
+[12:39:29]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 271 - 271
+[12:39:29]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[12:39:29]	[FILTER_DEAD]:	p1.getWindingRule()==p2.getWindingRule():true;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:29]	[FILTER_SURVIVE]:	p1.getWindingRule()>p2.getWindingRule():false;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:29]	[FILTER_DEAD]:	p1.getWindingRule()>=p2.getWindingRule():true;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:29]	[FILTER_SURVIVE]:	p1.getWindingRule()<p2.getWindingRule():false;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:29]	[FILTER_DEAD]:	p1.getWindingRule()<=p2.getWindingRule():true;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:30]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[12:39:30]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:30]	[FILTER_DEAD]:	p1.getWindingRule()>p2.getWindingRule():false;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:30]	[FILTER_DEAD]:	p1.getWindingRule()<p2.getWindingRule():false;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:30]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:2	
+[12:39:30]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:30]	[FILTER_DEAD]:	p1.getWindingRule()>p2.getWindingRule():false;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:30]	[FILTER_DEAD]:	p1.getWindingRule()<p2.getWindingRule():false;p1.getWindingRule() != p2.getWindingRule():false
+[12:39:30]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[12:39:30]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:2	
+[12:39:30]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 277 - 277
+[12:39:30]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 283 - 283
+[12:39:30]	[SEARCH_FIX]:	search for:org/jfree/chart/util/ShapeUtilities:equal:(Ljava/awt/geom/GeneralPath;Ljava/awt/geom/GeneralPath;)Zline 275 - 275

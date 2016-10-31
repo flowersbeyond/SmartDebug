@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/cn.edu.thu.tsmart.tool.da.dpryer.feature_1.0.0.qualifier.jar" id="cn.edu.thu.tsmart.tool.da.dpryer.feature" version="1.0.0.qualifier">
+      <category name="cn.edu.thu.tsmart.tool.da"/>
+   </feature>
+   <feature url="features/cn.edu.thu.tsmart.tool.da.smartdebug.feature_1.0.0.qualifier.jar" id="cn.edu.thu.tsmart.tool.da.smartdebug.feature" version="1.0.0.qualifier">
+      <category name="cn.edu.thu.tsmart.tool.da"/>
+   </feature>
+   <feature url="features/cn.edu.thu.tsmart.tool.da.feature_1.0.0.qualifier.jar" id="cn.edu.thu.tsmart.tool.da.feature" version="1.0.0.qualifier">
+      <category name="cn.edu.thu.tsmart.tool.da"/>
+   </feature>
+   <category-def name="cn.edu.thu.tsmart.tool.da" label="DebugAssist"/>
+</site>

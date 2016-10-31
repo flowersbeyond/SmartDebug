@@ -1,0 +1,705 @@
+package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Timer;
+
+import key.capsulation.GuidedSymbolicExecutor;
+import key.capsulation.KeY2CodeHintUtils;
+import key.capsulation.Position;
+import key.capsulation.ProgramInformation;
+
+import org.eclipse.core.filebuffers.ITextFileBuffer;
+import org.eclipse.core.filebuffers.ITextFileBufferManager;
+import org.eclipse.core.filebuffers.LocationKind;
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.debug.core.DebugException;
+import org.eclipse.debug.core.DebugPlugin;
+import org.eclipse.debug.core.IBreakpointManager;
+import org.eclipse.debug.core.ILaunch;
+import org.eclipse.debug.core.ILaunchConfiguration;
+import org.eclipse.debug.core.ILaunchManager;
+import org.eclipse.debug.core.model.IBreakpoint;
+import org.eclipse.debug.core.model.IVariable;
+import org.eclipse.jdt.core.ICompilationUnit;
+import org.eclipse.jdt.core.IJavaProject;
+import org.eclipse.jdt.core.IType;
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.Assignment;
+import org.eclipse.jdt.core.dom.Expression;
+import org.eclipse.jdt.core.dom.ExpressionStatement;
+import org.eclipse.jdt.core.dom.ITypeBinding;
+import org.eclipse.jdt.core.dom.Message;
+import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.MethodInvocation;
+import org.eclipse.jdt.core.dom.ReturnStatement;
+import org.eclipse.jdt.core.dom.Statement;
+import org.eclipse.jdt.core.dom.TypeDeclaration;
+import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
+import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
+import org.eclipse.jdt.debug.core.IJavaBreakpoint;
+import org.eclipse.jdt.debug.core.IJavaBreakpointListener;
+import org.eclipse.jdt.debug.core.IJavaDebugTarget;
+import org.eclipse.jdt.debug.core.IJavaLineBreakpoint;
+import org.eclipse.jdt.debug.core.IJavaStackFrame;
+import org.eclipse.jdt.debug.core.IJavaThread;
+import org.eclipse.jdt.debug.core.IJavaType;
+import org.eclipse.jdt.debug.core.IJavaVariable;
+import org.eclipse.jdt.debug.core.JDIDebugModel;
+import org.eclipse.jface.text.BadLocationException;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.jface.text.IRegion;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.text.edits.InsertEdit;
+import org.eclipse.text.edits.MalformedTreeException;
+import org.eclipse.text.edits.MultiTextEdit;
+import org.eclipse.text.edits.ReplaceEdit;
+import org.eclipse.text.edits.TextEdit;
+import org.eclipse.text.edits.UndoEdit;
+
+import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
+import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.suggestion.BlockFix;
+import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
+import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.CheckpointOnNode;
+import cn.edu.thu.tsmart.tool.da.tracer.trace.InvokeTraceNode;
+import cn.edu.thu.tsmart.tool.da.tracer.trace.TraceNode;
+import cn.edu.thu.tsmart.tool.da.tracer.trace.TraceUtil;
+import codehint.anotherEncapsulation.GetStatementForExpectation;
+
+public class SymExpressionFixer {
+	
+	private static final String SYMBOLIC_VARIABLE_NAME = "SYM_VAR";
+	private static final String CORRECT_HIT_COUNT_VAR_NAME = "CORRECT_HIT_COUNT";
+	
+	private BugFixSession session;
+	private TestCase coveringTestCase;
+	private Checkpoint checkpoint;
+	
+	public SymExpressionFixer(BugFixSession session, TestCase coveringTestCase, Checkpoint checkpoint){
+		this.session = session;
+		this.coveringTestCase = coveringTestCase;
+		this.checkpoint = checkpoint;
+	}
+	
+	public ArrayList<Fix> generateFix(StatementFixSite fixSite){
+		ArrayList<Fix> fixes = new ArrayList<Fix>();
+		List<ASTNode> stmts = (List<ASTNode>) fixSite.getStatements();
+		for(ASTNode stmt: stmts){
+			fixes.addAll(generateFix(stmt, fixSite));
+		}
+		return fixes;
+	}
+	
+	private ArrayList<Fix> generateFix(ASTNode statement, StatementFixSite fixSite){
+		ArrayList<Fix> fixes = new ArrayList<Fix>();
+		if (statement instanceof ExpressionStatement) {
+			Expression expr = ((ExpressionStatement) statement).getExpression();
+			if(expr instanceof Assignment){
+				Expression rhs = ((Assignment) expr).getRightHandSide();
+				fixes.addAll(generateFix(rhs, (ExpressionStatement)statement, fixSite));
+			}
+			
+		} else if (statement instanceof ReturnStatement){
+			Expression expr = ((ReturnStatement) statement).getExpression();
+			if(expr != null){
+				fixes.addAll(generateFix(expr, (ReturnStatement)statement, fixSite));
+			}
+		} else if (statement instanceof VariableDeclarationStatement){
+			List<VariableDeclarationFragment> fragments = ((VariableDeclarationStatement) statement).fragments();
+			for(VariableDeclarationFragment frag: fragments){
+				Expression expr = frag.getInitializer();
+				if(expr != null){
+					fixes.addAll(generateFix(expr, (VariableDeclarationStatement)statement, fixSite));
+				}
+			}
+		}
+		return fixes;
+	}
+	/*
+	private ArrayList<Fix> generateFix(Expression expr, Statement wrappingStmt, StatementFixSite fixSite){
+		ArrayList<Fix> fixes = new ArrayList<Fix>();
+		if(expr instanceof ArrayAccess){
+			
+		} else if (expr instanceof ArrayCreation){
+			
+		} else if (expr instanceof ArrayInitializer){
+			
+		} else if (expr instanceof Assignment){
+			
+		} else if (expr instanceof BooleanLiteral){
+			
+		} else if (expr instanceof CastExpression){
+			
+		} else if (expr instanceof CharacterLiteral){
+			
+		} else if (expr instanceof ClassInstanceCreation){
+			
+		} else if (expr instanceof ConditionalExpression){
+			
+		} else if (expr instanceof FieldAccess){
+			
+		} else if (expr instanceof InfixExpression){
+			
+		} else if (expr instanceof LambdaExpression){
+			
+		} else if (expr instanceof Name){
+			
+		} else if (expr instanceof NullLiteral){
+			
+		} else if (expr instanceof ParenthesizedExpression){
+			
+		} else if (expr instanceof PostfixExpression){
+			
+		}
+		return fixes;
+	}*/
+	
+	private ArrayList<Fix> generateFix(Expression expr, Statement wrappingStmt, StatementFixSite fixSite){
+		
+		ArrayList<Fix> fixes = new ArrayList<Fix>();
+		
+			try{
+			//-------------------------------------------------------
+			// construct new variable statement:
+			//TODO: calculate the hitting count for:
+			//		a: the last correct checkpoint
+			//		b: the target incorrect checkpoint
+			ArrayList<InvokeTraceNode> correspondingTrace = session.getTraceForTestCase(coveringTestCase);
+			//TODO: where is this correct node?
+			TraceNode correctNode = null;
+			TraceNode incorrectNode = null;
+			ArrayList<TraceNode> flattenedNodes = TraceUtil.flattenTrace(correspondingTrace);
+			for(TraceNode node: flattenedNodes){
+				CheckpointOnNode cp = session.findCheckpointFromTraceNode(node);
+				if(cp != null){
+					if(cp.getConditionString().equals("true")){
+						correctNode = node;
+						continue;
+					}
+					else {
+						incorrectNode = node;
+						break;
+					}
+				}
+			}
+			
+			CheckpointOnNode correctCheckpoint = session.findCheckpointFromTraceNode(correctNode);
+			CheckpointOnNode incorrectCheckpoint = session.findCheckpointFromTraceNode(incorrectNode);
+			
+			int correctHitCount = TraceUtil.getHitCount(correctNode, correspondingTrace);
+			//int incorrectHitCount = TraceUtil.getHitCount(incorrectNode, correspondingTrace);
+			
+			//------------------------------------------------------------------------------	
+			// insert the hitcount counter field for correct checkpoint
+			// insert the hitcount counter statement for correct checkpoint
+			IFile correctCPFile = correctCheckpoint.getFile();
+			
+			String correctHitCountFieldString = "public static int " + CORRECT_HIT_COUNT_VAR_NAME + "= 0;\n";
+			String correctCPClassName = correctNode.getClassName().replaceAll("/", ".");
+			TypeDeclaration correctClassTypeDecl = session.getFixSiteManager().getTypeDeclarationFromClassName(correctCPClassName);
+			InsertEdit insertHitCountField = new InsertEdit(correctClassTypeDecl.getStartPosition() + correctClassTypeDecl.getLength() - 1, correctHitCountFieldString);
+			
+			String increaseCorrectHitCountString = "if (" + correctCPClassName + "." + CORRECT_HIT_COUNT_VAR_NAME + " < " + correctHitCount + ")\n"
+					+ correctCPClassName + "." + CORRECT_HIT_COUNT_VAR_NAME + " ++;\n";
+			int correctNodeLineNum = correctNode.getStartLineNum();
+			ITextFileBuffer correctFileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(correctCPFile.getFullPath(), LocationKind.IFILE);
+			IDocument correctDocument = correctFileBuffer.getDocument();
+			InsertEdit insertIncreaseHitCountStmt = new InsertEdit(correctDocument.getLineOffset(correctNodeLineNum - 1), increaseCorrectHitCountString);
+			ArrayList<TextEdit> correctFileEdit = new ArrayList<TextEdit>();
+			correctFileEdit.add(insertHitCountField);
+			correctFileEdit.add(insertIncreaseHitCountStmt);
+			
+			
+			//------------------------------------------------------------------------------
+			// insert incorrect checkpoint judgement statement:
+			IFile incorrectCPFile = correctCheckpoint.getFile();
+			String incorrectCPJudgeString = "if (" + correctCPClassName + "." + CORRECT_HIT_COUNT_VAR_NAME + " >= " + correctHitCount + ") {\n"
+											+ "boolean CHECKPOINT_CONDITION = (" + incorrectCheckpoint.getConditionString() + ");\n"
+											+ " if (CHECKPOINT_CONDITION) {\n"
+											+ "boolean DUMMY_STMT = true;\n}\n"
+											+ "}\n";
+			
+			ITextFileBuffer incorrectFileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(incorrectCPFile.getFullPath(), LocationKind.IFILE);
+			IDocument incorrectDocument = incorrectFileBuffer.getDocument();
+			int incorrectNodeLineNum = incorrectNode.getStartLineNum();
+			InsertEdit insertCPJudge = new InsertEdit(incorrectDocument.getLineOffset(incorrectNodeLineNum - 1), incorrectCPJudgeString);
+			ArrayList<TextEdit> incorrectFileEdit = new ArrayList<TextEdit>();
+			incorrectFileEdit.add(insertCPJudge);
+			
+			
+			//----------------------------------------------------------------------------	
+			// insert the sym_var replace statement
+			ITypeBinding typeBinding = expr.resolveTypeBinding();		
+			String newVariableString = "private static ";
+			String symvarInitStmtString = "";
+			String typeName = typeBinding.getName();
+			if(typeBinding.isPrimitive()){			
+				if(typeName.equals("boolean")){
+					symvarInitStmtString = "boolean " + SYMBOLIC_VARIABLE_NAME + " = false;";
+				} else {
+					symvarInitStmtString = typeName + " " + SYMBOLIC_VARIABLE_NAME + " = 0;";
+				}
+			} else{
+				symvarInitStmtString = typeName + " " + SYMBOLIC_VARIABLE_NAME + " = null;";
+			}
+			newVariableString += symvarInitStmtString  + "\n";
+			
+			//insert the new variable at the end of the class declaration;
+			TypeDeclaration fixsiteTypeDeclaration = null;
+			ASTNode cdnode = expr;
+			while(!(cdnode instanceof TypeDeclaration)){
+				cdnode = cdnode.getParent();
+			}
+			fixsiteTypeDeclaration = (TypeDeclaration)cdnode;
+			int endposition = fixsiteTypeDeclaration.getStartPosition() + fixsiteTypeDeclaration.getLength() - 1;
+			InsertEdit insertSymVarEdit = new InsertEdit(endposition, newVariableString);
+			
+			
+			//construct the modified statement:
+			String replacedStatementString = "";
+			IFile fixSiteFile = fixSite.getFile();
+			ITextFileBuffer fixSitefileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(fixSiteFile.getFullPath(), LocationKind.IFILE);
+			IDocument document = fixSitefileBuffer.getDocument();
+			String originalString = "";
+			try {
+				originalString = document.get(wrappingStmt.getStartPosition(), wrappingStmt.getLength());
+			} catch (BadLocationException e2) {
+				e2.printStackTrace();
+			}
+			
+			int rawstmtstart = 0;
+			if (wrappingStmt instanceof VariableDeclarationStatement){
+				VariableDeclarationStatement vardeclstmt = (VariableDeclarationStatement)wrappingStmt;			
+				VariableDeclarationFragment initExpr = (VariableDeclarationFragment)vardeclstmt.fragments().get(0);
+				ITypeBinding vartype = initExpr.resolveBinding().getType();
+				if(vartype.isPrimitive()){			
+					if(vartype.getName().equals("boolean")){
+						replacedStatementString += "boolean " + initExpr.getName() + " = false;\n";
+					} else {
+						replacedStatementString += vartype.getName() + " " + initExpr.getName() + " = 0;\n";
+					}
+				} else{
+					replacedStatementString += vartype.getName() + " " + initExpr.getName() + " = null;\n";
+				}
+				rawstmtstart = originalString.indexOf(' ') + 1;
+			}
+			int wrappingStart = expr.getStartPosition()- wrappingStmt.getStartPosition();
+			int wrappingEnd = wrappingStart + expr.getLength();
+			replacedStatementString += "if (" + correctCPClassName + ".CORRECT_HIT_COUNT < " + correctHitCount + ")\n"
+					+ "{\n"
+					+ originalString.substring(rawstmtstart) + "\n"
+					+ "}\n"
+					+ "else {\n"
+					+ originalString.substring(rawstmtstart, wrappingStart) 
+						+ SYMBOLIC_VARIABLE_NAME 
+						+ originalString.substring(wrappingEnd) + "\n"
+					+ "}\n";
+			
+			//replace the old statement string with the new one:
+			ReplaceEdit replaceEdit = new ReplaceEdit(wrappingStmt.getStartPosition(), wrappingStmt.getLength(), replacedStatementString);
+			ArrayList<TextEdit> fixSiteEdit = new ArrayList<TextEdit>();
+			fixSiteEdit.add(insertSymVarEdit);
+			fixSiteEdit.add(replaceEdit);
+			
+			HashMap<IFile, ArrayList<TextEdit>> fileEditArrays = new HashMap<IFile, ArrayList<TextEdit>>();
+			fileEditArrays.put(correctCPFile, correctFileEdit);
+			if(correctCPFile.getFullPath().equals(incorrectCPFile.getFullPath())){
+				ArrayList<TextEdit> fileEdit = new ArrayList<TextEdit>();
+				fileEdit.addAll(correctFileEdit);
+				fileEdit.addAll(incorrectFileEdit);
+				fileEditArrays.put(correctCPFile, fileEdit);
+			} else {
+				fileEditArrays.put(incorrectCPFile, incorrectFileEdit);
+			}
+			
+			IFile targetfile = null;
+			ArrayList<TextEdit> targetEdit = null;
+			for(IFile file: fileEditArrays.keySet()){
+				if(file.getFullPath().equals(fixSiteFile.getFullPath())){
+					targetfile = file;
+					targetEdit = fileEditArrays.get(file);
+					break;				
+				}
+			}
+			if(targetfile != null){
+				ArrayList<TextEdit> fileEdit = new ArrayList<TextEdit>();
+				fileEdit.addAll(targetEdit);
+				fileEdit.addAll(fixSiteEdit);
+				fileEditArrays.put(targetfile, fileEdit);
+			} else {
+				fileEditArrays.put(fixSiteFile, fixSiteEdit);
+			}
+			
+			HashMap<IFile, MultiTextEdit> fileEdits = new HashMap<IFile, MultiTextEdit>();
+			for(IFile file: fileEditArrays.keySet()){
+				MultiTextEdit multiedit = new MultiTextEdit();
+				ArrayList<TextEdit> editarray = fileEditArrays.get(file);
+				for(TextEdit edit: editarray){
+					multiedit.addChild(edit);
+				}
+				fileEdits.put(file, multiedit);
+			}
+			
+			//----------------------------------------------------------------------
+			//modify source code:
+			ArrayList<DoAndUndoEditRunnable> undoEditRunnables = new ArrayList<DoAndUndoEditRunnable>();
+			for(IFile file: fileEdits.keySet()){
+				ITextFileBuffer fileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(file.getFullPath(), LocationKind.IFILE);
+				DoAndUndoEditRunnable editRunnable = new DoAndUndoEditRunnable(fileEdits.get(file), fileBuffer);
+				undoEditRunnables.add(editRunnable);
+				Display.getDefault().syncExec(editRunnable);
+			}
+	
+			//----------------------------------------------------------------------
+			//compute path conditions
+	
+			// compute necessary location information for Symbolic Execution:
+			
+			String projectPath = session.getProject().getProject().getLocation().toOSString();
+			String directoryPath = projectPath + "/src";
+			
+			String qualifiedClassName = coveringTestCase.getClassName();
+			int separatorIndex = qualifiedClassName.lastIndexOf('.');
+			String className = qualifiedClassName.substring(separatorIndex + 1);
+			String methodName = coveringTestCase.getMethodName();
+			String packageName = qualifiedClassName.substring(0, separatorIndex);
+			TypeDeclaration td = session.getFixSiteManager().getTypeDeclarationFromClassName(qualifiedClassName);
+			MethodDeclaration testcaseMD = null;
+			MethodDeclaration mds[] = td.getMethods();
+			for(MethodDeclaration md: mds){
+				if(md.getName().toString().equals(methodName)){
+					testcaseMD = md;
+					break;
+				}
+			}
+			
+			if(testcaseMD == null)
+				return fixes;
+			
+			IJavaProject project = session.getProject();
+			IType type = project.findType(qualifiedClassName);
+			ICompilationUnit icu = type.getCompilationUnit();
+			IFile testFile = (IFile)icu.getUnderlyingResource();
+			IDocument testFileDocument = ITextFileBufferManager.DEFAULT.getTextFileBuffer(testFile.getFullPath(), LocationKind.IFILE).getDocument();
+			
+			Statement firstStmt = (Statement)testcaseMD.getBody().statements().get(0);
+			String insertHitCountInitStmt = correctCPClassName + ".CORRECT_HIT_COUNT = 0;\n";
+			InsertEdit insertHitCountInitEdit = new InsertEdit(firstStmt.getStartPosition(), insertHitCountInitStmt);
+			DoAndUndoEditRunnable hitcountInitEdit = new DoAndUndoEditRunnable(insertHitCountInitEdit,ITextFileBufferManager.DEFAULT.getTextFileBuffer(testFile.getFullPath(), LocationKind.IFILE));
+			
+			//line number should plus 1 since document line number starts from 0
+			// start line of method should plus an additional 1 since test method has annotation @Test
+			// end line of method should plus an additional 1 since correct hit count init statement is inserted.
+			int startLineOfMethod = testFileDocument.getLineOfOffset(testcaseMD.getStartPosition()) + 2;
+			int endLineOfMethod = testFileDocument.getLineOfOffset(testcaseMD.getStartPosition() + testcaseMD.getLength() - 1) + 2;
+			
+			Position startPosition = new Position(startLineOfMethod + 1, 0);
+			Position endPosition = new Position(endLineOfMethod - 1, 0);
+			//TODO: stopLine??
+			int stopLine = endLineOfMethod - 1;
+			
+			ProgramInformation programInfo = new ProgramInformation(projectPath,directoryPath, packageName,
+					methodName, className, SYMBOLIC_VARIABLE_NAME,
+					stopLine, startLineOfMethod, endLineOfMethod,
+					startPosition, endPosition,
+					"true");
+			
+			
+			Display.getDefault().syncExec(hitcountInitEdit);
+			GuidedSymbolicExecutor guidedExecutor = new GuidedSymbolicExecutor(programInfo);
+			ArrayList<String> pathConditions = guidedExecutor.getPathCondtionsBySteps();
+			
+			ArrayList<String> convertedPathConditions = new ArrayList<String>();
+			for(String pc: pathConditions){
+				String convertedPC = KeY2CodeHintUtils.convertPCToCodeHintProperty(pc, fixsiteTypeDeclaration.resolveBinding().getQualifiedName() + "." + SYMBOLIC_VARIABLE_NAME);
+				convertedPathConditions.add(convertedPC);
+			}
+			
+			//Recover documents:
+			for(DoAndUndoEditRunnable editRunnable: undoEditRunnables){
+				Display.getDefault().syncExec(editRunnable);
+			}
+			for(MultiTextEdit multiedit: fileEdits.values()){
+				multiedit.removeChildren();
+			}
+			Display.getDefault().syncExec(hitcountInitEdit);
+			
+			//----------------------------------------------------------------------------------------------------------
+			//modify the code and let the program stop at the expected time
+			String dummyBPStmtString = "if (" + correctCPClassName + "." + CORRECT_HIT_COUNT_VAR_NAME + ">=" + correctHitCount + "){\n"
+										+ symvarInitStmtString +  "\n"
+										+ "int DUMMY_INT = 0;\n"
+										+ "}\n";
+			
+			InsertEdit insertDummyBP = new InsertEdit(wrappingStmt.getStartPosition(), dummyBPStmtString);
+			ArrayList<TextEdit> dummyBPMultiEdit = new ArrayList<TextEdit>();
+			dummyBPMultiEdit.add(insertDummyBP);
+			undoEditRunnables.clear();
+			fileEditArrays.clear();
+			fileEditArrays.put(correctCPFile, correctFileEdit);
+			
+			insertHitCountField = new InsertEdit(correctClassTypeDecl.getStartPosition() + correctClassTypeDecl.getLength() - 1, correctHitCountFieldString);
+			insertIncreaseHitCountStmt = new InsertEdit(correctDocument.getLineOffset(correctNodeLineNum - 1), increaseCorrectHitCountString);
+			correctFileEdit.clear();
+			correctFileEdit.add(insertHitCountField);
+			correctFileEdit.add(insertIncreaseHitCountStmt);
+			if(correctCPFile.getFullPath().equals(fixSiteFile.getFullPath())){
+				ArrayList<TextEdit> fileEdit = new ArrayList<TextEdit>();
+				fileEdit.addAll(correctFileEdit);
+				fileEdit.addAll(dummyBPMultiEdit);
+				fileEditArrays.put(correctCPFile, fileEdit);
+			} else {
+				fileEditArrays.put(fixSiteFile, dummyBPMultiEdit);
+			}
+			
+			fileEdits.clear();
+			for(IFile file: fileEditArrays.keySet()){
+				ArrayList<TextEdit> edits = fileEditArrays.get(file);
+				MultiTextEdit multiedit = new MultiTextEdit();
+				for(TextEdit edit: edits){
+					multiedit.addChild(edit);
+				}
+				fileEdits.put(file, multiedit);
+			}
+			
+			for(IFile file: fileEdits.keySet()){
+				ITextFileBuffer fileBuffer = ITextFileBufferManager.DEFAULT.getTextFileBuffer(file.getFullPath(), LocationKind.IFILE);
+				DoAndUndoEditRunnable editRunnable = new DoAndUndoEditRunnable(fileEdits.get(file), fileBuffer);
+				undoEditRunnables.add(editRunnable);
+				Display.getDefault().syncExec(editRunnable);
+			}
+			
+			
+			//----------------------------------------------------------------------------------
+			// find breakpoint position
+			// 
+			IDocument fixSiteDocument = ITextFileBufferManager.DEFAULT.getTextFileBuffer(fixSiteFile.getFullPath(), LocationKind.IFILE).getDocument();
+			int anchorLineNum = fixSiteDocument.getLineOfOffset(wrappingStmt.getStartPosition());
+			boolean found = false;
+			while(!found){
+				IRegion region = fixSiteDocument.getLineInformation(anchorLineNum);
+				String lineContent = fixSiteDocument.get(region.getOffset(), region.getLength());
+				if(lineContent.indexOf("DUMMY_INT") != -1){
+					found = true;
+					break;
+				}
+				anchorLineNum ++;
+			}		
+			int dummyBPLineNum = anchorLineNum + 1;
+			int bpStartOffset = fixSiteDocument.getLineOffset(anchorLineNum);
+			int bpEndOffset = fixSiteDocument.getLineOffset(anchorLineNum) + fixSiteDocument.getLineLength(anchorLineNum) - 1;
+			System.out.println("breakpoint at: line " + dummyBPLineNum);
+			
+			//----------------------------------------------------------------------
+			//register breakpoints;
+			try {
+				Object breakpointMutualLock = session.getBreakpointMutualLock();
+				synchronized(breakpointMutualLock){
+					
+					IBreakpointManager manager = DebugPlugin.getDefault().getBreakpointManager();
+					IBreakpoint[] bps = manager.getBreakpoints();
+					
+					ArrayList<IBreakpoint> enabledbps = new ArrayList<IBreakpoint>();
+					for(IBreakpoint bp0: bps){
+						if(bp0.isEnabled()){
+							enabledbps.add(bp0);
+							bp0.setEnabled(false);
+						}
+					}
+					
+					IJavaLineBreakpoint bp = JDIDebugModel.createLineBreakpoint(
+							fixSiteFile, fixsiteTypeDeclaration.resolveBinding().getQualifiedName(), dummyBPLineNum, 
+							//wrappingStmt.getStartPosition() + newVariableString.length(),
+							//wrappingStmt.getStartPosition() + newVariableString.length() + replacedStatementString.length(),
+							bpStartOffset, bpEndOffset, 0, false, null);
+					
+					manager.addBreakpoint(bp);
+					bp.setEnabled(true);
+					
+					Object lock = new Object();					
+					
+					SymGenRepoBPListener genRepoListener = new SymGenRepoBPListener(lock, convertedPathConditions, SYMBOLIC_VARIABLE_NAME, document);
+					JDIDebugModel.addJavaBreakpointListener(genRepoListener);
+					ILaunchConfiguration config = session.findLaunchConfiguration(coveringTestCase);
+					
+					Timer timer = new Timer();
+					ExpressionGeneratorTimeoutTask timeoutTask = new ExpressionGeneratorTimeoutTask(lock);
+					ILaunch launch = null;
+					synchronized(lock){
+						System.out.println("start launching");
+						launch = config.launch(ILaunchManager.DEBUG_MODE, new NullProgressMonitor());
+						//timer.schedule(timeoutTask , 5000);			
+						System.out.println("launch started");
+						lock.wait();
+					}
+					
+					if(!timeoutTask.validateTimeOut()){
+						timeoutTask.cancel();
+					} else if(launch != null) {
+						launch.terminate();
+					}
+					
+					bp.setEnabled(false);
+					manager.removeBreakpoint(bp, true);
+					/*IMarker marker = bp.getMarker();
+					marker.delete();*/
+					
+					for(IBreakpoint bp0: enabledbps){
+						bp0.setEnabled(true);
+					}
+					//manager.addBreakpoints(bps);
+					JDIDebugModel.removeJavaBreakpointListener(genRepoListener);
+					
+					//--------------------------------------------
+					//recover document
+					for(DoAndUndoEditRunnable editRunnable: undoEditRunnables){
+						Display.getDefault().syncExec(editRunnable);
+					}
+					for(MultiTextEdit multiedit: fileEdits.values()){
+						multiedit.removeChildren();
+					}
+					
+					List<String> exprRepo = genRepoListener.getExpressionRepository();
+					if(exprRepo != null){
+						for(String str: exprRepo){
+							BlockFix fix = new BlockFix(fixSite, expr.getStartPosition(), expr.getLength(), str);
+							fixes.add(fix);
+						}
+					}
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();				
+			} catch (CoreException e) {
+				e.printStackTrace();
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return fixes;
+		
+	}
+
+}
+
+class DoAndUndoEditRunnable implements Runnable{
+	
+	private UndoEdit undoEdit = null;
+	private TextEdit edit;
+	private ITextFileBuffer fileBuffer;
+	public DoAndUndoEditRunnable(TextEdit edit, ITextFileBuffer fileBuffer){
+		this.edit = edit;
+		this.fileBuffer = fileBuffer;
+	}
+
+	@Override
+	public void run() {
+		try {
+			if(undoEdit == null)
+				undoEdit = edit.apply(fileBuffer.getDocument());
+			else
+				undoEdit.apply(fileBuffer.getDocument());
+			fileBuffer.commit(new NullProgressMonitor(), true);
+		} catch (MalformedTreeException | BadLocationException | CoreException e) {
+			e.printStackTrace();
+		}
+	}
+	
+}
+
+class SymGenRepoBPListener implements IJavaBreakpointListener{
+	
+	private List<String> exprRepository;
+	private Object lock;
+	private String varName;
+	private ArrayList<String> pathConditions;
+	private IDocument document;
+	
+	public SymGenRepoBPListener(Object lock, ArrayList<String> pathConditions, String varName, IDocument document){
+		this.lock = lock;
+		this.exprRepository = new ArrayList<String>();
+		this.pathConditions = pathConditions;
+		this.varName = varName;
+		this.document = document;
+	}
+	
+	public List<String> getExpressionRepository(){
+		return this.exprRepository;
+	}
+	
+	@Override
+	public void addingBreakpoint(IJavaDebugTarget target,
+			IJavaBreakpoint breakpoint) {							
+	}
+
+	@Override
+	public int installingBreakpoint(
+			IJavaDebugTarget target,
+			IJavaBreakpoint breakpoint, IJavaType type) {
+		return 0;
+	}
+
+	@Override
+	public void breakpointInstalled(
+			IJavaDebugTarget target,
+			IJavaBreakpoint breakpoint) {							
+	}
+
+	@Override
+	public int breakpointHit(IJavaThread thread,
+			IJavaBreakpoint breakpoint) {
+		try {
+			IJavaStackFrame frame = (IJavaStackFrame) thread.getTopStackFrame();
+			IVariable[] variables = frame.getVariables();
+			IVariable targetVariable = null;
+			for(int i = 0; i < variables.length; i ++){
+				if(variables[i].getName().equals(varName)){
+					targetVariable = variables[i];
+					break;
+				}
+			}
+			
+			if(targetVariable != null){
+				for(String pc: pathConditions){
+					GetStatementForExpectation statements = new GetStatementForExpectation(document, frame, ((IJavaVariable)targetVariable).getJavaType(), pc);
+		        	List<String> expressions = statements.getTotalExpressions();
+		        	if(expressions != null){
+		        		this.exprRepository.addAll(expressions);
+		        	}
+				}
+			}
+			thread.getLaunch().terminate();
+		} catch (DebugException e) {
+			e.printStackTrace();
+		} finally{			
+			synchronized(lock){
+				lock.notifyAll();
+			}
+		}
+		
+		return 0;
+	}
+
+	@Override
+	public void breakpointRemoved(IJavaDebugTarget target,
+			IJavaBreakpoint breakpoint) {							
+	}
+
+	@Override
+	public void breakpointHasRuntimeException(
+			IJavaLineBreakpoint breakpoint,
+			DebugException exception) {							
+	}
+
+	@Override
+	public void breakpointHasCompilationErrors(
+			IJavaLineBreakpoint breakpoint, Message[] errors) {
+	}
+
+}
+

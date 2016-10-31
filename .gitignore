@@ -1,0 +1,14 @@
+# Eclipse
+.metadata
+## Eclipse Mars 2016-04-04
+.recommenders
+
+# (Mac) OS X
+.DS_Store
+
+# Debug Assist
+cn.edu.thu.tsmart.tool.da.test
+cn.edu.thu.tsmart.tool.da.wala/WALA
+
+#class
+*/bin/

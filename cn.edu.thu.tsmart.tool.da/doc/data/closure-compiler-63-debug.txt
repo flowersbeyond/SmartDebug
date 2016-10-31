@@ -1,0 +1,387 @@
+[18:03:38]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/JSError:make:(Ljava/lang/String;IILcom/google/javascript/jscomp/DiagnosticType;[Ljava/lang/String;)Lcom/google/javascript/jscomp/JSError;line 85 - 85
+[18:03:38]	[GENERATE_METHOD_FIX]:	1
+[18:03:38]	[METHOD_FIX_DETAIL]:	||||?? -> new JSError(sourceName, null, lineno, charno, type, null, arguments)
+[18:03:38]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:38]	[FILTER_DEAD]:	sourceName.isEmpty():false;not expected:false
+[18:03:38]	[FILTER_SURVIVE]:	!sourceName.isEmpty():true;not expected:false
+[18:03:38]	[FILTER_SURVIVE]:	charno:10;lineno:1
+[18:03:38]	[FAIL_TC_FILTER_FINISHED]:	survive count:2
+[18:03:38]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:1	#10:1	#false:1	
+[18:03:38]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/JSError:make:(Ljava/lang/String;IILcom/google/javascript/jscomp/DiagnosticType;[Ljava/lang/String;)Lcom/google/javascript/jscomp/JSError;line 85 - 85
+[18:03:38]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/JSError:make:(Ljava/lang/String;IILcom/google/javascript/jscomp/DiagnosticType;[Ljava/lang/String;)Lcom/google/javascript/jscomp/JSError;line 85 - 85
+[18:03:38]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 77 - 77
+[18:03:39]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:39]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:39]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:39]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:39]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:39]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:39]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:39]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:39]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:39]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:40]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:40]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:40]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:40]	[FILTER_DEAD]:	error.lineNumber==0:false;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber>=0:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_DEAD]:	error.lineNumber<0:false;error.lineNumber > 0:true
+[18:03:40]	[FILTER_DEAD]:	error.lineNumber<=0:false;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber!=0:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber > 0||warning:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_DEAD]:	error.lineNumber > 0&&warning:false;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber > 0||!warning:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber > 0&&!warning:true;error.lineNumber > 0:true
+[18:03:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:40]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:40]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber>=0:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber!=0:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber > 0||warning:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber > 0||!warning:true;error.lineNumber > 0:true
+[18:03:40]	[FILTER_SURVIVE]:	error.lineNumber > 0&&!warning:true;error.lineNumber > 0:true
+[18:03:40]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:41]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:41]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:41]	[FILTER_DEAD]:	error.lineNumber>=0:true;error.lineNumber > 0:true
+[18:03:41]	[FILTER_DEAD]:	error.lineNumber!=0:true;error.lineNumber > 0:true
+[18:03:41]	[FILTER_DEAD]:	error.lineNumber > 0||warning:true;error.lineNumber > 0:true
+[18:03:41]	[FILTER_DEAD]:	error.lineNumber > 0||!warning:true;error.lineNumber > 0:true
+[18:03:41]	[FILTER_DEAD]:	error.lineNumber > 0&&!warning:true;error.lineNumber > 0:true
+[18:03:41]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:41]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:5	#false:1	
+[18:03:41]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 85 - 85
+[18:03:41]	[GENERATE_METHOD_FIX]:	49
+[18:03:41]	[METHOD_FIX_DETAIL]:	||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append(equals)||||?? -> b.append(c)||||?? -> b.append(charno)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.StringBuilder(getLevelName(warning ? CheckLevel.WARNING : CheckLevel.ERROR))||||?? -> b.indexOf(getLevelName(warning ? CheckLevel.WARNING : CheckLevel.ERROR))||||?? -> b.lastIndexOf(getLevelName(warning ? CheckLevel.WARNING : CheckLevel.ERROR))||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append(equals)||||?? -> b.append(c)||||?? -> b.append(charno)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.StringBuilder(" - ")||||?? -> b.indexOf(" - ")||||?? -> b.lastIndexOf(" - ")||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append(equals)||||?? -> b.append(c)||||?? -> b.append(charno)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.StringBuilder(error.description)||||?? -> b.indexOf(error.description)||||?? -> b.lastIndexOf(error.description)||||?? -> b.append()||||?? -> b.append(sourceExcerpt)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append(equals)||||?? -> b.append(charno)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()
+[18:03:41]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:41]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:41]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:41]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:42]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:42]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:42]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:42]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:42]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:42]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:42]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:42]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:42]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:42]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:42]	[FILTER_DEAD]:	sourceExcerpt:    if (foobar) {;" - ": - 
+[18:03:42]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:43]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:43]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:43]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:43]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:43]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:43]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:43]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:43]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:43]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:43]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:44]	[FILTER_DEAD]:	sourceExcerpt:    if (foobar) {;error.description:error description here
+[18:03:44]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:44]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:44]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:44]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:44]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:44]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:44]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:44]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:44]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:45]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:45]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:45]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:45]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:45]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:45]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:45]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:45]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:45]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:45]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:45]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 90 - 90
+[18:03:45]	[GENERATE_METHOD_FIX]:	23
+[18:03:45]	[METHOD_FIX_DETAIL]:	||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append(equals)||||?? -> b.append(c)||||?? -> b.append(charno)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.StringBuilder(sourceExcerpt)||||?? -> b.indexOf(sourceExcerpt)||||?? -> b.lastIndexOf(sourceExcerpt)||||?? -> b.append()||||?? -> b.append(sourceExcerpt)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()||||?? -> b.append(equals)||||?? -> b.append(charno)||||?? -> b.append()||||?? -> b.append()||||?? -> b.append()
+[18:03:46]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:46]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:46]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:46]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:46]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:46]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:46]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:46]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:46]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:46]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:46]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:47]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:47]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:47]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:47]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:47]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:47]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:47]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:47]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:48]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:48]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:48]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:48]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:48]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:48]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:48]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:48]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:48]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:48]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:49]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:49]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:49]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:49]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:49]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:49]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:49]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:49]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:49]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:49]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:49]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:50]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:50]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:50]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:50]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:50]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 84 - 84
+[18:03:50]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 75 - 75
+[18:03:50]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:50]	[FILTER_DEAD]:	error.sourceName==null:false;error.sourceName != null:true
+[18:03:50]	[FILTER_SURVIVE]:	error.sourceName != null||warning:true;error.sourceName != null:true
+[18:03:50]	[FILTER_DEAD]:	error.sourceName != null&&warning:false;error.sourceName != null:true
+[18:03:50]	[FILTER_SURVIVE]:	error.sourceName != null||!warning:true;error.sourceName != null:true
+[18:03:50]	[FILTER_SURVIVE]:	error.sourceName != null&&!warning:true;error.sourceName != null:true
+[18:03:50]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:51]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:51]	[FILTER_SURVIVE]:	error.sourceName != null||warning:true;error.sourceName != null:true
+[18:03:51]	[FILTER_SURVIVE]:	error.sourceName != null||!warning:true;error.sourceName != null:true
+[18:03:51]	[FILTER_SURVIVE]:	error.sourceName != null&&!warning:true;error.sourceName != null:true
+[18:03:51]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:51]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:51]	[FILTER_DEAD]:	error.sourceName != null||warning:true;error.sourceName != null:true
+[18:03:51]	[FILTER_DEAD]:	error.sourceName != null||!warning:true;error.sourceName != null:true
+[18:03:51]	[FILTER_DEAD]:	error.sourceName != null&&!warning:true;error.sourceName != null:true
+[18:03:51]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:51]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:3	
+[18:03:51]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:formatError:(Lcom/google/javascript/jscomp/JSError;)Ljava/lang/String;line 59 - 59
+[18:03:51]	[GENERATE_METHOD_FIX]:	0
+[18:03:51]	[METHOD_FIX_DETAIL]:	
+[18:03:51]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:51]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:51]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/AbstractMessageFormatter:maybeColorize:(Ljava/lang/String;Lcom/google/javascript/jscomp/AbstractMessageFormatter$Color;)Ljava/lang/String;line 82 - 82
+[18:03:51]	[GENERATE_METHOD_FIX]:	0
+[18:03:51]	[METHOD_FIX_DETAIL]:	
+[18:03:52]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:52]	[FILTER_SURVIVE]:	text.isEmpty():false;expected:false
+[18:03:52]	[FILTER_SURVIVE]:	colorize:false;expected:false
+[18:03:52]	[FILTER_DEAD]:	!colorize:true;expected:false
+[18:03:52]	[FILTER_DEAD]:	!text.isEmpty():true;expected:false
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||colorize:true;!colorize:true
+[18:03:52]	[FILTER_DEAD]:	!colorize&&colorize:false;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize&&!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||colorize:true;!colorize:true
+[18:03:52]	[FILTER_DEAD]:	!colorize&&colorize:false;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize&&!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	text.isEmpty():false;expected:false
+[18:03:52]	[FILTER_SURVIVE]:	colorize:false;expected:false
+[18:03:52]	[FILTER_DEAD]:	!colorize:true;expected:false
+[18:03:52]	[FILTER_DEAD]:	!text.isEmpty():true;expected:false
+[18:03:52]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:52]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:52]	[FILTER_SURVIVE]:	text.isEmpty():false;expected:false
+[18:03:52]	[FILTER_SURVIVE]:	colorize:false;expected:false
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize&&!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize||!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	!colorize&&!colorize:true;!colorize:true
+[18:03:52]	[FILTER_SURVIVE]:	text.isEmpty():false;expected:false
+[18:03:52]	[FILTER_SURVIVE]:	colorize:false;expected:false
+[18:03:52]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:53]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:53]	[FILTER_DEAD]:	text.isEmpty():false;not expected:false
+[18:03:53]	[FILTER_DEAD]:	colorize:false;not expected:false
+[18:03:53]	[FILTER_DEAD]:	!colorize||colorize:true;!colorize:true
+[18:03:53]	[FILTER_DEAD]:	!colorize||!colorize:true;!colorize:true
+[18:03:53]	[FILTER_DEAD]:	!colorize&&!colorize:true;!colorize:true
+[18:03:53]	[FILTER_DEAD]:	!colorize||colorize:true;!colorize:true
+[18:03:53]	[FILTER_DEAD]:	!colorize||!colorize:true;!colorize:true
+[18:03:53]	[FILTER_DEAD]:	!colorize&&!colorize:true;!colorize:true
+[18:03:53]	[FILTER_DEAD]:	text.isEmpty():false;not expected:false
+[18:03:53]	[FILTER_DEAD]:	colorize:false;not expected:false
+[18:03:53]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:53]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:6	#false:4	
+[18:03:53]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 71 - 71
+[18:03:53]	[GENERATE_METHOD_FIX]:	4
+[18:03:53]	[METHOD_FIX_DETAIL]:	||||?? -> new StringBuilder()||||?? -> new StringBuilder(charno)||||?? -> new StringBuilder(sourceExcerpt)||||?? -> new StringBuilder()
+[18:03:53]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:53]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:54]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:54]	[FILTER_DEAD]:	source!=null:true;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null||warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&warning:false;source == null:false
+[18:03:54]	[FILTER_DEAD]:	source == null||!warning:true;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&!warning:false;source == null:false
+[18:03:54]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:54]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:54]	[FILTER_SURVIVE]:	source == null||warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&!warning:false;source == null:false
+[18:03:54]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:54]	[CORRECT_TC_FILTER_START]:	Iterate 3
+[18:03:54]	[FILTER_SURVIVE]:	source == null||warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&!warning:false;source == null:false
+[18:03:54]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 3
+[18:03:54]	[CORRECT_TC_FILTER_START]:	Iterate 4
+[18:03:54]	[FILTER_SURVIVE]:	source == null||warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&warning:false;source == null:false
+[18:03:54]	[FILTER_SURVIVE]:	source == null&&!warning:false;source == null:false
+[18:03:54]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 4
+[18:03:55]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:55]	[FILTER_DEAD]:	source == null||warning:false;source == null:false
+[18:03:55]	[FILTER_DEAD]:	source == null&&warning:false;source == null:false
+[18:03:55]	[FILTER_DEAD]:	source == null&&!warning:false;source == null:false
+[18:03:55]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:55]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:3	
+[18:03:55]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:55]	[FILTER_DEAD]:	source == null||warning:false;source == null:false
+[18:03:55]	[FILTER_DEAD]:	source == null&&warning:false;source == null:false
+[18:03:55]	[FILTER_DEAD]:	source == null&&!warning:false;source == null:false
+[18:03:55]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:55]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false#false:3	
+[18:03:55]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:55]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:55]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:55]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:55]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:55]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:56]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:56]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:56]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:56]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:56]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:56]	[FAIL_TC_FILTER_FINISHED]:	survive count:0
+[18:03:56]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#false:1	
+[18:03:56]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 75 - 75
+[18:03:56]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 91 - 91
+[18:03:56]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 97 - 97
+[18:03:56]	[CORRECT_TC_FILTER_START]:	Iterate 1
+[18:03:57]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:57]	[FILTER_DEAD]:	!sourceExcerpt.isEmpty():true;expected:false
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno&&charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE)&&0 <= charno && charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0==charno && charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0>charno && charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0>=charno && charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0<charno && charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0!=charno && charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0 <= charno && charno==sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0 <= charno && charno>sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0 <= charno && charno>=sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno && charno<=sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno && charno!=sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.isEmpty():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!sourceExcerpt.equalsIgnoreCase(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!sourceExcerpt.startsWith(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!sourceExcerpt.endsWith(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.matches(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.matches(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&warning:false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:57]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 1
+[18:03:58]	[CORRECT_TC_FILTER_START]:	Iterate 2
+[18:03:58]	[FILTER_SURVIVE]:	sourceExcerpt.isEmpty():false;expected:false
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno&&charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)&&0 <= charno && charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0<charno && charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0!=charno && charno < sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno && charno<=sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno && charno!=sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.matches(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.matches(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():true
+[18:03:58]	[CORRECT_TC_FILTER_FINISHED]:	Iterate 2
+[18:03:58]	[FAIL_TC_FILTER_START]:	survive count:0
+[18:03:58]	[FILTER_DEAD]:	sourceExcerpt.isEmpty():false;not expected:false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0 <= charno&&charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE)&&0 <= charno && charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0<charno && charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0!=charno && charno < sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE)
+          && 0 <= charno && charno<=sourceExcerpt.length():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE)
+          && 0 <= charno && charno!=sourceExcerpt.length():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.isEmpty():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.isEmpty():true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!sourceExcerpt.isEmpty():false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.equalsIgnoreCase(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.equalsIgnoreCase(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.equalsIgnoreCase(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:58]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.startsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.startsWith(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.startsWith(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||sourceExcerpt.endsWith(sourceExcerpt):true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&sourceExcerpt.endsWith(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!sourceExcerpt.endsWith(sourceExcerpt):false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||warning:false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_SURVIVE]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()||!warning:true;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FILTER_DEAD]:	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()&&!warning:false;excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length():false
+[18:03:59]	[FAIL_TC_FILTER_FINISHED]:	survive count:6
+[18:03:59]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#true:6	#false:16	
+[18:03:59]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 88 - 88
+[18:03:59]	[SEARCH_FIX]:	search for:com/google/javascript/jscomp/LightweightMessageFormatter:format:(Lcom/google/javascript/jscomp/JSError;Z)Ljava/lang/String;line 98 - 98

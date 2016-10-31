@@ -1,0 +1,272 @@
+[12:39:30]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/GrayPaintScale:getPaint:(D)Ljava/awt/Paint;line 128 - 128
+[12:39:30]	[GENERATE_METHOD_FIX]:	26
+[12:39:30]	[METHOD_FIX_DETAIL]:	||||?? -> Math.max(g, g)||||?? -> Math.max()||||?? -> Math.max()||||?? -> Math.IEEEremainder(value, this.lowerBound)||||?? -> Math.atan2(value, this.lowerBound)||||?? -> Math.copySign(value, this.lowerBound)||||?? -> Math.hypot(value, this.lowerBound)||||?? -> Math.min(value, this.lowerBound)||||?? -> Math.nextAfter(value, this.lowerBound)||||?? -> Math.pow(value, this.lowerBound)||||?? -> Math.min(g, g)||||?? -> Math.min()||||?? -> Math.min()||||?? -> Math.IEEEremainder(v, this.upperBound)||||?? -> Math.atan2(v, this.upperBound)||||?? -> Math.copySign(v, this.upperBound)||||?? -> Math.hypot(v, this.upperBound)||||?? -> Math.max(v, this.upperBound)||||?? -> Math.nextAfter(v, this.upperBound)||||?? -> Math.pow(v, this.upperBound)||||?? -> new Color(g)||||?? -> new Color(g, g, g)||||?? -> new Color()||||?? -> new Color()||||?? -> new Color(g, g, g, g)||||?? -> new Color()
+[12:39:31]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;value:0.0
+[12:39:31]	[FILTER_DEAD]:	lowerBound:0.0;value:0.0
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:31]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:31]	[FILTER_DEAD]:	value:0.0;this.lowerBound:0.0
+[12:39:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:3
+[12:39:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0:3	#0.0:3	
+[12:39:31]	[FAIL_TC_FILTER_START]:	survive count:3
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:31]	[FILTER_DEAD]:	upperBound:1.0;value:1.0
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:3
+[12:39:31]	[FILTER_SURVIVE]:	lowerBound:0.0;value:1.0
+[12:39:31]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:31]	[FILTER_SURVIVE]:	value:1.0;this.lowerBound:0.0
+[12:39:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:39:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0:2	#0.0#1.0:1	#1.0#1.0:3	
+[12:39:31]	[FAIL_TC_FILTER_START]:	survive count:5
+[12:39:31]	[FILTER_SURVIVE]:	lowerBound:0.0;value:-0.5
+[12:39:31]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:39:31]	[FILTER_SURVIVE]:	value:-0.5;this.lowerBound:0.0
+[12:39:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;value:-0.5
+[12:39:31]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:31]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:39:31]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0#1.0#1.0:3	#0.0#0.0#0.0:2	#0.0#1.0#-0.5:1	
+[12:39:32]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;v:0.0
+[12:39:32]	[FILTER_DEAD]:	lowerBound:0.0;v:0.0
+[12:39:32]	[FILTER_DEAD]:	value:0.0;v:0.0
+[12:39:32]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	v:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	value:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:39:32]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0:2	#0.0:6	
+[12:39:32]	[FAIL_TC_FILTER_START]:	survive count:5
+[12:39:32]	[FILTER_DEAD]:	upperBound:1.0;v:1.0
+[12:39:32]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:5
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;v:1.0
+[12:39:32]	[FILTER_DEAD]:	value:1.0;v:1.0
+[12:39:32]	[FILTER_DEAD]:	v:1.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_DEAD]:	value:1.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:6
+[12:39:32]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0:3	#0.0#1.0:3	#1.0#1.0:2	
+[12:39:32]	[FAIL_TC_FILTER_START]:	survive count:6
+[12:39:32]	[FILTER_DEAD]:	lowerBound:0.0;v:0.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:6
+[12:39:32]	[FILTER_SURVIVE]:	value:-0.5;v:0.0
+[12:39:32]	[FILTER_SURVIVE]:	v:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	value:-0.5;this.upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;v:0.0
+[12:39:32]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:32]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0#1.0#1.0:2	#0.0#0.0#0.0:3	#0.0#1.0#-0.5:2	#0.0#1.0#0.0:1	
+[12:39:32]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;value:0.0
+[12:39:32]	[FILTER_DEAD]:	v:0.0;value:0.0
+[12:39:32]	[FILTER_DEAD]:	lowerBound:0.0;value:0.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	value:0.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	v:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	value:0.0;this.upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:32]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0:4	#0.0:9	
+[12:39:32]	[FAIL_TC_FILTER_START]:	survive count:7
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;value:0.0
+[12:39:32]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:32]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:32]	[FILTER_DEAD]:	v:0.0;value:0.0
+[12:39:32]	[FILTER_DEAD]:	lowerBound:0.0;value:0.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:32]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_DEAD]:	value:0.0;this.lowerBound:0.0
+[12:39:32]	[FILTER_SURVIVE]:	v:0.0;this.upperBound:1.0
+[12:39:32]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:33]	[FILTER_SURVIVE]:	value:0.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0:9	#1.0#1.0:4	
+[12:39:33]	[FAIL_TC_FILTER_START]:	survive count:7
+[12:39:33]	[FILTER_DEAD]:	v:0.0;value:0.0
+[12:39:33]	[FILTER_DEAD]:	lowerBound:0.0;value:0.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	value:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	v:0.0;this.upperBound:1.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:33]	[FILTER_SURVIVE]:	value:0.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;value:0.0
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0#1.0#1.0:4	#0.0#0.0#0.0:9	
+[12:39:33]	[FAIL_TC_FILTER_START]:	survive count:7
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:7
+[12:39:33]	[FILTER_DEAD]:	v:1.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:33]	[FILTER_SURVIVE]:	v:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	value:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	v:1.0;this.upperBound:1.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	value:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0#1.0#1.0#1.0:4	#0.0#0.0#0.0#1.0:5	#0.0#0.0#0.0#0.0:4	
+[12:39:33]	[FAIL_TC_FILTER_START]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FILTER_DEAD]:	v:1.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	v:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	value:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	v:1.0;this.upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	value:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0#0.0#0.0#0.0:4	#0.0#0.0#0.0#1.0#1.0:5	#1.0#1.0#1.0#1.0#1.0:4	
+[12:39:33]	[FAIL_TC_FILTER_START]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FILTER_DEAD]:	v:1.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	v:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	value:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	v:1.0;this.upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	value:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;value:1.0
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0#1.0#1.0#1.0#1.0#1.0:4	#0.0#0.0#0.0#0.0#0.0#0.0:4	#0.0#0.0#0.0#1.0#1.0#1.0:5	
+[12:39:33]	[FAIL_TC_FILTER_START]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;value:-0.5
+[12:39:33]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_DEAD]:	upperBound:1.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;value:-0.5
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;upperBound:1.0
+[12:39:33]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	lowerBound:0.0;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:10
+[12:39:33]	[FILTER_SURVIVE]:	v:0.0;value:-0.5
+[12:39:33]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	value:-0.5;this.lowerBound:0.0
+[12:39:33]	[FILTER_SURVIVE]:	v:0.0;this.upperBound:1.0
+[12:39:33]	[FILTER_SURVIVE]:	value:-0.5;this.upperBound:1.0
+[12:39:33]	[FAIL_TC_FILTER_FINISHED]:	survive count:11
+[12:39:33]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0#0.0#0.0#0.0#0.0#0.0:4	#0.0#0.0#0.0#1.0#1.0#1.0#0.0:3	#0.0#0.0#0.0#1.0#1.0#1.0#-0.5:2	#1.0#1.0#1.0#1.0#1.0#1.0#1.0:4	
+[12:39:34]	[FAIL_TC_FILTER_START]:	survive count:0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_DEAD]:	value:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	v:0.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	lowerBound:0.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	value:0.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:6
+[12:39:34]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0:3	#0.0:6	
+[12:39:34]	[FAIL_TC_FILTER_START]:	survive count:6
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:6
+[12:39:34]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_DEAD]:	value:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	v:0.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	lowerBound:0.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	value:0.0;255.0:255.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:6
+[12:39:34]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0:6	#1.0#1.0:3	
+[12:39:34]	[FAIL_TC_FILTER_START]:	survive count:6
+[12:39:34]	[FILTER_SURVIVE]:	v:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	value:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	v:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	lowerBound:0.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	value:1.0;255.0:255.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0#1.0:4	#1.0#1.0#1.0:3	#0.0#0.0#0.0:2	
+[12:39:34]	[FAIL_TC_FILTER_START]:	survive count:8
+[12:39:34]	[FILTER_SURVIVE]:	v:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	value:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	v:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	value:1.0;255.0:255.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	lowerBound:0.0;255.0:255.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#1.0#1.0#1.0#1.0:3	#0.0#0.0#0.0#0.0:2	#0.0#0.0#1.0#1.0:4	
+[12:39:34]	[FAIL_TC_FILTER_START]:	survive count:8
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;255.0:255.0
+[12:39:34]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:34]	[FILTER_SURVIVE]:	lowerBound:0.0;255.0:255.0
+[12:39:34]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:34]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:35]	[FILTER_SURVIVE]:	value:-0.5;this.lowerBound:0.0
+[12:39:35]	[FILTER_SURVIVE]:	v:0.0;255.0:255.0
+[12:39:35]	[FILTER_SURVIVE]:	value:-0.5;255.0:255.0
+[12:39:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0#1.0#1.0#0.0:2	#0.0#0.0#0.0#0.0#0.0:2	#0.0#0.0#1.0#1.0#-0.5:2	#1.0#1.0#1.0#1.0#1.0:3	
+[12:39:35]	[FAIL_TC_FILTER_START]:	survive count:8
+[12:39:35]	[FILTER_DEAD]:	v:0.0;this.lowerBound:0.0
+[12:39:35]	[FILTER_SURVIVE]:	v:0.0;255.0:255.0
+[12:39:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:35]	[FILTER_DEAD]:	lowerBound:0.0;this.lowerBound:0.0
+[12:39:35]	[FILTER_SURVIVE]:	lowerBound:0.0;255.0:255.0
+[12:39:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:35]	[FILTER_SURVIVE]:	value:-0.5;this.lowerBound:0.0
+[12:39:35]	[FILTER_SURVIVE]:	value:-0.5;255.0:255.0
+[12:39:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:35]	[FILTER_SURVIVE]:	upperBound:1.0;this.lowerBound:0.0
+[12:39:35]	[FILTER_SURVIVE]:	upperBound:1.0;255.0:255.0
+[12:39:35]	[FILTER_SURVIVE]:	upperBound:1.0;lowerBound:0.0
+[12:39:35]	[FAIL_TC_FILTER_FINISHED]:	survive count:8
+[12:39:35]	[FAIL_TC_FILTER_SPLIT_FINISHED]:	#0.0#0.0#1.0#1.0#-0.5#-0.5:2	#1.0#1.0#1.0#1.0#1.0#1.0:3	#0.0#0.0#1.0#1.0#0.0#0.0:2	#0.0#0.0#0.0#0.0#0.0#0.0:2	
+[12:39:35]	[SEARCH_FIX]:	search for:org/jfree/chart/renderer/GrayPaintScale:getPaint:(D)Ljava/awt/Paint;line 126 - 126
