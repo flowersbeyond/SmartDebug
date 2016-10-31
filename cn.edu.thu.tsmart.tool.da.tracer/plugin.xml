@@ -3,30 +3,6 @@
 <plugin>
 
    <extension
-         point="org.eclipse.ui.actionSets">
-      <actionSet
-            label="Sample Action Set"
-            visible="true"
-            id="cn.edu.thu.tsmart.tool.da.tracer.actionSet">
-         <menu
-               label="Sample &amp;Menu"
-               id="sampleMenu">
-            <separator
-                  name="sampleGroup">
-            </separator>
-         </menu>
-         <action
-               label="&amp;Sample Action"
-               icon="icons/sample.gif"
-               class="cn.edu.thu.tsmart.tool.da.tracer.actions.SampleAction"
-               tooltip="Hello, Eclipse world"
-               menubarPath="sampleMenu/sampleGroup"
-               toolbarPath="sampleGroup"
-               id="cn.edu.thu.tsmart.tool.da.tracer.actions.SampleAction">
-         </action>
-      </actionSet>
-   </extension>
-   <extension
          point="org.eclipse.ui.commands">
       <command
             id="cn.edu.thu.tsmart.tool.da.tracer.TranslateTrace"
@@ -56,7 +32,7 @@
       <view
             class="cn.edu.thu.tsmart.tool.da.tracer.TraceView"
             id="cn.edu.thu.tsmart.tool.da.tracer.traceview"
-            name="name"
+            name="TraceView"
             restorable="true">
       </view>
    </extension>

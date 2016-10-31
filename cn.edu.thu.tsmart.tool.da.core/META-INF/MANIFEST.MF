@@ -39,5 +39,4 @@ Export-Package: cn.edu.thu.tsmart.tool.da.core,
  cn.edu.thu.tsmart.tool.da.core.suggestion,
  cn.edu.thu.tsmart.tool.da.core.validator,
  cn.edu.thu.tsmart.tool.da.core.validator.cp
-Bundle-ClassPath: lib/guava-13.0.1.jar,
- .
+Bundle-ClassPath: .

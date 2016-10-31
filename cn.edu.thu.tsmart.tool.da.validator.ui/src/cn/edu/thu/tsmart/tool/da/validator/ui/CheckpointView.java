@@ -102,10 +102,8 @@ public class CheckpointView extends ViewPart {
 			}
 			else if(obj instanceof ConditionItem){
 				ConditionItem item = (ConditionItem)obj;
-				if(item.getHitCount() == 0){
-					text = " Hit count: always" + "; Condition: "+ item.getConditionExpr();
-				}else if(item.getHitCount() != -1){
-					text = " Hit count: " + item.getHitCount() + "; Condition: "+ item.getConditionExpr();
+				if(!item.getHitCount().equals("")){
+					text = " Hit condition: " + item.getHitCount() + "; Expectation: "+ item.getConditionExpr();
 				} else
 					text = "";
 			}

@@ -24,7 +24,6 @@ import cn.edu.thu.tsmart.tool.da.core.search.fixSite.InsertStopFixSite;
 import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.ConditionExprFixer;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.ExpressionFixer;
-import cn.edu.thu.tsmart.tool.da.core.search.strategy.ExpressionRepository;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.FixerUtil;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.IfInserter;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.MethodFixer;

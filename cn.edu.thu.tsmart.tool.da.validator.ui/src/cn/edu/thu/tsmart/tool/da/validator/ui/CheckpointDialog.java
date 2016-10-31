@@ -6,9 +6,7 @@ import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.jface.viewers.CellEditor;
 import org.eclipse.jface.viewers.ColumnLabelProvider;
-import org.eclipse.jface.viewers.ColumnViewer;
 import org.eclipse.jface.viewers.EditingSupport;
-import org.eclipse.jface.viewers.ICellModifier;
 import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.jface.viewers.TableViewerColumn;
@@ -26,6 +24,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.ConditionItem;
 
 public class CheckpointDialog extends Dialog {
@@ -63,13 +62,13 @@ public class CheckpointDialog extends Dialog {
 			this.conditions.add(copyItem);
 		}
 		if(conditions.size() == 0){
-			ConditionItem exampleItem = new ConditionItem(-1, "");
+			ConditionItem exampleItem = new ConditionItem("", "");
 			this.conditions.add(exampleItem);
 		}
 		else{
 			ConditionItem lastItem = this.conditions.get(this.conditions.size() - 1);
-			if(!(lastItem.getHitCount() == -1 && lastItem.getConditionExpr().equals(""))){
-				ConditionItem exampleItem = new ConditionItem(-1, "");
+			if(!(lastItem.getHitCount().equals("") && lastItem.getConditionExpr().equals(""))){
+				ConditionItem exampleItem = new ConditionItem("", "");
 				this.conditions.add(exampleItem);
 			}
 		}
@@ -129,11 +128,9 @@ public class CheckpointDialog extends Dialog {
 			public String getText(Object element) {
 				if (element != null) {
 					if (element instanceof ConditionItem) {
-						int hitCount = ((ConditionItem) element).getHitCount();
-						if (hitCount == -1) {
+						String hitCondition = ((ConditionItem) element).getHitCount();
+						if (hitCondition.equals("")) {
 							return "New Condition";
-						} else if (hitCount == 0) {
-							return "Always";
 						} else
 							return ((ConditionItem) element).getHitCount() + "";
 					}
@@ -157,9 +154,8 @@ public class CheckpointDialog extends Dialog {
 			public String getText(Object element) {
 				if (element != null) {
 					if (element instanceof ConditionItem) {
-						if(((ConditionItem) element).getHitCount() == -1)
-							return "true";
-						return ((ConditionItem) element).getConditionExpr();
+						if(!((ConditionItem) element).getHitCount().equals(""))
+							return ((ConditionItem) element).getConditionExpr();
 					}
 					return element.toString();
 				}
@@ -250,14 +246,14 @@ class ConditionItemEditSupport extends EditingSupport{
 				try {
 					ConditionItem citem = (ConditionItem) element;
 					if (value.equals("New Condition")) {
-						citem.setHitCount(-1);
+						citem.setHitCount("");
 					} else if (value.equals("Always")) {
-						citem.setHitCount(0);
+						citem.setHitCount(Checkpoint.HIT_ALWAYS);
 					} else{
-						citem.setHitCount((Integer.parseInt((String) value)));
+						citem.setHitCount((String)value);
 					}
 				} catch (NumberFormatException e) {
-					((ConditionItem) element).setHitCount(-1);
+					((ConditionItem) element).setHitCount("");
 				}
 			} else if(propertyKey.equals(propertyKeys[1])){
 				((ConditionItem) element).setConditionExpr((String) value);
@@ -266,59 +262,15 @@ class ConditionItemEditSupport extends EditingSupport{
 		
 		ArrayList<ConditionItem> removedItems = new ArrayList<ConditionItem>();
 		for(ConditionItem item: conditions){
-			if(item.getHitCount() == -1){
+			if(item.getHitCount().equals("")){
 				removedItems.add(item);
 			}
 		}
 		conditions.removeAll(removedItems);
-		conditions.add(new ConditionItem(-1, "true"));
+		conditions.add(new ConditionItem("", "true"));
 		tableViewer.refresh();
 		
 	}
 	
 }
-/*
-class ConditionItemCellModifier implements ICellModifier {
 
-	private static String[] propertyName = new String[] { "Hit Count",
-			"Condition" };
-
-	private TableViewer viewer;
-	
-	public ConditionItemCellModifier(TableViewer viewer){
-		this.viewer = viewer;
-	}
-	@Override
-	public boolean canModify(Object element, String property) {
-		return true;
-	}
-
-	@Override
-	public Object getValue(Object element, String property) {
-		if (element instanceof ConditionItem) {
-			ConditionItem item = (ConditionItem) element;
-			if (property.equals(propertyName[0])) {
-				return item.getHitCount();
-			} else if (property.equals(propertyName[1])) {
-				return item.getConditionExpr();
-			}
-		}
-
-		return null;
-	}
-
-	@Override
-	public void modify(Object element, String property, Object value) {
-		if (element instanceof ConditionItem) {
-			ConditionItem item = (ConditionItem) element;
-			if (property.equals(propertyName[0])) {
-				item.setHitCount((Integer) value);
-			} else if (property.equals(propertyName[1])) {
-				item.setConditionExpr((String) value);
-			}
-		}
-		viewer.refresh();
-
-	}
-
-}*/

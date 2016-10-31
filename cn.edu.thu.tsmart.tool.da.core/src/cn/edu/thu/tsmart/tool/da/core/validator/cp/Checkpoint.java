@@ -21,24 +21,14 @@ public class Checkpoint extends JavaLineBreakpoint{
 	public static String CONDITIONS = "cn.thu.edu.thss.tsmart.tool.da.validator.conditions";
 	public static String CONDITION_SATISFIED = "cn.edu.thu.tsmart.tool.da.validator.conditionSatisfied";
 	
-	public static int HIT_ALWAYS = 0;
-	public static int HIT_NOT_SET = -1;
 	
 	private TestCase ownerTC;
 	private ArrayList<ConditionItem> conditions;
-	/**
-	 * 	 是个实然. 目前通过call hierarchy看到它与CP对话框和CPview有关(以后都没了.) 
-	 (感悟: 一个属性默认应该为 "实然" 属性; "应然" 属性应当用变量名或 final 修饰符 来表示一下... 
-	 */
+	
+	public static final String HIT_ALWAYS = "always";
+
 	private boolean conditionSatisfied;
-	/**
-	 本checkpoint存一个IMarker对象里;<br>
-	 我们告诉Eclipse该IMarker和某IFile(事实上就是所分析的Java文件!)关联;<br>
-	 Eclipse自动把IMarker内容 以及它与IFile的关联关系 serialize起来; <br>
-	 我们在插件启动时用 ResourcesPlugin.getWorkspace().getRoot().findMarkers 来 deserialize.<br>
-	 <br>
-	 我们确实也将用这个IMarker来在代码行上提示Checkpoint的存在.
-	 */
+	
 	private IFile file; 
 	private String typeName;
 	private int lineNumber;
@@ -59,7 +49,6 @@ public class Checkpoint extends JavaLineBreakpoint{
 		try {
 			this.getMarker().setAttribute(Checkpoint.CONDITION_SATISFIED, conditionSatisfied);
 		} catch (CoreException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -104,7 +93,7 @@ public class Checkpoint extends JavaLineBreakpoint{
 	private String getConditionString(){
 		String conditionString = "";
 		for(ConditionItem item: this.conditions){
-			if(item.getHitCount() != -1){
+			if(!item.getHitCount().equals("")){
 				conditionString += item.getHitCount() + ";" + item.getConditionExpr() + ";";
 			}
 		}

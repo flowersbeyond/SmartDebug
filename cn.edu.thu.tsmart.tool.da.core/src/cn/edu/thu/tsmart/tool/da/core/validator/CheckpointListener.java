@@ -201,7 +201,7 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 	}
 	
 	protected int checkCheckpoint(Checkpoint cp, IJavaThread thread){
-		
+	/*	
 		try{
 			ArrayList<ConditionItem> conditions = cp.getConditions();
 			
@@ -258,6 +258,8 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 		}catch(CoreException e){
 			return DONT_CARE;
 		}
+		*/
+		return DONT_CARE;
 	}
 
 	@Override

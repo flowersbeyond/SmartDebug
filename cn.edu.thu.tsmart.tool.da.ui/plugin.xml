@@ -48,11 +48,6 @@
                icon="icons/c_moe.png"
                style="push">
          </command>
-         <command
-               commandId="cn.edu.thu.tsmart.tool.da.ui.fl"
-               icon="icons/ff.png"
-               style="push">
-         </command>
       </menuContribution>
    </extension>
    <extension
@@ -77,10 +72,6 @@
             id="cn.edu.thu.tsmart.tool.da.ui.collectCheckpoints"
             name="Collect Checkpoints">
       </command>
-      <command
-            id="cn.edu.thu.tsmart.tool.da.ui.fl"
-            name="FL">
-      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
@@ -99,14 +90,6 @@
       <handler
             class="cn.edu.thu.tsmart.tool.da.ui.handler.ContinueResolvingHandler"
             commandId="cn.edu.thu.tsmart.tool.da.ui.continueResolving">
-      </handler>
-      <handler
-            class="cn.edu.thu.tsmart.tool.da.ui.handler.CollectCheckpointsHandler"
-            commandId="cn.edu.thu.tsmart.tool.da.ui.collectCheckpoints">
-      </handler>
-      <handler
-            class="cn.edu.thu.tsmart.tool.da.ui.handler.FaultLocalizationHandler"
-            commandId="cn.edu.thu.tsmart.tool.da.ui.fl">
       </handler>
    </extension>
    <extension

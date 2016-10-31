@@ -83,7 +83,7 @@ public class CheckpointUtils {
 		for(int i = 0; i < strings.length;){
 			if(strings[i].equals(""))
 				break;
-			items.add(new ConditionItem(Integer.parseInt(strings[i]), strings[i + 1]));
+			items.add(new ConditionItem(strings[i], strings[i + 1]));
 			i = i + 2;
 		}
 		return items;

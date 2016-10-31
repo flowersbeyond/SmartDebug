@@ -2,28 +2,28 @@ package cn.edu.thu.tsmart.tool.da.core.validator.cp;
 
 public class ConditionItem {
 	
-	private int hitCount;
-	private String conditionExpr;
+	private String hitCondition;
+	private String expectation;
 	
-	public ConditionItem(int hitCount, String conditionExpr){
-		this.hitCount = hitCount;
-		this.conditionExpr = conditionExpr;
+	public ConditionItem(String hitCondition, String expectation){
+		this.hitCondition = hitCondition;
+		this.expectation = expectation;
 	}
 
-	public int getHitCount() {
-		return hitCount;
+	public String getHitCount() {
+		return hitCondition;
 	}
 
-	public void setHitCount(int hitCount) {
-		this.hitCount = hitCount;
+	public void setHitCount(String hitCount) {
+		this.hitCondition = hitCount;
 	}
 
 	public String getConditionExpr() {
-		return conditionExpr;
+		return expectation;
 	}
 
 	public void setConditionExpr(String conditionExpr) {
-		this.conditionExpr = conditionExpr;
+		this.expectation = conditionExpr;
 	}
 
 }
