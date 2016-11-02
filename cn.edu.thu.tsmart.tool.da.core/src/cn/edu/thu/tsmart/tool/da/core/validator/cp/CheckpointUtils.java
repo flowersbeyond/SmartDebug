@@ -8,6 +8,7 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IMarker;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.debug.core.model.IBreakpoint;
 import org.eclipse.jdt.core.ICompilationUnit;
 import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.JavaCore;
@@ -19,18 +20,6 @@ import org.eclipse.jdt.internal.debug.core.breakpoints.ValidBreakpointLocationLo
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
 
 public class CheckpointUtils {
-	public static Checkpoint createCheckpoint(boolean conditionSatisfied, IResource resource,
-			String typeName, int lineNumber, int charStart, int charEnd,
-			int hitCount, boolean add, Map<String, Object> attributes)
-			throws CoreException {
-
-		if (attributes == null) {
-			attributes = new HashMap<String, Object>(10);
-		}
-		return new Checkpoint(conditionSatisfied, resource, typeName, lineNumber, charStart,
-				charEnd, hitCount, add, attributes);
-
-	}
 	
 	public static Checkpoint createCheckpoint(IMarker marker){
 		IResource resource = marker.getResource();
@@ -56,17 +45,13 @@ public class CheckpointUtils {
 				String typeName = locator.getFullyQualifiedTypeName();
 				
 				try {
-					boolean conditionSatisfied = (boolean)marker.getAttribute(Checkpoint.CONDITION_SATISFIED, false);
-					Checkpoint cp = createCheckpoint(conditionSatisfied, resource, typeName, realLineNum,
-							marker.getAttribute(IMarker.CHAR_START, -1), marker.getAttribute(IMarker.CHAR_END, -1),
-							0, false, null);
 					String conditionString = (String)marker.getAttribute(Checkpoint.CONDITIONS);
 					String testCaseString = (String)marker.getAttribute(Checkpoint.TEST_CASE_PROPERTY);
 					
 					ArrayList<ConditionItem> conditions = parseConditionString(conditionString);
 					TestCase testcase = parseTestCaseString(testCaseString);
+					Checkpoint cp = new Checkpoint(testcase, (IFile)resource, typeName, realLineNum);
 					cp.setConditions(conditions);
-					cp.setOwnerTestCase(testcase);
 					return cp;
 				} catch (CoreException e) {
 					e.printStackTrace();
@@ -91,5 +76,10 @@ public class CheckpointUtils {
 	private static TestCase parseTestCaseString(String testCaseString){
 		String[] strings = testCaseString.split(";");
 		return new TestCase(strings[0],strings[1]);
+	}
+
+	public static IBreakpoint createBreakpoint(Checkpoint cp) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

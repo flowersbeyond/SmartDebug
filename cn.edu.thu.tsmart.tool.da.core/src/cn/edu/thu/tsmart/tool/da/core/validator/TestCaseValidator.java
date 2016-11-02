@@ -1,6 +1,8 @@
 package cn.edu.thu.tsmart.tool.da.core.validator;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -16,6 +18,7 @@ import org.eclipse.jdt.debug.core.JDIDebugModel;
 import org.eclipse.jdt.junit.JUnitCore;
 
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.CheckpointUtils;
 
 public class TestCaseValidator{
 
@@ -43,14 +46,19 @@ public class TestCaseValidator{
 					
 			}
 			
-			Checkpoint[] cpsArray = new Checkpoint[cps.size()];
-			cpsArray = cps.toArray(cpsArray);
-			for(int i = 0; i < cpsArray.length; i ++){
-				cpsArray[i].ensureCPMarker();
+			
+			IBreakpoint[] cpsArray = new IBreakpoint[cps.size()];
+			Map<IBreakpoint, Checkpoint> bpcpMap = new HashMap<IBreakpoint, Checkpoint>();
+			for(int i = 0; i < cps.size(); i ++){
+				Checkpoint cp = cps.get(i);
+				IBreakpoint cpbp = CheckpointUtils.createBreakpoint(cp);
+				cpsArray[i] = cpbp;
+				bpcpMap.put(cpbp, cp);
 			}
+			
 			manager.addBreakpoints(cpsArray);
 			
-			CheckpointListener listener = new CheckpointListener(tcLaunchConfig, cps);
+			CheckpointListener listener = new CheckpointListener(tcLaunchConfig, cps, bpcpMap);
 			
 			JDIDebugModel.addJavaBreakpointListener(listener);
 			DebugPlugin.getDefault().getLaunchManager().addLaunchListener(listener);
@@ -86,9 +94,6 @@ public class TestCaseValidator{
 				for(IBreakpoint bp: enabledBreakpoints){
 					bp.setEnabled(true);
 				}
-				for(int i = 0; i < cpsArray.length; i ++){
-					cpsArray[i].ensureCPMarker();
-				}
 			} else{
 				this.validateresult = false;
 				JUnitCore.removeTestRunListener(listener);
@@ -101,12 +106,7 @@ public class TestCaseValidator{
 				for(IBreakpoint bp: enabledBreakpoints){
 					bp.setEnabled(true);
 				}
-				for(int i = 0; i < cpsArray.length; i ++){
-					cpsArray[i].ensureCPMarker();
-				}	
-			}
-			for(int i = 0; i < cpsArray.length; i ++){
-				cpsArray[i].ensureCPMarker();
+				
 			}
 		
 		} catch (CoreException e) {

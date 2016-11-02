@@ -16,6 +16,7 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IMethod;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
+import cn.edu.thu.tsmart.tool.da.core.FixGoalTable;
 import cn.edu.thu.tsmart.tool.da.core.Logger;
 import cn.edu.thu.tsmart.tool.da.core.fl.BasicBlock;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableSetFix;
@@ -30,6 +31,7 @@ public class FixValidator{
 	private NullProgressMonitor compilerPM;
 	private SuggestionManager suggestionManager;
 	private int validateCount = 0;
+	private FixGoalTable goalTable;
 	
 	private static ArrayList<ValidateEventListener> validateEventListeners = new ArrayList<ValidateEventListener>();
 	
@@ -200,7 +202,7 @@ public class FixValidator{
 				ILaunchConfiguration config = session.findLaunchConfiguration(tc);
 				if(config != null){
 					TestCaseValidator validator = new TestCaseValidator();
-					validator.validate(config, cps);
+					??validator.validate(config, cps);
 					if(validator.getValidationResult() == false){
 						fixSuccess = false;
 						break;
@@ -215,7 +217,7 @@ public class FixValidator{
 					ILaunchConfiguration config = session.findLaunchConfiguration(tc);
 					if(config != null){
 						TestCaseValidator validator = new TestCaseValidator();
-						validator.validate(config, cps);
+						??validator.validate(config, cps);
 						if(validator.getValidationResult() == false){
 							fixSuccess = false;
 							break;
@@ -243,6 +245,10 @@ public class FixValidator{
 			//breakpointMutualLock.notifyAll();
 			return false;
 		}
+	}
+
+	public void setGoalTable(FixGoalTable goalTable) {
+		this.goalTable = goalTable;
 	}
 
 }

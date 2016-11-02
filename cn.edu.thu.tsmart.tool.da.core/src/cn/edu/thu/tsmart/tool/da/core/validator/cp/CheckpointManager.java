@@ -10,7 +10,6 @@ import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jdt.core.IMethod;
-import org.eclipse.jdt.junit.launcher.JUnitLaunchShortcut;
 
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
 
@@ -18,6 +17,20 @@ public class CheckpointManager {
 
 	private Map<TestCase, ArrayList<Checkpoint>> conditions;
 	private static CheckpointManager cpmanager = new CheckpointManager();
+	
+	private boolean inSync = false;
+	
+	public void setSync(){
+		inSync = true;
+	}
+	
+	public void setOutOfSync(){
+		inSync = false;
+	}
+	
+	public boolean isInSync(){
+		return inSync;
+	}
 
 	private CheckpointManager() {
 		this.conditions = new HashMap<TestCase, ArrayList<Checkpoint>>();
@@ -45,7 +58,6 @@ public class CheckpointManager {
 			cplist = newList;
 		}
 		cplist.add(cp);
-		cp.setOwnerTestCase(testcase);
 	}
 
 	public void removeCheckpoint(Checkpoint cp) {
@@ -79,13 +91,9 @@ public class CheckpointManager {
 					&& tc.getMethodName().equals(currentTestCase.getMethodName())) {
 				ArrayList<Checkpoint> checkpoints = conditions.get(tc);
 				for (Checkpoint cp : checkpoints) {
-					try {
-						if (cp.getFile().equals(file)
-								&& cp.getLineNumber() == lineNumber) {
-							return cp;
-						}
-					} catch (CoreException e) {
-						e.printStackTrace();
+					if (cp.getFile().equals(file)
+							&& cp.getLineNumber() == lineNumber) {
+						return cp;
 					}
 				}
 				return null;
@@ -142,6 +150,14 @@ public class CheckpointManager {
 				cp.ensureCPMarker();
 			}
 		}
+		
+	}
+
+	public void registerTestCase(TestCase testCase) {
+		if(conditions.containsKey(testCase))
+			return;
+		else
+			conditions.put(testCase, new ArrayList<Checkpoint>());
 		
 	}
 

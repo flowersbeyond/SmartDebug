@@ -12,7 +12,6 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.debug.core.DebugEvent;
 import org.eclipse.debug.core.DebugException;
 import org.eclipse.debug.core.DebugPlugin;
 import org.eclipse.debug.core.IBreakpointManager;
@@ -36,13 +35,10 @@ import org.eclipse.jdt.debug.core.IJavaType;
 import org.eclipse.jdt.debug.core.IJavaValue;
 import org.eclipse.jdt.debug.core.IJavaVariable;
 import org.eclipse.jdt.debug.core.JDIDebugModel;
-import org.eclipse.jdt.debug.eval.EvaluationManager;
-import org.eclipse.jdt.debug.eval.IAstEvaluationEngine;
-import org.eclipse.jdt.debug.eval.IEvaluationListener;
-import org.eclipse.jdt.debug.eval.IEvaluationResult;
 import org.eclipse.jdt.internal.debug.core.breakpoints.ValidBreakpointLocationLocator;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
+import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
 import cn.edu.thu.tsmart.tool.da.core.Logger;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableSetFix;
@@ -262,7 +258,7 @@ class CorrectTCFilterBPListener extends FilterBPListener{
 				
 				//handle side effects:
 				//sideEffectHandler.startHandlingSideEffects();
-				IJavaValue newExprValue = evaluateExpr(newExprString, thread, stackframe);
+				IJavaValue newExprValue = EclipseUtils.evaluateExpr(newExprString, thread, stackframe, project);
 				String actualValue = getValueSchetch(newExprValue, fix.getTargetExprType());
 				//sideEffectHandler.stopHandlingSideEffects();
 				if(actualValue == null){
@@ -286,7 +282,7 @@ class CorrectTCFilterBPListener extends FilterBPListener{
 						String oldValue = "";
 						if(!oldValueMap.containsKey(oldExpression)){
 							//sideEffectHandler.startHandlingSideEffects();
-							IJavaValue oldExprValue = evaluateExpr(oldExpression.toString(), thread, stackframe);
+							IJavaValue oldExprValue = EclipseUtils.evaluateExpr(oldExpression.toString(), thread, stackframe, project);
 							oldValue = getValueSchetch(oldExprValue, fix.getTargetExprType());
 							oldValueMap.put(oldExpression, oldValue);
 							//sideEffectHandler.stopHandlingSideEffects();
@@ -400,7 +396,7 @@ class FailTCFilterBPListener extends FilterBPListener{
 					String newExprString = fix.getNewExprString();
 					//handle side effects:
 					//sideEffectHandler.startHandlingSideEffects();
-					IJavaValue newExprValue = evaluateExpr(newExprString, thread, stackframe);
+					IJavaValue newExprValue = EclipseUtils.evaluateExpr(newExprString, thread, stackframe, project);
 					String actualValue = getValueSchetch(newExprValue, fix.getTargetExprType());
 					//sideEffectHandler.stopHandlingSideEffects();
 					if(actualValue == null){
@@ -434,7 +430,7 @@ class FailTCFilterBPListener extends FilterBPListener{
 							String oldValue = "";
 							if(!oldValueMap.containsKey(oldExpression)){
 								//sideEffectHandler.startHandlingSideEffects();
-								IJavaValue oldExprValue = evaluateExpr(oldExpression.toString(), thread, stackframe);
+								IJavaValue oldExprValue = EclipseUtils.evaluateExpr(oldExpression.toString(), thread, stackframe, project);
 								oldValue = getValueSchetch(oldExprValue, fix.getTargetExprType());
 								oldValueMap.put(oldExpression, oldValue);
 								//sideEffectHandler.stopHandlingSideEffects();
@@ -597,40 +593,7 @@ abstract class FilterBPListener implements IJavaBreakpointListener{
 		return null;
 	}
 
-	protected IJavaValue evaluateExpr(String newExprString, IJavaThread thread,
-			IJavaStackFrame stackframe) {
-		
-		IAstEvaluationEngine evalEngine = EvaluationManager.newAstEvaluationEngine(project, (IJavaDebugTarget) thread.getDebugTarget());
-		Object evalLock = new Object();
-		EvaluationListener listener = new EvaluationListener(evalLock);
-		
-		Timer timer = new Timer();
-		EvaluationTimeoutTask timeoutTask = new EvaluationTimeoutTask(evalLock);
-		synchronized(evalLock){
-			try {
-				evalEngine.evaluate(newExprString, stackframe, listener, DebugEvent.EVALUATION, false);
-				timer.schedule(timeoutTask, 200);
-				evalLock.wait();
-			} catch (DebugException e) {
-				e.printStackTrace();
-				return null;
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-				return null;
-			}
-		}
-		
-		IJavaValue value = null;
-		if(!timeoutTask.evaluationTimeOut()){
-			timeoutTask.cancel();
-			IEvaluationResult result = listener.getResult();
-			if(result.getErrorMessages().length == 0 && result.getException() == null){
-				value = result.getValue();
-			}
-		}
-		evalEngine.dispose();
-		return value;
-	}
+	
 	
 	@Override
 	public void addingBreakpoint(IJavaDebugTarget target,
@@ -690,28 +653,6 @@ class LaunchTerminatedListener implements ILaunchesListener2{
 	}
 	
 }
-
-class EvaluationListener implements IEvaluationListener{
-	private IEvaluationResult result;
-	private Object lock;
-	
-	public EvaluationListener(Object lock){
-		this.lock = lock;
-	}
-	
-	public IEvaluationResult getResult(){
-		return result;
-	}
-	@Override
-	public void evaluationComplete(IEvaluationResult result) {
-		this.result = result;
-		synchronized(lock){
-			lock.notifyAll();
-		}
-	}
-	
-}
-
 class EvaluationTimeoutTask extends TimerTask{
 	Object lock;
 	boolean timeout = false;
@@ -731,3 +672,4 @@ class EvaluationTimeoutTask extends TimerTask{
 		}
 	}
 }
+

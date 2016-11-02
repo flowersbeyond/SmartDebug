@@ -1,7 +1,6 @@
 package cn.edu.thu.tsmart.tool.da.core.validator;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
 import org.eclipse.core.runtime.CoreException;
@@ -10,6 +9,7 @@ import org.eclipse.debug.core.DebugException;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.debug.core.ILaunchesListener2;
+import org.eclipse.debug.core.model.IBreakpoint;
 import org.eclipse.debug.core.model.IValue;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.dom.Message;
@@ -133,7 +133,6 @@ class EvaluationListener implements IEvaluationListener{
 public class CheckpointListener extends TestRunListener implements IJavaBreakpointListener, ILaunchesListener2{
 
 	protected ILaunchConfiguration config;
-	private Map<Checkpoint, Integer> hitCountMap;
 
 	protected Checkpoint failedCheckpoint = null;
 	protected boolean testcaseFailed = false;
@@ -143,6 +142,8 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 	protected boolean CHECKPOINT_VIOLATED_FLAG = false;
 	
 	protected Object lock = new Object();
+	
+	private Map<IBreakpoint, Checkpoint> bpcpMap;
 	public Object getLock() {
 		return lock;
 	}
@@ -153,12 +154,9 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 	public Checkpoint getFailedCheckpoint(){
 		return failedCheckpoint;
 	}
-	public CheckpointListener(ILaunchConfiguration config, ArrayList<Checkpoint> cps) {
+	public CheckpointListener(ILaunchConfiguration config, ArrayList<Checkpoint> cps, Map<IBreakpoint, Checkpoint> bpcpMap) {
 		this.config = config;
-		hitCountMap = new HashMap<Checkpoint, Integer>();
-		for(Checkpoint cp: cps){
-			hitCountMap.put(cp, 0);
-		}
+		this.bpcpMap = bpcpMap;
 	}
 
 	@Override
@@ -182,11 +180,12 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 	public int breakpointHit(IJavaThread thread, IJavaBreakpoint breakpoint) {
 		
 		try {
-			if(breakpoint instanceof Checkpoint && thread.getLaunch().getLaunchConfiguration().equals(config)){
-				int checkResult = checkCheckpoint((Checkpoint)breakpoint, thread);
+			Checkpoint cp = bpcpMap.get(breakpoint);
+			if(cp != null && thread.getLaunch().getLaunchConfiguration().equals(config)){
+				int checkResult = checkCheckpoint(cp, thread);
 						
 				if(checkResult == IJavaBreakpointListener.SUSPEND){
-					this.failedCheckpoint = (Checkpoint)breakpoint;
+					this.failedCheckpoint = cp;
 					this.CHECKPOINT_VIOLATED_FLAG = true;
 					thread.getLaunch().terminate();
 				}
@@ -201,20 +200,26 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 	}
 	
 	protected int checkCheckpoint(Checkpoint cp, IJavaThread thread){
-	/*	
-		try{
+		
+		/*try{
 			ArrayList<ConditionItem> conditions = cp.getConditions();
 			
-			Integer currentHitCount = hitCountMap.get(cp);
-			if(currentHitCount != null){
-				currentHitCount++;
-				hitCountMap.put(cp, currentHitCount);
+			for(ConditionItem condition: conditions){
+				String hitCondition = condition.getHitCondition();
+				if(checkSatisfied(hitCondition, thread)){
+					if(!checkExpectation(condition.getExpectation(), thread)){
+						condition.setFailed();
+					}
+					else {
+						
+					}
+				}
 			}
 			
 			for(ConditionItem item: conditions){
 				
-				if(item.getHitCount() == Checkpoint.HIT_ALWAYS
-						|| item.getHitCount() == currentHitCount){
+				if(item.getHitCondition() == Checkpoint.HIT_ALWAYS
+						|| item.getHitCondition() == currentHitCount){
 					
 					EvaluationListener listener = new EvaluationListener(
 							cp);
@@ -233,7 +238,7 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 						// If no engine is available, suspend
 						return DONT_CARE;
 					}
-					ICompiledExpression expression = engine.getCompiledExpression(item.getConditionExpr(), frame);
+					ICompiledExpression expression = engine.getCompiledExpression(item.getExpectation(), frame);
 						
 					if (expression.hasErrors()) {
 						System.out.println("condition expression compile failed, skip");

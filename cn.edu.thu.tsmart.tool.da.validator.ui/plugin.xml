@@ -30,7 +30,7 @@
          name="checkpointMarker"
          point="org.eclipse.core.resources.markers">
       <super
-            type="org.eclipse.debug.core.lineBreakpointMarker">
+            type="org.eclipse.core.resources.bookmark">
       </super>
       <persistent
             value="true">
@@ -63,7 +63,7 @@
             colorPreferenceValue="255,0,0"
             highlightPreferenceKey="CHECKPOINT_HIGHLIGHT"
             highlightPreferenceValue="false"
-            icon="icons/checkpoint.gif"
+            icon="icons/checkpoint.jpg"
             includeOnPreferencePage="true"
             label="Checkpoints"
             overviewRulerPreferenceKey="CHECKPOINT_OVERVIEW_RULER"
@@ -83,14 +83,6 @@
       </startup>
    </extension>
    <extension
-         point="org.eclipse.debug.core.breakpoints">
-      <breakpoint
-            class="cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint"
-            id="cn.thu.edu.thss.tsmart.tool.da.validator.Checkpoint"
-            markerType="cn.thu.edu.thss.tsmart.tool.da.validator.checkpointMarker">
-      </breakpoint>
-   </extension>
-   <extension
          point="org.eclipse.jdt.junit.testRunListeners">
       <testRunListener
             class="cn.edu.thu.tsmart.tool.da.validator.ui.ValidatorTestRunListener">
@@ -108,6 +100,7 @@
                style="push">
          </command>
       </menuContribution>
+      
    </extension>
    <extension
          point="org.eclipse.ui.commands">

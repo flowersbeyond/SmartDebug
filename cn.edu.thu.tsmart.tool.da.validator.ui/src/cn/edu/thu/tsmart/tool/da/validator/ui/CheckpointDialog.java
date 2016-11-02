@@ -25,6 +25,7 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.CheckpointManager;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.ConditionItem;
 
 public class CheckpointDialog extends Dialog {
@@ -58,7 +59,7 @@ public class CheckpointDialog extends Dialog {
 		
 		this.conditions = new ArrayList<ConditionItem>();
 		for(ConditionItem item: conditions){
-			ConditionItem copyItem = new ConditionItem(item.getHitCount(), item.getConditionExpr());
+			ConditionItem copyItem = new ConditionItem(item.getHitCondition(), item.getExpectation());
 			this.conditions.add(copyItem);
 		}
 		if(conditions.size() == 0){
@@ -67,7 +68,7 @@ public class CheckpointDialog extends Dialog {
 		}
 		else{
 			ConditionItem lastItem = this.conditions.get(this.conditions.size() - 1);
-			if(!(lastItem.getHitCount().equals("") && lastItem.getConditionExpr().equals(""))){
+			if(!(lastItem.getHitCondition().equals("") && lastItem.getExpectation().equals(""))){
 				ConditionItem exampleItem = new ConditionItem("", "");
 				this.conditions.add(exampleItem);
 			}
@@ -128,11 +129,11 @@ public class CheckpointDialog extends Dialog {
 			public String getText(Object element) {
 				if (element != null) {
 					if (element instanceof ConditionItem) {
-						String hitCondition = ((ConditionItem) element).getHitCount();
+						String hitCondition = ((ConditionItem) element).getHitCondition();
 						if (hitCondition.equals("")) {
 							return "New Condition";
 						} else
-							return ((ConditionItem) element).getHitCount() + "";
+							return ((ConditionItem) element).getHitCondition() + "";
 					}
 					return element.toString();
 				}
@@ -154,8 +155,8 @@ public class CheckpointDialog extends Dialog {
 			public String getText(Object element) {
 				if (element != null) {
 					if (element instanceof ConditionItem) {
-						if(!((ConditionItem) element).getHitCount().equals(""))
-							return ((ConditionItem) element).getConditionExpr();
+						if(!((ConditionItem) element).getHitCondition().equals(""))
+							return ((ConditionItem) element).getExpectation();
 					}
 					return element.toString();
 				}
@@ -231,9 +232,9 @@ class ConditionItemEditSupport extends EditingSupport{
 	protected Object getValue(Object element) {
 		if (element instanceof ConditionItem) {
 			if(propertyKey.equals(propertyKeys[0])){
-				return ((ConditionItem) element).getHitCount() + "";
+				return ((ConditionItem) element).getHitCondition() + "";
 			} else if(propertyKey.equals(propertyKeys[1])){
-				return ((ConditionItem) element).getConditionExpr();
+				return ((ConditionItem) element).getExpectation();
 			}
 		}
 		return null;
@@ -246,30 +247,30 @@ class ConditionItemEditSupport extends EditingSupport{
 				try {
 					ConditionItem citem = (ConditionItem) element;
 					if (value.equals("New Condition")) {
-						citem.setHitCount("");
+						citem.setHitCondition("");
 					} else if (value.equals("Always")) {
-						citem.setHitCount(Checkpoint.HIT_ALWAYS);
+						citem.setHitCondition(Checkpoint.HIT_ALWAYS);
 					} else{
-						citem.setHitCount((String)value);
+						citem.setHitCondition((String)value);
 					}
 				} catch (NumberFormatException e) {
-					((ConditionItem) element).setHitCount("");
+					((ConditionItem) element).setHitCondition("");
 				}
 			} else if(propertyKey.equals(propertyKeys[1])){
-				((ConditionItem) element).setConditionExpr((String) value);
+				((ConditionItem) element).setExpecation((String) value);
 			}
 		}
 		
 		ArrayList<ConditionItem> removedItems = new ArrayList<ConditionItem>();
 		for(ConditionItem item: conditions){
-			if(item.getHitCount().equals("")){
+			if(item.getHitCondition().equals("")){
 				removedItems.add(item);
 			}
 		}
 		conditions.removeAll(removedItems);
 		conditions.add(new ConditionItem("", "true"));
 		tableViewer.refresh();
-		
+		CheckpointManager.getInstance().setOutOfSync();
 	}
 	
 }

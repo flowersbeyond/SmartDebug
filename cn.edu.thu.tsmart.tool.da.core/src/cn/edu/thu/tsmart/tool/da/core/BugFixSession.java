@@ -77,7 +77,7 @@ public class BugFixSession {
 	public BugFixSession(IJavaProject project, IType testsType) {
 		this.project = project;
 		this.testsType = testsType;
-		this.testMethods = TestCaseUtil.getTestMethods(testsType);
+		this.testMethods = EclipseUtils.getTestMethods(testsType);
 		this.fixSiteManager = new FixSiteManager(this);
 		this.fixer = new BugFixer(this);
 		this.exprGenerator = new ExpressionGenerator(this);

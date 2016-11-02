@@ -16,3 +16,4 @@ Require-Bundle: org.eclipse.ui,
  cn.edu.thu.tsmart.tool.da.core;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
+Export-Package: cn.edu.thu.tsmart.tool.da.validator.ui

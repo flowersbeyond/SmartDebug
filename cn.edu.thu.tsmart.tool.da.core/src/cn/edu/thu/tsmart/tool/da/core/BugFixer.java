@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.core.resources.IncrementalProjectBuilder;
@@ -20,13 +22,19 @@ import org.eclipse.debug.core.DebugPlugin;
 import org.eclipse.debug.core.IBreakpointManager;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
+import org.eclipse.debug.core.ILaunchesListener2;
 import org.eclipse.debug.core.model.IBreakpoint;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IMethod;
 import org.eclipse.jdt.core.JavaModelException;
+import org.eclipse.jdt.core.dom.Message;
 import org.eclipse.jdt.debug.core.IJavaBreakpoint;
+import org.eclipse.jdt.debug.core.IJavaBreakpointListener;
+import org.eclipse.jdt.debug.core.IJavaDebugTarget;
+import org.eclipse.jdt.debug.core.IJavaLineBreakpoint;
 import org.eclipse.jdt.debug.core.IJavaStackFrame;
 import org.eclipse.jdt.debug.core.IJavaThread;
+import org.eclipse.jdt.debug.core.IJavaType;
 import org.eclipse.jdt.debug.core.JDIDebugModel;
 import org.eclipse.jdt.junit.JUnitCore;
 import org.eclipse.jdt.junit.TestRunListener;
@@ -37,11 +45,13 @@ import cn.edu.thu.tsmart.tool.da.core.fl.BasicBlock;
 import cn.edu.thu.tsmart.tool.da.core.fl.FaultLocalizer;
 import cn.edu.thu.tsmart.tool.da.core.search.SearchEngine;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
-import cn.edu.thu.tsmart.tool.da.core.validator.CheckpointListener;
 import cn.edu.thu.tsmart.tool.da.core.validator.FixValidator;
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.CheckpointManager;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.CheckpointUtils;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.ConditionItem;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.StatusCode;
 import cn.edu.thu.tsmart.tool.da.tracer.CFGCache;
 import cn.edu.thu.tsmart.tool.da.tracer.DynamicTranslator;
 //import cn.edu.thu.tsmart.tool.da.tracer.ITraceEventAllDoneListener;
@@ -63,9 +73,11 @@ public class BugFixer extends Job{
 	}
 	
 	
-	private void initFixSession(boolean updateTraces, SubProgressMonitor subPM) {
+	private void initFixSession(SubProgressMonitor subPM) {
+		if(!CheckpointManager.getInstance().isInSync()){
+			updateDebugProcess();
+		}
 		
-		FixGoalTable goalTable = new FixGoalTable();
 		DynamicTranslator.clearAnalysisScope();
 		try{
 			//collect traces for all test methods.
@@ -108,8 +120,6 @@ public class BugFixer extends Job{
 					failTCs.add(testCase);				
 				}
 				session.addTestResult(testCase, testResult);
-				//TODO: Goal Table
-				goalTable.registerFixGoal(testMethod, null, true);
 			}
 			
 			//collect trace of failing methods:
@@ -128,8 +138,7 @@ public class BugFixer extends Job{
 				localizer.mergeNewTrace(traceBlocks, true);
 				System.gc();
 			}
-			// when reading 2016-08-15:  
-			session.setFixGoalTable(goalTable); 
+			
 			ArrayList<BasicBlock> suspects = localizer.localize();
 			session.setSuspectList(suspects);
 		} finally{
@@ -145,7 +154,6 @@ public class BugFixer extends Job{
 		if(cps == null)
 			cps = new ArrayList<Checkpoint>();
 		
-		TraceAndTestResultListener listener = new TraceAndTestResultListener(config, cps, session.getProject(), includeNewBlocks);
 		try{
 			IBreakpointManager manager = DebugPlugin.getDefault().getBreakpointManager();
 			IBreakpoint[] bps = manager.getBreakpoints();
@@ -157,9 +165,17 @@ public class BugFixer extends Job{
 				}					
 			}
 			
-			Checkpoint[] cpsArray = new Checkpoint[cps.size()];
-			cpsArray = cps.toArray(cpsArray);
+			IBreakpoint[] cpsArray = new IBreakpoint[cps.size()];
+			Map<IBreakpoint, Checkpoint> bpcpMap = new HashMap<IBreakpoint, Checkpoint>();
+			for(int i = 0; i < cps.size(); i ++){
+				IBreakpoint bp = CheckpointUtils.createBreakpoint(cps.get(i));
+				bpcpMap.put(bp, cps.get(i));
+				cpsArray[i] = bp;
+			}
 			manager.addBreakpoints(cpsArray);
+			
+			TraceAndTestResultListener listener = new TraceAndTestResultListener(config, bpcpMap, session.getProject(), includeNewBlocks);
+			
 			
 			JDIDebugModel.addJavaBreakpointListener(listener);
 			DebugPlugin.getDefault().getLaunchManager().addLaunchListener(listener);
@@ -264,17 +280,48 @@ public class BugFixer extends Job{
 		
 	}
 
-	protected class TraceAndTestResultListener extends CheckpointListener{
+	/**
+	 * This listener is responsible for:
+	 * 1. update the checkpoint passing conditions of this test
+	 * 2. collect the fault part and correct part of the execution trace
+	 * 3. listen to the test case result
+	 * @author Evelyn
+	 *
+	 */
+	protected class TraceAndTestResultListener extends TestRunListener implements IJavaBreakpointListener, ILaunchesListener2{
 
 		private DynamicTranslator translator;
+		private ILaunchConfiguration config;
+		private Map<IBreakpoint, Checkpoint> bpcpMap;
+		protected Checkpoint failedCheckpoint = null;
+		protected boolean testcaseFailed = false;
+		
+		protected boolean TEST_FINISHED_FLAG = false;
+		protected boolean LAUNCH_TERMINATED_FLAG = false;
+		protected boolean CHECKPOINT_VIOLATED_FLAG = false;
+		
+		protected Object lock = new Object();
+		
+		public Object getLock() {
+			return lock;
+		}
 		public TraceAndTestResultListener(ILaunchConfiguration config,
-				ArrayList<Checkpoint> cps, IJavaProject project, boolean includeNewBlocks) {
-			super(config, cps);
+				Map<IBreakpoint, Checkpoint> bpcpMap, IJavaProject project, boolean includeNewBlocks) {
+			this.config = config;
+			this.bpcpMap = bpcpMap;
 			translator = new DynamicTranslator(project, includeNewBlocks);			
 		}
 		
 		public ArrayList<InvokeTraceNode> getTrace(){
 			return translator.getCurrentTrace();
+		}
+		
+		public boolean junitTestCaseFailed(){
+			return testcaseFailed;
+		}
+
+		public Checkpoint getFailedCheckpoint(){
+			return failedCheckpoint;
 		}
 		
 		@Override
@@ -356,7 +403,44 @@ public class BugFixer extends Job{
 					lock.notifyAll();
 				}
 			}
-		}		
+		}
+		
+		private int checkCheckpoint(Checkpoint cp, IJavaThread thread){
+			return DONT_CARE;
+		}
+
+		@Override
+		public void launchesRemoved(ILaunch[] launches) {}
+
+		@Override
+		public void launchesAdded(ILaunch[] launches) {}
+
+		@Override
+		public void launchesChanged(ILaunch[] launches) {}
+
+		@Override
+		public void addingBreakpoint(IJavaDebugTarget target,
+				IJavaBreakpoint breakpoint) {}
+
+		@Override
+		public int installingBreakpoint(IJavaDebugTarget target,
+				IJavaBreakpoint breakpoint, IJavaType type) { return 0; }
+
+		@Override
+		public void breakpointInstalled(IJavaDebugTarget target,
+				IJavaBreakpoint breakpoint) {}
+
+		@Override
+		public void breakpointRemoved(IJavaDebugTarget target,
+				IJavaBreakpoint breakpoint) {}
+
+		@Override
+		public void breakpointHasRuntimeException(
+				IJavaLineBreakpoint breakpoint, DebugException exception) {}
+
+		@Override
+		public void breakpointHasCompilationErrors(
+				IJavaLineBreakpoint breakpoint, Message[] errors) {}		
 	}
 
 	
@@ -366,18 +450,20 @@ public class BugFixer extends Job{
 		int allworkload = 100000;
 		monitor.beginTask("SmartDebugger Resolving Bugs...", ticks);
 		try {
+			// we just entered into a new fix session, everything needs to
+			// be initialized
+			session.getLogger().log(Logger.DATA_MODE, Logger.INIT, "initialize started...");
+			initFixSession(new SubProgressMonitor(monitor, 5000));
+			session.getLogger().log(Logger.DATA_MODE, Logger.INIT_FINISHED, "initialization finished...");
+			
+			
 			if (fixGenerator == null) {
-				// we just entered into a new fix session, everything needs to
-				// be initialized
-				session.getLogger().log(Logger.DATA_MODE, Logger.INIT, "initialize started...");
-				initFixSession(true, new SubProgressMonitor(monitor, 5000));
-				session.getLogger().log(Logger.DATA_MODE, Logger.INIT_FINISHED, "initialization finished...");
-				
 				fixGenerator = new SearchEngine(session);
 				fixValidator = new FixValidator(session);
 				allworkload = allworkload - 5000;
 			}
-				
+			FixGoalTable goalTable = createGoalTable();
+			fixValidator.setGoalTable(goalTable);
 			int allSuspiciousBlockNum = session.getSuspectList().size();
 			session.getLogger().log(Logger.DATA_MODE, Logger.FL_TOTAL, allSuspiciousBlockNum + "" );
 			
@@ -461,5 +547,81 @@ public class BugFixer extends Job{
 
 	public void stopAnalysis(){
 		this.cancel();
+	}
+
+
+	public void updateDebugProcess() {
+		ArrayList<IMethod> testMethods = session.getTestMethods();
+				
+		ArrayList<TestCase> failTCs = new ArrayList<TestCase>();
+		for(IMethod testMethod: testMethods){
+			String className = testMethod.getDeclaringType().getFullyQualifiedName();
+			String methodName = testMethod.getElementName();
+			TestCase testCase = new TestCase(className, methodName);
+			ILaunchConfiguration config = session.findLaunchConfiguration(testCase);
+			
+			Object lock = new Object();
+			ArrayList<Checkpoint> cps = CheckpointManager.getInstance().getConditionForTestCase(testMethod);
+			if(cps == null)
+				cps = new ArrayList<Checkpoint>();
+			IBreakpoint bps[] = new IBreakpoint[cps.size()];
+			Map<IBreakpoint, Checkpoint> bpcpMap = new HashMap<IBreakpoint, Checkpoint>();
+			for(int i = 0; i < cps.size(); i ++){
+				bps[i] = CheckpointUtils.createBreakpoint(cps.get(i));
+				bpcpMap.put(bps[i], cps.get(i));
+			}
+			CheckpointConditionRefresher listener = new CheckpointConditionRefresher(config, cps, bpcpMap, lock);
+			JUnitCore.addTestRunListener(listener);
+			
+			IBreakpointManager manager = DebugPlugin.getDefault().getBreakpointManager();
+			IBreakpoint existingbps[] = manager.getBreakpoints();
+			try {
+				manager.removeBreakpoints(existingbps, true);
+				manager.addBreakpoints(bps);
+			} catch (CoreException e1) {
+				e1.printStackTrace();
+			}
+			JDIDebugModel.addJavaBreakpointListener(listener);
+			synchronized (lock) {
+				try {
+					config.launch("run", new NullProgressMonitor());
+					lock.wait();
+				} catch (CoreException e) {
+					e.printStackTrace();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+							
+			}
+			
+			try {
+				manager.removeBreakpoints(bps, true);
+				manager.addBreakpoints(existingbps);
+			} catch (CoreException e1) {
+				e1.printStackTrace();
+			}
+			
+			if(listener.getTestPassed()){
+				testCase.setStatus(StatusCode.PASSED);
+			} else {
+				if(cps.size() == 0){
+					testCase.setStatus(StatusCode.FAILED);
+					CheckpointManager.getInstance().registerTestCase(testCase);
+				}
+				else {
+					ConditionItem item = listener.getFailedExpectation();
+					if(item == null){
+						// condition items are out of date
+						testCase.setStatus(StatusCode.OUT_OF_DATE);
+					} else {
+						failTCs.add(testCase);
+						testCase.setStatus(StatusCode.FAILED);
+					}
+				
+				}
+			}
+			
+		}	
+		CheckpointManager.getInstance().setSync();
 	}
 }
