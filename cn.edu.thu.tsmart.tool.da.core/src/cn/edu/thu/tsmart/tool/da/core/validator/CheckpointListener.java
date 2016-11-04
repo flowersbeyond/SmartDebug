@@ -1,162 +1,69 @@
 package cn.edu.thu.tsmart.tool.da.core.validator;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import org.eclipse.core.runtime.CoreException;
-import org.eclipse.debug.core.DebugEvent;
 import org.eclipse.debug.core.DebugException;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.debug.core.ILaunchesListener2;
 import org.eclipse.debug.core.model.IBreakpoint;
-import org.eclipse.debug.core.model.IValue;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.dom.Message;
 import org.eclipse.jdt.debug.core.IJavaBreakpoint;
 import org.eclipse.jdt.debug.core.IJavaBreakpointListener;
 import org.eclipse.jdt.debug.core.IJavaDebugTarget;
 import org.eclipse.jdt.debug.core.IJavaLineBreakpoint;
-import org.eclipse.jdt.debug.core.IJavaPrimitiveValue;
 import org.eclipse.jdt.debug.core.IJavaStackFrame;
 import org.eclipse.jdt.debug.core.IJavaThread;
 import org.eclipse.jdt.debug.core.IJavaType;
-import org.eclipse.jdt.debug.eval.IAstEvaluationEngine;
-import org.eclipse.jdt.debug.eval.ICompiledExpression;
-import org.eclipse.jdt.debug.eval.IEvaluationListener;
-import org.eclipse.jdt.debug.eval.IEvaluationResult;
-import org.eclipse.jdt.internal.debug.core.JDIDebugPlugin;
-import org.eclipse.jdt.internal.debug.core.JavaDebugUtils;
-import org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget;
-import org.eclipse.jdt.internal.debug.core.model.JDIThread;
+import org.eclipse.jdt.debug.core.IJavaValue;
 import org.eclipse.jdt.junit.TestRunListener;
 import org.eclipse.jdt.junit.model.ITestCaseElement;
 import org.eclipse.jdt.junit.model.ITestElement.Result;
 
+import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
+import cn.edu.thu.tsmart.tool.da.core.SmartDebugPlugin;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.ConditionItem;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.StatusCode;
 
-
-/**
- * Listens for evaluation completion for condition evaluation. If an
- * evaluation evaluates <code>true</code> or has an error, this checkpoint
- * will resume the thread in which the breakpoint was hit. If the
- * evaluation returns <code>false</code>, the thread is suspended.
- */
-class EvaluationListener implements IEvaluationListener{
-
-	/**
-	 * Lock for synchronizing evaluation
-	 */
-	private Object fLock = new Object();
-
-	/**
-	 * The checkpoint that was hit
-	 */
-	private Checkpoint fCheckpoint;
-
-	/**
-	 * Result of the vote
-	 */
-	private int fVote;
-
-	EvaluationListener(Checkpoint checkpoint) {
-		fCheckpoint = checkpoint;
-	}
-
-	@Override
-	public void evaluationComplete(IEvaluationResult result) {
-		fVote = determineVote(result);
-		synchronized (fLock) {
-			fLock.notifyAll();
-		}
-	}
-
-	/**
-	 * Processes the result to determine whether to suspend or resume.
-	 * 
-	 * @param result
-	 *            evaluation result
-	 * @return vote
-	 */
-	private int determineVote(IEvaluationResult result) {
-		if (result.isTerminated()) {
-			// indicates the user terminated the evaluation
-			return IJavaBreakpointListener.DONT_CARE;
-		}
-		JDIThread thread = (JDIThread) result.getThread();
-		if (result.hasErrors()) {
-			return IJavaBreakpointListener.DONT_CARE;
-		} 
-		try {
-			IValue value = result.getValue();
-				if (value instanceof IJavaPrimitiveValue) {
-					// Suspend when the condition evaluates true
-					IJavaPrimitiveValue javaValue = (IJavaPrimitiveValue) value;
-					if (javaValue.getJavaType().getName()
-							.equals("boolean")) { //$NON-NLS-1$
-						if (javaValue.getBooleanValue()) {
-							return IJavaBreakpointListener.DONT_SUSPEND;
-						} 
-						return IJavaBreakpointListener.SUSPEND;
-					}
-				}
-				// result was not boolean
-				System.out.println("condition expression not boolean");
-				return IJavaBreakpointListener.DONT_SUSPEND;
-		} catch (DebugException e) {
-			// Suspend when an error occurs
-			JDIDebugPlugin.log(e);
-			return IJavaBreakpointListener.DONT_SUSPEND;
-		}
-	}
-
-	/**
-	 * Result of the conditional expression evaluation - to resume or not
-	 * resume, that is the question.
-	 * 
-	 * @return vote result
-	 */
-	int getVote() {
-		return fVote;
-	}
-
-	/**
-	 * Returns the lock object to synchronize this evaluation.
-	 * 
-	 * @return lock object
-	 */
-	Object getLock() {
-		return fLock;
-	}
-}
 public class CheckpointListener extends TestRunListener implements IJavaBreakpointListener, ILaunchesListener2{
 
 	protected ILaunchConfiguration config;
 
-	protected Checkpoint failedCheckpoint = null;
+	protected ConditionItem failedConditionItem = null;
 	protected boolean testcaseFailed = false;
 	
 	protected boolean TEST_FINISHED_FLAG = false;
 	protected boolean LAUNCH_TERMINATED_FLAG = false;
 	protected boolean CHECKPOINT_VIOLATED_FLAG = false;
 	
-	protected Object lock = new Object();
-	
+	private Object lock;
 	private Map<IBreakpoint, Checkpoint> bpcpMap;
-	public Object getLock() {
-		return lock;
-	}
-	public boolean junitTestCaseFailed(){
-		return testcaseFailed;
-	}
-
-	public Checkpoint getFailedCheckpoint(){
-		return failedCheckpoint;
-	}
-	public CheckpointListener(ILaunchConfiguration config, ArrayList<Checkpoint> cps, Map<IBreakpoint, Checkpoint> bpcpMap) {
+	private ArrayList<Checkpoint> cps;
+	private Set<ConditionItem> passedConditions;
+	
+	public CheckpointListener(ILaunchConfiguration config, ArrayList<Checkpoint> cps, Map<IBreakpoint, Checkpoint> bpcpMap, Object lock) {
 		this.config = config;
 		this.bpcpMap = bpcpMap;
+		this.lock = lock;
+		this.passedConditions = new HashSet<ConditionItem>();
+		this.cps = cps;
+		clearCheckpointStatus();
+	}
+	
+	private void clearCheckpointStatus(){
+		for(Checkpoint cp: cps){
+			cp.setStatus(StatusCode.UNKNOWN);
+			for(ConditionItem item: cp.getConditions()){
+				item.setUnknown();
+				item.setHitCount(0);
+			}
+		}
 	}
 
 	@Override
@@ -182,14 +89,32 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 		try {
 			Checkpoint cp = bpcpMap.get(breakpoint);
 			if(cp != null && thread.getLaunch().getLaunchConfiguration().equals(config)){
-				int checkResult = checkCheckpoint(cp, thread);
-						
-				if(checkResult == IJavaBreakpointListener.SUSPEND){
-					this.failedCheckpoint = cp;
-					this.CHECKPOINT_VIOLATED_FLAG = true;
-					thread.getLaunch().terminate();
+				ArrayList<ConditionItem> conditions = cp.getConditions();
+				for(ConditionItem item: conditions){
+					int hitConditionSatisfied = evaluate(item.getHitCondition(), thread);
+					if(hitConditionSatisfied == -1){
+						// compilation error, item out of date
+						continue;
+					} else if (hitConditionSatisfied == 1){
+						item.increaseHitCount();
+						int expectationSatisfied = evaluate(item.getExpectation(), thread);
+						if(expectationSatisfied == 0){
+							if(item.getStatus() == StatusCode.PASSED)
+								this.testcaseFailed = true;
+							else if (item.getStatus() == StatusCode.FAILED){
+								if(item.getHitCount() <= item.getFailHitTime())
+									this.testcaseFailed = true;
+								else
+									this.testcaseFailed = false;
+							}
+							thread.getLaunch().terminate();
+						} else {
+							continue;
+						}
+					}
 				}
-				return checkResult;
+				
+				return IJavaBreakpointListener.DONT_CARE;
 			
 			} 
 		} catch (CoreException e) {
@@ -199,125 +124,45 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 		return IJavaBreakpointListener.DONT_SUSPEND;
 	}
 	
-	protected int checkCheckpoint(Checkpoint cp, IJavaThread thread){
-		
-		/*try{
-			ArrayList<ConditionItem> conditions = cp.getConditions();
-			
-			for(ConditionItem condition: conditions){
-				String hitCondition = condition.getHitCondition();
-				if(checkSatisfied(hitCondition, thread)){
-					if(!checkExpectation(condition.getExpectation(), thread)){
-						condition.setFailed();
-					}
-					else {
-						
-					}
-				}
-			}
-			
-			for(ConditionItem item: conditions){
-				
-				if(item.getHitCondition() == Checkpoint.HIT_ALWAYS
-						|| item.getHitCondition() == currentHitCount){
-					
-					EvaluationListener listener = new EvaluationListener(
-							cp);
-					IJavaStackFrame frame = (IJavaStackFrame) thread
-							.getTopStackFrame();
-					IJavaProject project = JavaDebugUtils.resolveJavaProject(frame);
-					if (project == null) {
-						System.out.println("cannot initiate evaluation listener");
-						return IJavaBreakpointListener.DONT_CARE;
-					}
-					IJavaDebugTarget target = (IJavaDebugTarget) thread
-							.getDebugTarget();
-					IAstEvaluationEngine engine = getEvaluationEngine(target,
-							project);
-					if (engine == null) {
-						// If no engine is available, suspend
-						return DONT_CARE;
-					}
-					ICompiledExpression expression = engine.getCompiledExpression(item.getExpectation(), frame);
-						
-					if (expression.hasErrors()) {
-						System.out.println("condition expression compile failed, skip");
-						return IJavaBreakpointListener.DONT_SUSPEND;
-					}
-					Object lock = listener.getLock();
-					synchronized (lock) {
-						engine.evaluateExpression(expression, frame, listener,
-								DebugEvent.EVALUATION_IMPLICIT, false);
-						// TODO: timeout?
-						try {
-							lock.wait();
-						} catch (InterruptedException e) {
-							return DONT_SUSPEND;
-						}
-					}
-					return listener.getVote();
-				}
-			}
-			return DONT_CARE;
-			
-		}catch(CoreException e){
-			return DONT_CARE;
+
+
+	private int evaluate(String hitCondition, IJavaThread thread) {
+		IJavaProject project = SmartDebugPlugin.getLastFixSession().getProject();
+		try{
+		IJavaValue value = EclipseUtils.evaluateExpr(hitCondition, thread, (IJavaStackFrame)thread.getTopStackFrame(), project);
+		if(value != null){
+			if(value.getValueString().equals("true"))
+				return 1;
+			else if (value.getValueString().equals("false"))
+				return 0;
 		}
-		*/
-		return DONT_CARE;
+		} catch (DebugException e){
+			e.printStackTrace();
+			return -1;
+		}
+		return -1;
 	}
 
 	@Override
 	public void breakpointRemoved(IJavaDebugTarget target,
-			IJavaBreakpoint breakpoint) {
-		// TODO Auto-generated method stub
-
-	}
+			IJavaBreakpoint breakpoint) {}
 
 	@Override
 	public void breakpointHasRuntimeException(IJavaLineBreakpoint breakpoint,
-			DebugException exception) {
-		// TODO Auto-generated method stub
-
-	}
+			DebugException exception) {}
 
 	@Override
 	public void breakpointHasCompilationErrors(IJavaLineBreakpoint breakpoint,
-			Message[] errors) {
-		// TODO Auto-generated method stub
-
-	}
-
-	
-	/**
-	 * Returns an evaluation engine for evaluating this breakpoint's condition
-	 * in the given target and project context.
-	 * @param vm the VM to get an evaluation engine for
-	 * @param project the project context
-	 * @return a new {@link IAstEvaluationEngine}
-	 */
-	private IAstEvaluationEngine getEvaluationEngine(IJavaDebugTarget vm, IJavaProject project) {
-		return ((JDIDebugTarget) vm).getEvaluationEngine(project);
-	}
-
+			Message[] errors) {}
 	
 	@Override
-	public void launchesRemoved(ILaunch[] launches) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void launchesRemoved(ILaunch[] launches) {}
 
 	@Override
-	public void launchesAdded(ILaunch[] launches) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void launchesAdded(ILaunch[] launches) {}
 
 	@Override
-	public void launchesChanged(ILaunch[] launches) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void launchesChanged(ILaunch[] launches) {}
 
 	@Override
 	public void launchesTerminated(ILaunch[] launches) {
@@ -347,5 +192,10 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 			}
 		} else
 			this.TEST_FINISHED_FLAG = true;
+	}
+
+	
+	public boolean getValidationResult() {
+		return !testcaseFailed;
 	}
 }

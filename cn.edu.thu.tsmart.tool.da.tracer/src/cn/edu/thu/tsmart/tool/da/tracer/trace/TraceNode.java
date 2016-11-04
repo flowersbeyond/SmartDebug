@@ -13,14 +13,17 @@ public class TraceNode extends AbstractCommonTraceNode {
 	private int instructionIndex;
 	private int lineNumStart;
 	private int lineNumEnd;
+	
+	private int timeStamp;
 
 	private InvokeTraceNode callerNode;
 	private ArrayList<InvokeTraceNode> calleeList = new ArrayList<InvokeTraceNode>();
 
-	public TraceNode(String methodKey, ArrayList<SSACFG.BasicBlock> coveredBlocks, int instructionIndex) {
+	public TraceNode(String methodKey, ArrayList<SSACFG.BasicBlock> coveredBlocks, int instructionIndex, int timeStamp) {
 		this.methodKey = methodKey;
 		this.blocktrace = coveredBlocks;
 		this.instructionIndex = instructionIndex;
+		this.timeStamp = timeStamp;
 		if (blocktrace == null) {
 			lineNumStart = -1;
 			lineNumEnd = -1;
@@ -55,6 +58,9 @@ public class TraceNode extends AbstractCommonTraceNode {
 		return blocktrace;
 	}
 
+	public int getTimeStamp(){
+		return this.timeStamp;
+	}
 	public int getInstructionIndex() {
 		return instructionIndex;
 	}

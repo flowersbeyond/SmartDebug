@@ -1,4 +1,6 @@
 package cn.edu.thu.tsmart.tool.da.ui.handler;
+import java.util.ArrayList;
+
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
@@ -6,6 +8,7 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PlatformUI;
 
 import cn.edu.thu.tsmart.tool.da.core.SmartDebugPlugin;
+import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
 import cn.edu.thu.tsmart.tool.da.validator.ui.CheckpointView;
 
 

@@ -16,6 +16,7 @@ import cn.edu.thu.tsmart.tool.da.tracer.action.BranchAction;
 import cn.edu.thu.tsmart.tool.da.tracer.action.EnterAction;
 import cn.edu.thu.tsmart.tool.da.tracer.action.ExitAction;
 import cn.edu.thu.tsmart.tool.da.tracer.action.InvokeAction;
+import cn.edu.thu.tsmart.tool.da.tracer.action.SuspendAction;
 import cn.edu.thu.tsmart.tool.da.tracer.action.TraceAction;
 import cn.edu.thu.tsmart.tool.da.tracer.action.TraceActionFactory;
 import cn.edu.thu.tsmart.tool.da.tracer.trace.InvokeTraceNode;
@@ -46,6 +47,7 @@ public class DynamicTranslator {
 	private ArrayList<InvokeTraceNode> rootInvocationTrace = new ArrayList<InvokeTraceNode>();
 	private Stack<TraceStackFrame> traceStack = new Stack<TraceStackFrame>();
 	private boolean includeNewBlocks;
+	private int timeStamp = 0;
 	
 	public static ArrayList<ITraceEventListener> listeners = new ArrayList<ITraceEventListener>();
 	
@@ -163,7 +165,7 @@ public class DynamicTranslator {
 			}
 			
 			// entryblock is empty!! So no traceblocks are added to the first trace node.
-			TraceNode node = new TraceNode(methodKey, null, action.getInstructionIndex());
+			TraceNode node = new TraceNode(methodKey, null, action.getInstructionIndex(), timeStamp);
 			trace.add(node);
 			
 			TraceStackFrame newFrame = new TraceStackFrame(trace, cfg, entryBlock);
@@ -184,7 +186,7 @@ public class DynamicTranslator {
 			ArrayList<SSACFG.BasicBlock> coveredBlocks = travelToExit(cfg, currentBlock, action.getInstructionIndex());
 			if(!coveredBlocks.isEmpty()){
 				methodKey = action.getClassName() + ":" + action.getMethodName() + ":" + action.getMethodSignature();
-				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex());
+				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex(), timeStamp);
 				trace.add(node);
 			}
 			traceStack.pop();
@@ -205,7 +207,7 @@ public class DynamicTranslator {
 			ArrayList<SSACFG.BasicBlock> coveredBlocks = travelToNext(cfg, currentBlock, action.getInstructionIndex());
 			if(!coveredBlocks.isEmpty()){
 				methodKey = action.getClassName() + ":" + action.getMethodName() + ":" + action.getMethodSignature();
-				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex());
+				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex(), timeStamp);
 				trace.add(node);
 				frame.setCurrentBlock(coveredBlocks.get(coveredBlocks.size() - 1));
 			}
@@ -224,7 +226,7 @@ public class DynamicTranslator {
 			ArrayList<SSACFG.BasicBlock> coveredBlocks = travelToMethodInvok(cfg, currentBlock, action.getInstructionIndex());
 			if(!coveredBlocks.isEmpty()){
 				methodKey = action.getClassName() + ":" + action.getMethodName() + ":" + action.getMethodSignature();
-				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex());
+				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex(), timeStamp);
 				trace.add(node);
 				frame.setCurrentBlock(coveredBlocks.get(coveredBlocks.size() - 1));
 			}
@@ -237,6 +239,8 @@ public class DynamicTranslator {
 			
 			ArrayList<TraceNode> calleeTrace = new ArrayList<TraceNode>();
 			invokeNode.setCalleeTrace(calleeTrace);
+		} else if (action instanceof SuspendAction){
+			this.timeStamp ++;
 		}
 	}
 	

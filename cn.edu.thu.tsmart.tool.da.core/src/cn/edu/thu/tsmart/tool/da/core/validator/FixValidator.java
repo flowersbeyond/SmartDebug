@@ -16,7 +16,6 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IMethod;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.FixGoalTable;
 import cn.edu.thu.tsmart.tool.da.core.Logger;
 import cn.edu.thu.tsmart.tool.da.core.fl.BasicBlock;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableSetFix;
@@ -31,7 +30,6 @@ public class FixValidator{
 	private NullProgressMonitor compilerPM;
 	private SuggestionManager suggestionManager;
 	private int validateCount = 0;
-	private FixGoalTable goalTable;
 	
 	private static ArrayList<ValidateEventListener> validateEventListeners = new ArrayList<ValidateEventListener>();
 	
@@ -181,76 +179,143 @@ public class FixValidator{
 				e.printStackTrace();
 			} 	
 			
-			ArrayList<IMethod> methods = session.getTestMethods();
-			
-			ArrayList<TestCase> failedTestCases = new ArrayList<TestCase>();
-			ArrayList<TestCase> passedTestCases = new ArrayList<TestCase>();
-			boolean fixSuccess = true;
-			for(IMethod method: methods){
-				
-				TestCase tc = new TestCase(method.getDeclaringType().getFullyQualifiedName(), method.getElementName());
-				boolean pass = session.getTestResult(tc);
-				if(pass)
-					passedTestCases.add(tc);
-				else
-					failedTestCases.add(tc);
+			if(session.getFixGoal() == null){
+				return validateForAll(fix);
+			} else{
+				return validateForCheckpoint(fix, session.getFixGoal());
 			}
-			for(TestCase tc: failedTestCases){
-				ArrayList<Checkpoint> cps = CheckpointManager.getInstance().getConditionForTestCase(tc);
-				if(cps == null)
-					cps = new ArrayList<Checkpoint>();
+			
+			
+		}
+	}
+	
+	private boolean validateForAll(Fix fix){
+		ArrayList<IMethod> methods = session.getTestMethods();
+		
+		ArrayList<TestCase> failedTestCases = new ArrayList<TestCase>();
+		ArrayList<TestCase> passedTestCases = new ArrayList<TestCase>();
+		boolean fixSuccess = true;
+		for(IMethod method: methods){
+			
+			TestCase tc = new TestCase(method.getDeclaringType().getFullyQualifiedName(), method.getElementName());
+			boolean pass = session.getTestResult(tc);
+			if(pass)
+				passedTestCases.add(tc);
+			else
+				failedTestCases.add(tc);
+		}
+		for(TestCase tc: failedTestCases){
+			ArrayList<Checkpoint> cps = CheckpointManager.getInstance().getConditionForTestCase(tc);
+			if(cps == null)
+				cps = new ArrayList<Checkpoint>();
+			ILaunchConfiguration config = session.findLaunchConfiguration(tc);
+			if(config != null){
+				TestCaseValidator validator = new TestCaseValidator();
+				validator.validate(config, cps);
+				if(validator.getValidationResult() == false){
+					fixSuccess = false;
+					break;
+				}
+			}
+		}
+		if(fixSuccess){
+			for(TestCase tc: passedTestCases){
 				ILaunchConfiguration config = session.findLaunchConfiguration(tc);
 				if(config != null){
 					TestCaseValidator validator = new TestCaseValidator();
-					??validator.validate(config, cps);
+					validator.validate(config, new ArrayList<Checkpoint>());
 					if(validator.getValidationResult() == false){
 						fixSuccess = false;
 						break;
 					}
 				}
 			}
-			if(fixSuccess){
-				for(TestCase tc: passedTestCases){
-					ArrayList<Checkpoint> cps = CheckpointManager.getInstance().getConditionForTestCase(tc);
-					if(cps == null)
-						cps = new ArrayList<Checkpoint>();
-					ILaunchConfiguration config = session.findLaunchConfiguration(tc);
-					if(config != null){
-						TestCaseValidator validator = new TestCaseValidator();
-						??validator.validate(config, cps);
-						if(validator.getValidationResult() == false){
-							fixSuccess = false;
-							break;
-						}
-					}
-				}
-			}
-			
-			fix.undoFix();
-			
-			if(fixSuccess){
-				suggestionManager.confirmFix(fix);
-				session.getLogger().log(Logger.DATA_MODE, Logger.FIX_PLAUSIBLE, this.validateCount + ":" + fix.toString());
-				
-				for(ValidateEventListener listener: validateEventListeners){
-					ValidateEventListener oracle = listener;
-					if(oracle.confirmValidateResult(fix.getFileName(), fix.getFixLineNum())){
-						session.getLogger().log(Logger.DATA_MODE, Logger.FIX_SUCCESS, this.validateCount + ":" + fix.toString());
-						return true;
-					}
-				}
-			}
-					
-			System.gc();
-			//breakpointMutualLock.notifyAll();
-			return false;
 		}
+		
+		fix.undoFix();
+		
+		if(fixSuccess){
+			suggestionManager.confirmFix(fix);
+			session.getLogger().log(Logger.DATA_MODE, Logger.FIX_PLAUSIBLE, this.validateCount + ":" + fix.toString());
+			
+			for(ValidateEventListener listener: validateEventListeners){
+				ValidateEventListener oracle = listener;
+				if(oracle.confirmValidateResult(fix.getFileName(), fix.getFixLineNum())){
+					session.getLogger().log(Logger.DATA_MODE, Logger.FIX_SUCCESS, this.validateCount + ":" + fix.toString());
+					return true;
+				}
+			}
+		}
+				
+		System.gc();
+		//breakpointMutualLock.notifyAll();
+		return false;
 	}
-
-	public void setGoalTable(FixGoalTable goalTable) {
-		this.goalTable = goalTable;
+	
+	private boolean validateForCheckpoint(Fix fix, Checkpoint cp){
+		ArrayList<IMethod> methods = session.getTestMethods();
+		
+		ArrayList<TestCase> failedTestCases = new ArrayList<TestCase>();
+		ArrayList<TestCase> passedTestCases = new ArrayList<TestCase>();
+		boolean fixSuccess = true;
+		
+		TestCase targetTC = cp.getOwnerTestCase();
+		ArrayList<Checkpoint> targetCPs = CheckpointManager.getInstance().getConditionForTestCase(targetTC);
+		ILaunchConfiguration targetConfig = session.findLaunchConfiguration(targetTC);
+		if(targetConfig != null){
+			TestCaseValidator validator = new TestCaseValidator();
+			validator.validate(targetConfig, targetCPs);
+			if(validator.getValidationResult() == false){
+				return false;
+			}
+		}
+		
+		
+		int score = 0;
+		for(IMethod method: methods){			
+			TestCase tc = new TestCase(method.getDeclaringType().getFullyQualifiedName(), method.getElementName());
+			boolean pass = session.getTestResult(tc);
+			if(pass)
+				passedTestCases.add(tc);
+			else if (!tc.equals(targetTC))
+				failedTestCases.add(tc);
+		}
+		
+		
+		
+		for(TestCase tc: passedTestCases){
+			ILaunchConfiguration config = session.findLaunchConfiguration(tc);
+			if(config != null){
+				TestCaseValidator validator = new TestCaseValidator();
+				validator.validate(config, new ArrayList<Checkpoint>());
+				if(validator.getValidationResult() == true){
+					score ++;
+				}
+			}
+		}
+		
+		for(TestCase tc: failedTestCases){
+			ArrayList<Checkpoint> cps = CheckpointManager.getInstance().getConditionForTestCase(tc);
+			if(cps == null)
+				cps = new ArrayList<Checkpoint>();
+			ILaunchConfiguration config = session.findLaunchConfiguration(tc);
+			if(config != null){
+				TestCaseValidator validator = new TestCaseValidator();
+				validator.validate(config, cps);
+				if(validator.getValidationResult() == true){
+					score ++;
+				}
+			}
+		}
+		
+		fix.undoFix();
+		fix.setScore(score);
+		suggestionManager.confirmFix(fix);
+		session.getLogger().log(Logger.DATA_MODE, Logger.FIX_PLAUSIBLE, this.validateCount + ":" + fix.toString());				
+		System.gc();
+		//breakpointMutualLock.notifyAll();
+		return false;
 	}
-
 }
 
 

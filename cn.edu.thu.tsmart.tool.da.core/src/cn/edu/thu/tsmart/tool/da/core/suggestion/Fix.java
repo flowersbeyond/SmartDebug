@@ -27,5 +27,13 @@ public abstract class Fix {
 	public abstract int getFixLineNum();
 	public abstract String getFileName();
 	
+	private int score;
+	public void setScore(int score){
+		this.score = score;
+	}
+	
+	public int getScore(){
+		return score;
+	}
 	
 }

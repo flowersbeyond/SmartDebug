@@ -11,7 +11,15 @@ public class SuggestionManager {
 		if(suggestion instanceof FilterableSetFix){
 			suggestions.addAll(((FilterableSetFix)suggestion).getFixes());
 		} else {
-			suggestions.add(suggestion);
+			int i = suggestions.size() - 1;
+			while(i >= 0){
+				Fix f = suggestions.get(i);
+				if(f.getScore() >= suggestion.getScore()){
+					break;
+				}
+			}
+			
+			suggestions.add(i + 1, suggestion);
 		}
 		fireSuggestionChanged();
 	}

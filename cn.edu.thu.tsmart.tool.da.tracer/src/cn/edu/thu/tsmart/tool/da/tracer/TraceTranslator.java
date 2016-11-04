@@ -119,7 +119,7 @@ public class TraceTranslator {
 				//record the first basicblock here.
 				SSACFG.BasicBlock entryBlock= findEntryBlock(cfg);
 				// entryblock is empty!! So no traceblocks are added to the first trace node.
-				TraceNode node = new TraceNode(methodKey, null, action.getInstructionIndex());
+				TraceNode node = new TraceNode(methodKey, null, action.getInstructionIndex(), -1);
 				trace.add(node);
 				currentBlock = entryBlock;
 				i ++;
@@ -131,7 +131,7 @@ public class TraceTranslator {
 				ArrayList<SSACFG.BasicBlock> coveredBlocks = travelToNext(cfg, currentBlock, action.getInstructionIndex());
 				
 				String methodKey = action.getClassName() + ":" + action.getMethodName() + ":" + action.getMethodSignature();
-				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex());
+				TraceNode node = new TraceNode(methodKey, coveredBlocks, action.getInstructionIndex(), -1);
 				trace.add(node);
 				currentBlock = coveredBlocks.get(coveredBlocks.size() - 1);
 				i ++;

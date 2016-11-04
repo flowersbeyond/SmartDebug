@@ -19,11 +19,11 @@ import org.eclipse.jdt.junit.JUnitCore;
 
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.CheckpointUtils;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.ConditionItem;
 
 public class TestCaseValidator{
 
 	private boolean validateresult;
-	private Checkpoint failingCheckpoint;
 	
 	//private BugFixSession session;
 	
@@ -58,13 +58,22 @@ public class TestCaseValidator{
 			
 			manager.addBreakpoints(cpsArray);
 			
-			CheckpointListener listener = new CheckpointListener(tcLaunchConfig, cps, bpcpMap);
+			
+			for(Checkpoint cp: cps){
+				ArrayList<ConditionItem> items = cp.getConditions();
+				for(ConditionItem item:items){
+					item.setHitCount(0);
+				}
+			}
+			
+			Object lock = new Object();
+			CheckpointListener listener = new CheckpointListener(tcLaunchConfig, cps, bpcpMap, lock);
 			
 			JDIDebugModel.addJavaBreakpointListener(listener);
 			DebugPlugin.getDefault().getLaunchManager().addLaunchListener(listener);
 			JUnitCore.addTestRunListener(listener);
 			
-			Object lock = listener.getLock();
+			
 			Timer timer = new Timer();
 			TestCaseValidateTimeoutTask timeoutTask = new TestCaseValidateTimeoutTask(lock);
 			ILaunch launch = null;
@@ -76,16 +85,7 @@ public class TestCaseValidator{
 			}
 			if(!timeoutTask.validateTimeOut()){
 				timer.cancel();
-				Checkpoint cp = listener.getFailedCheckpoint();
-				if(cp == null && !listener.junitTestCaseFailed()){
-					this.validateresult = true;
-					System.out.println(tcLaunchConfig.toString() + ": passed");
-				} else {
-					this.validateresult = false;
-					this.failingCheckpoint = cp;
-					System.out.println(tcLaunchConfig.toString() + ": failed");
-					
-				}
+				this.validateresult = listener.getValidationResult();
 			
 				JUnitCore.removeTestRunListener(listener);
 				JDIDebugModel.removeJavaBreakpointListener(listener);
@@ -119,10 +119,6 @@ public class TestCaseValidator{
 	
 	public boolean getValidationResult(){
 		return validateresult;
-	}
-	
-	public Checkpoint getFailingCheckpoint(){
-		return failingCheckpoint;
 	}
 
 }

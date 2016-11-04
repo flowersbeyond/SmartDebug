@@ -18,6 +18,7 @@ import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSiteManager;
 import cn.edu.thu.tsmart.tool.da.core.search.flt.Filter;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.ExpressionGenerator;
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
+import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
 import cn.edu.thu.tsmart.tool.da.tracer.trace.InvokeTraceNode;
 import cn.edu.thu.tsmart.tool.da.tracer.trace.TraceNode;
 
@@ -37,9 +38,6 @@ public class BugFixSession {
 	private ArrayList<IMethod> testMethods;
 
 	private FixSiteManager fixSiteManager;
-
-
-	private FixGoalTable fixGoal;
 	
 	private Map<TestCase, ArrayList<InvokeTraceNode>> traceMap = new HashMap<TestCase, ArrayList<InvokeTraceNode>>();
 
@@ -139,13 +137,14 @@ public class BugFixSession {
 		}
 	}
 	
-	private Set<BasicBlock> toBlockTrace(InvokeTraceNode tr, Map<SSACFG.BasicBlock, BasicBlock> bbmap) {
-		Set<BasicBlock> rawBlockTrace = new HashSet<BasicBlock>();
-
+	private void toBlockTrace(InvokeTraceNode tr, Map<SSACFG.BasicBlock, BasicBlock> bbmap, Map<Integer, Set<BasicBlock>> blockBuckets) {
 		ArrayList<TraceNode> traceNodes = tr.getCalleeTrace();
 		for (TraceNode node : traceNodes) {
 			ArrayList<SSACFG.BasicBlock> ssablocks = node.getBlockTrace();
-
+			int timeStamp = node.getTimeStamp();
+			if(!blockBuckets.containsKey(timeStamp)){
+				blockBuckets.put(timeStamp, new HashSet<BasicBlock>());
+			}
 			if (ssablocks != null) {
 				for (SSACFG.BasicBlock ssabb : ssablocks) {
 					BasicBlock bb = bbmap.get(ssabb);
@@ -153,40 +152,51 @@ public class BugFixSession {
 						bb = new BasicBlock(node.getMethodKey(), ssabb);
 						bbmap.put(ssabb, bb);
 					}
-					rawBlockTrace.add(bb);
+					blockBuckets.get(timeStamp).add(bb);
 				}
 			}
 			ArrayList<InvokeTraceNode> calleeNodes = node.getCalleeList();
 			if (calleeNodes != null) {
 				for (InvokeTraceNode calleeNode : calleeNodes) {
-					rawBlockTrace.addAll(toBlockTrace(calleeNode, bbmap));
+					toBlockTrace(calleeNode, bbmap, blockBuckets);
+				}
+			}
+		}		
+	}
+	
+	public ArrayList<Set<BasicBlock>> toBlockTrace(ArrayList<InvokeTraceNode> trnodes){
+		Map<SSACFG.BasicBlock, BasicBlock> bbmap = new HashMap<SSACFG.BasicBlock, BasicBlock>();
+		Map<Integer, Set<BasicBlock>> blockBuckets = new HashMap<Integer, Set<BasicBlock>>();
+		for(InvokeTraceNode tr: trnodes){
+			toBlockTrace(tr, bbmap, blockBuckets);
+		}
+		
+		int maxTimeStamp = -1;
+		for(Integer stamp: blockBuckets.keySet()){
+			if(stamp > maxTimeStamp)
+				stamp = maxTimeStamp;
+		}
+		Set<BasicBlock> piece1 = new HashSet<BasicBlock>();
+		Set<BasicBlock> piece2 = new HashSet<BasicBlock>();
+		for(Integer stamp: blockBuckets.keySet()){
+			Set<BasicBlock> blocks = blockBuckets.get(stamp);
+			for(BasicBlock block: blocks){
+				String className = block.getClassName().replaceAll("/", ".");
+				if (!(className.equals(testsType.getFullyQualifiedName()))) {
+					if(maxTimeStamp != 0 && stamp == maxTimeStamp ){
+						piece2.add(block);
+					} else
+						piece1.add(block);
 				}
 			}
 		}
-		Set<BasicBlock> blockTrace = new HashSet<BasicBlock>();
-		for (BasicBlock block : rawBlockTrace) {
-			String className = block.getClassName().replaceAll("/", ".");
-			if (!(className.equals(testsType.getFullyQualifiedName()))) {
-				blockTrace.add(block);
-			}
-		}
-		return blockTrace;
+		
+		ArrayList<Set<BasicBlock>> traces = new ArrayList<Set<BasicBlock>>();
+		traces.add(piece1);
+		traces.add(piece2);
+		return traces;
 	}
 	
-	public Set<BasicBlock> toBlockTrace(ArrayList<InvokeTraceNode> trnodes){
-		Map<SSACFG.BasicBlock, BasicBlock> bbmap = new HashMap<SSACFG.BasicBlock, BasicBlock>();
-		Set<BasicBlock> blockTrace = new HashSet<BasicBlock>();
-		for(InvokeTraceNode tr: trnodes){
-			blockTrace.addAll(toBlockTrace(tr, bbmap));
-		}
-		return blockTrace;
-	}
-	
-	
-	public void setFixGoalTable(FixGoalTable table) {
-		this.fixGoal = table;
-	}
-
 	public void setSuspectList(ArrayList<BasicBlock> suspectList) {
 		this.suspectList = suspectList;
 	}
@@ -279,10 +289,6 @@ public class BugFixSession {
 		return fixSiteManager;
 	}
 
-	public FixGoalTable getFixGoal() {
-		return this.fixGoal;
-	}
-
 	public CandidateQueue getCandidateQueue() {
 		return this.candidateQueue;
 	}
@@ -332,6 +338,29 @@ public class BugFixSession {
 		this.NEED_TO_STOP = true;
 	}
 
+	private Checkpoint fixGoal;
+	public Checkpoint getFixGoal() {
+		return this.fixGoal;
+	}
+	
+	public void setFixGoal(Checkpoint fixGoal){
+		this.fixGoal = fixGoal;
+	}
+
+	private ArrayList<TestCase> correctTCs = null;
+	private ArrayList<TestCase> failTCs = null;
+	public void setAllTestResults(ArrayList<TestCase> correctTCs, ArrayList<TestCase> failTCs) {
+		this.correctTCs = correctTCs;
+		this.failTCs = failTCs;
+	}
+	
+	public ArrayList<TestCase> getCorrectTCs(){
+		return this.correctTCs;
+	}
+	
+	public ArrayList<TestCase> getFailTCs(){
+		return this.failTCs;
+	}
 	
 }
 
