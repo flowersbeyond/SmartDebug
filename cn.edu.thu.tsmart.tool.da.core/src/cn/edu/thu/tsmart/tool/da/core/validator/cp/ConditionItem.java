@@ -1,5 +1,7 @@
 package cn.edu.thu.tsmart.tool.da.core.validator.cp;
 
+import org.eclipse.swt.widgets.Control;
+
 public class ConditionItem {
 	
 	private String hitCondition;
@@ -7,6 +9,7 @@ public class ConditionItem {
 	private StatusCode status;	
 	private int hitCount;
 	private int failHitCount = -1;
+	private Checkpoint owningCheckpoint;
 	
 	
 	public ConditionItem(String hitCondition, String expectation){
@@ -15,6 +18,9 @@ public class ConditionItem {
 		this.status = StatusCode.UNKNOWN;
 	}
 
+	public void setOwningCheckpoint(Checkpoint cp){
+		this.owningCheckpoint = cp;
+	}
 	
 	public void setPassed(){
 		this.status = StatusCode.PASSED;
@@ -73,6 +79,11 @@ public class ConditionItem {
 	public void setOutOfDate() {
 		this.status = StatusCode.OUT_OF_DATE;
 		
+	}
+
+
+	public Checkpoint getOwningCheckpoint() {
+		return this.owningCheckpoint;
 	}
 
 }

@@ -7,6 +7,8 @@ public class TraceRecordContainer {
 	public static ArrayList<String>traceMessageRecord = new ArrayList<String>();
 	
 	private static boolean flushable = false;
+	
+	
 	public static void setFlushable(){
 		flushable = true;
 	}

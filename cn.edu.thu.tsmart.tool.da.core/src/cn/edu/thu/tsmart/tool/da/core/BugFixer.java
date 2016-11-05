@@ -82,6 +82,12 @@ public class BugFixer extends Job{
 		
 		ArrayList<TestCase> passTCs = session.getCorrectTCs();
 		ArrayList<TestCase> failTCs = session.getFailTCs();
+		for(TestCase tc: passTCs){
+			session.addTestResult(tc, true);
+		}
+		for(TestCase tc: failTCs){
+			session.addTestResult(tc, false);
+		}
 			
 		DynamicTranslator.clearAnalysisScope();
 		try{
@@ -109,13 +115,15 @@ public class BugFixer extends Job{
 				localizer.mergeNewTrace(failTrace, false);
 				
 				for(TestCase tc: failTCs){
-					ArrayList<Set<BasicBlock>> blocks = collectTrace(tc, false);
-					Set<BasicBlock> correctT = blocks.get(0);
-					Set<BasicBlock> failT = blocks.get(1);
-					session.mergeCoverageInfo(correctT, targetTC, false);
-					session.mergeCoverageInfo(failT, targetTC, false);
-					localizer.mergeNewTrace(correctTrace, true);
-					localizer.mergeNewTrace(failTrace, false);
+					if(!tc.equals(targetTC)){
+						ArrayList<Set<BasicBlock>> blocks = collectTrace(tc, false);
+						Set<BasicBlock> correctT = blocks.get(0);
+						Set<BasicBlock> failT = blocks.get(1);
+						session.mergeCoverageInfo(correctT, targetTC, false);
+						session.mergeCoverageInfo(failT, targetTC, false);
+						localizer.mergeNewTrace(correctTrace, true);
+						localizer.mergeNewTrace(failTrace, false);
+					}
 				}
 				//updateInstrumentMethods();
 				for(TestCase tc: passTCs){
@@ -213,7 +221,7 @@ public class BugFixer extends Job{
 			}
 			
 			ArrayList<InvokeTraceNode> trace = listener.getTrace();
-			ArrayList<Set<BasicBlock>> blockTraces = session.toBlockTrace(trace);
+			ArrayList<Set<BasicBlock>> blockTraces = session.toBlockTrace(trace, testResult);
 			return blockTraces;
 		} catch(CoreException e){
 			return null;
@@ -327,46 +335,53 @@ public class BugFixer extends Job{
 					int lineNumber = stackFrame.getLineNumber();
 					
 					translator.handleNewActions();
-					boolean pass = checkCheckpoint(cp, thread);
+					int cpCondition = checkCheckpoint(cp, thread);
 					
-					if(!pass){
+					if(cpCondition == 0){
 						CHECKPOINT_VIOLATED_FLAG = true;
 						this.testcaseFailed = true;
+						
 						//SuspendAction added to describe "Suspension" during a debug session
-						translator.addSuspendAction(className, methodName, "methodSignature", lineNumber);
+						translator.increaseTimeStamp();
+						translator.setFailCPFound();
 						//TrActionFactory.produceSuspendAction(className, methodName, lineNumber, cp, false);
-						translator.handleNewActions();
 						translator.fireTraceEvent(ITraceEventListener.LAUNCH_TERMINATED);
 						thread.getLaunch().terminate();
-					} else{
+					} else if (cpCondition == 1){
 						//SuspendAction added to describe "Suspension" during a debug session
-						translator.addSuspendAction(className, methodName, "methodSignature", lineNumber);
-						translator.handleNewActions();
-						//TODO: check if this is correct? why do we need to fire a LAUNCH_TERMINATED_EVENT?
-						translator.fireTraceEvent(ITraceEventListener.HIT_BREAKPOINT);
+						translator.increaseTimeStamp();
 					}
-					return DONT_CARE;
+					
+					return DONT_SUSPEND;
 				}catch(DebugException e){
 					e.printStackTrace();
-					return DONT_CARE;
+					return DONT_SUSPEND;
 				}				
 			}
-			return DONT_CARE;
+			return DONT_SUSPEND;
 		}
 		
-		private boolean checkCheckpoint(Checkpoint cp, IJavaThread thread) throws DebugException{
+		private int checkCheckpoint(Checkpoint cp, IJavaThread thread) throws DebugException{
 			ArrayList<ConditionItem> items = cp.getConditions();
+			boolean findValidCondition = false;
 			for(ConditionItem item: items){
 				IJavaValue value = EclipseUtils.evaluateExpr(item.getHitCondition(), thread, (IJavaStackFrame)thread.getTopStackFrame(), session.getProject());
 				if(value != null && value.toString().equals("true")){
 					IJavaValue condValue = EclipseUtils.evaluateExpr(item.getExpectation(), thread, (IJavaStackFrame)thread.getTopStackFrame(), session.getProject());
-					if(condValue != null && value.toString().equals("false")){
-						return false;
+					if(condValue != null && condValue.toString().equals("false")){
+						findValidCondition = true;
+						return 0;
+					}
+					if(condValue != null && condValue.toString().equals("true")){
+						findValidCondition = true;
 					}
 				}
 			}
 			
-			return true;
+			if(findValidCondition)
+				return 1;
+			
+			return -1;
 		}
 		
 		@Override
@@ -544,6 +559,14 @@ public class BugFixer extends Job{
 
 
 	public void updateDebugProcess() {
+		IBreakpointManager manager = DebugPlugin.getDefault().getBreakpointManager();
+		IBreakpoint existingbps[] = manager.getBreakpoints();
+		try {
+			manager.removeBreakpoints(existingbps, true);
+		} catch (CoreException e2) {
+			e2.printStackTrace();
+		}
+		
 		ArrayList<TestCase> correctTCs = new ArrayList<TestCase>();
 		ArrayList<TestCase> failTCs = new ArrayList<TestCase>();
 		
@@ -566,20 +589,19 @@ public class BugFixer extends Job{
 				bpcpMap.put(bps[i], cps.get(i));
 			}
 			CheckpointConditionRefresher listener = new CheckpointConditionRefresher(config, cps, bpcpMap, lock);
-			JUnitCore.addTestRunListener(listener);
 			
-			IBreakpointManager manager = DebugPlugin.getDefault().getBreakpointManager();
-			IBreakpoint existingbps[] = manager.getBreakpoints();
-			try {
-				manager.removeBreakpoints(existingbps, true);
+			try {				
 				manager.addBreakpoints(bps);
 			} catch (CoreException e1) {
 				e1.printStackTrace();
 			}
+			
+			JUnitCore.addTestRunListener(listener);
+			DebugPlugin.getDefault().getLaunchManager().addLaunchListener(listener);
 			JDIDebugModel.addJavaBreakpointListener(listener);
 			synchronized (lock) {
 				try {
-					config.launch("run", new NullProgressMonitor());
+					config.launch("debug", new NullProgressMonitor());
 					lock.wait();
 				} catch (CoreException e) {
 					e.printStackTrace();
@@ -591,10 +613,13 @@ public class BugFixer extends Job{
 			
 			try {
 				manager.removeBreakpoints(bps, true);
-				manager.addBreakpoints(existingbps);
 			} catch (CoreException e1) {
 				e1.printStackTrace();
 			}
+			
+			JUnitCore.removeTestRunListener(listener);
+			DebugPlugin.getDefault().getLaunchManager().removeLaunchListener(listener);
+			JDIDebugModel.removeJavaBreakpointListener(listener);
 			
 			if(listener.getTestPassed()){
 				testCase.setStatus(StatusCode.PASSED);
@@ -618,8 +643,20 @@ public class BugFixer extends Job{
 				}
 			}
 			
-		}	
+		}
+		try {
+			manager.addBreakpoints(existingbps);
+		} catch (CoreException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		CheckpointManager.getInstance().setSync();
 		session.setAllTestResults(correctTCs, failTCs);
+	}
+
+
+	public void clearCache() {
+		if(this.fixGenerator != null)
+			this.fixGenerator.clearCache();		
 	}
 }

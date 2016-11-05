@@ -67,7 +67,7 @@ public class SmartDebugPlugin extends AbstractUIPlugin {
 		//currentFixSessions.add(session);
 		currentFixSession = session;
 		System.gc();
-		session.getBugFixer().schedule();
+		
 	}
 	
 	public void cancelCurrentSession() {

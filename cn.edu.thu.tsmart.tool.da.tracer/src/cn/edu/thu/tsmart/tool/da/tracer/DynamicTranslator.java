@@ -48,6 +48,7 @@ public class DynamicTranslator {
 	private Stack<TraceStackFrame> traceStack = new Stack<TraceStackFrame>();
 	private boolean includeNewBlocks;
 	private int timeStamp = 0;
+	private boolean failCPFound = false;
 	
 	public static ArrayList<ITraceEventListener> listeners = new ArrayList<ITraceEventListener>();
 	
@@ -239,8 +240,6 @@ public class DynamicTranslator {
 			
 			ArrayList<TraceNode> calleeTrace = new ArrayList<TraceNode>();
 			invokeNode.setCalleeTrace(calleeTrace);
-		} else if (action instanceof SuspendAction){
-			this.timeStamp ++;
 		}
 	}
 	
@@ -402,6 +401,13 @@ private static ArrayList<SSACFG.BasicBlock> travelToMethodInvok(SSACFG cfg, SSAC
 
 	public ArrayList<InvokeTraceNode> getCurrentTrace() {
 		return this.rootInvocationTrace;
+	}
+	public void increaseTimeStamp() {
+		if(!this.failCPFound)
+			this.timeStamp ++;		
+	}
+	public void setFailCPFound() {
+		this.failCPFound = true;		
 	}
 
 }

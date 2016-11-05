@@ -112,31 +112,7 @@ public class CheckpointConditionRefresher extends TestRunListener implements IJa
 							this.testcaseFailed = true;
 							if(passedConditions.contains(item)){
 								passedConditions.remove(item);
-							}
-							
-							for(ConditionItem passitem: passedConditions){
-								if(passitem.getHitCondition().equals(Checkpoint.HIT_ALWAYS)){
-									passitem.setUnknown();
-								} else {
-									passitem.setPassed();
-								}
-							}
-							
-							Checkpoint failCheckpoint = null;
-							for(Checkpoint checkpoint: this.cps){
-								boolean allpass = true;								
-								for(ConditionItem i: checkpoint.getConditions()){
-									if(i.getStatus() != StatusCode.PASSED){
-										allpass = false;
-									}
-									if(i.equals(failedConditionItem)){
-										failCheckpoint = checkpoint;
-									}
-								}
-								if(allpass)
-									checkpoint.setStatus(StatusCode.PASSED);
-							}
-							failCheckpoint.setStatus(StatusCode.FAILED);
+							}						
 							
 							this.CHECKPOINT_VIOLATED_FLAG = true;
 							thread.getLaunch().terminate();
@@ -144,7 +120,7 @@ public class CheckpointConditionRefresher extends TestRunListener implements IJa
 					}
 				}
 				
-				return IJavaBreakpointListener.DONT_CARE;
+				return IJavaBreakpointListener.DONT_SUSPEND;
 			
 			} 
 		} catch (CoreException e) {
@@ -154,7 +130,33 @@ public class CheckpointConditionRefresher extends TestRunListener implements IJa
 		return IJavaBreakpointListener.DONT_SUSPEND;
 	}
 	
-
+	private void cleanUp(){
+		for(ConditionItem passitem: passedConditions){
+			if(passitem.getHitCondition().equals(Checkpoint.HIT_ALWAYS)){
+				passitem.setUnknown();
+			} else {
+				passitem.setPassed();
+			}
+		}
+		
+		Checkpoint failCheckpoint = null;
+		for(Checkpoint checkpoint: this.cps){
+			boolean allpass = true;								
+			for(ConditionItem i: checkpoint.getConditions()){
+				if(i.getStatus() != StatusCode.PASSED){
+					allpass = false;
+				}
+				if(i.equals(failedConditionItem)){
+					failCheckpoint = checkpoint;
+				}
+			}
+			if(allpass)
+				checkpoint.setStatus(StatusCode.PASSED);
+		}
+		if(failCheckpoint != null)
+			failCheckpoint.setStatus(StatusCode.FAILED);
+		
+	}
 
 	private int evaluate(String hitCondition, IJavaThread thread) {
 		IJavaProject project = SmartDebugPlugin.getLastFixSession().getProject();
@@ -199,7 +201,10 @@ public class CheckpointConditionRefresher extends TestRunListener implements IJa
 		for(int i = 0; i < launches.length; i ++){
 			ILaunch launch = launches[i];
 			if(launch.getLaunchConfiguration().equals(config)){
-				if(this.TEST_FINISHED_FLAG == true){
+				
+				cleanUp();
+				
+				if(this.TEST_FINISHED_FLAG == true || CHECKPOINT_VIOLATED_FLAG == true){
 					synchronized(lock){
 						lock.notifyAll();
 					}
@@ -220,8 +225,9 @@ public class CheckpointConditionRefresher extends TestRunListener implements IJa
 			synchronized(lock){
 				lock.notifyAll();
 			}
-		} else
+		} else{
 			this.TEST_FINISHED_FLAG = true;
+		}
 	}
 
 	public boolean getTestPassed() {

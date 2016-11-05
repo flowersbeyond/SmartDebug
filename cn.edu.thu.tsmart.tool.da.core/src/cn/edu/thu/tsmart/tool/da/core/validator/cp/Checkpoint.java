@@ -73,6 +73,9 @@ public class Checkpoint {
 	}
 	public void setConditions(ArrayList<ConditionItem> conditions) {
 		this.conditions = conditions;
+		for(ConditionItem item: conditions){
+			item.setOwningCheckpoint(this);
+		}
 		try {
 			this.marker.setAttribute(Checkpoint.CONDITIONS, getConditionString());
 		} catch (CoreException e) {
@@ -126,5 +129,15 @@ public class Checkpoint {
 	}
 	public void setStatus(StatusCode status) {
 		this.checkpointStatus = status;		
+	}
+	
+	
+	public void update() {
+		try {
+			this.marker.setAttribute(Checkpoint.CONDITIONS, getConditionString());
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}
+		
 	}
 }

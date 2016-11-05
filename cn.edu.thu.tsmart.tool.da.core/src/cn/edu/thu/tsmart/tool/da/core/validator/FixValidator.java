@@ -253,6 +253,9 @@ public class FixValidator{
 	}
 	
 	private boolean validateForCheckpoint(Fix fix, Checkpoint cp){
+		if(fix.toString().contains("i<n")){
+			int i = 0;
+		}
 		ArrayList<IMethod> methods = session.getTestMethods();
 		
 		ArrayList<TestCase> failedTestCases = new ArrayList<TestCase>();
@@ -266,6 +269,7 @@ public class FixValidator{
 			TestCaseValidator validator = new TestCaseValidator();
 			validator.validate(targetConfig, targetCPs);
 			if(validator.getValidationResult() == false){
+				fix.undoFix();
 				return false;
 			}
 		}

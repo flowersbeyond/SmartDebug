@@ -15,6 +15,8 @@ import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
+import org.eclipse.jdt.debug.core.IJavaLineBreakpoint;
+import org.eclipse.jdt.debug.core.JDIDebugModel;
 import org.eclipse.jdt.internal.debug.core.breakpoints.ValidBreakpointLocationLocator;
 
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
@@ -79,7 +81,15 @@ public class CheckpointUtils {
 	}
 
 	public static IBreakpoint createBreakpoint(Checkpoint cp) {
-		// TODO Auto-generated method stub
+		IJavaLineBreakpoint bp;
+		try {
+			bp = JDIDebugModel.createLineBreakpoint(cp.getFile(), cp.getTypeName(), cp.getLineNumber(), -1, -1, 0, true, null);
+			bp.setEnabled(true);
+			return bp;
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}
+		
 		return null;
 	}
 }

@@ -154,8 +154,14 @@ public class CheckpointManager {
 	}
 
 	public void registerTestCase(TestCase testCase) {
-		if(conditions.containsKey(testCase))
-			return;
+		if(conditions.containsKey(testCase)){
+			for(TestCase tc: conditions.keySet()){
+				if(tc.equals(testCase)){
+					tc.setStatus(testCase.getStatus());
+					return;
+				}
+			}
+		}
 		else
 			conditions.put(testCase, new ArrayList<Checkpoint>());
 		

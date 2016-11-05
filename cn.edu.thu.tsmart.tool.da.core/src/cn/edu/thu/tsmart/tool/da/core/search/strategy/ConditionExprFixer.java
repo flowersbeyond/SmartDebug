@@ -48,9 +48,9 @@ public class ConditionExprFixer {
 		Map<Integer, ArrayList<FilterableFix>> results = new HashMap<Integer, ArrayList<FilterableFix>>();
 		Expression expr = (Expression) fixSite.getConditionExpression();
 		ASTNode node = fixSite.getWrappingStatement();
-		if(node instanceof ForStatement || node instanceof WhileStatement || node instanceof EnhancedForStatement){
+		/*if(node instanceof ForStatement || node instanceof WhileStatement || node instanceof EnhancedForStatement){
 			return results;
-		}
+		}*/
 		
 		ExpressionVisitor visitor = new ExpressionVisitor();
 		expr.accept(visitor);

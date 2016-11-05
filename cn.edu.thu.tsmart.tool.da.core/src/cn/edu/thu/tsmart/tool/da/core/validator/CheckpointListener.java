@@ -40,7 +40,7 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 	
 	protected boolean TEST_FINISHED_FLAG = false;
 	protected boolean LAUNCH_TERMINATED_FLAG = false;
-	protected boolean CHECKPOINT_VIOLATED_FLAG = false;
+	protected boolean CRITICAL_CHECKPOINT_REACHED = false;
 	
 	private Object lock;
 	private Map<IBreakpoint, Checkpoint> bpcpMap;
@@ -53,14 +53,12 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 		this.lock = lock;
 		this.passedConditions = new HashSet<ConditionItem>();
 		this.cps = cps;
-		clearCheckpointStatus();
+		clearCheckpointHitCount();
 	}
 	
-	private void clearCheckpointStatus(){
+	private void clearCheckpointHitCount(){
 		for(Checkpoint cp: cps){
-			cp.setStatus(StatusCode.UNKNOWN);
 			for(ConditionItem item: cp.getConditions()){
-				item.setUnknown();
 				item.setHitCount(0);
 			}
 		}
@@ -107,14 +105,20 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 								else
 									this.testcaseFailed = false;
 							}
+							CRITICAL_CHECKPOINT_REACHED = true;
 							thread.getLaunch().terminate();
-						} else {
+						} else if(expectationSatisfied == 1){
+							if(item.getStatus() == StatusCode.FAILED){
+								this.testcaseFailed = false;
+								CRITICAL_CHECKPOINT_REACHED = true;
+								thread.getLaunch().terminate();
+							}
 							continue;
 						}
 					}
 				}
 				
-				return IJavaBreakpointListener.DONT_CARE;
+				return IJavaBreakpointListener.DONT_SUSPEND;
 			
 			} 
 		} catch (CoreException e) {
@@ -169,7 +173,7 @@ public class CheckpointListener extends TestRunListener implements IJavaBreakpoi
 		for(int i = 0; i < launches.length; i ++){
 			ILaunch launch = launches[i];
 			if(launch.getLaunchConfiguration().equals(config)){
-				if(this.TEST_FINISHED_FLAG == true){
+				if(this.TEST_FINISHED_FLAG == true || CRITICAL_CHECKPOINT_REACHED == true){
 					synchronized(lock){
 						lock.notifyAll();
 					}

@@ -108,7 +108,7 @@ public class CheckpointView extends ViewPart {
 							return img;
 						}
 						case FAILED:{
-							ImageDescriptor id = Activator.getImageDescriptor("icons/fail.gif");
+							ImageDescriptor id = Activator.getImageDescriptor("icons/fail.png");
 							Image img = id.createImage();
 							return img;
 						}
@@ -243,6 +243,19 @@ public class CheckpointView extends ViewPart {
 			
 		}		
 	}
+	
+	public Checkpoint getSelectedCheckpoint(){
+		ISelection selection = this.viewer.getSelection();
+		if(selection instanceof TreeSelection){
+			TreeSelection treeSel = (TreeSelection)selection;
+			Object obj = treeSel.getFirstElement();
+			if(obj instanceof Checkpoint){
+				return (Checkpoint)obj;
+			}
+		}	
+		
+		return null;
+	}
 
 	public void refresh() {
 		if(cpmanager != null)
@@ -298,6 +311,7 @@ class CheckpointViewEditSupport extends EditingSupport{
 			} else if(propertyKey.equals(propertyKeys[1])){
 				((ConditionItem) element).setExpecation((String) value);
 			}
+			((ConditionItem)element).getOwningCheckpoint().update();
 			refresh();
 		}
 		cpManager.setOutOfSync();

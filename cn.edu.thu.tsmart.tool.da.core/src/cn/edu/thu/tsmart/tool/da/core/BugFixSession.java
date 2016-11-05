@@ -19,6 +19,8 @@ import cn.edu.thu.tsmart.tool.da.core.search.flt.Filter;
 import cn.edu.thu.tsmart.tool.da.core.search.strategy.ExpressionGenerator;
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
 import cn.edu.thu.tsmart.tool.da.core.validator.cp.Checkpoint;
+import cn.edu.thu.tsmart.tool.da.tracer.CFGCache;
+import cn.edu.thu.tsmart.tool.da.tracer.DynamicTranslator;
 import cn.edu.thu.tsmart.tool.da.tracer.trace.InvokeTraceNode;
 import cn.edu.thu.tsmart.tool.da.tracer.trace.TraceNode;
 
@@ -92,6 +94,21 @@ public class BugFixSession {
 		this.filter = new Filter(this);
 	}
 	
+	public void clearUpCache(){
+		this.fixSiteManager = new FixSiteManager(this);
+		if(candidateQueue != null)
+			candidateQueue.clearCache();
+		CFGCache.clearCache();
+		if(this.fixer != null)
+			this.fixer.clearCache();
+		
+		this.bbProgress = 0;
+		traceMap = new HashMap<TestCase, ArrayList<InvokeTraceNode>>();
+		testResultMap = new HashMap<TestCase, Boolean>();
+		coverageMap = new HashMap<SSACFG.BasicBlock, ArrayList<TestCase>>();
+		dumpCoverageMap = new HashMap<BasicBlock, ArrayList<TestCase>>();		
+		failedCoveredBlocks = new HashSet<SSACFG.BasicBlock>();
+	}
 
 	public int getBBProgress(){
 		return this.bbProgress;
@@ -164,7 +181,7 @@ public class BugFixSession {
 		}		
 	}
 	
-	public ArrayList<Set<BasicBlock>> toBlockTrace(ArrayList<InvokeTraceNode> trnodes){
+	public ArrayList<Set<BasicBlock>> toBlockTrace(ArrayList<InvokeTraceNode> trnodes, boolean testPassed){
 		Map<SSACFG.BasicBlock, BasicBlock> bbmap = new HashMap<SSACFG.BasicBlock, BasicBlock>();
 		Map<Integer, Set<BasicBlock>> blockBuckets = new HashMap<Integer, Set<BasicBlock>>();
 		for(InvokeTraceNode tr: trnodes){
@@ -174,7 +191,7 @@ public class BugFixSession {
 		int maxTimeStamp = -1;
 		for(Integer stamp: blockBuckets.keySet()){
 			if(stamp > maxTimeStamp)
-				stamp = maxTimeStamp;
+				maxTimeStamp = stamp;
 		}
 		Set<BasicBlock> piece1 = new HashSet<BasicBlock>();
 		Set<BasicBlock> piece2 = new HashSet<BasicBlock>();
@@ -192,8 +209,13 @@ public class BugFixSession {
 		}
 		
 		ArrayList<Set<BasicBlock>> traces = new ArrayList<Set<BasicBlock>>();
-		traces.add(piece1);
-		traces.add(piece2);
+		if(!testPassed && piece2.size() == 0){
+			traces.add(piece2);
+			traces.add(piece1);
+		} else {
+			traces.add(piece1);
+			traces.add(piece2);
+		}
 		return traces;
 	}
 	

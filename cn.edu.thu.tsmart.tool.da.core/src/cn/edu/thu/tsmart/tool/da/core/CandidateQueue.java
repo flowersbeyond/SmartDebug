@@ -32,4 +32,8 @@ public class CandidateQueue {
 		
 		return !candidates.isEmpty();
 	}
+	
+	public void clearCache(){
+		candidates.clear();
+	}
 }

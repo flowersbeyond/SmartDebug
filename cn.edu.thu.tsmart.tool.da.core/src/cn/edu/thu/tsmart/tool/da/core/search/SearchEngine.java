@@ -37,7 +37,7 @@ public class SearchEngine extends Job{
 	BugFixSession session;
 	private Set<FixSite> triedStatementFixSite = new HashSet<FixSite>();	
 	private Set<FixSite> triedConditionFixSite = new HashSet<FixSite>();
-	private Set<FixSite>triedInsertStopFixSite = new HashSet<FixSite>();
+	private Set<FixSite> triedInsertStopFixSite = new HashSet<FixSite>();
 	
 	
 	//Fix generation strategies:
@@ -211,6 +211,15 @@ public class SearchEngine extends Job{
 	@Override
 	protected IStatus run(IProgressMonitor monitor) {
 		return Status.OK_STATUS;
+	}
+
+	public void clearCache() {
+		if(this.triedConditionFixSite!= null)
+			this.triedConditionFixSite.clear();
+		if(this.triedInsertStopFixSite!= null)
+			this.triedInsertStopFixSite.clear();
+		if(this.triedStatementFixSite!= null)
+			this.triedStatementFixSite.clear();
 	}
 
 }
