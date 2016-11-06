@@ -131,7 +131,7 @@ public class CheckpointDialog extends Dialog {
 					if (element instanceof ConditionItem) {
 						String hitCondition = ((ConditionItem) element).getHitCondition();
 						if (hitCondition.equals("")) {
-							return "New Condition";
+							return "New Specification";
 						} else
 							return ((ConditionItem) element).getHitCondition() + "";
 					}
@@ -158,7 +158,6 @@ public class CheckpointDialog extends Dialog {
 						if(!((ConditionItem) element).getHitCondition().equals(""))
 							return ((ConditionItem) element).getExpectation();
 					}
-					return element.toString();
 				}
 				return "";
 			}

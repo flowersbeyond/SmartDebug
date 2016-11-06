@@ -320,6 +320,10 @@ public class FixValidator{
 		//breakpointMutualLock.notifyAll();
 		return false;
 	}
+	
+	public void clearCache(){
+		this.suggestionManager.clearCache();
+	}
 }
 
 

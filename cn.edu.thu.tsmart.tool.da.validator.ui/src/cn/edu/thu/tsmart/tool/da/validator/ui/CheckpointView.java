@@ -137,11 +137,7 @@ public class CheckpointView extends ViewPart {
 					text = cp.getTypeName() + ": Line " + cp.getLineNumber();
 				}
 				else if(element instanceof ConditionItem){
-					ConditionItem item = (ConditionItem)element;
-					if(!item.getHitCondition().equals("")){
-						text = " Hit condition: " + item.getHitCondition() + "; Expectation: "+ item.getExpectation();
-					} else
-						text = "";
+					text = "Specification:";
 				}
 				return text;
 			}
@@ -156,7 +152,11 @@ public class CheckpointView extends ViewPart {
 			
 			case 3:
 				if(element instanceof ConditionItem){
-					return ((ConditionItem) element).getFailHitTime() + "";
+					int failHitTime = ((ConditionItem)element).getFailHitTime();
+					if(failHitTime < 1)
+						return "";
+					else
+						return failHitTime - 1 + "";
 				}
 			}
 			return null;
@@ -198,19 +198,19 @@ public class CheckpointView extends ViewPart {
 		TreeViewerColumn column2 = new TreeViewerColumn(viewer, SWT.RIGHT);
 		column2.getColumn().setAlignment(SWT.LEFT);
 		column2.getColumn().setText("Hit Condition");
-		column2.getColumn().setWidth(100);
+		column2.getColumn().setWidth(150);
 		column2.setEditingSupport(new CheckpointViewEditSupport(viewer, "Hit Condition", cpmanager));
 		
 		TreeViewerColumn column3 = new TreeViewerColumn(viewer, SWT.RIGHT);
 		column3.getColumn().setAlignment(SWT.LEFT);
 		column3.getColumn().setText("Expectation");
-		column3.getColumn().setWidth(100);
+		column3.getColumn().setWidth(150);
 		column3.setEditingSupport(new CheckpointViewEditSupport(viewer, "Expectation", cpmanager));
 		
 		TreeViewerColumn column4 = new TreeViewerColumn(viewer, SWT.RIGHT);
 		column4.getColumn().setAlignment(SWT.LEFT);
-		column4.getColumn().setText("Fail At");
-		column4.getColumn().setWidth(100);
+		column4.getColumn().setText("Last Correct At");
+		column4.getColumn().setWidth(150);
 		
 
 		viewer.setContentProvider(new ViewContentProvider());

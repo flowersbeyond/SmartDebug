@@ -36,5 +36,9 @@ public class SuggestionManager {
 	public static void removeSuggestionListener(ISuggestionListener listener){
 		listeners.remove(listener);
 	}
+
+	public void clearCache() {
+		this.suggestions.clear();
+	}
 	
 }

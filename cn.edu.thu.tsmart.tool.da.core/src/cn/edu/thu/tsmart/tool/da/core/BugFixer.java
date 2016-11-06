@@ -627,7 +627,6 @@ public class BugFixer extends Job{
 			} else {
 				if(cps.size() == 0){
 					testCase.setStatus(StatusCode.FAILED);
-					CheckpointManager.getInstance().registerTestCase(testCase);
 					failTCs.add(testCase);
 				}
 				else {
@@ -643,6 +642,8 @@ public class BugFixer extends Job{
 				}
 			}
 			
+			CheckpointManager.getInstance().registerTestCase(testCase);
+			
 		}
 		try {
 			manager.addBreakpoints(existingbps);
@@ -657,6 +658,8 @@ public class BugFixer extends Job{
 
 	public void clearCache() {
 		if(this.fixGenerator != null)
-			this.fixGenerator.clearCache();		
+			this.fixGenerator.clearCache();
+		if(this.fixValidator != null)
+			this.fixValidator.clearCache();
 	}
 }
