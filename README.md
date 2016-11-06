@@ -5,4 +5,4 @@ This master branch contains two features: "interactive debugging" and "early fil
 
 The "defects4J" branch contains code for experiments on defects4J benchmark, including data log and analysis scripts.
 
-For more information, please refer to SmartDebug
+For more information, please refer to [SmartDebug](http://sts.thss.tsinghua.edu.cn/tsmart2.0/da/smartdebug/).
