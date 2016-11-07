@@ -727,13 +727,14 @@ pre {
 <h2>
 <a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
-<p>SmartDebug is an interactive Java debug assistant. It utilizes programmers' judgement of program running state by taking in specifications on "Checkpoints", makes it possible that complicated debug tasks are split into small fragment of tasks. It works as an eclipse plug-in. Here is a snapshot of SmartDebug:
-<a href="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/screen-shot.png" target="_blank"><img src="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/screen-shot.png" alt="SmartDebug Screen Shot" title="SmartDebug Screen Shot" style="max-width:100%;"></a></p>
+<p>SmartDebug is an interactive Java debug assistant. Similar to existing patch generation systems, it analyzes the execution status of tests in a certain test suite, and produces suggestions to fix the bug in a program. However, more than existing systems, it utilizes programmers' judgement of program running state by taking in specifications on "Checkpoints", makes it possible that complicated debug tasks are split into small fragment of tasks. Therefore it is able to work with bugs that can only be fixed with modifications on several locations. SmartDebug works as an eclipse plug-in. Here is a snapshot:</p>
+
+<p><a href="./fig/screen-shot.png" target="_blank"><img src="./fig/screen-shot.png" alt="SmartDebug Snapshot" style="max-width:100%;"></a></p>
 
 <h3>
 <a id="user-content-repository" class="anchor" href="#repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository</h3>
 
-<p>SmartDebug is open source at <a href="https://github.com/flowersbeyond/SmartDebug">here</a>.</p>
+<p>SmartDebug is open source in <a href="https://github.com/flowersbeyond/SmartDebug">here</a>.</p>
 
 <h2>
 <a id="user-content-background-and-our-contributions" class="anchor" href="#background-and-our-contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background and Our Contributions</h2>
@@ -748,12 +749,12 @@ pre {
 
 <p>The first one is a usage design called "interactive debugging", which allows the users to decompose the debug task into small fractions through annotations on program execution state, so that the GAV system can work on small tasks susccessively. This mechanism makes it possible to utilize users' understanding of the faulty program and simplifies debugging task given to GAV systems, which further shortens the waiting time of users when they use the system. This mechanism has already been implemented as an eclipse plugin called SmartDebug.</p>
 
-<p>The second is an optimization technique, called "early filtration", which filters out impossible fix candidates before they ever go into the valdiation phase. Preliminary experiments show that this technique is able to compress the search space dramatically, even harsher than SPR. Experiments are still running.</p>
+<p>The second is an optimization technique, called "early filtration", which filters out impossible fix candidates before they ever go into the valdiation phase. Preliminary experiments show that this technique is able to compress the search space dramatically, even harsher than SPR.</p>
 
 <h2>
-<a id="user-content-interactive-debugging" class="anchor" href="#interactive-debugging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interactive Debugging</h2>
+<a id="user-content-an-interactive-debugger" class="anchor" href="#an-interactive-debugger" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An Interactive Debugger</h2>
 
-<p>Please refer to for more information:</p>
+<p>Please refer to:</p>
 
 <ul>
 <li>Xinrui Guo, "SmartDebug: An Interactive Debug Assistant for Java", FSE-SRC 2016 <a href="http://sts.thss.tsinghua.edu.cn/tsmart2.0/da/smartdebug/fse16src-srcid27-preprint.pdf">[pdf]</a>
@@ -785,7 +786,7 @@ Despite the promising results reported, in our experiment, we discovered that th
 
 <p>Based on this observation, for most of the expression fixes covered in state-of-the-art search space, we only need to evaluate the candidate expressions (Bs) and the target expression (A) and see if they obey the observation above. If not, the candidate expression should be tossed out of the candidate list. The following table lists our current search space:</p>
 
-<p><a href="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/fix-patterns.png" target="_blank"><img src="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/fix-patterns.png" alt="Search Space Specification" title="Search Space Specification" style="max-width:100%;"></a></p>
+<p><a href="./fig/fix-patterns.png" target="_blank"><img src="./fig/fix-patterns.png" alt="Search Space Specification" style="max-width:100%;"></a></p>
 
 <p>We are currently working on Java programs. The machanism of JVM makes it very convenient to "halt" the execution process at a certain point and evaluate the value of an expression. During our experiment, we discovered that it takes often seconds to validate a fix (think about the modify-and-rebuild process) while only a few milisecond to evaluate an expression on a hot java stackframe. Therefore, through early filtration, we can save a large amount of time since mass majority of the candidates can be filtered out before moving to the validation process.</p>
 
@@ -794,11 +795,11 @@ Despite the promising results reported, in our experiment, we discovered that th
 
 <p>Currently we are performing experiments on Defects4J, a collection of several hundred versions of 5 real world programs. Theoretically our search space covers 30 of the 324 versions. However due to implementation issues, we are now able to fix 24 versions. This is currently the largest amout ever reported on this benchmark. The following table lists the detailed fix status of each bug and the failing reasons.</p>
 
-<p><a href="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/defects4J-status.png" target="_blank"><img src="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/defects4J-status.png" alt="Status report on Defects4J" title="Defects4J Status Report" style="max-width:100%;"></a></p>
+<p><a href="./fig/defects4j-status.png" target="_blank"><img src="./fig/defects4j-status.png" alt="Defects4J Status Report" style="max-width:100%;"></a></p>
 
 <p>To investigate the efficiency of early filtration, we analyzed the amount of different kinds of fixes generated during the fix generation process before and after filtration. Here is a data report table:</p>
 
-<p><a href="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/defects4J-data.png" target="_blank"><img src="///D://SmartDebug/cn.edu.thu.tsmart.tool.da/doc/indexPage/fig/defects4J-data.png" alt="Data report on Defects4J" title="Defects4J Report" style="max-width:100%;"></a></p>
+<p><a href="./fig/defects4j-data.png" target="_blank"><img src="./fig/defects4j-data.png" alt="Early Filtration Data Report" style="max-width:100%;"></a></p>
 
 <p>As shown in the table, HUGE amount of fixes are filtered out before entering into validation phase. For example, in closure-compiler-1, we needed to validate 154963 expression fixes or condition fixes without filtration. However, this number drops to 1878 after early filtration, only 1.21% of the original amount.</p>
 </article></body></html>
