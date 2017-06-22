@@ -1,9 +1,9 @@
-package cn.edu.thu.tsmart.tool.da.core.search.fixSite;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
-public abstract class FixSite {
+public abstract class AbstractFixSite {
 	
 	private boolean visited = false;
 	private int lineNumStart;
@@ -11,7 +11,7 @@ public abstract class FixSite {
 	private IFile file;
 	private String qualifiedTypeName;
 	
-	public FixSite(IFile file, String qualifiedTypeName, int lineNumStart, int lineNumEnd){
+	public AbstractFixSite(IFile file, String qualifiedTypeName, int lineNumStart, int lineNumEnd){
 		this.file = file;
 		this.lineNumStart = lineNumStart;
 		this.lineNumEnd = lineNumEnd;

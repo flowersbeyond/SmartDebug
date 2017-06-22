@@ -50,6 +50,16 @@
                tooltip="Update debug process">
          </command>
       </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:cn.thu.edu.thss.tsmart.tool.da.validator.CheckpointView">
+         <command
+               commandId="cn.edu.thu.tsmart.tool.da.validator.ui.EnableFilter"
+               icon="icons/filter.png"
+               style="toggle"
+               tooltip="Enable early filtration">
+         </command>
+      </menuContribution>
    </extension>
    <extension
          id="cn.edu.thu.tsmart.tool.da.validator.ui.UpdateProgress"
@@ -69,6 +79,10 @@
       <command
             id="cn.edu.thu.tsmart.tool.da.ui.StepResolve"
             name="Resolve A Step">
+      </command>
+      <command
+            id="cn.edu.thu.tsmart.tool.da.validator.ui.EnableFilter"
+            name="Enable Early Filtration">
       </command>
    </extension>
    <extension
@@ -92,6 +106,10 @@
       <handler
             class="cn.edu.thu.tsmart.tool.da.ui.handler.StepResolveHandler"
             commandId="cn.edu.thu.tsmart.tool.da.ui.StepResolve">
+      </handler>
+      <handler
+            class="cn.edu.thu.tsmart.tool.da.ui.handler.EnableFilterHandler"
+            commandId="cn.edu.thu.tsmart.tool.da.validator.ui.EnableFilter">
       </handler>
    </extension>
    <extension

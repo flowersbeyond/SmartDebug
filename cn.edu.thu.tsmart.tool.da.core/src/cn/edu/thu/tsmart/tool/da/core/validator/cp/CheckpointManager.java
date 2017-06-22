@@ -167,4 +167,21 @@ public class CheckpointManager {
 		
 	}
 
+	public void clearUpConditions() {
+		
+		for(TestCase tc: conditions.keySet()){
+			ArrayList<Checkpoint> cps = conditions.get(tc);
+			for(Checkpoint cp: cps){
+				ArrayList<ConditionItem> conditions = cp.getConditions();
+				if(conditions.size() >= 1){
+					ConditionItem lastItem = conditions.get(conditions.size() - 1);
+					if(lastItem.getHitCondition().equals("")){
+						conditions.remove(lastItem);
+					}
+				}
+				
+			}
+		}
+	}
+
 }

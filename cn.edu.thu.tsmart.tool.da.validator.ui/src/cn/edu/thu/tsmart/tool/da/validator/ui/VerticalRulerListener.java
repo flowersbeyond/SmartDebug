@@ -86,6 +86,7 @@ public class VerticalRulerListener implements MouseListener {
 									
 									checkpoint.setConditions(dialog.getConditions());
 									CheckpointManager.getInstance().addCheckpoint(currentTestCase, checkpoint);
+									CheckpointManager.getInstance().clearUpConditions();
 									CheckpointManager.getInstance().setOutOfSync();
 								}
 								

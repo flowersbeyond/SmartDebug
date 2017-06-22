@@ -41,9 +41,6 @@ import com.ibm.wala.util.strings.UTF8Convert;
 
 public class DynamicTranslator {
 	
-	private static AnalysisScope scope;
-	private static ClassHierarchy cha;
-
 	private ArrayList<InvokeTraceNode> rootInvocationTrace = new ArrayList<InvokeTraceNode>();
 	private Stack<TraceStackFrame> traceStack = new Stack<TraceStackFrame>();
 	private boolean includeNewBlocks;
@@ -52,34 +49,20 @@ public class DynamicTranslator {
 	
 	public static ArrayList<ITraceEventListener> listeners = new ArrayList<ITraceEventListener>();
 	
+	private static AnalysisScope scope;
+	private static ClassHierarchy cha;
 	public static void clearAnalysisScope(){
 		scope = null;
 		cha = null;
 	}
+	
+	public static void initAnalysisScope(AnalysisScope scope, ClassHierarchy cha){
+		DynamicTranslator.scope = scope;
+		DynamicTranslator.cha = cha;
+	}
+	
 	public DynamicTranslator(IJavaProject project, boolean includeNewBlocks) {
 		this.includeNewBlocks = includeNewBlocks;
-		if(scope == null || cha == null){
-			String projectClassPath;
-			try {
-				String projectPath = EclipseUtils.getProjectDir(project);
-				File scopeFile = new File(projectPath + "bin-scope.txt");
-				if(scopeFile.exists()){
-					scope = AnalysisScopeReader.readJavaScope(projectPath + "bin-scope.txt", null, DynamicTranslator.class.getClassLoader());
-				} else {
-					projectClassPath = EclipseUtils.getProjectDir(project)
-							+ "/bin/";
-					scope = AnalysisScopeReader
-							.makeJavaBinaryAnalysisScope(projectClassPath, null);
-				}
-				cha = ClassHierarchy.make(scope);
-			} catch (JavaModelException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (ClassHierarchyException e) {
-				e.printStackTrace();
-			}
-		}
 	}
 	
 	public void handleNewActions(){

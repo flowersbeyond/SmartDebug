@@ -91,15 +91,9 @@ public class CheckpointDialog extends Dialog {
 		Label lblGuideText = new Label(container, SWT.NONE);
 		GridData gd_lblGuideText = new GridData(SWT.LEFT, SWT.FILL, false,
 				false, 1, 1);
-		gd_lblGuideText.heightHint = 20;
+		gd_lblGuideText.heightHint = 30;
 		lblGuideText.setLayoutData(gd_lblGuideText);
 		lblGuideText.setText("Please enter your expectations of the program:");
-
-		Label lblFileName = new Label(container, SWT.NONE);
-		lblFileName.setText("File name:");
-
-		Label lblAtLine = new Label(container, SWT.NONE);
-		lblAtLine.setText("At line:");
 
 		tableViewer = new TableViewer(container, SWT.BORDER
 				| SWT.FULL_SELECTION);
@@ -109,7 +103,7 @@ public class CheckpointDialog extends Dialog {
 		table.setLinesVisible(true);
 		table.setHeaderVisible(true);
 		GridData gd_table = new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1);
-		gd_table.widthHint = 296;
+		gd_table.widthHint = 400;
 		gd_table.heightHint = 175;
 		table.setLayoutData(gd_table);
 		tableViewer.setContentProvider(new ContentProvider());
@@ -118,9 +112,9 @@ public class CheckpointDialog extends Dialog {
 		TableViewerColumn hitCountColumn = new TableViewerColumn(tableViewer,
 				SWT.NONE);
 		TableColumn tblclmnHitCount = hitCountColumn.getColumn();
-		tblclmnHitCount.setWidth(75);
-		tblclmnHitCount.setText("Hit Count");
-		hitCountColumn.setEditingSupport(new ConditionItemEditSupport(tableViewer, "Hit Count", conditions));
+		tblclmnHitCount.setWidth(150);
+		tblclmnHitCount.setText("Hit Condition");
+		hitCountColumn.setEditingSupport(new ConditionItemEditSupport(tableViewer, "Hit Condition", conditions));
 		hitCountColumn.setLabelProvider(new ColumnLabelProvider() {
 			public Image getImage(Object element) {
 				return null;
@@ -145,8 +139,8 @@ public class CheckpointDialog extends Dialog {
 				SWT.NONE);
 		TableColumn tblclmnCondition = conditionColumn.getColumn();
 		tblclmnCondition.setWidth(247);
-		tblclmnCondition.setText("Condition");
-		conditionColumn.setEditingSupport(new ConditionItemEditSupport(tableViewer, "Condition", conditions));
+		tblclmnCondition.setText("Expectation");
+		conditionColumn.setEditingSupport(new ConditionItemEditSupport(tableViewer, "Expectation", conditions));
 		conditionColumn.setLabelProvider(new ColumnLabelProvider() {
 			public Image getImage(Object element) {
 				return null;
@@ -187,7 +181,7 @@ public class CheckpointDialog extends Dialog {
 	 */
 	@Override
 	protected Point getInitialSize() {
-		return new Point(376, 369);
+		return new Point(450, 400);
 	}
 
 	public ArrayList<ConditionItem> getConditions() {
@@ -207,7 +201,7 @@ class ConditionItemEditSupport extends EditingSupport{
 	private TableViewer tableViewer;
 	private ArrayList<ConditionItem> conditions;
 	
-	private static String[] propertyKeys = {"Hit Count", "Condition"};
+	private static String[] propertyKeys = {"Hit Condition", "Expectation"};
 	public ConditionItemEditSupport(TableViewer viewer, String propertyKey, ArrayList<ConditionItem> conditions) {
 		super(viewer);
 		this.tableViewer = viewer;

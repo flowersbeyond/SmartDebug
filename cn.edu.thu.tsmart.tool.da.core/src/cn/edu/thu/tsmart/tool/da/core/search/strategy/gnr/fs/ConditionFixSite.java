@@ -1,10 +1,12 @@
-package cn.edu.thu.tsmart.tool.da.core.search.fixSite;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
-public class ConditionFixSite extends FixSite{
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
+
+public class ConditionFixSite extends AbstractFixSite{
 
 	private ASTNode conditionExpr;
 	private ASTNode wrappingStmt;
@@ -45,4 +47,5 @@ public class ConditionFixSite extends FixSite{
 			return (CompilationUnit)node;
 		return null;
 	}
+
 }

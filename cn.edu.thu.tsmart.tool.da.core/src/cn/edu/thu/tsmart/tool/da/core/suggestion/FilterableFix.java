@@ -14,34 +14,34 @@ import org.eclipse.text.edits.MalformedTreeException;
 import org.eclipse.text.edits.ReplaceEdit;
 import org.eclipse.text.edits.UndoEdit;
 
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
 
 public class FilterableFix extends Fix implements Filterable{
 	
-	private FixSite fixSite;
+	protected AbstractFixSite fixSite;
 	
-	private IFile modifiedFile;
-	private int startposition;
-	private int originalLength;
-	private String originalString;
-	private String modifiedString;
+	protected IFile modifiedFile;
+	protected int startposition;
+	protected int originalLength;
+	protected String originalString;
+	protected String modifiedString;
 	
-	private int fixLineNum;
+	protected int fixLineNum;
 	
-	private String fixType;
+	protected String fixType;
 	
-	private double exprPriority;
-	private double fixSimilarity;
+	protected double exprPriority;
+	protected double fixSimilarity;
 	
-	private Expression targetExpr;
-	private String targetExprType;
-	private String newExprString;
-	private boolean hasExpectedValue = false;
-	private String expectedValue = "false";
+	protected Expression targetExpr;
+	protected String targetExprType;
+	protected String newExprString;
+	protected boolean hasExpectedValue = false;
+	protected String expectedValue = "false";
 	
-	private UndoEdit undoEdit;
+	protected UndoEdit undoEdit;
 	
-	public FilterableFix(FixSite fixSite, int startPosition, int originalLength, String modifiedString, String fixType, int fixLineNum, Expression targetExpr, String targetExprType, String newExprString) {
+	public FilterableFix(AbstractFixSite fixSite, int startPosition, int originalLength, String modifiedString, String fixType, int fixLineNum, Expression targetExpr, String targetExprType, String newExprString) {
 		this.fixSite = fixSite;
 		
 		this.modifiedFile = fixSite.getFile();
@@ -57,7 +57,7 @@ public class FilterableFix extends Fix implements Filterable{
 		this.newExprString = newExprString;
 	}
 	
-	public FilterableFix(FixSite fixSite, int startPosition, int originalLength, String modifiedString, String fixType, int fixLineNum, Expression targetExpr, String targetExprType, String newExprString, String passTCExpectedValue) {
+	public FilterableFix(AbstractFixSite fixSite, int startPosition, int originalLength, String modifiedString, String fixType, int fixLineNum, Expression targetExpr, String targetExprType, String newExprString, String passTCExpectedValue) {
 		this.fixSite = fixSite;
 		
 		this.modifiedFile = fixSite.getFile();
@@ -241,7 +241,7 @@ public class FilterableFix extends Fix implements Filterable{
 		return this.modifiedFile.getName();
 	}
 
-	public FixSite getfixSite() {
+	public AbstractFixSite getfixSite() {
 		return fixSite;
 	}
 

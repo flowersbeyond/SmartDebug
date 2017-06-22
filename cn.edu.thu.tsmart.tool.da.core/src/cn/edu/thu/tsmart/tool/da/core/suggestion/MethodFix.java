@@ -14,7 +14,7 @@ import org.eclipse.text.edits.ReplaceEdit;
 import org.eclipse.text.edits.TextEdit;
 import org.eclipse.text.edits.UndoEdit;
 
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.StatementFixSite;
 
 public class MethodFix extends Fix{
 	private StatementFixSite fixSite;

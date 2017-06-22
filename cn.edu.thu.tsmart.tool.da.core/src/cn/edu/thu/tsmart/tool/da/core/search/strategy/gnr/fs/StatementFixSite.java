@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.fixSite;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs;
 
 import java.util.List;
 
@@ -6,7 +6,9 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
-public class StatementFixSite extends FixSite{
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
+
+public class StatementFixSite extends AbstractFixSite{
 
 	private List<? extends ASTNode> statements;
 	

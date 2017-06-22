@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.fixSite;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,14 +39,16 @@ import org.eclipse.jdt.core.dom.TypeDeclarationStatement;
 import org.eclipse.jdt.core.dom.WhileStatement;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSiteManager;
 
-public class FixSiteManager {
+public class GnrFixSiteManager extends AbstractFixSiteManager {
 	
-	private HashMap<String, ArrayList<FixSite>> fixSiteCache = new HashMap<String, ArrayList<FixSite>>();
+	private HashMap<String, ArrayList<AbstractFixSite>> fixSiteCache = new HashMap<String, ArrayList<AbstractFixSite>>();
 	private HashMap<String, TypeDeclaration> classDeclASTCache = new HashMap<String, TypeDeclaration>();
 	
 	private BugFixSession session;
-	public FixSiteManager(BugFixSession session){
+	public GnrFixSiteManager(BugFixSession session){
 		this.session = session;
 	}
 	
@@ -66,13 +68,13 @@ public class FixSiteManager {
 		return td;
 	}
 	
-	public ArrayList<FixSite> getFixSitesFromLocation(String methodKey,
+	public ArrayList<AbstractFixSite> getFixSitesFromLocation(String methodKey,
 			int startLineNum, int endLineNum) {
-		ArrayList<FixSite> fixSites = getFixSitesForMethod(methodKey, startLineNum, endLineNum);
-		ArrayList<FixSite> coveringSites = new ArrayList<FixSite>();
+		ArrayList<AbstractFixSite> fixSites = getFixSitesForMethod(methodKey, startLineNum, endLineNum);
+		ArrayList<AbstractFixSite> coveringSites = new ArrayList<AbstractFixSite>();
 		//TODO:try this out?
 		if(fixSites != null){
-			for(FixSite fxst:fixSites){
+			for(AbstractFixSite fxst:fixSites){
 				if(fxst == null){
 					continue;
 				}
@@ -84,8 +86,8 @@ public class FixSiteManager {
 		return coveringSites;
 	}
 	
-	private ArrayList<FixSite> getFixSitesForMethod(String methodKey, int startLineNum, int endLineNum){
-		ArrayList<FixSite> fixSites = fixSiteCache.get(methodKey);
+	private ArrayList<AbstractFixSite> getFixSitesForMethod(String methodKey, int startLineNum, int endLineNum){
+		ArrayList<AbstractFixSite> fixSites = fixSiteCache.get(methodKey);
 		if(fixSites == null){
 			fixSites = resolveFixSites(methodKey, startLineNum, endLineNum);
 			fixSiteCache.put(methodKey, fixSites);
@@ -120,7 +122,7 @@ public class FixSiteManager {
 		}
 		return td;
 	}
-	private ArrayList<FixSite> resolveFixSites(String methodKey, int startLineNum, int endLineNum){
+	private ArrayList<AbstractFixSite> resolveFixSites(String methodKey, int startLineNum, int endLineNum){
 		
 		try {
 			String[] methodInfo = methodKey.split(":");
@@ -177,7 +179,7 @@ public class FixSiteManager {
 			Block methodBody = targetMethod.getBody();
 			FixSiteCollector collector = new FixSiteCollector(file, className);
 			methodBody.accept(collector);
-			ArrayList<FixSite> fixSites = collector.getFixSites();
+			ArrayList<AbstractFixSite> fixSites = collector.getFixSites();
 					
 			//for constructors we need to add dynamic field declaration & dynamic initializers			
 			if(methodName.equals("<init>")){
@@ -217,10 +219,16 @@ public class FixSiteManager {
 			return true;
 		}
 	}
+
+	@Override
+	public void clearCache() {
+		this.classDeclASTCache.clear();
+		this.fixSiteCache.clear();		
+	}
 }
 
 class FixSiteCollector extends ASTVisitor{
-	private ArrayList<FixSite> fixSites = new ArrayList<FixSite>();
+	private ArrayList<AbstractFixSite> fixSites = new ArrayList<AbstractFixSite>();
 	private IFile file;
 	private String qualifiedTypeName;
 
@@ -229,7 +237,7 @@ class FixSiteCollector extends ASTVisitor{
 		this.qualifiedTypeName = qualifiedTypeName;
 	}
 	
-	public ArrayList<FixSite> getFixSites(){
+	public ArrayList<AbstractFixSite> getFixSites(){
 		return fixSites;
 	}
 	
@@ -261,12 +269,12 @@ class FixSiteCollector extends ASTVisitor{
 		return null;
 	}
 	
-	private ArrayList<FixSite> generateSubFixSite(ArrayList<Statement> collection){
+	private ArrayList<AbstractFixSite> generateSubFixSite(ArrayList<Statement> collection){
 		if(collection.isEmpty())
-			return new ArrayList<FixSite>();
-		ArrayList<FixSite> results = new ArrayList<FixSite>();
+			return new ArrayList<AbstractFixSite>();
+		ArrayList<AbstractFixSite> results = new ArrayList<AbstractFixSite>();
 		for(Statement stmt:collection){
-			ArrayList<FixSite> fixsites = visitGeneralStatement(stmt);
+			ArrayList<AbstractFixSite> fixsites = visitGeneralStatement(stmt);
 			results.addAll(fixsites);
 		}
 		return results;
@@ -313,9 +321,9 @@ class FixSiteCollector extends ASTVisitor{
 				return true;
 		}
 	}
-	private ArrayList<FixSite> visitGeneralStatement(Statement stmt) {
+	private ArrayList<AbstractFixSite> visitGeneralStatement(Statement stmt) {
 		
-		ArrayList<FixSite> stmtFixSites = new ArrayList<FixSite>();
+		ArrayList<AbstractFixSite> stmtFixSites = new ArrayList<AbstractFixSite>();
 		if(isSimpleStatement(stmt)){
 			ArrayList<Statement> stmtList = new ArrayList<Statement>();
 			stmtList.add(stmt);
@@ -326,14 +334,14 @@ class FixSiteCollector extends ASTVisitor{
 			return visitCompoundStatement(stmt);
 		}
 	}
-	private ArrayList<FixSite> visitCompoundStatement(Statement stmt) {
+	private ArrayList<AbstractFixSite> visitCompoundStatement(Statement stmt) {
 		if(stmt instanceof LabeledStatement){
 			Statement innerStmt = ((LabeledStatement) stmt).getBody();
 			FixSiteCollector collector = new FixSiteCollector(file, qualifiedTypeName);
 			innerStmt.accept(collector);
 			return collector.getFixSites();
 		}
-		ArrayList<FixSite> fixSites = new ArrayList<FixSite>();
+		ArrayList<AbstractFixSite> fixSites = new ArrayList<AbstractFixSite>();
 		int stmtType = stmt.getNodeType();
 		switch(stmtType){
 			case ASTNode.DO_STATEMENT:
@@ -374,7 +382,7 @@ class FixSiteCollector extends ASTVisitor{
 				fixSites.add(sFixSite);
 				
 			} else {
-				ArrayList<FixSite> fss = visitCompoundStatement(stmt);
+				ArrayList<AbstractFixSite> fss = visitCompoundStatement(stmt);
 				fixSites.addAll(fss);
 			}
 			
@@ -388,7 +396,7 @@ class FixSiteCollector extends ASTVisitor{
 		fixSites.add(cFixSite);
 		
 		Statement body = node.getBody();
-		ArrayList<FixSite> sfixSites = visitGeneralStatement(body);
+		ArrayList<AbstractFixSite> sfixSites = visitGeneralStatement(body);
 		fixSites.addAll(sfixSites);
 		
 		return false;
@@ -401,7 +409,7 @@ class FixSiteCollector extends ASTVisitor{
 		fixSites.add(cFixSite);
 		
 		Statement body = node.getBody();
-		ArrayList<FixSite> sfixSites = visitGeneralStatement(body);
+		ArrayList<AbstractFixSite> sfixSites = visitGeneralStatement(body);
 		fixSites.addAll(sfixSites);
 		
 		return false;
@@ -414,7 +422,7 @@ class FixSiteCollector extends ASTVisitor{
 		fixSites.add(cFixSite);
 		
 		Statement body = node.getBody();
-		ArrayList<FixSite> sfixSites = visitGeneralStatement(body);
+		ArrayList<AbstractFixSite> sfixSites = visitGeneralStatement(body);
 		fixSites.addAll(sfixSites);
 		
 		return false;
@@ -427,12 +435,12 @@ class FixSiteCollector extends ASTVisitor{
 		fixSites.add(cFixSite);
 		
 		Statement thenbody = node.getThenStatement();
-		ArrayList<FixSite> thenfixSites = visitGeneralStatement(thenbody);
+		ArrayList<AbstractFixSite> thenfixSites = visitGeneralStatement(thenbody);
 		fixSites.addAll(thenfixSites);
 		
 		Statement elsebody = node.getElseStatement();
 		if(elsebody != null){
-			ArrayList<FixSite> elsefixSites = visitGeneralStatement(elsebody);
+			ArrayList<AbstractFixSite> elsefixSites = visitGeneralStatement(elsebody);
 			fixSites.addAll(elsefixSites);
 		}
 		return false;
@@ -467,7 +475,7 @@ class FixSiteCollector extends ASTVisitor{
 				}
 				i --; //i should always point to the last statement we visited.
 				
-				ArrayList<FixSite> switchCaseFixSites
+				ArrayList<AbstractFixSite> switchCaseFixSites
 					= visitSwitchCaseGroup(node, (SwitchCase) switchstart, group);
 				fixSites.addAll(switchCaseFixSites);
 			}
@@ -476,10 +484,10 @@ class FixSiteCollector extends ASTVisitor{
 		return true;
 	}
 	
-	private ArrayList<FixSite> visitSwitchCaseGroup(SwitchStatement node, SwitchCase switchstart,
+	private ArrayList<AbstractFixSite> visitSwitchCaseGroup(SwitchStatement node, SwitchCase switchstart,
 			ArrayList<Statement> group) {
 		
-		ArrayList<FixSite> switchfixSites = new ArrayList<FixSite>();
+		ArrayList<AbstractFixSite> switchfixSites = new ArrayList<AbstractFixSite>();
 		Expression switchexpr = node.getExpression();
 		Expression caseexpr = switchstart.getExpression();
 		if(caseexpr != null){		
@@ -490,11 +498,11 @@ class FixSiteCollector extends ASTVisitor{
 			Expression caseexprCopy = (Expression)ASTNode.copySubtree(caseexpr.getAST(), caseexpr);
 			condExpr.setLeftOperand(switchexprCopy);
 			condExpr.setRightOperand(caseexprCopy);
-			FixSite condFixSite = generateConditionFixSite(condExpr, switchstart, true);
+			AbstractFixSite condFixSite = generateConditionFixSite(condExpr, switchstart, true);
 			switchfixSites.add(condFixSite);
 		}
 		
-		ArrayList<FixSite> fixSites = generateSubFixSite(group);
+		ArrayList<AbstractFixSite> fixSites = generateSubFixSite(group);
 		switchfixSites.addAll(fixSites);
 		
 		
@@ -502,7 +510,7 @@ class FixSiteCollector extends ASTVisitor{
 	}
 	@Override
 	public boolean visit(SynchronizedStatement node) {
-		ArrayList<FixSite> sfixSites = visitGeneralStatement(node.getBody());
+		ArrayList<AbstractFixSite> sfixSites = visitGeneralStatement(node.getBody());
 		fixSites.addAll(sfixSites);
 		return false;
 	}
@@ -514,11 +522,11 @@ class FixSiteCollector extends ASTVisitor{
 	
 	@Override
 	public boolean visit(TryStatement node) {
-		ArrayList<FixSite> tryfixSites = visitGeneralStatement(node.getBody());
+		ArrayList<AbstractFixSite> tryfixSites = visitGeneralStatement(node.getBody());
 		fixSites.addAll(tryfixSites);
 		
 		if(node.getFinally() != null){
-			ArrayList<FixSite> finallyfixSites = visitGeneralStatement(node.getFinally());
+			ArrayList<AbstractFixSite> finallyfixSites = visitGeneralStatement(node.getFinally());
 			fixSites.addAll(finallyfixSites);
 		}
 		return false;
@@ -542,7 +550,7 @@ class FixSiteCollector extends ASTVisitor{
 		fixSites.add(cFixSite);
 		
 		Statement body = node.getBody();
-		ArrayList<FixSite> sfixSites = visitGeneralStatement(body);
+		ArrayList<AbstractFixSite> sfixSites = visitGeneralStatement(body);
 		fixSites.addAll(sfixSites);
 		return false;
 	}

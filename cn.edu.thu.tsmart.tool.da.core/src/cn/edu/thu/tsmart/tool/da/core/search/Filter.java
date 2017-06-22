@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.flt;
+package cn.edu.thu.tsmart.tool.da.core.search;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,6 +40,7 @@ import org.eclipse.jdt.internal.debug.core.breakpoints.ValidBreakpointLocationLo
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
 import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
 import cn.edu.thu.tsmart.tool.da.core.Logger;
+import cn.edu.thu.tsmart.tool.da.core.SmartDebugPlugin;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableSetFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
@@ -85,6 +86,13 @@ public class Filter {
 	
 	public ArrayList<Fix> filter(Map<Integer, ArrayList<FilterableFix>> fixes, IFile file, String typeName, ArrayList<TestCase> passTCs, TestCase failTC){
 		ArrayList<Fix> results = new ArrayList<Fix>();
+		if(!SmartDebugPlugin.USE_FILTRATION){
+			for(Integer lineNum : fixes.keySet()){
+				ArrayList<FilterableFix> fixesEntry = fixes.get(lineNum);
+				results.addAll(fixesEntry);
+			}
+			return results;
+		}
 		for(Integer lineNum:  fixes.keySet()){
 			ArrayList<FilterableFix> fixesEntry = fixes.get(lineNum);
 			if(fixesEntry.size() == 0)
@@ -201,6 +209,33 @@ public class Filter {
 		}
 		return fixsets;
 		
+	}
+
+	/**
+	 * merge the pairs in newResults into results, and return results
+	 * @param results
+	 * @param newResults
+	 * @return
+	 */
+	public static void merge(Map<Integer, ArrayList<FilterableFix>> results, Map<Integer, ArrayList<FilterableFix>> newResults){
+		for(Integer lineNum: newResults.keySet()){
+			if(results.containsKey(lineNum)){
+				ArrayList<FilterableFix> fixes = results.get(lineNum);
+				fixes.addAll(newResults.get(lineNum));
+			} else {
+				results.put(lineNum, newResults.get(lineNum));
+			}
+		}
+		
+	}
+	
+	public static void addFix(Map<Integer, ArrayList<FilterableFix>> results, FilterableFix fix, int lineNum){
+		if(!results.containsKey(lineNum)){
+			ArrayList<FilterableFix> fixes = new ArrayList<FilterableFix>();
+			results.put(lineNum, fixes);
+		}
+		ArrayList<FilterableFix> fixes = results.get(lineNum);
+		fixes.add(fix);
 	}
 }
 

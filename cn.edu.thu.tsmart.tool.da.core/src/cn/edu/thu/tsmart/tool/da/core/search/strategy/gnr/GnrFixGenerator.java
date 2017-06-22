@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -7,10 +7,6 @@ import java.util.Set;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.debug.core.DebugPlugin;
 import org.eclipse.debug.core.IBreakpointManager;
 import org.eclipse.debug.core.model.IBreakpoint;
@@ -18,26 +14,27 @@ import org.eclipse.debug.core.model.IBreakpoint;
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
 import cn.edu.thu.tsmart.tool.da.core.Logger;
 import cn.edu.thu.tsmart.tool.da.core.fl.BasicBlock;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.ConditionFixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.InsertStopFixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.strategy.ConditionExprFixer;
-import cn.edu.thu.tsmart.tool.da.core.search.strategy.ExpressionFixer;
-import cn.edu.thu.tsmart.tool.da.core.search.strategy.FixerUtil;
-import cn.edu.thu.tsmart.tool.da.core.search.strategy.IfInserter;
-import cn.edu.thu.tsmart.tool.da.core.search.strategy.MethodFixer;
+import cn.edu.thu.tsmart.tool.da.core.search.Filter;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer.ConditionExprFixer;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer.ExpressionFixer;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer.IfInserter;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer.MethodFixer;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.ConditionFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.InsertStopFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.FixGenerator;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
 import cn.edu.thu.tsmart.tool.da.core.validator.TestCase;
 
 
-public class SearchEngine extends Job{
+public class GnrFixGenerator extends FixGenerator{
 
 	BugFixSession session;
-	private Set<FixSite> triedStatementFixSite = new HashSet<FixSite>();	
-	private Set<FixSite> triedConditionFixSite = new HashSet<FixSite>();
-	private Set<FixSite> triedInsertStopFixSite = new HashSet<FixSite>();
+	private Set<AbstractFixSite> triedStatementFixSite = new HashSet<AbstractFixSite>();	
+	private Set<AbstractFixSite> triedConditionFixSite = new HashSet<AbstractFixSite>();
+	private Set<AbstractFixSite> triedInsertStopFixSite = new HashSet<AbstractFixSite>();
 	
 	
 	//Fix generation strategies:
@@ -49,9 +46,12 @@ public class SearchEngine extends Job{
 	private ExpressionFixer exprFixer;
 	private ConditionExprFixer condFixer;
 	
+	
+	
+	
+	
 
-	public SearchEngine(BugFixSession session) {
-		super("Fix Generation");
+	public GnrFixGenerator(BugFixSession session) {
 		this.session = session;
 		
 //		this.branchFixer = new BranchFixer();
@@ -61,6 +61,8 @@ public class SearchEngine extends Job{
 		this.methodFixer = new MethodFixer(session);
 		this.exprFixer = new ExpressionFixer(session);
 		this.condFixer = new ConditionExprFixer(session);
+		
+		
 		
 	}
 	
@@ -95,11 +97,11 @@ public class SearchEngine extends Job{
 		if(testcase == null)
 			return null;
 		String methodKey = bb.getMethodKey();
-		ArrayList<FixSite> fixSites= session.getFixSiteManager().getFixSitesFromLocation(methodKey, bb.getStartLineNum(), bb.getEndLineNum());
+		ArrayList<AbstractFixSite> fixSites= session.getFixSiteManager().getFixSitesFromLocation(methodKey, bb.getStartLineNum(), bb.getEndLineNum());
 		
 		if(fixSites.size() == 0)
 			return null;
-		FixSite fs = fixSites.get(0);
+		AbstractFixSite fs = fixSites.get(0);
 		IFile file = fs.getFile();
 		String typeName = fs.getQualifiedTypeName();
 		ArrayList<TestCase> passTCs = session.getPassCoveringTCs(bb);
@@ -109,57 +111,59 @@ public class SearchEngine extends Job{
 		session.getLogger().log(Logger.EXPR_MODE, "SEARCH_FIX", "search for:" + bb.toString());
 		Map<Integer, ArrayList<FilterableFix>> fixes = new HashMap<Integer, ArrayList<FilterableFix>>();
 		ArrayList<Fix> filteredFixes = new ArrayList<Fix>();
-		for(FixSite fixSite: fixSites){
+		for(AbstractFixSite fixSite: fixSites){
 			
-			if(fixSite instanceof StatementFixSite){
-				if(triedStatementFixSite.contains(fixSite))
-					continue;
-				/*
-				//structure modifications
-				fixes.addAll(branchFixer.generateFix((StatementFixSite) fixSite));
-				fixes.addAll(seqFixer.generateFix((StatementFixSite)fixSite));
-				fixes.addAll(loopFixer.generateFix((StatementFixSite)fixSite));
-				*/
-				
-				
-										
-				//method fixes
-				ArrayList<Fix> methodFixes = methodFixer.generateFix((StatementFixSite)fixSite);
-				filteredFixes.addAll(methodFixes);
-				session.getLogger().log(Logger.DATA_MODE, Logger.GEN_METHOD_FIX, methodFixes.size() + "");
-				session.getLogger().log(Logger.EXPR_MODE, Logger.GEN_METHOD_FIX, methodFixes.size() + "");
-				session.getLogger().log(Logger.DEBUG_MODE, Logger.GEN_METHOD_FIX, methodFixes.size() + "");
-				session.getLogger().log(Logger.DEBUG_MODE, Logger.METHOD_FIX_DETAIL, Logger.generateMethodFixSummary(methodFixes));
-				Map<Integer, ArrayList<FilterableFix>> ifInsertedFixes = ifInserter.generateFix((StatementFixSite) fixSite);
-				
-				//then generate expression fixes
-				//expression fixes will be ordered:
-				//	temporarily : method param fixer first, finally general fixers
-				Map<Integer, ArrayList<FilterableFix>> exprFixes = exprFixer.generateFixForStatementBlocks(((StatementFixSite)fixSite));
-				
-				FixerUtil.merge(fixes, ifInsertedFixes);
-				FixerUtil.merge(fixes, exprFixes);
-				
-				triedStatementFixSite.add(fixSite);
-				
-				/*
-				SymExpressionFixer symExprFixer = new SymExpressionFixer(session, testcase, null);
-				fixes.addAll(symExprFixer.generateFix((StatementFixSite)fixSite));*/
 			
-			}
-			else if (fixSite instanceof ConditionFixSite){
-				if(triedConditionFixSite.contains(fixSite))
-					continue;
-				Map<Integer, ArrayList<FilterableFix>> conditionFixes = condFixer.generateFix((ConditionFixSite)fixSite);
-				FixerUtil.merge(fixes, conditionFixes);
-				triedConditionFixSite.add(fixSite);
-			} else if(fixSite instanceof InsertStopFixSite){
-				if(triedInsertStopFixSite.contains(fixSite))
-					continue;
-				Map<Integer, ArrayList<FilterableFix>> ifInsertedFixes = ifInserter.generateFix((InsertStopFixSite)fixSite);
-				FixerUtil.merge(fixes, ifInsertedFixes);
-				triedInsertStopFixSite.add(fixSite);
-			}
+				if(fixSite instanceof StatementFixSite){
+					if(triedStatementFixSite.contains(fixSite))
+						continue;
+					/*
+					//structure modifications
+					fixes.addAll(branchFixer.generateFix((StatementFixSite) fixSite));
+					fixes.addAll(seqFixer.generateFix((StatementFixSite)fixSite));
+					fixes.addAll(loopFixer.generateFix((StatementFixSite)fixSite));
+					*/
+					
+					
+											
+					//method fixes
+					ArrayList<Fix> methodFixes = methodFixer.generateFix((StatementFixSite)fixSite);
+					filteredFixes.addAll(methodFixes);
+					session.getLogger().log(Logger.DATA_MODE, Logger.GEN_METHOD_FIX, methodFixes.size() + "");
+					session.getLogger().log(Logger.EXPR_MODE, Logger.GEN_METHOD_FIX, methodFixes.size() + "");
+					session.getLogger().log(Logger.DEBUG_MODE, Logger.GEN_METHOD_FIX, methodFixes.size() + "");
+					session.getLogger().log(Logger.DEBUG_MODE, Logger.METHOD_FIX_DETAIL, Logger.generateMethodFixSummary(methodFixes));
+					Map<Integer, ArrayList<FilterableFix>> ifInsertedFixes = ifInserter.generateFix((StatementFixSite) fixSite);
+					
+					//then generate expression fixes
+					//expression fixes will be ordered:
+					//	temporarily : method param fixer first, finally general fixers
+					Map<Integer, ArrayList<FilterableFix>> exprFixes = exprFixer.generateFixForStatementBlocks(((StatementFixSite)fixSite));
+					
+					Filter.merge(fixes, ifInsertedFixes);
+					Filter.merge(fixes, exprFixes);
+					
+					triedStatementFixSite.add(fixSite);
+					
+					/*
+					SymExpressionFixer symExprFixer = new SymExpressionFixer(session, testcase, null);
+					fixes.addAll(symExprFixer.generateFix((StatementFixSite)fixSite));*/
+				
+				}
+				else if (fixSite instanceof ConditionFixSite){
+					if(triedConditionFixSite.contains(fixSite))
+						continue;
+					Map<Integer, ArrayList<FilterableFix>> conditionFixes = condFixer.generateFix((ConditionFixSite)fixSite);
+					Filter.merge(fixes, conditionFixes);
+					triedConditionFixSite.add(fixSite);
+				} else if(fixSite instanceof InsertStopFixSite){
+					if(triedInsertStopFixSite.contains(fixSite))
+						continue;
+					Map<Integer, ArrayList<FilterableFix>> ifInsertedFixes = ifInserter.generateFix((InsertStopFixSite)fixSite);
+					Filter.merge(fixes, ifInsertedFixes);
+					triedInsertStopFixSite.add(fixSite);
+				}
+				
 		}
 		
 		session.getLogger().log(Logger.EXPR_MODE, "PRE_FILTER_STATUS", Logger.generateFixStatistics(fixes));
@@ -208,11 +212,6 @@ public class SearchEngine extends Job{
 	}
 	*/
 	
-	@Override
-	protected IStatus run(IProgressMonitor monitor) {
-		return Status.OK_STATUS;
-	}
-
 	public void clearCache() {
 		if(this.triedConditionFixSite!= null)
 			this.triedConditionFixSite.clear();

@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,8 +33,12 @@ import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
+import cn.edu.thu.tsmart.tool.da.core.search.ExpressionVisitor;
+import cn.edu.thu.tsmart.tool.da.core.search.Filter;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fixer.Fixer;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
 
@@ -63,7 +67,7 @@ public class ExpressionFixer extends Fixer{
 			return results;		
 			
 		for(int i = 0; i < stmts.size(); i ++){
-			FixerUtil.merge(results, generateFix(fixSite, stmts.get(i), localVars, fieldVars));
+			Filter.merge(results, generateFix(fixSite, stmts.get(i), localVars, fieldVars));
 		}
 
 		//ArrayList<Expression> specialExpressions = findSpecialExpressions(stmts);
@@ -405,33 +409,33 @@ public class ExpressionFixer extends Fixer{
 	}
 	*/
 	
-	private Map<Integer, ArrayList<FilterableFix>> generateFix(FixSite fixSite, ASTNode stmt, Map<String, Set<String>> localVars, Map<String, Set<String>> fieldVars){
+	private Map<Integer, ArrayList<FilterableFix>> generateFix(AbstractFixSite fixSite, ASTNode stmt, Map<String, Set<String>> localVars, Map<String, Set<String>> fieldVars){
 		
 		Map<Integer, ArrayList<FilterableFix>> fixes = new HashMap<Integer, ArrayList<FilterableFix>>();
 		
 		if(stmt instanceof ConstructorInvocation){
 			List<?> argList = ((ConstructorInvocation) stmt).arguments();
 			for(Object obj: argList){
-				FixerUtil.merge(fixes, generateFixInner(fixSite,(Expression)obj, localVars, fieldVars));
+				Filter.merge(fixes, generateFixInner(fixSite,(Expression)obj, localVars, fieldVars));
 			}			
 			
 		}else if(stmt instanceof ExpressionStatement){
 			Expression expr = ((ExpressionStatement) stmt).getExpression();
-			FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+			Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 			
 		}else if(stmt instanceof ReturnStatement){
 			Expression expr = ((ReturnStatement) stmt).getExpression();
 			if(expr != null)
-				FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+				Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 			
 		}else if(stmt instanceof SuperConstructorInvocation){
 			Expression expr = ((SuperConstructorInvocation) stmt).getExpression();
 			if(expr != null)
-				FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+				Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 		}else if(stmt instanceof SwitchCase){
 			Expression expr = ((SwitchCase) stmt).getExpression();
 			if(expr != null)
-				FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+				Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 		}else if(stmt instanceof VariableDeclarationStatement){
 			VariableDeclarationStatement vdstmt = (VariableDeclarationStatement)stmt;
 			List<?> fragments = vdstmt.fragments();
@@ -439,7 +443,7 @@ public class ExpressionFixer extends Fixer{
 				if(frag instanceof VariableDeclarationFragment){
 					Expression expr = ((VariableDeclarationFragment) frag).getInitializer();
 					if(expr != null)
-						FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+						Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 				}
 			}
 		}else if(stmt instanceof VariableDeclarationExpression){
@@ -449,7 +453,7 @@ public class ExpressionFixer extends Fixer{
 				if(frag instanceof VariableDeclarationFragment){
 					Expression expr = ((VariableDeclarationFragment) frag).getInitializer();
 					if(expr != null)
-						FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+						Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 				}
 			}
 		}
@@ -457,17 +461,17 @@ public class ExpressionFixer extends Fixer{
 			PostfixExpression postfix = (PostfixExpression)stmt;
 			Expression expr = postfix.getOperand();
 			if(expr != null)
-				FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+				Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 		} else if(stmt instanceof PrefixExpression){
 			Expression expr = ((PrefixExpression) stmt).getOperand();
 			if(expr != null)
-				FixerUtil.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
+				Filter.merge(fixes, generateFixInner(fixSite, expr, localVars, fieldVars));
 		}
 		
 		return fixes;
 	}
 	
-	private Map<Integer, ArrayList<FilterableFix>> generateFixInner(FixSite fixSite, Expression expr, Map<String, Set<String>> localVars, Map<String, Set<String>> fieldVars){
+	private Map<Integer, ArrayList<FilterableFix>> generateFixInner(AbstractFixSite fixSite, Expression expr, Map<String, Set<String>> localVars, Map<String, Set<String>> fieldVars){
 		
 		// now we do the actual generation
 		ExpressionVisitor visitor = new ExpressionVisitor();
@@ -490,7 +494,7 @@ public class ExpressionFixer extends Fixer{
 						int fixLineNum = cu.getLineNumber(e.getStartPosition());
 						String exprString = fields[i].getDeclaringType().getElementName() + "." + fields[i].getElementName();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), exprString,  Fix.EXPR_CHANGE, fixLineNum, e, typeName, exprString);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 					}
 				} catch (JavaModelException e1) {
 					e1.printStackTrace();
@@ -526,12 +530,12 @@ public class ExpressionFixer extends Fixer{
 							|| exprString.contains("--") || exprString.contains("("))){
 						int fixLineNum = cu.getLineNumber(e.getStartPosition());
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), exprString, Fix.EXPR_CHANGE, fixLineNum, e, qualifiedTypeName, exprString);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 				} else {
 					int fixLineNum = cu.getLineNumber(e.getStartPosition());
 					FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), exprString,  Fix.EXPR_CHANGE, fixLineNum, e, qualifiedTypeName, exprString);
-					FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+					Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 				}
 			}
 		}
@@ -593,37 +597,37 @@ public class ExpressionFixer extends Fixer{
 						String modifiedExprString = left.toString() + "==" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + "==" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 					if(!op.equals(Operator.GREATER)){
 						String modifiedExprString = left.toString() + ">" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + ">" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 					if(!op.equals(Operator.GREATER_EQUALS)){
 						String modifiedExprString = left.toString() + ">=" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + ">=" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 					if(!op.equals(Operator.LESS)){
 						String modifiedExprString = left.toString() + "<" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + "<" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 					if(!op.equals(Operator.LESS_EQUALS)){
 						String modifiedExprString = left.toString() + "<=" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + "<=" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 					if(!op.equals(Operator.NOT_EQUALS)){
 						String modifiedExprString = left.toString() + "!=" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + "!=" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 				}
 				if(op.equals(Operator.CONDITIONAL_AND) || op.equals(Operator.CONDITIONAL_OR)){
@@ -631,13 +635,13 @@ public class ExpressionFixer extends Fixer{
 						String modifiedExprString = left.toString() + "||" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + "||" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 					if(!op.equals(Operator.CONDITIONAL_OR)){
 						String modifiedExprString = left.toString() + "&&" + right.toString();
 						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedExprString, Fix.EXPR_CHANGE, infixFixLineNum,
 								outermostBooleanExpr, typeName, leftFrac + "&&" + rightFrac);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 				}
 				
@@ -647,14 +651,14 @@ public class ExpressionFixer extends Fixer{
 					ArrayList<String> appendPads = session.getExpressionGenerator().genBooleanAppendPart(outermostBooleanExpr);
 					for(String boolExpr: appendPads){
 						String modifiedString = infixExpr.toString() + "||" + boolExpr;
-						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e),
+						FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, EclipseUtils.getLineNum(e),
 								e, typeName, modifiedString);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 						
 						modifiedString = infixExpr.toString() + "&&" + boolExpr;
-						fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e),
+						fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, EclipseUtils.getLineNum(e),
 								e, typeName, modifiedString);
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(e));
 					}
 				}
 				
@@ -671,30 +675,30 @@ public class ExpressionFixer extends Fixer{
 			if(op.equals(PrefixExpression.Operator.INCREMENT)){
 				String modifiedString = "--" + operand.toString();
 				FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-				FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+				Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 			} else if(op.equals(PrefixExpression.Operator.DECREMENT)){
 				String modifiedString = "++" + operand.toString();
 				FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-				FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+				Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 			} else if(op.equals(PrefixExpression.Operator.NOT)){
 				String modifiedString = operand.toString();
 				FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-				FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+				Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 			} else{
 				if(!op.equals(PrefixExpression.Operator.COMPLEMENT)){
 					String modifiedString = "~" + operand.toString();
 					FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-					FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+					Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 				}
 				if(!op.equals(PrefixExpression.Operator.MINUS)){
 					String modifiedString = "-" + operand.toString();
 					FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-					FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+					Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 				}
 				if(!op.equals(PrefixExpression.Operator.PLUS)){
 					String modifiedString = "+" + operand.toString();
 					FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-					FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+					Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 				}
 			}
 		}
@@ -708,12 +712,12 @@ public class ExpressionFixer extends Fixer{
 			if(op.equals(PostfixExpression.Operator.DECREMENT)){
 				String modifiedString = operand.toString() + "++";
 				FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-				FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+				Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 			}
 			if(op.equals(PostfixExpression.Operator.INCREMENT)){
 				String modifiedString = operand.toString() + "--";
 				FilterableFix fix = new FilterableFix(fixSite, e.getStartPosition(), e.getLength(), modifiedString, Fix.EXPR_CHANGE, FixerUtil.getLineNum(e), e, typeName, modifiedString);
-				FixerUtil.addFix(results, fix, FixerUtil.getLineNum(e));
+				Filter.addFix(results, fix, FixerUtil.getLineNum(e));
 			}
 		}
 		*/

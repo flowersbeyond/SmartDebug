@@ -14,7 +14,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Import-Package: cn.edu.thu.tsmart.tool.da.core,
  cn.edu.thu.tsmart.tool.da.core.fl,
- cn.edu.thu.tsmart.tool.da.core.search,
  cn.edu.thu.tsmart.tool.da.core.suggestion,
  cn.edu.thu.tsmart.tool.da.core.validator,
  cn.edu.thu.tsmart.tool.da.core.validator.cp,

@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+package cn.edu.thu.tsmart.tool.da.core.search;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,7 +35,7 @@ import org.eclipse.jdt.core.dom.VariableDeclarationExpression;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
 
 public class ExpressionVisitor extends ASTVisitor{
 	//private Map<Expression, String> nodeTypeMap = new HashMap<Expression, String>();

@@ -86,7 +86,7 @@ public class UpdateProgressHandler extends AbstractHandler {
 		}
 		
 		if(SmartDebugPlugin.getLastFixSession() != null){
-			SmartDebugPlugin.getLastFixSession().getBugFixer().updateDebugProcess();
+			SmartDebugPlugin.getLastFixSession().updateDebugProcess();
 			IWorkbenchPage page = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
 			CheckpointView view = (CheckpointView) page.findView("cn.thu.edu.thss.tsmart.tool.da.validator.CheckpointView");
 			if(view != null)

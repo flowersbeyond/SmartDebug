@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+package cn.edu.thu.tsmart.tool.da.core.search;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,35 +27,25 @@ import org.eclipse.jdt.core.dom.Statement;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.ConditionFixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.InsertStopFixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.ConditionFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.InsertStopFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
 
 public class ExpressionGenerator {
 	
-	private static String[] primitiveNames = new String[]{"boolean", "byte", "short", "int", "long", "float", "double", "char"};
 	private BugFixSession session;
 	
 	public ExpressionGenerator(BugFixSession session){
 		this.session = session;
 	}
 	
-	public static boolean isPrimitive(String typeName){
-		for(int i = 0; i < primitiveNames.length; i ++){
-			if(typeName.equals(primitiveNames[i])){
-				return true;
-			}
-		}
-		return false;
-	}
-	
-
 	private String recoverQualifiedName(IImportDeclaration[] imports,
 			IPackageDeclaration[] packageDeclarations, String qName) {
 		if(qName == null)
 			return null;
-		if(isPrimitive(qName))
+		if(EclipseUtils.isPrimitive(qName))
 			return qName;
 		if(qName.equals("Object"))
 			return "java.lang.Object";
@@ -107,7 +97,8 @@ public class ExpressionGenerator {
 			return qualifier + "." + simpleName;
 		
 	}
-	public Set<String> genIfCondition(FixSite fixsite) {
+	
+	public Set<String> genIfCondition(AbstractFixSite fixsite) {
 		try{
 			Statement stmt = null;
 			if (fixsite instanceof StatementFixSite){
@@ -153,15 +144,12 @@ public class ExpressionGenerator {
 	}
 	
 	public ArrayList<String> genBooleanAppendPart(ConditionFixSite fixsite){
-		
-			ASTNode node = fixsite.getConditionExpression();
-			if(node instanceof Expression){
-				Expression expr = (Expression)node;
-				return genBooleanAppendPart(expr);
-			}
-			return new ArrayList<String>();
-		
-		
+		ASTNode node = fixsite.getConditionExpression();
+		if(node instanceof Expression){
+			Expression expr = (Expression)node;
+			return genBooleanAppendPart(expr);
+		}	
+		return new ArrayList<String>();
 	}
 	
 	public ArrayList<String> genBooleanAppendPart(Expression booleanExpr){
@@ -219,8 +207,6 @@ public class ExpressionGenerator {
 		}
 	}
 	
-	
-
 	public Map<String, Set<String>> genLocalVariableReplacements(StatementFixSite fixSite){
 		if(fixSite.getStatements().size() <= 0)
 			return new HashMap<String, Set<String>>();
@@ -525,7 +511,7 @@ class ValueVariableCollector extends ASTVisitor {
 		ITypeBinding binding = node.resolveTypeBinding();
 		if(binding != null){
 			String typeName = binding.getQualifiedName();
-			if(ExpressionGenerator.isPrimitive(typeName) && !typeName.equals("boolean") && !typeName.equals("java.lang.Boolean")){				
+			if(EclipseUtils.isPrimitive(typeName) && !typeName.equals("boolean") && !typeName.equals("java.lang.Boolean")){				
 				variables.add(node.toString());
 			}
 		}

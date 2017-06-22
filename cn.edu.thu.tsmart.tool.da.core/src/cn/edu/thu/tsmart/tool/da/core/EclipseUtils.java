@@ -11,6 +11,8 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IMethod;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.JavaModelException;
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.debug.core.IJavaDebugTarget;
 import org.eclipse.jdt.debug.core.IJavaStackFrame;
 import org.eclipse.jdt.debug.core.IJavaThread;
@@ -21,6 +23,12 @@ import org.eclipse.jdt.debug.eval.IEvaluationListener;
 import org.eclipse.jdt.debug.eval.IEvaluationResult;
 
 public class EclipseUtils {
+
+	public static String getProjectDir(IJavaProject project) throws JavaModelException{
+		String projectdir = project.getUnderlyingResource().getLocation().toOSString() + "/";
+		return projectdir;
+	}
+	
 	/**
 	 * find all test methods in a @param testClass.
 	 * if the test class is a subclass of TestCase, then 
@@ -101,6 +109,28 @@ public class EclipseUtils {
 		evalEngine.dispose();
 		return value;
 	}
+
+	
+	/*
+	 * Type related utils
+	 */
+	private static String[] primitiveNames = new String[]{"boolean", "byte", "short", "int", "long", "float", "double", "char"};
+	public static boolean isPrimitive(String typeName){
+		for(int i = 0; i < primitiveNames.length; i ++){
+			if(typeName.equals(primitiveNames[i])){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+
+	
+	public static int getLineNum(ASTNode e){
+		CompilationUnit cu = (CompilationUnit)e.getRoot();
+		return cu.getLineNumber(e.getStartPosition());
+	}
+
 }
 
 class EvaluationListener implements IEvaluationListener{
@@ -143,3 +173,4 @@ class EvaluationTimeoutTask extends TimerTask{
 		}
 	}
 }
+

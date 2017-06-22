@@ -9,7 +9,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.jdt.core,
  org.eclipse.debug.ui;bundle-version="3.10.2",
  org.junit,
- org.eclipse.jdt.debug
+ org.eclipse.jdt.debug,
+ com.ibm.wala.core
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Import-Package: cn.edu.thu.tsmart.tool.da.tracer,
@@ -35,7 +36,6 @@ Import-Package: cn.edu.thu.tsmart.tool.da.tracer,
  org.eclipse.ui.texteditor
 Export-Package: cn.edu.thu.tsmart.tool.da.core,
  cn.edu.thu.tsmart.tool.da.core.fl,
- cn.edu.thu.tsmart.tool.da.core.search,
  cn.edu.thu.tsmart.tool.da.core.suggestion,
  cn.edu.thu.tsmart.tool.da.core.validator,
  cn.edu.thu.tsmart.tool.da.core.validator.cp

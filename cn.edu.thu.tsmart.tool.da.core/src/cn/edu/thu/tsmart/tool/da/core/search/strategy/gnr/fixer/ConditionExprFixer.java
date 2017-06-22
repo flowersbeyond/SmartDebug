@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,7 +23,8 @@ import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.ConditionFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.ExpressionVisitor;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.ConditionFixSite;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
 

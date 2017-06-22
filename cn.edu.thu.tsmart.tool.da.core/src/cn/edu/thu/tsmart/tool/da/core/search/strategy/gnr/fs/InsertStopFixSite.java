@@ -1,11 +1,13 @@
-package cn.edu.thu.tsmart.tool.da.core.search.fixSite;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.Statement;
 
-public class InsertStopFixSite extends FixSite {
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
+
+public class InsertStopFixSite extends AbstractFixSite {
 
 	private Statement stmt;
 	public InsertStopFixSite(IFile file, String qualifiedTypeName,

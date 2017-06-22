@@ -20,6 +20,8 @@ public class SmartDebugPlugin extends AbstractUIPlugin {
 	
 	private static BugFixSession currentFixSession;
 	//private ArrayList<BugFixSession> currentFixSessions = new ArrayList<BugFixSession>();
+
+	public static boolean USE_FILTRATION = false;
 	
 	/** 
 	 * // return last one. null if no FixSession.<br>

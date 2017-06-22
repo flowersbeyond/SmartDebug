@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -15,7 +15,9 @@ import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.MethodInvocation;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fixer.Fixer;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.MethodFix;
 
@@ -33,7 +35,7 @@ public class MethodFixer extends Fixer{
 		ArrayList<Fix> fixes = new ArrayList<Fix>();
 		ArrayList<String> reps = genOverloadedReplaces(mi, vars);
 		for(String rep: reps){		
-			MethodFix fix = new MethodFix(fixSite, mi.getStartPosition(), mi.getLength(), rep, Fix.METHOD_GENERAL_OVERLOAD, FixerUtil.getLineNum(mi));
+			MethodFix fix = new MethodFix(fixSite, mi.getStartPosition(), mi.getLength(), rep, Fix.METHOD_GENERAL_OVERLOAD, EclipseUtils.getLineNum(mi));
 			fixes.add(fix);
 		}
 		
@@ -145,7 +147,7 @@ public class MethodFixer extends Fixer{
 		ArrayList<Fix> fixes = new ArrayList<Fix>();
 		ArrayList<String> reps = genOverloadedReplaces(cic, vars);
 		for(String rep: reps){
-			MethodFix fix = new MethodFix(fixSite, cic.getStartPosition(), cic.getLength(), rep, Fix.METHOD_CNSTR_OVERLOAD, FixerUtil.getLineNum(cic));
+			MethodFix fix = new MethodFix(fixSite, cic.getStartPosition(), cic.getLength(), rep, Fix.METHOD_CNSTR_OVERLOAD, EclipseUtils.getLineNum(cic));
 			fixes.add(fix);
 		}
 		
@@ -248,7 +250,7 @@ public class MethodFixer extends Fixer{
 		ArrayList<Fix> fixes = new ArrayList<Fix>();
 		ArrayList<String> reps = genSameSigReplacers(mi, vars);
 		for(String rep: reps){	
-			MethodFix fix = new MethodFix(fixSite, mi.getStartPosition(), mi.getLength(), rep, Fix.METHOD_SAME_SIG, FixerUtil.getLineNum(mi));
+			MethodFix fix = new MethodFix(fixSite, mi.getStartPosition(), mi.getLength(), rep, Fix.METHOD_SAME_SIG, EclipseUtils.getLineNum(mi));
 			fixes.add(fix);			
 		}
 		

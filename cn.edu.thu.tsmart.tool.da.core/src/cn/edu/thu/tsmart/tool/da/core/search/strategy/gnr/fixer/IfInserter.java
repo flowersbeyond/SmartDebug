@@ -1,4 +1,4 @@
-package cn.edu.thu.tsmart.tool.da.core.search.strategy;
+package cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fixer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,9 +31,12 @@ import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.WhileStatement;
 
 import cn.edu.thu.tsmart.tool.da.core.BugFixSession;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.FixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.InsertStopFixSite;
-import cn.edu.thu.tsmart.tool.da.core.search.fixSite.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.EclipseUtils;
+import cn.edu.thu.tsmart.tool.da.core.search.Filter;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.InsertStopFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.gnr.fs.StatementFixSite;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fixer.Fixer;
+import cn.edu.thu.tsmart.tool.da.core.search.strategy.tmpl.fs.AbstractFixSite;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.FilterableFix;
 import cn.edu.thu.tsmart.tool.da.core.suggestion.Fix;
 
@@ -47,7 +50,7 @@ public class IfInserter extends Fixer{
 	/**
 	 * insert if(...) {break/continue/return}
 	 */
-	private Map<Integer, ArrayList<FilterableFix>> insertStop(FixSite fixSite, int environmentType, String returnTypeName){
+	private Map<Integer, ArrayList<FilterableFix>> insertStop(AbstractFixSite fixSite, int environmentType, String returnTypeName){
 		//get expression repository
 		//construct ifStatement:
 		//a. get a boolean expression that evaluate to true in the current context
@@ -111,16 +114,16 @@ public class IfInserter extends Fixer{
 				//a switch case => break and return
 				//a method body => return
 				if(environmentType == 1 || environmentType == 2){//loop or switch case
-					FilterableFix breakFix = new FilterableFix(fixSite, stmt.getStartPosition(), 0, breakModifiedString, Fix.IF_BREAK, FixerUtil.getLineNum(stmt), null, "boolean", booleanExpr, "false");
-					FixerUtil.addFix(results, breakFix, FixerUtil.getLineNum(stmt));
+					FilterableFix breakFix = new FilterableFix(fixSite, stmt.getStartPosition(), 0, breakModifiedString, Fix.IF_BREAK, EclipseUtils.getLineNum(stmt), null, "boolean", booleanExpr, "false");
+					Filter.addFix(results, breakFix, EclipseUtils.getLineNum(stmt));
 				}
 				if(environmentType == 1){
-					FilterableFix continueFix = new FilterableFix(fixSite, stmt.getStartPosition(), 0, continueModifiedString, Fix.IF_BREAK, FixerUtil.getLineNum(stmt), null, "boolean", booleanExpr, "false");
-					FixerUtil.addFix(results, continueFix, FixerUtil.getLineNum(stmt));
+					FilterableFix continueFix = new FilterableFix(fixSite, stmt.getStartPosition(), 0, continueModifiedString, Fix.IF_BREAK, EclipseUtils.getLineNum(stmt), null, "boolean", booleanExpr, "false");
+					Filter.addFix(results, continueFix, EclipseUtils.getLineNum(stmt));
 				}
 				
-				FilterableFix returnFix = new FilterableFix(fixSite, stmt.getStartPosition(), 0, returnModifiedString, Fix.IF_BREAK, FixerUtil.getLineNum(stmt), null, "boolean", booleanExpr, "false");
-				FixerUtil.addFix(results, returnFix, FixerUtil.getLineNum(stmt));
+				FilterableFix returnFix = new FilterableFix(fixSite, stmt.getStartPosition(), 0, returnModifiedString, Fix.IF_BREAK, EclipseUtils.getLineNum(stmt), null, "boolean", booleanExpr, "false");
+				Filter.addFix(results, returnFix, EclipseUtils.getLineNum(stmt));
 			
 			
 			}
@@ -196,8 +199,8 @@ public class IfInserter extends Fixer{
 								+ "if (" + nullCondStr + ") {\n"
 								+ varDecl.getName().toString() + " = " + initExpr.toString() + "\n"
 								+ "}\n";
-						FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_NULL_CHECK, FixerUtil.getLineNum(wrappingStmt), null, nullCondStr, "boolean", "true");
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+						FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_NULL_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, nullCondStr, "boolean", "true");
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 						continue;
 					}
 				} 
@@ -207,8 +210,8 @@ public class IfInserter extends Fixer{
 				String modifiedString = "if (" + nullCondStr + ") {\n" 
 							+ wrappingStmt.toString() + "\n"
 							+ "}\n";
-				FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_NULL_CHECK, FixerUtil.getLineNum(wrappingStmt), null, nullCondStr, "boolean", "true");
-				FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));				
+				FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_NULL_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, nullCondStr, "boolean", "true");
+				Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));				
 			}
 		}
 		return results;
@@ -257,8 +260,8 @@ public class IfInserter extends Fixer{
 								+ "if (" + instanceOfCond + ") {\n"
 								+ varDecl.getName() + " = " + initExpr.toString() + "\n"
 								+ "}\n";
-						FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_CAST_CHECK, FixerUtil.getLineNum(wrappingStmt), null, instanceOfCond, "boolean", "true");
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+						FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_CAST_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, instanceOfCond, "boolean", "true");
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 					}
 				} else {
 					// we assume it is just common statement
@@ -266,8 +269,8 @@ public class IfInserter extends Fixer{
 					String modifiedString = "if (" + instanceOfCond + ") {\n" 
 								+ wrappingStmt.toString() + "\n"
 								+ "}\n";
-					FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_CAST_CHECK, FixerUtil.getLineNum(wrappingStmt), null, instanceOfCond, "boolean", "true");
-					FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+					FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_CAST_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, instanceOfCond, "boolean", "true");
+					Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 				}
 				
 			}
@@ -306,8 +309,8 @@ public class IfInserter extends Fixer{
 								+ "if (" + rangeCheckCond + ") {\n"
 								+ varDecl.getName() + " = " + initExpr.toString() + "\n"
 								+ "}\n";
-						FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_ARRAY_RANGE_CHECK, FixerUtil.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
-						FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+						FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_ARRAY_RANGE_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
+						Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 					}
 				} else {
 					// we assume it is just common statement
@@ -315,8 +318,8 @@ public class IfInserter extends Fixer{
 					String modifiedString = "if (" + rangeCheckCond + ") {\n" 
 								+ wrappingStmt.toString() + "\n"
 								+ "}\n";
-					FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_ARRAY_RANGE_CHECK, FixerUtil.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
-					FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+					FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_ARRAY_RANGE_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
+					Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 				}
 				
 			}
@@ -384,8 +387,8 @@ public class IfInserter extends Fixer{
 											+ "if (" + rangeCheckCond + ") {\n"
 											+ varDecl.getName() + " = " + initExpr.toString() + "\n"
 											+ "}\n";
-									FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_LIST_RANGE_CHECK, FixerUtil.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
-									FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+									FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_LIST_RANGE_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
+									Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 								}
 							} else {
 								// we assume it is just common statement
@@ -393,8 +396,8 @@ public class IfInserter extends Fixer{
 								String modifiedString = "if (" + rangeCheckCond + ") {\n" 
 											+ wrappingStmt.toString() + "\n"
 											+ "}\n";
-								FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_LIST_RANGE_CHECK, FixerUtil.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
-								FixerUtil.addFix(results, fix, FixerUtil.getLineNum(wrappingStmt));
+								FilterableFix fix = new FilterableFix(fixSite, wrappingStmt.getStartPosition(), wrappingStmt.getLength(), modifiedString, Fix.IF_LIST_RANGE_CHECK, EclipseUtils.getLineNum(wrappingStmt), null, rangeCheckCond, "boolean", "true");
+								Filter.addFix(results, fix, EclipseUtils.getLineNum(wrappingStmt));
 							}
 							
 						}
@@ -458,14 +461,14 @@ public class IfInserter extends Fixer{
 		
 		
 		
-		FixerUtil.merge(results, insertStop(fixSite, environmentType, returnTypeName));
-		FixerUtil.merge(results, insertNullChecker(fixSite, castExprsMap));
-		FixerUtil.merge(results, insertNullChecker(fixSite, arrayAccessesMap));
-		FixerUtil.merge(results, insertNullChecker(fixSite, fieldAccessesMap));
-		FixerUtil.merge(results, insertNullChecker(fixSite, methodInvocsMap));
-		FixerUtil.merge(results, insertCastChecker(fixSite, castExprsMap));
-		FixerUtil.merge(results, insertRangeChecker(fixSite, arrayAccessesMap));
-		FixerUtil.merge(results, insertCollectionBoundChecker(fixSite, methodInvocsMap));
+		Filter.merge(results, insertStop(fixSite, environmentType, returnTypeName));
+		Filter.merge(results, insertNullChecker(fixSite, castExprsMap));
+		Filter.merge(results, insertNullChecker(fixSite, arrayAccessesMap));
+		Filter.merge(results, insertNullChecker(fixSite, fieldAccessesMap));
+		Filter.merge(results, insertNullChecker(fixSite, methodInvocsMap));
+		Filter.merge(results, insertCastChecker(fixSite, castExprsMap));
+		Filter.merge(results, insertRangeChecker(fixSite, arrayAccessesMap));
+		Filter.merge(results, insertCollectionBoundChecker(fixSite, methodInvocsMap));
 			
 		return results;
 	}
@@ -511,7 +514,7 @@ public class IfInserter extends Fixer{
 		
 		
 		
-		FixerUtil.merge(results, insertStop(fixSite, environmentType, returnTypeName));
+		Filter.merge(results, insertStop(fixSite, environmentType, returnTypeName));
 		
 			
 		return results;
